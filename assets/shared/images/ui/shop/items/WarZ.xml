@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="WarZ.png">
+<SubTexture name="idle0000" x="450" y="0" width="217" height="411" frameX="-68" frameY="-568" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0000" x="228" y="0" width="222" height="417" frameX="-66" frameY="-565" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0001" x="0" y="0" width="228" height="423" frameX="-63" frameY="-562" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="sold0000" x="667" y="0" width="217" height="411" frameX="-68" frameY="-568" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="pixel padlock.png">
+<SubTexture name="pixel padlock padlock idle0000" x="0" y="0" width="59" height="87" frameX="-484" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock anim0000" x="59" y="0" width="76" height="87" frameX="-472" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock anim0001" x="135" y="0" width="83" height="87" frameX="-468" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock anim0002" x="0" y="0" width="59" height="87" frameX="-484" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock idle0000" x="99" y="174" width="85" height="87" frameX="-465" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock press0000" x="0" y="0" width="59" height="87" frameX="-484" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock press0001" x="0" y="87" width="131" height="87" frameX="-458" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock press0002" x="218" y="0" width="121" height="87" frameX="-450" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock press0003" x="218" y="87" width="86" height="87" frameX="-483" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock press0004" x="131" y="87" width="68" height="87" frameX="-470" frameY="-308" frameWidth="1024" frameHeight="768" />
+<SubTexture name="pixel padlock padlock press0005" x="0" y="174" width="99" height="87" frameX="-460" frameY="-308" frameWidth="1024" frameHeight="768" />
+</TextureAtlas>

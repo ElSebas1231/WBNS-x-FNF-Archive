@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jisuz.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="jisuz0000" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0001" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0002" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0003" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0004" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0005" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0006" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0007" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0008" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0009" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0010" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0011" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0012" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0013" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0014" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0015" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0016" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0017" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0018" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0019" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0020" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0021" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0022" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0023" x="927" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0024" x="1236" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0025" x="1236" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0026" x="1545" y="0" width="309" height="272"/>
+	<SubTexture name="jisuz0027" x="0" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0028" x="0" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0029" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0030" x="618" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0031" x="618" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0032" x="927" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0033" x="1236" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0034" x="1236" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0035" x="1545" y="272" width="309" height="272"/>
+	<SubTexture name="jisuz0036" x="0" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0037" x="0" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0038" x="309" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0039" x="618" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0040" x="618" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0041" x="927" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0042" x="1236" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0043" x="1236" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0044" x="1545" y="544" width="309" height="272"/>
+	<SubTexture name="jisuz0045" x="0" y="816" width="309" height="272"/>
+	<SubTexture name="jisuz0046" x="0" y="816" width="309" height="272"/>
+	<SubTexture name="jisuz0047" x="309" y="816" width="309" height="272"/>
+	<SubTexture name="jisuz0048" x="618" y="816" width="309" height="272"/>
+</TextureAtlas>

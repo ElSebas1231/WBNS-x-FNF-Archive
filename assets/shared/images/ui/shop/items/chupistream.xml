@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="chupistream.png">
+<SubTexture name="idle0000" x="184" y="0" width="83" height="211" frameX="-1454" frameY="-355" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0000" x="95" y="0" width="89" height="217" frameX="-1451" frameY="-352" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0001" x="0" y="0" width="95" height="223" frameX="-1448" frameY="-349" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="sold0000" x="267" y="0" width="83" height="211" frameX="-1454" frameY="-355" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="favorite.png">
+<SubTexture name="favorite corazon anim0000" x="41" y="49" width="20" height="20" frameX="-86" frameY="-93" frameWidth="192" frameHeight="192" />
+<SubTexture name="favorite corazon anim0001" x="0" y="49" width="41" height="24" frameX="-75" frameY="-89" frameWidth="192" frameHeight="192" />
+<SubTexture name="favorite corazon anim0002" x="0" y="0" width="34" height="49" frameX="-79" frameY="-75" frameWidth="192" frameHeight="192" />
+<SubTexture name="favorite corazon anim0003" x="75" y="0" width="45" height="34" frameX="-73" frameY="-83" frameWidth="192" frameHeight="192" />
+<SubTexture name="favorite corazon idle0000" x="34" y="0" width="41" height="36" frameX="-75" frameY="-82" frameWidth="192" frameHeight="192" />
+</TextureAtlas>

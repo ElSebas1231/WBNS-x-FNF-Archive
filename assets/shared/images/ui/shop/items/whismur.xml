@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="whismur.png">
+<SubTexture name="idle0000" x="348" y="0" width="165" height="241" frameX="-639" frameY="-123" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0000" x="177" y="0" width="171" height="247" frameX="-636" frameY="-120" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0001" x="0" y="0" width="177" height="253" frameX="-633" frameY="-117" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="sold0000" x="0" y="253" width="165" height="241" frameX="-639" frameY="-123" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

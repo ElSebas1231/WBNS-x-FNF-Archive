@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jackflowers.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="jackflowers0000" x="0" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0001" x="0" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0002" x="0" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0003" x="311" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0004" x="311" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0005" x="311" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0006" x="622" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0007" x="622" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0008" x="622" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0009" x="933" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0010" x="933" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0011" x="933" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0012" x="1244" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0013" x="1244" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0014" x="1244" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0015" x="1555" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0016" x="1555" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0017" x="1555" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0018" x="0" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0019" x="0" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0020" x="0" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0021" x="311" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0022" x="311" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0023" x="311" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0024" x="0" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0025" x="0" y="0" width="311" height="273"/>
+	<SubTexture name="jackflowers0026" x="622" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0027" x="622" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0028" x="622" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0029" x="933" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0030" x="933" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0031" x="933" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0032" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0033" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0034" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0035" x="1555" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0036" x="1555" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0037" x="1555" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0038" x="0" y="546" width="311" height="273"/>
+	<SubTexture name="jackflowers0039" x="0" y="546" width="311" height="273"/>
+	<SubTexture name="jackflowers0040" x="0" y="546" width="311" height="273"/>
+	<SubTexture name="jackflowers0041" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0042" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0043" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0044" x="1555" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0045" x="1555" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0046" x="1555" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0047" x="0" y="546" width="311" height="273"/>
+	<SubTexture name="jackflowers0048" x="0" y="546" width="311" height="273"/>
+	<SubTexture name="jackflowers0049" x="0" y="546" width="311" height="273"/>
+	<SubTexture name="jackflowers0050" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0051" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0052" x="1244" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0053" x="1555" y="273" width="311" height="273"/>
+	<SubTexture name="jackflowers0054" x="1555" y="273" width="311" height="273"/>
+</TextureAtlas>

@@ -1,0 +1,19 @@
+{
+	"name": "stickers-set-1",
+	"artist": "elcami2022",
+	"stickers": {
+		"aquino": ["aquinoSticker1", "aquinoSticker2", "aquinoSticker3"],
+		"c3jo": ["c3joSticker1", "c3joSticker2", "c3joSticker3"],
+		"duxo": ["duxoSticker1", "duxoSticker2", "duxoSticker3"],
+		"estailus": ["estailusSticker1", "estailusSticker2", "estailusSticker3"],
+		"loco": ["locoSticker1", "locoSticker2", "locoSticker3"],
+		"lucasta": ["lucastaSticker1", "lucastaSticker2", "lucastaSticker3"],
+		"mictia": ["mictiaSticker1", "mictiaSticker2", "mictiaSticker3"],
+		"mishifu": ["mishifuSticker1", "mishifuSticker2", "mishifuSticker3"],
+		"natalan": ["natalanSticker1", "natalanSticker2", "natalanSticker3"],
+		"soarinng": ["soarinngSticker1", "soarinngSticker2", "soarinngSticker3"]
+	},
+	"stickerPacks": {
+		"all": ["aquino", "c3jo", "duxo", "estailus", "loco", "lucasta", "mictia", "mishifu", "natalan", "soarinng"]
+	}
+}

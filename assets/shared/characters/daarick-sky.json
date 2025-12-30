@@ -1,0 +1,102 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-444
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "daarick idle0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				-447
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "daarick left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-11,
+				-463
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "daarick down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-26,
+				-391
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "daarick up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				-431
+			],
+			"anim": "laugh",
+			"fps": 24,
+			"name": "daarick laugh0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-37,
+				-461
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "daarick right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				-450
+			],
+			"anim": "shoot",
+			"fps": 24,
+			"name": "daarick shoot0",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/daarick/DaarickSky",
+	"position": [
+		400,
+		-120
+	],
+	"healthicon": "aquino_icon",
+	"flip_x": false,
+	"healthbar_colors": [
+		96,
+		52,
+		45
+	],
+	"camera_position": [
+		200,
+		280
+	],
+	"sing_duration": 6.1,
+	"scale": 1.6,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="elcami.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="elcami0000" x="0" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0001" x="0" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0002" x="0" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0003" x="319" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0004" x="638" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0005" x="638" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0006" x="957" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0007" x="1276" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0008" x="1276" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0009" x="1595" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0010" x="0" y="287" width="319" height="287"/>
+	<SubTexture name="elcami0011" x="319" y="287" width="319" height="287"/>
+	<SubTexture name="elcami0012" x="638" y="287" width="319" height="287"/>
+	<SubTexture name="elcami0013" x="957" y="287" width="319" height="287"/>
+	<SubTexture name="elcami0014" x="1276" y="287" width="319" height="287"/>
+	<SubTexture name="elcami0015" x="1595" y="287" width="319" height="287"/>
+	<SubTexture name="elcami0016" x="0" y="574" width="319" height="287"/>
+	<SubTexture name="elcami0017" x="0" y="574" width="319" height="287"/>
+	<SubTexture name="elcami0018" x="319" y="574" width="319" height="287"/>
+	<SubTexture name="elcami0019" x="0" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0020" x="0" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0021" x="319" y="0" width="319" height="287"/>
+	<SubTexture name="elcami0022" x="319" y="0" width="319" height="287"/>
+</TextureAtlas>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="capihucha.png">
+<SubTexture name="full0000" x="0" y="0" width="551" height="390" frameX="-97" frameY="-664" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="mid0000" x="551" y="0" width="401" height="381" frameX="-180" frameY="-664" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="empty0000" x="0" y="390" width="401" height="381" frameX="-180" frameY="-664" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

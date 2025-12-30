@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gonn.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gonn0000" x="0" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0001" x="0" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0002" x="308" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0003" x="616" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0004" x="616" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0005" x="924" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0006" x="1232" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0007" x="1232" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0008" x="1540" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0009" x="0" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0010" x="0" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0011" x="308" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0012" x="616" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0013" x="616" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0014" x="924" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0015" x="1232" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0016" x="1232" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0017" x="1540" y="273" width="308" height="273"/>
+	<SubTexture name="gonn0018" x="0" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0019" x="0" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0020" x="308" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0021" x="616" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0022" x="616" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0023" x="924" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0024" x="1232" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0025" x="1232" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0026" x="1540" y="546" width="308" height="273"/>
+	<SubTexture name="gonn0027" x="0" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0028" x="0" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0029" x="308" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0030" x="616" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0031" x="616" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0032" x="924" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0033" x="924" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0034" x="924" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0035" x="1232" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0036" x="1232" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0037" x="1540" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0038" x="1540" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0039" x="1540" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0040" x="308" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0041" x="924" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0042" x="924" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0043" x="924" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0044" x="1232" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0045" x="1232" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0046" x="1540" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0047" x="1540" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0048" x="1540" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0049" x="308" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0050" x="924" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0051" x="924" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0052" x="924" y="0" width="308" height="273"/>
+	<SubTexture name="gonn0053" x="1232" y="819" width="308" height="273"/>
+	<SubTexture name="gonn0054" x="1232" y="819" width="308" height="273"/>
+</TextureAtlas>

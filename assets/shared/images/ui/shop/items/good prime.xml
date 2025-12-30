@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="good prime.png">
+<SubTexture name="idle0000" x="0" y="168" width="231" height="156" frameX="-169" frameY="-320" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0000" x="243" y="0" width="237" height="162" frameX="-166" frameY="-317" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0001" x="0" y="0" width="243" height="168" frameX="-163" frameY="-314" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="sold0000" x="231" y="168" width="231" height="156" frameX="-169" frameY="-320" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

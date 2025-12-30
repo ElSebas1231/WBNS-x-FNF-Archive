@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="MURFT05.png">
+<SubTexture name="idle0000" x="0" y="0" width="164" height="197" frameX="-275" frameY="-485" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0000" x="164" y="0" width="164" height="197" frameX="-275" frameY="-485" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0001" x="328" y="0" width="164" height="197" frameX="-275" frameY="-485" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="sold0000" x="0" y="197" width="164" height="197" frameX="-275" frameY="-485" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

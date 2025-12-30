@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="week1.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="idle0000" x="0" y="0" width="846" height="574" frameX="2" frameY="2" frameWidth="842" frameHeight="570"/>
+	<SubTexture name="locked0000" x="846" y="0" width="846" height="574" frameX="2" frameY="2" frameWidth="842" frameHeight="570"/>
+</TextureAtlas>

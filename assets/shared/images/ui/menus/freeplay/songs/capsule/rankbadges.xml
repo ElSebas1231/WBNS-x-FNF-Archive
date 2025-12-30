@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="rankbadges.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="rank_A0000" x="85" y="99" width="85" height="95" frameX="2" frameY="2" frameWidth="81" frameHeight="91"/>
+	<SubTexture name="rank_B0000" x="174" y="0" width="85" height="95" frameX="2" frameY="2" frameWidth="81" frameHeight="91"/>
+	<SubTexture name="rank_C0000" x="170" y="99" width="85" height="94" frameX="2" frameY="2" frameWidth="81" frameHeight="90"/>
+	<SubTexture name="rank_D0000" x="0" y="99" width="85" height="95" frameX="2" frameY="2" frameWidth="81" frameHeight="91"/>
+	<SubTexture name="rank_questionmark0000" x="0" y="0" width="89" height="99" frameX="2" frameY="2" frameWidth="85" frameHeight="95"/>
+	<SubTexture name="rank_S0000" x="89" y="0" width="85" height="95" frameX="2" frameY="2" frameWidth="81" frameHeight="91"/>
+</TextureAtlas>

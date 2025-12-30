@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="advertencia_intro.png">
+<SubTexture name="advertencia_intro lightsOFF0000" x="1416" y="539" width="386" height="257" frameX="-850" frameY="-435" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOFF0001" x="1416" y="278" width="384" height="261" frameX="-853" frameY="-433" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro idle0000" x="470" y="1071" width="471" height="278" frameX="-804" frameY="-438" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0000" x="470" y="753" width="470" height="307" frameX="-805" frameY="-409" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0001" x="941" y="1071" width="470" height="278" frameX="-805" frameY="-438" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0002" x="940" y="753" width="470" height="299" frameX="-805" frameY="-417" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0003" x="0" y="1071" width="470" height="298" frameX="-805" frameY="-418" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0004" x="0" y="753" width="470" height="318" frameX="-805" frameY="-398" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0005" x="0" y="393" width="475" height="360" frameX="-805" frameY="-356" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0006" x="0" y="0" width="475" height="393" frameX="-805" frameY="-323" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0007" x="475" y="0" width="470" height="377" frameX="-805" frameY="-339" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0008" x="475" y="393" width="470" height="334" frameX="-805" frameY="-382" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0009" x="945" y="0" width="471" height="340" frameX="-805" frameY="-376" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0010" x="945" y="340" width="470" height="337" frameX="-805" frameY="-379" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOn0011" x="1416" y="0" width="470" height="278" frameX="-805" frameY="-438" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOFF0002" x="1416" y="539" width="386" height="257" frameX="-850" frameY="-435" frameWidth="1280" frameHeight="720" />
+<SubTexture name="advertencia_intro lightsOFF0003" x="1416" y="278" width="384" height="261" frameX="-853" frameY="-433" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>

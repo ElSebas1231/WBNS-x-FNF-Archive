@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="akira.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="akira0000" x="0" y="0" width="309" height="282"/>
+	<SubTexture name="akira0001" x="0" y="0" width="309" height="282"/>
+	<SubTexture name="akira0002" x="0" y="0" width="309" height="282"/>
+	<SubTexture name="akira0003" x="0" y="0" width="309" height="282"/>
+	<SubTexture name="akira0004" x="309" y="0" width="309" height="282"/>
+	<SubTexture name="akira0005" x="309" y="0" width="309" height="282"/>
+	<SubTexture name="akira0006" x="309" y="0" width="309" height="282"/>
+	<SubTexture name="akira0007" x="618" y="0" width="309" height="282"/>
+	<SubTexture name="akira0008" x="618" y="0" width="309" height="282"/>
+	<SubTexture name="akira0009" x="618" y="0" width="309" height="282"/>
+	<SubTexture name="akira0010" x="927" y="0" width="309" height="282"/>
+	<SubTexture name="akira0011" x="1236" y="0" width="309" height="282"/>
+	<SubTexture name="akira0012" x="1236" y="0" width="309" height="282"/>
+	<SubTexture name="akira0013" x="1545" y="0" width="309" height="282"/>
+	<SubTexture name="akira0014" x="0" y="282" width="309" height="282"/>
+	<SubTexture name="akira0015" x="0" y="282" width="309" height="282"/>
+	<SubTexture name="akira0016" x="309" y="282" width="309" height="282"/>
+	<SubTexture name="akira0017" x="618" y="282" width="309" height="282"/>
+	<SubTexture name="akira0018" x="618" y="282" width="309" height="282"/>
+	<SubTexture name="akira0019" x="927" y="282" width="309" height="282"/>
+	<SubTexture name="akira0020" x="927" y="282" width="309" height="282"/>
+	<SubTexture name="akira0021" x="1236" y="282" width="309" height="282"/>
+	<SubTexture name="akira0022" x="1545" y="282" width="309" height="282"/>
+	<SubTexture name="akira0023" x="1545" y="282" width="309" height="282"/>
+	<SubTexture name="akira0024" x="0" y="564" width="309" height="282"/>
+	<SubTexture name="akira0025" x="309" y="564" width="309" height="282"/>
+	<SubTexture name="akira0026" x="309" y="564" width="309" height="282"/>
+	<SubTexture name="akira0027" x="309" y="564" width="309" height="282"/>
+	<SubTexture name="akira0028" x="618" y="564" width="309" height="282"/>
+	<SubTexture name="akira0029" x="618" y="564" width="309" height="282"/>
+	<SubTexture name="akira0030" x="618" y="564" width="309" height="282"/>
+	<SubTexture name="akira0031" x="0" y="564" width="309" height="282"/>
+	<SubTexture name="akira0032" x="0" y="564" width="309" height="282"/>
+	<SubTexture name="akira0033" x="0" y="564" width="309" height="282"/>
+	<SubTexture name="akira0034" x="927" y="564" width="309" height="282"/>
+	<SubTexture name="akira0035" x="927" y="564" width="309" height="282"/>
+	<SubTexture name="akira0036" x="927" y="564" width="309" height="282"/>
+	<SubTexture name="akira0037" x="1236" y="564" width="309" height="282"/>
+	<SubTexture name="akira0038" x="1236" y="564" width="309" height="282"/>
+	<SubTexture name="akira0039" x="1236" y="564" width="309" height="282"/>
+	<SubTexture name="akira0040" x="0" y="0" width="309" height="282"/>
+	<SubTexture name="akira0041" x="0" y="0" width="309" height="282"/>
+</TextureAtlas>

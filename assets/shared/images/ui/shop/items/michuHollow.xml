@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="michuHollow.png">
+<SubTexture name="idle0000" x="0" y="0" width="272" height="266" frameX="-1492" frameY="-110" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0000" x="272" y="0" width="272" height="266" frameX="-1492" frameY="-110" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0001" x="0" y="266" width="272" height="266" frameX="-1492" frameY="-110" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="sold0000" x="272" y="266" width="272" height="266" frameX="-1492" frameY="-110" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

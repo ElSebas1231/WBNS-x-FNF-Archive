@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="loading animation.png">
+<SubTexture name="loading animation loading clear0000" x="0" y="0" width="381" height="506" frameX="-83" frameY="-103" frameWidth="640" frameHeight="640" />
+<SubTexture name="loading animation loading anim0000" x="760" y="506" width="381" height="485" frameX="-83" frameY="-124" frameWidth="640" frameHeight="640" />
+<SubTexture name="loading animation loading anim0001" x="381" y="0" width="383" height="496" frameX="-79" frameY="-114" frameWidth="640" frameHeight="640" />
+<SubTexture name="loading animation loading anim0002" x="764" y="0" width="382" height="495" frameX="-83" frameY="-115" frameWidth="640" frameHeight="640" />
+<SubTexture name="loading animation loading anim0003" x="0" y="506" width="381" height="494" frameX="-83" frameY="-115" frameWidth="640" frameHeight="640" />
+<SubTexture name="loading animation loading anim0004" x="1146" y="0" width="383" height="470" frameX="-79" frameY="-140" frameWidth="640" frameHeight="640" />
+<SubTexture name="loading animation loading anim0005" x="381" y="506" width="379" height="489" frameX="-86" frameY="-121" frameWidth="640" frameHeight="640" />
+</TextureAtlas>

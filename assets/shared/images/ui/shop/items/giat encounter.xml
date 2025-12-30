@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="giat encounter.png">
+<SubTexture name="idle0000" x="0" y="137" width="135" height="125" frameX="-1423" frameY="-191" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0000" x="147" y="0" width="141" height="131" frameX="-1420" frameY="-188" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="press0001" x="0" y="0" width="147" height="137" frameX="-1417" frameY="-185" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="sold0000" x="135" y="137" width="135" height="125" frameX="-1423" frameY="-191" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

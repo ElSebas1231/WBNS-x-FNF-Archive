@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="title enter.png">
+<SubTexture name="title enter press0000" x="0" y="0" width="847" height="68" frameX="-227" frameY="-604" frameWidth="1280" frameHeight="720" />
+<SubTexture name="title enter press0001" x="0" y="68" width="847" height="68" frameX="-227" frameY="-604" frameWidth="1280" frameHeight="720" />
+<SubTexture name="title enter press0002" x="0" y="136" width="847" height="68" frameX="-227" frameY="-604" frameWidth="1280" frameHeight="720" />
+<SubTexture name="title enter press0003" x="0" y="204" width="847" height="68" frameX="-227" frameY="-604" frameWidth="1280" frameHeight="720" />
+<SubTexture name="title enter press0004" x="0" y="272" width="847" height="68" frameX="-227" frameY="-604" frameWidth="1280" frameHeight="720" />
+<SubTexture name="title enter press0005" x="0" y="340" width="847" height="68" frameX="-227" frameY="-604" frameWidth="1280" frameHeight="720" />
+<SubTexture name="title enter idle0000" x="0" y="272" width="847" height="68" frameX="-227" frameY="-604" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>

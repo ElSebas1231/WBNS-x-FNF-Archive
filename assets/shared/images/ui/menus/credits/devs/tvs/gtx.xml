@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gtx.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="gtx0000" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0001" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0002" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0003" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0004" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0005" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0006" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0007" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0008" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0009" x="0" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0010" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0011" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0012" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0013" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0014" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0015" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0016" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0017" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0018" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0019" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0020" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0021" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0022" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0023" x="0" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0024" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0025" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0026" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0027" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0028" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0029" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0030" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0031" x="0" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0032" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0033" x="309" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0034" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0035" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0036" x="618" y="0" width="309" height="272"/>
+	<SubTexture name="gtx0037" x="0" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0038" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0039" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0040" x="309" y="272" width="309" height="272"/>
+	<SubTexture name="gtx0041" x="309" y="272" width="309" height="272"/>
+</TextureAtlas>

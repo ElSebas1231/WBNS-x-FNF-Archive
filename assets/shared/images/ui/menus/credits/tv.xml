@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tv.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="TV  enters0000" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0001" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0002" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0003" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0004" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0005" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0006" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0007" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0008" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0009" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0010" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0011" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0012" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0013" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0014" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0015" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0016" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0017" x="0" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0018" x="442" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0019" x="442" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0020" x="884" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0021" x="884" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0022" x="1326" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0023" x="1326" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0024" x="1326" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0025" x="1768" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0026" x="1768" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0027" x="2210" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0028" x="2210" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0029" x="2652" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0030" x="2652" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0031" x="2652" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0032" x="3094" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0033" x="3094" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0034" x="3094" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0035" x="3536" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0036" x="3536" y="0" width="442" height="841"/>
+	<SubTexture name="TV  enters0037" x="0" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0038" x="0" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0039" x="442" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0040" x="884" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0041" x="1326" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0042" x="1326" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0043" x="1326" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0044" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0045" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0046" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0047" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0048" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0049" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0050" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0051" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0052" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0053" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0054" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0055" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0056" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0057" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0058" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0059" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0060" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0061" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0062" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0063" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0064" x="1768" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0065" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0066" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV  enters0067" x="2210" y="841" width="442" height="841"/>
+	<SubTexture name="TV IDLE0000" x="2652" y="841" width="360" height="400"/>
+	<SubTexture name="TV IDLE0001" x="2652" y="841" width="360" height="400"/>
+	<SubTexture name="TV IDLE0002" x="2652" y="841" width="360" height="400"/>
+	<SubTexture name="TV IDLE0003" x="2652" y="841" width="360" height="400"/>
+	<SubTexture name="TV IDLE0004" x="2652" y="841" width="360" height="400"/>
+	<SubTexture name="TV IDLE0005" x="2652" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0000" x="3012" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0001" x="3012" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0002" x="3012" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0003" x="3372" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0004" x="3372" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0005" x="3732" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0006" x="3732" y="841" width="360" height="400"/>
+	<SubTexture name="TV change channel0007" x="0" y="1682" width="360" height="400"/>
+	<SubTexture name="TV change channel0008" x="0" y="1682" width="360" height="400"/>
+	<SubTexture name="TV change channel with transition0000" x="360" y="1682" width="360" height="400"/>
+	<SubTexture name="TV change channel with transition0001" x="360" y="1682" width="360" height="400"/>
+	<SubTexture name="TV change channel with transition0002" x="360" y="1682" width="360" height="400"/>
+	<SubTexture name="TV change channel with transition0003" x="720" y="1682" width="360" height="400"/>
+	<SubTexture name="TV change channel with transition0004" x="720" y="1682" width="360" height="400"/>
+	<SubTexture name="TV change channel with transition0005" x="720" y="1682" width="360" height="400"/>
+</TextureAtlas>

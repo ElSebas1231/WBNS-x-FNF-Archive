@@ -1,0 +1,22 @@
+{
+	"songs": [
+		["Highs", "bf", [255, 255, 255]],
+		["Llamas Duel", "bf", [255, 255, 255]],
+		["Made in 2002 v2", "bf", [255, 255, 255]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "",
+
+	"storyName": "",
+	"weekBefore": "",
+	"weekName": "Aquino Week",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

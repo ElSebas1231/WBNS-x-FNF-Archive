@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="eikoz.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="eikoz0000" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0001" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0002" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0003" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0004" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0005" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0006" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0007" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0008" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0009" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0010" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0011" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0012" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0013" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0014" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0015" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0016" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0017" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0018" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0019" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0020" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0021" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0022" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0023" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0024" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0025" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0026" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0027" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0028" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0029" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0030" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0031" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0032" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0033" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0034" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0035" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0036" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0037" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0038" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0039" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0040" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0041" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0042" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0043" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0044" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0045" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0046" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0047" x="0" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0048" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0049" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0050" x="317" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0051" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0052" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0053" x="634" y="0" width="317" height="273"/>
+	<SubTexture name="eikoz0054" x="0" y="0" width="317" height="273"/>
+</TextureAtlas>

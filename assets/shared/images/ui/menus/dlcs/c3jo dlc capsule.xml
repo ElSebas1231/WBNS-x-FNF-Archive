@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="c3jo dlc capsule.png">
+<SubTexture name="c3jo dlc capsule instalado0000" x="0" y="0" width="956" height="816" frameX="-95" frameY="-45" frameWidth="1917" frameHeight="962" />
+<SubTexture name="c3jo dlc capsule disponible0000" x="956" y="0" width="955" height="816" frameX="-95" frameY="-45" frameWidth="1917" frameHeight="962" />
+</TextureAtlas>

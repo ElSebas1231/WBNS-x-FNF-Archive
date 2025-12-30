@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bayestso.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bayestso0000" x="0" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0001" x="0" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0002" x="0" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0003" x="309" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0004" x="309" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0005" x="309" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0006" x="618" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0007" x="618" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0008" x="618" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0009" x="0" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0010" x="0" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0011" x="0" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0012" x="927" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0013" x="927" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0014" x="927" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0015" x="1236" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0016" x="1236" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0017" x="1236" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0018" x="1545" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0019" x="1545" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0020" x="1545" y="0" width="309" height="286"/>
+	<SubTexture name="bayestso0021" x="0" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0022" x="0" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0023" x="0" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0024" x="309" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0025" x="309" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0026" x="309" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0027" x="618" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0028" x="618" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0029" x="618" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0030" x="927" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0031" x="927" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0032" x="927" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0033" x="1236" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0034" x="1236" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0035" x="1236" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0036" x="1545" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0037" x="1545" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0038" x="1545" y="286" width="309" height="286"/>
+	<SubTexture name="bayestso0039" x="0" y="572" width="309" height="286"/>
+	<SubTexture name="bayestso0040" x="0" y="572" width="309" height="286"/>
+	<SubTexture name="bayestso0041" x="0" y="572" width="309" height="286"/>
+</TextureAtlas>

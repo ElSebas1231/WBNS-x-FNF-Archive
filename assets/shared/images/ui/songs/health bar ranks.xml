@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="health bar ranks.png">
+<SubTexture name="health bar ranks rank s0000" x="0" y="0" width="48" height="57" frameX="-550" frameY="-570" frameWidth="1280" frameHeight="720" />
+<SubTexture name="health bar ranks rank a0000" x="48" y="0" width="48" height="57" frameX="-550" frameY="-570" frameWidth="1280" frameHeight="720" />
+<SubTexture name="health bar ranks rank b0000" x="96" y="0" width="48" height="57" frameX="-550" frameY="-570" frameWidth="1280" frameHeight="720" />
+<SubTexture name="health bar ranks rank c0000" x="0" y="57" width="48" height="57" frameX="-550" frameY="-570" frameWidth="1280" frameHeight="720" />
+<SubTexture name="health bar ranks rank d0000" x="48" y="57" width="48" height="57" frameX="-550" frameY="-570" frameWidth="1280" frameHeight="720" />
+<SubTexture name="health bar ranks rank ?0000" x="96" y="57" width="48" height="57" frameX="-550" frameY="-570" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>

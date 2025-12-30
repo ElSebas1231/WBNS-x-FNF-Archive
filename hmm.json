@@ -1,0 +1,101 @@
+{
+  "dependencies": [
+    {
+      "name": "lime",
+      "type": "haxelib",
+      "version": "8.2.2"
+    },
+    {
+      "name": "openfl",
+      "type": "haxelib",
+      "version": "9.4.1"
+    },
+    {
+      "name": "flixel",
+      "type": "haxelib",
+      "version": "5.9.0"
+    },
+    {
+      "name": "flixel-addons",
+      "type": "haxelib",
+      "version": "3.2.1"
+    },
+    {
+      "name": "flixel-tools",
+      "type": "haxelib",
+      "version": "1.5.1"
+    },
+    {
+      "name": "flixel-ui",
+      "type": "haxelib",
+      "version": "2.5.0"
+    },
+    {
+      "name": "hxcpp",
+      "type": "haxelib",
+      "version": "4.3.2"
+    },
+    {
+      "name": "HtmlParser",
+      "type": "haxelib",
+      "version": "3.4.0"
+    },
+    {
+      "name": "UnRAR",
+      "type": "haxelib",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hxCodec",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/polybiusproxy/hxCodec"
+    },
+    {
+      "name": "SScript",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/MrMadera/good-sscript"
+    },
+    {
+      "name": "hxcpp-debug-server",
+      "type": "haxelib",
+      "version": null
+    },
+    {
+      "name": "tjson",
+      "type": "haxelib",
+      "version": "1.4.0"
+    },
+    {
+      "name": "hxdiscord_rpc",
+      "type": "git",
+      "dir": null,
+      "ref": "19518713cbd59fc5705f899144fffdbf9ae6695c",
+      "url": "https://github.com/MAJigsaw77/hxdiscord_rpc"
+    },
+    {
+      "name": "flxanimate",
+      "type": "git",
+      "dir": null,
+      "ref": "dev",
+      "url": "https://github.com/ShadowMario/flxanimate"
+    },
+    {
+      "name": "linc_luajit",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/superpowers04/linc_luajit"
+    },
+    {
+      "name": "farfadox-utils",
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/MrMadera/farfadox-utils"
+    }
+  ]
+}

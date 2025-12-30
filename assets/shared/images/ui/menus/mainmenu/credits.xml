@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="credits.png">
+<SubTexture name="idle0000" x="457" y="462" width="461" height="104" frameX="-84" frameY="-296" frameWidth="640" frameHeight="640" />
+<SubTexture name="idle0001" x="0" y="462" width="457" height="104" frameX="-86" frameY="-296" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0000" x="0" y="0" width="625" height="154" frameX="-2" frameY="-271" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0001" x="625" y="0" width="629" height="152" frameX="0" frameY="-272" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0002" x="0" y="154" width="625" height="154" frameX="-2" frameY="-271" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0003" x="625" y="0" width="629" height="152" frameX="0" frameY="-272" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0004" x="0" y="154" width="625" height="154" frameX="-2" frameY="-271" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0005" x="625" y="0" width="629" height="152" frameX="0" frameY="-272" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0006" x="0" y="154" width="625" height="154" frameX="-2" frameY="-271" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0007" x="625" y="152" width="629" height="152" frameX="0" frameY="-272" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0008" x="0" y="308" width="625" height="154" frameX="-2" frameY="-271" frameWidth="640" frameHeight="640" />
+<SubTexture name="selected0009" x="625" y="304" width="629" height="152" frameX="0" frameY="-272" frameWidth="640" frameHeight="640" />
+</TextureAtlas>

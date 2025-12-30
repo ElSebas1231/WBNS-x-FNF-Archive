@@ -1,0 +1,234 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-8,
+				158
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BF Idle"
+		},
+		{
+			"offsets": [
+				154,
+				125
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BF Down0"
+		},
+		{
+			"offsets": [
+				154,
+				125
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "BF Down0"
+		},
+		{
+			"offsets": [
+				-36,
+				238
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BF Up0"
+		},
+		{
+			"offsets": [
+				-36,
+				238
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "BF Up0"
+		},
+		{
+			"offsets": [
+				-87,
+				184
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BF Right0"
+		},
+		{
+			"offsets": [
+				-87,
+				184
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "BF Right0"
+		},
+		{
+			"offsets": [
+				223,
+				143
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "BF Down Miss0"
+		},
+		{
+			"offsets": [
+				223,
+				143
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss-alt",
+			"indices": [],
+			"name": "BF Down Miss0"
+		},
+		{
+			"offsets": [
+				190,
+				191
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BF Left0"
+		},
+		{
+			"offsets": [
+				190,
+				191
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "BF Left0"
+		},
+		{
+			"offsets": [
+				20,
+				242
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "BF Up Miss0"
+		},
+		{
+			"offsets": [
+				20,
+				242
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss-alt",
+			"indices": [],
+			"name": "BF Up Miss0"
+		},
+		{
+			"offsets": [
+				132,
+				249
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "BF Right Miss0"
+		},
+		{
+			"offsets": [
+				132,
+				249
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss-alt",
+			"indices": [],
+			"name": "BF Right Miss0"
+		},
+		{
+			"offsets": [
+				190,
+				182
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "BF Left Miss0"
+		},
+		{
+			"offsets": [
+				190,
+				182
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss-alt",
+			"indices": [],
+			"name": "BF Left Miss0"
+		},
+		{
+			"offsets": [
+				792,
+				289
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "shield",
+			"loop": false,
+			"name": "BF Shield"
+		},
+		{
+			"offsets": [
+				490,
+				300
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "hurt",
+			"loop": false,
+			"name": "Bf hurt"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/bf/BoyfriendSkyNight",
+	"position": [
+		-40,
+		440
+	],
+	"healthicon": "bf_duxo_icon",
+	"flip_x": true,
+	"healthbar_colors": [
+		0,
+		204,
+		236
+	],
+	"camera_position": [
+		500,
+		-650
+	],
+	"sing_duration": 4,
+	"scale": 2,
+	"_editor_isPlayer": true
+}
