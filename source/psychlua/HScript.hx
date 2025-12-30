@@ -65,7 +65,15 @@ class HScript extends SScript
 		}
 		#end
 
-		if (scriptFile != null && scriptFile.length > 0) this.origin = scriptFile;
+		if (scriptFile != null && scriptFile.length > 0)
+		{
+			this.origin = scriptFile;
+			#if MODS_ALLOWED
+			var myFolder:Array<String> = scriptFile.split('/');
+			if(myFolder[0] + '/' == Paths.mods() && (Mods.currentModDirectory == myFolder[1] || Mods.getGlobalMods().contains(myFolder[1]))) //is inside mods folder
+				this.modFolder = myFolder[1];
+			#end
+		}
 
 		preset();
 		execute();
@@ -128,6 +136,18 @@ class HScript extends SScript
 		set('debugPrint', function(text:String, ?color:FlxColor = null) {
 			if(color == null) color = FlxColor.WHITE;
 			PlayState.instance.addTextToDebug(text, color);
+		});
+		set('getModSetting', function(saveTag:String, ?modName:String = null) {
+			if(modName == null)
+			{
+				if(this.modFolder == null)
+				{
+					PlayState.instance.addTextToDebug('getModSetting: Argument #2 is null and script is not inside a packed Mod folder!', FlxColor.RED);
+					return null;
+				}
+				modName = this.modFolder;
+			}
+			return LuaUtils.getModSetting(saveTag, modName);
 		});
 
 		// Keyboard & Gamepads

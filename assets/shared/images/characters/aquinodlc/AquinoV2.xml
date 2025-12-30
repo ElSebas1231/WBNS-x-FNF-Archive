@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="AquinoV2.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Aquino Idle0000" x="0" y="0" width="354" height="546" frameX="0" frameY="-1" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0001" x="0" y="0" width="354" height="546" frameX="0" frameY="-1" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0002" x="354" y="0" width="362" height="540" frameX="0" frameY="-7" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0003" x="354" y="0" width="362" height="540" frameX="0" frameY="-7" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0004" x="716" y="0" width="347" height="521" frameX="-7" frameY="-26" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0005" x="716" y="0" width="347" height="521" frameX="-7" frameY="-26" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0006" x="1063" y="0" width="342" height="534" frameX="-9" frameY="-13" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0007" x="1063" y="0" width="342" height="534" frameX="-9" frameY="-13" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0008" x="1405" y="0" width="342" height="540" frameX="-9" frameY="-7" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0009" x="1405" y="0" width="342" height="540" frameX="-9" frameY="-7" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0010" x="1747" y="0" width="345" height="545" frameX="-6" frameY="-2" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0011" x="1747" y="0" width="345" height="545" frameX="-6" frameY="-2" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0012" x="2092" y="0" width="350" height="547" frameX="-1" frameY="0" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0013" x="2092" y="0" width="350" height="547" frameX="-1" frameY="0" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino Idle0014" x="2092" y="0" width="350" height="547" frameX="-1" frameY="0" frameWidth="362" frameHeight="547"/>
+	<SubTexture name="Aquino down0000" x="2442" y="0" width="370" height="521" frameX="0" frameY="-5" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0001" x="2442" y="0" width="370" height="521" frameX="0" frameY="-5" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0002" x="2812" y="0" width="352" height="523" frameX="-14" frameY="-5" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0003" x="2812" y="0" width="352" height="523" frameX="-14" frameY="-5" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0004" x="3164" y="0" width="347" height="526" frameX="-19" frameY="-2" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0005" x="3164" y="0" width="347" height="526" frameX="-19" frameY="-2" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0006" x="3511" y="0" width="347" height="528" frameX="-19" frameY="0" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0007" x="3511" y="0" width="347" height="528" frameX="-19" frameY="0" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0008" x="0" y="547" width="347" height="528" frameX="-19" frameY="0" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino down0009" x="0" y="547" width="347" height="528" frameX="-19" frameY="0" frameWidth="370" frameHeight="528"/>
+	<SubTexture name="Aquino left0000" x="347" y="547" width="388" height="540" frameX="0" frameY="-1" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0001" x="347" y="547" width="388" height="540" frameX="0" frameY="-1" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0002" x="735" y="547" width="371" height="533" frameX="-17" frameY="-6" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0003" x="735" y="547" width="371" height="533" frameX="-17" frameY="-6" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0004" x="1106" y="547" width="371" height="538" frameX="-17" frameY="-1" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0005" x="1106" y="547" width="371" height="538" frameX="-17" frameY="-1" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0006" x="1477" y="547" width="371" height="539" frameX="-17" frameY="0" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0007" x="1477" y="547" width="371" height="539" frameX="-17" frameY="0" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0008" x="1848" y="547" width="371" height="539" frameX="-17" frameY="0" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino left0009" x="1848" y="547" width="371" height="539" frameX="-17" frameY="0" frameWidth="388" frameHeight="541"/>
+	<SubTexture name="Aquino right0000" x="2219" y="547" width="391" height="521" frameX="-1" frameY="-17" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0001" x="2219" y="547" width="391" height="521" frameX="-1" frameY="-17" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0002" x="2610" y="547" width="376" height="537" frameX="0" frameY="0" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0003" x="2610" y="547" width="376" height="537" frameX="0" frameY="0" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0004" x="2986" y="547" width="377" height="536" frameX="0" frameY="-1" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0005" x="2986" y="547" width="377" height="536" frameX="0" frameY="-1" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0006" x="3363" y="547" width="377" height="535" frameX="0" frameY="-2" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0007" x="3363" y="547" width="377" height="535" frameX="0" frameY="-2" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0008" x="0" y="1087" width="377" height="535" frameX="0" frameY="-2" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino right0009" x="0" y="1087" width="377" height="535" frameX="0" frameY="-2" frameWidth="392" frameHeight="538"/>
+	<SubTexture name="Aquino up0000" x="377" y="1087" width="361" height="548" frameX="-5" frameY="-3" frameWidth="383" frameHeight="551"/>
+	<SubTexture name="Aquino up0001" x="377" y="1087" width="361" height="548" frameX="-5" frameY="-3" frameWidth="383" frameHeight="551"/>
+	<SubTexture name="Aquino up0002" x="738" y="1087" width="383" height="551"/>
+	<SubTexture name="Aquino up0003" x="738" y="1087" width="383" height="551"/>
+	<SubTexture name="Aquino up0004" x="1121" y="1087" width="383" height="548" frameX="0" frameY="-3" frameWidth="383" frameHeight="551"/>
+	<SubTexture name="Aquino up0005" x="1121" y="1087" width="383" height="548" frameX="0" frameY="-3" frameWidth="383" frameHeight="551"/>
+	<SubTexture name="Aquino up0006" x="1504" y="1087" width="383" height="546" frameX="0" frameY="-5" frameWidth="383" frameHeight="551"/>
+	<SubTexture name="Aquino up0007" x="1504" y="1087" width="383" height="546" frameX="0" frameY="-5" frameWidth="383" frameHeight="551"/>
+	<SubTexture name="Aquino up0008" x="1887" y="1087" width="383" height="546" frameX="0" frameY="-5" frameWidth="383" frameHeight="551"/>
+	<SubTexture name="Aquino up0009" x="1887" y="1087" width="383" height="546" frameX="0" frameY="-5" frameWidth="383" frameHeight="551"/>
+</TextureAtlas>

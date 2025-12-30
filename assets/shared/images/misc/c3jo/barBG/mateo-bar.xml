@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mateo-bar.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mateo-bar0000" x="0" y="0" width="264" height="276"/>
+	<SubTexture name="mateo-bar0001" x="0" y="0" width="264" height="276"/>
+	<SubTexture name="mateo-bar0002" x="264" y="0" width="264" height="276"/>
+	<SubTexture name="mateo-bar0003" x="264" y="0" width="264" height="276"/>
+	<SubTexture name="mateo-bar0004" x="528" y="0" width="264" height="276"/>
+	<SubTexture name="mateo-bar0005" x="528" y="0" width="264" height="276"/>
+	<SubTexture name="mateo-bar0006" x="0" y="276" width="264" height="276"/>
+	<SubTexture name="mateo-bar0007" x="0" y="276" width="264" height="276"/>
+	<SubTexture name="mateo-bar0008" x="264" y="276" width="264" height="276"/>
+	<SubTexture name="mateo-bar0009" x="264" y="276" width="264" height="276"/>
+	<SubTexture name="mateo-bar0010" x="264" y="276" width="264" height="276"/>
+	<SubTexture name="mateo-bar0011" x="264" y="276" width="264" height="276"/>
+	<SubTexture name="mateo-bar0012" x="264" y="276" width="264" height="276"/>
+	<SubTexture name="mateo-bar0013" x="264" y="276" width="264" height="276"/>
+</TextureAtlas>

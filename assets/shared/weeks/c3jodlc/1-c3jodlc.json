@@ -1,0 +1,23 @@
+{
+	"songs": [
+		["Hiper", "hiper-dlc", [255, 255, 255]],
+		["Roier", "roier-dlc", [255, 255, 255]],
+		["Steyb", "steyb-dlc", [255, 255, 255]],
+		["Noticiero", "umad-dlc", [255, 255, 255]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "",
+
+	"storyName": "",
+	"weekBefore": "",
+	"weekName": "c3jo dlc",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

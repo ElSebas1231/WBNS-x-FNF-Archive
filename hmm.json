@@ -36,16 +36,6 @@
       "version": "4.3.2"
     },
     {
-      "name": "HtmlParser",
-      "type": "haxelib",
-      "version": "3.4.0"
-    },
-    {
-      "name": "UnRAR",
-      "type": "haxelib",
-      "version": "1.0.0"
-    },
-    {
       "name": "hxCodec",
       "type": "git",
       "dir": null,

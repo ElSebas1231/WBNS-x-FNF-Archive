@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="mayday.png">
-<SubTexture name="idle0000" x="0" y="120" width="127" height="108" frameX="-1522" frameY="-449" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="139" y="0" width="133" height="114" frameX="-1519" frameY="-446" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="0" width="139" height="120" frameX="-1516" frameY="-443" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="127" y="120" width="127" height="108" frameX="-1522" frameY="-449" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

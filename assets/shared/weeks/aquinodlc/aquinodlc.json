@@ -1,0 +1,29 @@
+{
+	"songs": [
+		["Estupidez", "daarickcraft-dlc", [255, 255, 255]],
+		["Sylvee", "sylvee-dlc", [255, 255, 255]],
+		["Karfall", "karfall-dlc", [255, 255, 255]],
+		["Erika", "erika-dlc", [255, 255, 255]],
+		["Let's Go Compota v2", "compota-dlc", [255, 255, 255]],
+		["Promenade", "bot-dlc", [255, 255, 255]],
+		["Saludo v2", "fernan-dlc", [255, 255, 255]],
+		["Noobly", "noobly-dlc", [255, 255, 255]],
+		["Toneando v2", "adrian-dlc", [255, 255, 255]],
+		["Creisi.MOV", "creisi-dlc", [255, 255, 255]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "",
+
+	"storyName": "",
+	"weekBefore": "",
+	"weekName": "aquino dlc",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

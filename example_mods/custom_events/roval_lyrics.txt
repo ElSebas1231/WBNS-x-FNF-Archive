@@ -1,0 +1,8 @@
+Value1: Texto
+Value2: Modo,Tamaño,X,Y,Color(HEX),Fuente,Alpha
+Modos: hud (Texto en el hud)
+bf-gf-dad (Texto en camgame/sobre bf-gf-dad)
+bg (Texto detras de los personajes)
+Predeterminado: Texto: (Nada)
+Modo: Hud   Tamaño: 50     Fuente: vcr.ttf
+X: 0       Y: 0     Color: ffffff (Blanco)     Alpha: 1

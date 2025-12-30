@@ -1,0 +1,102 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-18,
+				-248
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				-18,
+				-248
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-18,
+				-248
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-18,
+				-248
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				-248
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-18,
+				-248
+			],
+			"loop": false,
+			"fps": 18,
+			"anim": "saludo",
+			"indices": [],
+			"name": "saludo aquino"
+		},
+		{
+			"offsets": [
+				-18,
+				-248
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "quevoid",
+			"indices": [],
+			"name": "te void a descuartizar"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/aquinodlc/fernan-saludo, characters/aquinodlc/fernan-saludo-dialogos",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "icon-fernan-dlc",
+	"flip_x": true,
+	"healthbar_colors": [
+		45,
+		217,
+		137
+	],
+	"camera_position": [
+		-70,
+		230
+	],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

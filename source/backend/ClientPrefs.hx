@@ -39,9 +39,8 @@ import states.TitleState;
 		[0xFF3DCAFF, 0xFFF4FFFF, 0xFF003060],
 		[0xFF71E300, 0xFFF6FFE6, 0xFF003100],
 		[0xFFFF884E, 0xFFFFFAF5, 0xFF6C0000]];
-
-	public var fpSectionsUnlocked:Array<String> = ['storymode'];
-	public var shopItemsBuyed:Array<String> = [];
+	public var messagesAlreadySeen:Map<String, Bool> = [];
+	public var fpSectionsUnlocked:Array<String> = [];
 	public var favoriteSongs:Array<String> = [];
 	public var ghostTapping:Bool = true;
 	public var timeBarType:String = 'Time Left';
@@ -108,9 +107,6 @@ class ClientPrefs {
 		'pause'			=> [ENTER, ESCAPE],
 		'reset'			=> [R],
 		'fullscreen' 	=> [Y, F11],
-		'fp_favorite'	=> [F],
-		'fp_left'		=> [Q],
-		'fp_right'		=> [E],
 		
 		'volume_mute'	=> [ZERO],
 		'volume_up'		=> [NUMPADPLUS, PLUS],
@@ -134,9 +130,6 @@ class ClientPrefs {
 		'back'			=> [B],
 		'pause'			=> [START],
 		'reset'			=> [BACK],
-		'fp_favorite'	=> [BACK],
-		'fp_left'		=> [LEFT_SHOULDER],
-		'fp_right'		=> [RIGHT_SHOULDER],
 	];
 	public static var defaultKeys:Map<String, Array<FlxKey>> = null;
 	public static var defaultButtons:Map<String, Array<FlxGamepadInputID>> = null;

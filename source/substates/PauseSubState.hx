@@ -10,8 +10,6 @@ import flixel.util.FlxStringUtil;
 
 import states.StoryMenuState;
 import states.freeplay.FreeplayState;
-import states.freeplay.FreeplayUtil;
-
 import options.OptionsState;
 
 class PauseSubState extends MusicBeatSubstate
@@ -58,8 +56,12 @@ class PauseSubState extends MusicBeatSubstate
 		}
 		menuItems = menuItemsOG;
 
-		difficultyChoices = FreeplayUtil.getSongDifficulties(PlayState.SONG.song);
+		for (i in 0...Difficulty.list.length) {
+			var diff:String = Difficulty.getString(i);
+			difficultyChoices.push(diff);
+		}
 		difficultyChoices.push('BACK');
+
 
 		pauseMusic = new FlxSound();
 		try
@@ -281,17 +283,20 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.changedDifficulty = true;
 					practiceText.visible = PlayState.instance.practiceMode;
 				case "Restart Song":
-					PlayState.needsReset = true;
-					close();
+					restartSong();
 				case "Leave Charting Mode":
 					restartSong();
 					PlayState.chartingMode = false;
 				case 'Skip Time':
-					if(curTime < Conductor.songPosition) {
+					if(curTime < Conductor.songPosition)
+					{
 						PlayState.startOnTime = curTime;
 						restartSong(true);
-					} else {
-						if (curTime != Conductor.songPosition) {
+					}
+					else
+					{
+						if (curTime != Conductor.songPosition)
+						{
 							PlayState.instance.clearNotesBefore(curTime);
 							PlayState.instance.setSongTime(curTime);
 						}
@@ -364,7 +369,7 @@ class PauseSubState extends MusicBeatSubstate
 						StickerSubState.STICKER_PACK = stickerPack;
 
 						if (PlayState.isStoryMode) {
-							openSubState(cast new StickerSubState(null, (sticker) -> new StoryMenuState(sticker)));
+							openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
 						} else {
 							openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
 						}
@@ -402,7 +407,8 @@ class PauseSubState extends MusicBeatSubstate
 		FlxG.sound.music.volume = 0;
 		PlayState.instance.vocals.volume = 0;
 
-		if (noTrans) {
+		if(noTrans)
+		{
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxTransitionableState.skipNextTransOut = true;
 		}
@@ -504,7 +510,6 @@ class PauseSubState extends MusicBeatSubstate
 
 		for (i in 0...menuItems.length) {
 			var item = new Alphabet(90, 320, menuItems[i], true);
-			item.distancePerItem.x = 0;
 			item.isMenuItem = true;
 			item.targetY = i;
 			grpMenuShit.add(item);

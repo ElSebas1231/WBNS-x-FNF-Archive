@@ -1,152 +1,223 @@
 package states;
 
-import sys.FileSystem;
-import sys.io.File;
+import backend.downloads.DownloadManager;
 
-import states.freeplay.FreeplaySections;
-import flixel.ui.FlxButton;
+import flixel.ui.FlxBar;
 
-import backend.online.mods.OnlineMods;
+/*
+import farfadox.utils.ui.CustomButton;
+import farfadox.utils.net.downloads.GoogleDriveDownloader;
+import farfadox.utils.net.downloads.MediafireDownloader;
+*/
 
 class DlcMenuState extends MusicBeatState
 {
     var bg:FlxSprite;
-    var button:FlxButton;
-    var dlcsInstalled:Array<String> = [];
-    var dlcsDataMap = new Map<String, Dynamic>();
-    var programPath = openfl.filesystem.File.applicationDirectory.nativePath; // very useful ngl
+    /*
+    var buttonDownloadGrp:FlxTypedGroup<CustomButton>;
+    var buttonEnable_DisableGrp:FlxTypedGroup<CustomButton>;
 
-    override function create() {
+    var blackLineBG:FlxSprite;
+    var downloadTxt:FlxText;
+    var downloadBytesTxt:FlxText;
+    var downloadBar:FlxBar;
+    var downloadPercent:Float;
+
+    var isDownloading:Bool;
+    */
+
+    override function create()
+    {
         super.create();
 
         Cursor.show();
+        
+		var text:FlxText = new FlxText(0, 0, FlxG.width - 300, 'Placeholder', 32);
+		text.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		text.scrollFactor.set();
+		text.borderSize = 2;
+		text.screenCenter();
+		add(text);
 
-        bg = new FlxSprite().loadGraphic(Paths.image('ui/menus/utils/bgMisc'));
-        add(bg);
+        /*
+        var oldProgramPath = Sys.programPath();
+        var index = oldProgramPath.lastIndexOf("\\");
+        var programPath = oldProgramPath.substr(0, index);
+        programPath += '/';
+        trace('Unzipping path: $programPath');
 
-        initDlcs();
+        buttonDownloadGrp = new FlxTypedGroup<CustomButton>();
+        add(buttonDownloadGrp);
 
-        trace(dlcsDataMap);
-        trace(dlcsInstalled);
+        buttonEnable_DisableGrp = new FlxTypedGroup<CustomButton>();
+        add(buttonEnable_DisableGrp);
 
-        for (i in 0...dlcsInstalled.length) {
-            var dlcInfo = dlcsDataMap.get(dlcsInstalled[i]);
-
-            if (FileSystem.exists('$programPath/dlcs/${dlcInfo.name}/dlcData.json')) {
-                if (ClientPrefs.data.fpSectionsUnlocked.contains(dlcInfo.name)) ClientPrefs.data.fpSectionsUnlocked.remove(dlcInfo.name);
-                ClientPrefs.data.fpSectionsUnlocked.push(dlcInfo.name);
-                
-                if (FreeplaySections.freeplaySections.contains(dlcInfo.name)) FreeplaySections.freeplaySections.remove(dlcInfo.name);
-                FreeplaySections.freeplaySections.push(dlcInfo.name);
-
-                FlxG.save.data.fpSectionsUnlocked = ClientPrefs.data.fpSectionsUnlocked;
-                FlxG.save.flush();
-            }
-
-            var buttonDLC:FlxButton = new FlxButton(110, 50 * i+1, dlcInfo.name, function() {
-                if (!FileSystem.exists('$programPath/dlcs/${dlcInfo.name}')){
-                    OnlineMods.downloadMod(dlcInfo.link, function(_result:String) {
-                        if (ClientPrefs.data.fpSectionsUnlocked.contains(dlcInfo.name)) ClientPrefs.data.fpSectionsUnlocked.remove(dlcInfo.name);
-                        ClientPrefs.data.fpSectionsUnlocked.push(dlcInfo.name);
-                        
-                        if (FreeplaySections.freeplaySections.contains(dlcInfo.name)) FreeplaySections.freeplaySections.remove(dlcInfo.name);
-                        FreeplaySections.freeplaySections.push(dlcInfo.name);
-
-                        FlxG.save.data.fpSectionsUnlocked = ClientPrefs.data.fpSectionsUnlocked;
-                        FlxG.save.flush();
-                    });
-                } else {
-                    trace('Already installed ${dlcInfo.name}');
-                }
+        for(i in 0...DLCManager.dlcsInfo.length)
+        {
+            var btn = new CustomButton(10, 70 + (i * 80), 100, 33, 0xFF000000, 'DLC ${i+1}', 16, 0xFFFFFFFF, function()
+            {
+                new DownloadManager(
+                    DLCManager.dlcsInfo[i], 
+                    'assets',
+                    {
+                        extension: "zip",
+                        autoUnzip: true,
+                        customOutputPath: '',
+                        unZipCustomPath: programPath,
+                        onSuccess:
+                            function()
+                            {
+                                trace('Download completed!');
+                                isDownloading = false;
+                            },
+                        onCancel:
+                            function()
+                            {
+                                trace('Download canceled!');
+                                isDownloading = false;
+    
+                                new FlxTimer().start(1, function(t:FlxTimer)
+                                {
+                                    hideDownloadHUD();
+                                });
+                            },
+                        onZipSuccess:
+                            function()
+                            {
+                                trace('Unzipping process finished!');
+                                
+                                new FlxTimer().start(1, function(t:FlxTimer)
+                                {
+                                    hideDownloadHUD();
+                                    DLCManager.dlcSaves.data.dlc1Activated = true;
+                                    DLCManager.dlcSaves.flush();
+                                });
+                            }
+                    }
+                );
+    
+                isDownloading = true;
+    
+                showUpDownloadHUD();
             });
-            add(buttonDLC);
+            btn.ID = i;
+            buttonDownloadGrp.add(btn);
 
-            var buttonToggle:FlxButton;
-            buttonToggle = new FlxButton(buttonDLC.x + 100, buttonDLC.y, dlcInfo.name, function() {
-                updateDlcButton(dlcInfo.name, buttonToggle);
-            });
-            if (ClientPrefs.data.fpSectionsUnlocked.contains(dlcInfo.name)) {
-                buttonToggle.label.text = 'ON';
-                buttonToggle.color = FlxColor.GREEN;
-            } else {
-                buttonToggle.label.text = 'OFF';
-                buttonToggle.color = FlxColor.RED;
+            var buttonEnable_Disable:CustomButton;
+            buttonEnable_Disable = new CustomButton(btn.x + btn.width + 10, btn.y, 100, 33, 0xFF4B8B37, 'Enable/Disable', 16, 0xFFFFFFFF, function(){});
+            buttonEnable_Disable.ID = i;
+            buttonEnable_Disable.onPress = function()
+            {
+                DLCManager.enable_disable(buttonEnable_Disable.ID+1);
+                reloadButtons(buttonEnable_Disable.ID);
             }
-            add(buttonToggle);
+            buttonEnable_DisableGrp.add(buttonEnable_Disable);
+
+            // reloading every button
+            reloadButtons(buttonEnable_Disable.ID);
         }
+
+        blackLineBG = new FlxSprite(0, 500).makeGraphic(925, 120, 0xFF000000);
+        blackLineBG.screenCenter(X);
+        blackLineBG.alpha = 0.55;
+        blackLineBG.visible = false;
+        add(blackLineBG);
+
+        downloadTxt = new FlxText(blackLineBG.x, blackLineBG.y + 20, blackLineBG.width, 'Starting...', 30);
+		downloadTxt.setFormat("VCR OSD Mono", 30, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+        downloadTxt.visible = false;
+        add(downloadTxt);
+
+        downloadBytesTxt = new FlxText(blackLineBG.x, blackLineBG.y + 60, blackLineBG.width, '', 30);
+		downloadBytesTxt.setFormat("VCR OSD Mono", 30, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+        downloadBytesTxt.visible = false;
+        add(downloadBytesTxt);
+
+        downloadBar = new FlxBar(0, downloadBytesTxt.y + downloadBytesTxt.height + 10, LEFT_TO_RIGHT, 525, 10, this, 'downloadPercent', 0, 1);
+        downloadBar.screenCenter(X);
+        downloadBar.visible = false;
+        add(downloadBar);
+        */
     }
 
-    override function update(elapsed:Float) {
+    override function update(elapsed:Float)
+    {
         super.update(elapsed);
 
         if (controls.BACK) {
             FlxG.sound.play(Paths.sound('cancelMenu'));
             MusicBeatState.switchState(new MainMenuState());
         }
-    }
 
-    function updateDlcButton(name:String, btn:FlxButton) {
-        var isActive = ClientPrefs.data.fpSectionsUnlocked.contains(name);
+        /*
+        downloadTxt.text = DownloadManager.isGDrive ? GoogleDriveDownloader.downloadStatus : MediafireDownloader.downloadStatus;
 
-        if (isActive) {
-            ClientPrefs.data.fpSectionsUnlocked.remove(name);
-            FreeplaySections.freeplaySections.remove(name);
-            
-            btn.label.text = 'OFF';
-            btn.color = FlxColor.RED;
-        } else {
-            if (!ClientPrefs.data.fpSectionsUnlocked.contains(name)) {
-                ClientPrefs.data.fpSectionsUnlocked.push(name);
-
-                if (!FreeplaySections.freeplaySections.contains(name)) FreeplaySections.freeplaySections.push(name);
-
-                btn.label.text = 'ON';
-                btn.color = FlxColor.GREEN;
+        if(DownloadManager.isGDrive)
+        {
+            if(GoogleDriveDownloader.downloadStatus == 'Downloading...')
+            {
+                downloadBar.visible = true;
+                downloadBytesTxt.visible = true;
+                downloadBytesTxt.text = '${GoogleDriveDownloader.loadedBytes(GoogleDriveDownloader.bytesDownloaded)}/${GoogleDriveDownloader.loadedBytes(GoogleDriveDownloader.totalBytes)}';
+                downloadPercent = GoogleDriveDownloader.bytesDownloaded / GoogleDriveDownloader.totalBytes;
+            }
+            else
+            {
+                downloadBar.visible = false;
+                downloadBytesTxt.visible = false;
             }
         }
-
-        trace(ClientPrefs.data.fpSectionsUnlocked);
-
-        FlxG.save.data.fpSectionsUnlocked = ClientPrefs.data.fpSectionsUnlocked;
-        FlxG.save.flush();
+        else
+        {
+            if(MediafireDownloader.downloadStatus == 'Downloading...')
+            {
+                downloadBar.visible = true;
+                downloadBytesTxt.visible = true;
+                downloadBytesTxt.text = '${MediafireDownloader.loadedBytes(MediafireDownloader.bytesDownloaded)}/${MediafireDownloader.loadedBytes(MediafireDownloader.totalBytes)}';
+                downloadPercent = MediafireDownloader.bytesDownloaded / MediafireDownloader.totalBytes;
+            }
+            else
+            {
+                downloadBar.visible = false;
+                downloadBytesTxt.visible = false;
+            }
+        }
+        */
     }
 
-    function initDlcs(fetched:Bool = false) {
-        if (!fetched) {
-            var dlcsLength:Int = Std.parseInt(File.getContent('$programPath/dlc_data/total.txt'));
-
-            for (i in 0...dlcsLength) {
-                var path = '$programPath/dlc_data';  
-                if (FileSystem.exists(path)) {
-                    var jsonString = File.getContent('$path/dlc${i+1}.json');
-                    var jsonData = tjson.TJSON.parse(jsonString);
-
-                    dlcsInstalled.push(jsonData.name);
-                    dlcsDataMap.set(jsonData.name, jsonData);
+    /*
+    public function reloadButtons(btnObj:Int)
+    {
+        for(btn in buttonEnable_DisableGrp)
+        {
+            if(btn.ID == btnObj)
+            {
+                if(DLCManager.isDlcEnabled(btn.ID+1))
+                {
+                    btn.txt.text = 'Enabled';
+                    btn.bgColor = 0xFF4B8B37;
+                    btn.txt.y = btn.y + (btn.bg.height / 2) - (btn.txt.height / 2); // center
+                }
+                else
+                {
+                    btn.txt.text = 'Disabled';
+                    btn.bgColor = 0xFF8B3D37;
+                    btn.txt.y = btn.y + (btn.bg.height / 2) - (btn.txt.height / 2); // center
                 }
             }
-        } else {
-            // Unprivate the repo to use this lmao
-            var dlcsRequestLength:Http = new Http('https://raw.githubusercontent.com/ElSebas1231/WBNS-x-FNF-Develop/refs/heads/develop/dlc_data/total.txt');
-            dlcsRequestLength.onData = function(data:String) {
-                var dlcsLength:Int = Std.parseInt(data);
-
-                for (i in 0...dlcsLength) {
-                    var dlcRequest:Http = new Http('https://raw.githubusercontent.com/ElSebas1231/WBNS-x-FNF-Develop/refs/heads/develop/dlc_data/dlc${i+1}.json');
-                    dlcRequest.onData = function(data:String) {
-                        var jsonData = tjson.TJSON.parse(data);
-
-                        dlcsInstalled.push(jsonData.name);
-                        dlcsDataMap.set(jsonData.name, jsonData);
-                    }
-
-                    dlcRequest.onError = function(error:String) { trace('Error while fetching dlc ${i}: $error'); }
-                    dlcRequest.request();
-                }
-            };
-
-            dlcsRequestLength.onError = function(error:String) { trace('Error while fetching dlcs length: $error'); }
-            dlcsRequestLength.request();
         }
     }
+
+    public function showUpDownloadHUD()
+    {
+        blackLineBG.visible = true;
+        downloadTxt.visible = true;
+    }
+
+    public function hideDownloadHUD()
+    {
+        blackLineBG.visible = false;
+        downloadTxt.visible = false;
+    }
+    */
 }

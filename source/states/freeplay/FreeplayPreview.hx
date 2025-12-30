@@ -66,19 +66,12 @@ class FreeplayPreview {
     }
 
     public static function preloadSound(path:String, isInst:Bool, ?onLoaded:Void->Void) {
-        //trace('Preload $path');
         if (!Assets.cache.hasSound(path)) {
             var soundPath:String;
 
-            if (FreeplaySections.sectionSelected.contains('dlc')) {
-                soundPath = isInst
-                    ? 'dlcs/${FreeplaySections.sectionSelected}/songs/${Paths.formatToSongPath(path)}/Inst.${Paths.SOUND_EXT}'
-                    : 'dlcs/${FreeplaySections.sectionSelected}/music/$path.${Paths.SOUND_EXT}';
-            } else {
-                soundPath = isInst
-                    ? 'songs:assets/songs/${FreeplaySections.sectionSelected}/${Paths.formatToSongPath(path)}/Inst.${Paths.SOUND_EXT}'
-                    : 'assets/shared/music/$path.${Paths.SOUND_EXT}';
-            }
+            soundPath = isInst
+                ? 'songs:assets/songs/${FreeplaySections.sectionSelected}/${Paths.formatToSongPath(path)}/Inst.${Paths.SOUND_EXT}'
+                : 'assets/shared/music/$path.${Paths.SOUND_EXT}';
 
             if (Assets.exists(soundPath, AssetType.SOUND)) {
                 Assets.loadSound(soundPath, true).onComplete(function(sound:Sound) {

@@ -3,11 +3,6 @@ package states.freeplay;
 import flixel.graphics.FlxGraphic;
 import flixel.addons.display.FlxBackdrop;
 
-#if debug
-import shaders.RedBlackShader;
-import openfl.filters.ShaderFilter;
-#end
-
 import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
@@ -15,13 +10,14 @@ import backend.Song;
 import substates.StickerSubState;
 import substates.ResetScoreSubState;
 import substates.GameplayChangersSubstate;
-import substates.FreeplayPreloadSubState;
 
+import objects.AudioDisplay;
 import objects.freeplay.FreeplayCapsule;
 import objects.freeplay.FreeplayScore;
-import objects.AudioDisplay;
+
 import states.freeplay.FreeplayUtil;
 import states.freeplay.FreeplayPreview;
+import states.freeplay.FreeplayPreloadSubState;
 
 class FreeplayState extends MusicBeatState {
 
@@ -62,11 +58,6 @@ class FreeplayState extends MusicBeatState {
 	var bottomText:FlxText;
 	var bottomBG:FlxSprite;
 
-	#if debug
-	var mmMenuShader:RedBlackShader;
-	var shaderFilter1:ShaderFilter;
-	#end
-
 	public function new(?stickers:StickerSubState = null)
 	{
 		super();
@@ -76,9 +67,8 @@ class FreeplayState extends MusicBeatState {
 	
     override function create() {
 		Paths.clearUnusedMemory();
-
-		#if debug mmMenuShader = new RedBlackShader(); #end
-
+		Main.changeWindowIcon();
+		
 		if (stickerSubState != null && !ClientPrefs.data.noStickers) {
 			openSubState(stickerSubState);
 			stickerSubState.degenStickers();
@@ -94,13 +84,15 @@ class FreeplayState extends MusicBeatState {
 			MusicBeatState.switchState(new FreeplaySections());
 		}
 
+		if (FreeplaySections.sectionSelected == 'c3jodlc') {
+			freeplayCharacter = 'c3jo';
+		} else if (FreeplaySections.sectionSelected == 'aquinodlc') {
+			freeplayCharacter = 'aquino';
+		}
+
 		if (FlxG.sound.music != null) menuSongTime = FlxG.sound.music.time;
 
-		if (FreeplaySections.sectionSelected.contains('dlc')) {
-			WeekData.addByDirectory('dlcs/${FreeplaySections.sectionSelected}/weeks');
-		} else {
-			WeekData.addByDirectory(Paths.getSharedPath('weeks/${FreeplaySections.sectionSelected}'));
-		} 
+		WeekData.addByDirectory(Paths.getSharedPath('weeks/${FreeplaySections.sectionSelected}'));
 
 		for (i in 0...WeekData.weeksList.length) {
 			if(weekIsLocked(WeekData.weeksList[i])) continue;
@@ -117,19 +109,22 @@ class FreeplayState extends MusicBeatState {
             }
 		}
 
-		if (FreeplaySections.sectionSelected.contains('c3jo')) {
-			freeplayCharacter = 'c3jo';
-		} else if (FreeplaySections.sectionSelected.contains('aquino')) {
-			freeplayCharacter = 'aquino';
-		} else {
-			freeplayCharacter = 'bf';
-		}
-
 		Mods.loadTopMod();
 		persistentUpdate = true;
 
 		var bgColor:FlxSprite = new FlxSprite().makeGraphic(1280, 720, 0xFF121227);
 		add(bgColor);
+
+		var bgStars:FlxSprite = new FlxSprite();
+		bgStars.antialiasing = ClientPrefs.data.antialiasing;
+		bgStars.loadGraphic(Paths.image('ui/menus/utils/stars'));
+		add(bgStars);
+
+		visualizer = new AudioDisplay(FlxG.sound.music, 0, 50, 2, 580, 40, 4, FlxColor.WHITE, false, true, true);
+		visualizer.alpha = 0.75;
+		visualizer.color = 0xFFFF0000;
+		visualizer.changeAnalyzer(FlxG.sound.music);
+		add(visualizer);
 
 		grid = new FlxBackdrop(Paths.image('ui/menus/titlemenu/checker'));
 		grid.x = TitleState.gridXPosition;
@@ -138,42 +133,14 @@ class FreeplayState extends MusicBeatState {
 		grid.velocity.set(40, -40);
 		grid.alpha = 0.45;
 		add(grid);
-
-		var bgStars:FlxBackdrop = new FlxBackdrop(Paths.image('ui/menus/utils/stars'));
-		bgStars.velocity.set(10, 0);
-		bgStars.antialiasing = ClientPrefs.data.antialiasing;
-		add(bgStars);
-
-		visualizer = new AudioDisplay(FlxG.sound.music, 0, 50, 2, 580, 40, 4, FlxColor.WHITE, false, true, true);
-		visualizer.alpha = 0.75;
-		visualizer.changeAnalyzer(FlxG.sound.music);
-		add(visualizer);
         
         bg = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/songs/titles/playable_characters_background'));
         bg.screenCenter();
         bg.x += 300;
         add(bg);
 
-		if (freeplayCharacter == 'bf') {
-			extraCharFP = new FlxSprite(0,0);
-			extraCharFP.frames = Paths.getSparrowAtlas('ui/menus/freeplay/tab/fp-chars/mrwbn-freeplay');
-			extraCharFP.antialiasing = ClientPrefs.data.antialiasing;
-			extraCharFP.scale.set(0.8, 0.8);
-			extraCharFP.updateHitbox();
-			extraCharFP.animation.addByPrefix('idle', 'idle0', 24, false);
-			extraCharFP.animation.addByPrefix('enter', 'enter0', 24, false);
-			extraCharFP.animation.play('idle', true);
-			extraCharFP.x = 1160;
-			extraCharFP.y = 330;
-			add(extraCharFP);
-		}
-
 		freeplayCharacterAnim = new FlxSprite(0, 0);
-		if (FreeplaySections.sectionSelected.contains('dlc')) {
-			freeplayCharacterAnim.frames = Paths.getSparrowAtlas('freeplay/freeplay-char');
-		} else {
-			freeplayCharacterAnim.frames = Paths.getSparrowAtlas('ui/menus/freeplay/tab/fp-chars/bf-freeplay');
-		}
+		freeplayCharacterAnim.frames = Paths.getSparrowAtlas('ui/menus/freeplay/tab/fp-chars/${freeplayCharacter}-freeplay');
 		freeplayCharacterAnim.antialiasing = ClientPrefs.data.antialiasing;
 		freeplayCharacterAnim.animation.addByPrefix('enter', 'enter0', 24, false);
 		switch (freeplayCharacter) {
@@ -194,15 +161,6 @@ class FreeplayState extends MusicBeatState {
 				freeplayCharacterAnim.y = 355;
 
 				visualizer.color = 0xFFff6e00;
-			default :
-				freeplayCharacterAnim.scale.set(0.8, 0.8);
-				freeplayCharacterAnim.animation.addByIndices('idleLeft', 'idle0', [0,1,2,3,4,5,6,7,8,9,10,11], '',24, false);
-				freeplayCharacterAnim.animation.addByIndices('idleRight', 'idle0', [11,12,13,14,15,16,17,18,19,20,21,22,23], '', 24, false);
-				freeplayCharacterAnim.animation.play('idleLeft');
-				freeplayCharacterAnim.x = 840;
-				freeplayCharacterAnim.y = 350;
-
-				visualizer.color = 0xFF31b0d1;
 		}
 		add(freeplayCharacterAnim);
 
@@ -226,16 +184,12 @@ class FreeplayState extends MusicBeatState {
         freeplayTitle.antialiasing = ClientPrefs.data.antialiasing;
         add(freeplayTitle);
 
-		titleSec = new FlxSprite(0, 0);
-		if (FreeplaySections.sectionSelected.contains('dlc'))
-			titleSec.loadGraphic(Paths.image('freeplay/title_dlc'));
-		else
-			titleSec.loadGraphic(Paths.image('ui/menus/freeplay/songs/titles/title_${FreeplaySections.sectionSelected}'));
-
+		titleSec = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/songs/titles/title_${FreeplaySections.sectionSelected}'));
 		titleSec.scale.set(2.2, 2.2);
 		titleSec.updateHitbox();
 		titleSec.x = 342.5;
 		titleSec.y = 23.5;
+		titleSec.antialiasing = ClientPrefs.data.antialiasing;
 		add(titleSec);
 
         bottomBG = new FlxSprite(0, FlxG.height - 26).makeGraphic(FlxG.width, 26, 0xFF000000);
@@ -301,17 +255,13 @@ class FreeplayState extends MusicBeatState {
 		missingText.antialiasing = ClientPrefs.data.antialiasing;
 		add(missingText);
 
+		Main.changeWindowIcon();
+
 		changeSelection();
 		updateCapsulePositions(0);
 		bottomTextMove();
-		super.create();
-		
-		#if debug
-		for (cam in FlxG.cameras.list) {
-            cam.setFilters([new ShaderFilter(mmMenuShader)]);
-        }
-		#end
-		
+
+        super.create();
 		freeplayPreload(songs);
     }
 
@@ -339,8 +289,7 @@ class FreeplayState extends MusicBeatState {
 		});
 	}
 
-    public function addSong(songName:String, weekNum:Int, songCharacter:String)
-	{
+    public function addSong(songName:String, weekNum:Int, songCharacter:String) {
 		songs.push(new SongMetadata(songName, weekNum, songCharacter));
 	}
 
@@ -379,28 +328,6 @@ class FreeplayState extends MusicBeatState {
 			default:
 				completitionText.offset.x = -50;
 		}
-
-		#if debug
-		if (FlxG.keys.pressed.ALT) {
-			if (controls.UI_LEFT_P) {
-				trace('To 0');
-				FlxTween.cancelTweensOf(mmMenuShader);
-				FlxTween.num(0, 1, 1.5, {ease: FlxEase.smoothStepOut}, function(num:Float) {
-					mmMenuShader.uMix.value = [num];
-					trace('uMix = ${mmMenuShader.uMix.value[0]}');
-				});
-			}
-
-			if (controls.UI_RIGHT_P) {
-				trace('To 1');
-				FlxTween.cancelTweensOf(mmMenuShader);
-				FlxTween.num(1, 0, 1.5, {ease: FlxEase.smoothStepOut}, function(num:Float) {
-					mmMenuShader.uMix.value = [num];
-					trace('uMix = ${mmMenuShader.uMix.value[0]}');
-				});
-			}
-		}
-		#end
 		
 		var shiftMult:Int = 1;
 		if (FlxG.keys.pressed.SHIFT) shiftMult = 3;
@@ -461,25 +388,6 @@ class FreeplayState extends MusicBeatState {
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 			}
 
-			if (controls.FP_FAVORITE) {
-				var curCapsule:FreeplayCapsule = grpCapsules.members[curSelected];
-				if (curCapsule.songText.text != 'Random') {
-					if (FreeplayUtil.toggleFavorite(curCapsule)) {
-						FlxG.sound.play(Paths.sound('freeplay/fav'), 0.5);
-						curCapsule.favIcon.visible = true;
-						curCapsule.favIcon.animation.play('fav');
-						curCapsule.checkClip();
-					} else {
-						FlxG.sound.play(Paths.sound('freeplay/unfav'), 0.5);
-						curCapsule.favIcon.animation.play('fav', true, true);
-						new FlxTimer().start(0.3, _ -> {
-							curCapsule.favIcon.visible = false;
-							curCapsule.checkClip();
-						});
-					}
-				}
-			}
-
 			if (stickerSubState == null || stickerSubState.stickersGone) {
 				if (FlxG.keys.justPressed.CONTROL) {
 					persistentUpdate = false;
@@ -504,50 +412,52 @@ class FreeplayState extends MusicBeatState {
 			}
 		}
 
-		if (FlxG.keys.justPressed.SPACE) {
-			var curCapsule:FreeplayCapsule = grpCapsules.members[curSelected];
-			if (curCapsule.songText.text == 'Random') {
-				var availableSongCapsules:Array<FreeplayCapsule> = grpCapsules.members.filter(function(cap:FreeplayCapsule) {
-					return cap != null && cap.alive;
-				});
-
-				var randomCapsule:FreeplayCapsule = FlxG.random.getObject(availableSongCapsules, null, 1);
-				var songName:String = randomCapsule.songText.text;
-				if (songName != 'Random') {
-					var meta:FreeplayMetadata = FreeplayUtil.getMeta(songName);
-					
-					if (previewSong != null) {
-						if (FlxG.sound.music != null) FlxG.sound.music.stop();
-						previewSong.isLooping = false;
-					}
+		if (FlxG.keys.pressed.SHIFT) {
+			if (FlxG.keys.justPressed.SPACE) {
+				var curCapsule:FreeplayCapsule = grpCapsules.members[curSelected];
+				if (curCapsule.songText.text == 'Random') {
+					var availableSongCapsules:Array<FreeplayCapsule> = grpCapsules.members.filter(function(cap:FreeplayCapsule) {
+						return cap != null && cap.alive;
+					});
 	
-					var params:PlayerParams = {
-						isInst: true,
-						loop: true,
-						startingVolume: 0.0,
-						starting: meta.freeplayPrevStart,
-						ending: meta.freeplayPrevEnd,
-						onLoad: function() {
-							Conductor.bpm = meta.startingBPM;
-							FlxG.sound.music.fadeIn(2, 0.0, 0.8);
+					var randomCapsule:FreeplayCapsule = FlxG.random.getObject(availableSongCapsules, null, 1);
+					var songName:String = randomCapsule.songText.text;
+					if (songName != 'Random') {
+						var meta:FreeplayMetadata = FreeplayUtil.getMeta(songName);
+						
+						if (previewSong != null) {
+							if (FlxG.sound.music != null) FlxG.sound.music.stop();
+							previewSong.isLooping = false;
 						}
-					};
-					previewSong = new FreeplayPreview(params);
-					previewSong.play(songName);
-				} else {
-					var params:PlayerParams = {
-						isInst: false,
-						loop: true,
-						startingVolume: 0.0,
-						onLoad: function() {
-							Conductor.bpm = 146;
-							FlxG.sound.music.fadeIn(2, 0.0, 0.8);
-							visualizer.changeAnalyzer(FlxG.sound.music);
-						}
-					};
-
-					previewSong = new FreeplayPreview(params);
-					previewSong.play("freeplayRandom");
+		
+						var params:PlayerParams = {
+							isInst: true,
+							loop: true,
+							startingVolume: 0.0,
+							starting: meta.freeplayPrevStart,
+							ending: meta.freeplayPrevEnd,
+							onLoad: function() {
+								Conductor.bpm = meta.startingBPM;
+								FlxG.sound.music.fadeIn(2, 0.0, 0.8);
+							}
+						};
+						previewSong = new FreeplayPreview(params);
+						previewSong.play(songName);
+					} else {
+						var params:PlayerParams = {
+							isInst: false,
+							loop: true,
+							startingVolume: 0.0,
+							onLoad: function() {
+								Conductor.bpm = 146;
+								FlxG.sound.music.fadeIn(2, 0.0, 0.8);
+								visualizer.changeAnalyzer(FlxG.sound.music);
+							}
+						};
+	
+						previewSong = new FreeplayPreview(params);
+						previewSong.play("freeplayRandom");
+					}
 				}
 			}
 		}
@@ -562,7 +472,7 @@ class FreeplayState extends MusicBeatState {
 			if (extraCharFP.animation.curAnim.name != 'enter') extraCharFP.animation.play('idle', true);
 		}
 
-		if (freeplayCharacter == 'aquino' || freeplayCharacter == 'bf') {
+		if (freeplayCharacter == 'aquino') {
 			if (freeplayCharacterAnim.animation.curAnim.name != 'enter') {
 				danced = !danced;
 	
@@ -772,7 +682,7 @@ class FreeplayState extends MusicBeatState {
 
 		if (extraCharFP != null ) extraCharFP.animation.play('enter', true);
 		freeplayCharacterAnim.animation.play('enter');
-
+		
 		if (freeplayCharacter == 'c3jo') {
 			freeplayCharacterAnim.x = 789;
 			freeplayCharacterAnim.y = 295;
@@ -785,10 +695,7 @@ class FreeplayState extends MusicBeatState {
 		trace(poop);
 
 		try {
-			if (FreeplaySections.sectionSelected.contains('dlc'))
-				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-			else 
-				PlayState.SONG = Song.loadFromJson(poop, '${FreeplaySections.sectionSelected}/${songLowercase}');
+			PlayState.SONG = Song.loadFromJson(poop, '${FreeplaySections.sectionSelected}/${songLowercase}');
 			PlayState.isStoryMode = false;
 			PlayState.storyDifficulty = curDifficulty;
 

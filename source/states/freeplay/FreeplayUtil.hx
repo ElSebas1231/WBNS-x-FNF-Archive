@@ -12,10 +12,11 @@ class FreeplayUtil {
 		var fileSongName = Paths.formatToSongPath(song);
 		var songDataPath:String = '';
 
-		if (FreeplaySections.sectionSelected.contains('dlc'))
-			songDataPath = Paths.dlcsFolders('data/$fileSongName');
-		else 
-			songDataPath = Paths.getSharedPath('data/${FreeplaySections.sectionSelected}/$fileSongName');
+		if (FileSystem.exists(Paths.mods('${Mods.currentModDirectory}/data/${fileSongName}'))) {
+			songDataPath = Paths.mods('${Mods.currentModDirectory}/data/${fileSongName}');
+		} else {
+			songDataPath = Paths.getSharedPath('data/${FreeplaySections.sectionSelected}/${fileSongName}');
+		}
 
 		if(songDifficulties.length == 0){
 			if (FileSystem.exists(songDataPath)){
@@ -32,9 +33,7 @@ class FreeplayUtil {
 					diffNames.insert(1,"normal");
 				}
 
-				if (diffNames.contains("hard") && diffNames.remove("hard")) diffNames.insert(2,"hard");
-
-				if (diffNames.contains("insano") && diffNames.remove("insano")) diffNames.insert(3,"insano");
+				if(diffNames.contains("hard") && diffNames.remove("hard")) diffNames.insert(2,"hard");
 				songDifficulties = diffNames;
 			}
 		}
@@ -43,13 +42,7 @@ class FreeplayUtil {
 	}
 
 	public static function getMeta(songId:String):FreeplayMetadata {
-		var metaFilePath:String;
-		var formattedSongId = Paths.formatToSongPath(songId);
-
-		if (FreeplaySections.sectionSelected.contains('dlc')) 
-			metaFilePath = Paths.dlcsFolders('data/${formattedSongId}/metadata.json');
-		else
-			metaFilePath = Paths.getSharedPath('data/${FreeplaySections.sectionSelected}/${formattedSongId}/metadata.json');
+		var metaFilePath:String = Paths.getSharedPath('data/${FreeplaySections.sectionSelected}/${Paths.formatToSongPath(songId)}/metadata.json');
 		
 		if (FileSystem.exists(metaFilePath)) {
 			try {

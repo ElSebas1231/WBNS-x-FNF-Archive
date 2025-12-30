@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="duo-bar.png">
+	<!-- Created with Adobe Animate version 23.0.1.70 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="duo-bar0000" x="0" y="0" width="331" height="190" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0001" x="0" y="0" width="331" height="190" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0002" x="331" y="0" width="333" height="191" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0003" x="331" y="0" width="333" height="191" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0004" x="664" y="0" width="334" height="191"/>
+	<SubTexture name="duo-bar0005" x="664" y="0" width="334" height="191"/>
+	<SubTexture name="duo-bar0006" x="0" y="191" width="332" height="190" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0007" x="0" y="191" width="332" height="190" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0008" x="332" y="191" width="332" height="189" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0009" x="332" y="191" width="332" height="189" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0010" x="332" y="191" width="332" height="189" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0011" x="332" y="191" width="332" height="189" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0012" x="332" y="191" width="332" height="189" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+	<SubTexture name="duo-bar0013" x="332" y="191" width="332" height="189" frameX="0" frameY="0" frameWidth="334" frameHeight="191"/>
+</TextureAtlas>

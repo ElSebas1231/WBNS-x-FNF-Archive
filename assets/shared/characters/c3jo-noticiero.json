@@ -1,0 +1,124 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-61,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "c3jo idle0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-57,
+				-8
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "c3jo left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-81,
+				-34
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "c3jo down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				12
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "c3jo up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-63,
+				-7
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "c3jo right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-7
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "c3jo left miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-89,
+				-34
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "c3jo down miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				29
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "c3jo up miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-84,
+				-19
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "c3jo right miss0",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/c3jodlc/c3jo-noticiero",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "c3jo-dlc",
+	"flip_x": true,
+	"healthbar_colors": [
+		199,
+		0,
+		235
+	],
+	"camera_position": [
+		0,
+		80
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

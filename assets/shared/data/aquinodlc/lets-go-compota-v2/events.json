@@ -1,0 +1,2451 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"roval_zoom",
+						"-0.3",
+						"0.001, linear"
+					]
+				]
+			],
+			[
+				3.25520833333333,
+				[
+					[
+						"Camera Switch",
+						"0.001",
+						"off"
+					]
+				]
+			],
+			[
+				2265.625,
+				[
+					[
+						"Flashfade",
+						"0.4",
+						"0.6"
+					]
+				]
+			],
+			[
+				2500,
+				[
+					[
+						"Camera Switch",
+						"0.4",
+						"on"
+					]
+				]
+			],
+			[
+				2503.25520833333,
+				[
+					[
+						"Camera Follow Pos",
+						"300",
+						"700"
+					]
+				]
+			],
+			[
+				7500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 4.7, cubeinout"
+					]
+				]
+			],
+			[
+				11875,
+				[
+					[
+						"camera_target",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				12421.875,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12434.8958333333,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12447.9166666667,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12460.9375,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12473.9583333333,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12486.9791666667,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12498.046875,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				12500,
+				[
+					[
+						"WBG",
+						"off",
+						""
+					]
+				]
+			],
+			[
+				12503.2552083333,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12506.5104166667,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"90"
+					]
+				]
+			],
+			[
+				12519.53125,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				12539.0625,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				15000,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				17500,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				20000,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				21402.9947916667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				21406.25,
+				[
+					[
+						"Camera Follow Pos",
+						"300",
+						"700"
+					]
+				]
+			],
+			[
+				22496.7447916667,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				22500,
+				[
+					[
+						"zoom lol",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				25000,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				26402.9947916667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				26406.25,
+				[
+					[
+						"Camera Follow Pos",
+						"300",
+						"700"
+					]
+				]
+			],
+			[
+				27500,
+				[
+					[
+						"zoom lol",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				27503.2552083333,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				30000,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				31250,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				31253.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				31562.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				31565.7552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				31875,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"40"
+					]
+				]
+			],
+			[
+				31878.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				32187.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"20"
+					]
+				]
+			],
+			[
+				32190.7552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				32500,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				32503.2552083333,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"90"
+					]
+				]
+			],
+			[
+				32506.5104166667,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				35000,
+				[
+					[
+						"zoom lol",
+						"1.3",
+						""
+					]
+				]
+			],
+			[
+				37500,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				40000,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				41250,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				42500,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				45000,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				46250,
+				[
+					[
+						"zoom lol",
+						"1.2",
+						""
+					]
+				]
+			],
+			[
+				47187.5,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				47500,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				50000,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				51250,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				51253.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				51562.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				51565.7552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				51875,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"40"
+					]
+				]
+			],
+			[
+				51878.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				52187.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"20"
+					]
+				]
+			],
+			[
+				52190.7552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				52500,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				52503.2552083333,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"90"
+					]
+				]
+			],
+			[
+				52506.5104166667,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				55000,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"70"
+					]
+				]
+			],
+			[
+				55003.2552083333,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				56250,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"50"
+					]
+				]
+			],
+			[
+				56253.2552083333,
+				[
+					[
+						"zoom lol",
+						"1.2",
+						""
+					]
+				]
+			],
+			[
+				57500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"90"
+					]
+				]
+			],
+			[
+				57503.2552083333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"70"
+					]
+				]
+			],
+			[
+				60003.2552083333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				61250,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"50"
+					]
+				]
+			],
+			[
+				61253.2552083333,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				62187.5,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				62500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"90"
+					]
+				]
+			],
+			[
+				62503.2552083333,
+				[
+					[
+						"zoom lol",
+						"0.8",
+						""
+					]
+				]
+			],
+			[
+				63750,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				65000,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"20"
+					]
+				]
+			],
+			[
+				65003.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.3, expoout"
+					]
+				]
+			],
+			[
+				65312.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"40"
+					]
+				]
+			],
+			[
+				65315.7552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				65625,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				65628.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				65937.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				65940.7552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				66250,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"59"
+					]
+				]
+			],
+			[
+				66253.2552083333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				67500,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"70"
+					]
+				]
+			],
+			[
+				67503.2552083333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				68906.25,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				70156.25,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				71248.046875,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.74, cubeout"
+					]
+				]
+			],
+			[
+				71250,
+				[
+					[
+						"Better Cinematics",
+						"0.7",
+						"100"
+					]
+				]
+			],
+			[
+				71875,
+				[
+					[
+						"camera_target",
+						"",
+						"5"
+					]
+				]
+			],
+			[
+				72343.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.2, cubein"
+					]
+				]
+			],
+			[
+				72500,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"50"
+					]
+				]
+			],
+			[
+				72503.2552083333,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				72509.765625,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				75000,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"70"
+					]
+				]
+			],
+			[
+				75003.2552083333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				77500,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				80000,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"50"
+					]
+				]
+			],
+			[
+				80003.2552083333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				82500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"80"
+					]
+				]
+			],
+			[
+				82503.2552083333,
+				[
+					[
+						"Camera Follow Pos",
+						"300",
+						"700"
+					]
+				]
+			],
+			[
+				82506.5104166667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.3, expoout"
+					]
+				]
+			],
+			[
+				85000,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"50"
+					]
+				]
+			],
+			[
+				85003.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				87500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				90000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				91250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				92500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"80"
+					]
+				]
+			],
+			[
+				92503.2552083333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				92506.5104166667,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				92509.765625,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				95000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				95312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				95625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				96250,
+				[
+					[
+						"Better Cinematics",
+						"1",
+						"40"
+					]
+				]
+			],
+			[
+				96253.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				97500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"80"
+					]
+				]
+			],
+			[
+				97503.2552083333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				98750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				100000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				100312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				100625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				101248.046875,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.71, cubeout"
+					]
+				]
+			],
+			[
+				101250,
+				[
+					[
+						"Better Cinematics",
+						"0.7",
+						"40"
+					]
+				]
+			],
+			[
+				102343.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.23, cubein"
+					]
+				]
+			],
+			[
+				102500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"90"
+					]
+				]
+			],
+			[
+				102503.255208333,
+				[
+					[
+						"Camera Flash",
+						"0.6",
+						""
+					]
+				]
+			],
+			[
+				102506.510416667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				102509.765625,
+				[
+					[
+						"Fade UI Complete",
+						"8",
+						"1"
+					]
+				]
+			],
+			[
+				103750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.23, expoout"
+					]
+				]
+			],
+			[
+				105000,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"70"
+					]
+				]
+			],
+			[
+				105003.255208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.23, expoout"
+					]
+				]
+			],
+			[
+				105625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.23, expoout"
+					]
+				]
+			],
+			[
+				106250,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"90"
+					]
+				]
+			],
+			[
+				106253.255208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.23, expoout"
+					]
+				]
+			],
+			[
+				107500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"70"
+					]
+				]
+			],
+			[
+				107503.255208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.23, expoout"
+					]
+				]
+			],
+			[
+				108750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.23, expoout"
+					]
+				]
+			],
+			[
+				110000,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"90"
+					]
+				]
+			],
+			[
+				110003.255208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.23, expoout"
+					]
+				]
+			],
+			[
+				110625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.23, expoout"
+					]
+				]
+			],
+			[
+				111250,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"70"
+					]
+				]
+			],
+			[
+				111253.255208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.23, expoout"
+					]
+				]
+			],
+			[
+				112500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				115000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				117500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				120000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				122187.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				122500,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"60"
+					]
+				]
+			],
+			[
+				122503.255208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				123750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				124687.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				125000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				125312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				126093.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				126406.25,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				127503.255208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				128750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				129687.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				130000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				130312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				131093.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				131406.25,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				132187.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				132500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				133125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				133437.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				133750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				134375,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				134687.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				135000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				135312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				136093.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				136406.25,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				137500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138437.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				139375,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				139687.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				140000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				140312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				141093.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				141406.25,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				141875,
+				[
+					[
+						"Better Cinematics",
+						"0.9",
+						"140"
+					]
+				]
+			],
+			[
+				142031.25,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.7, cubeinout"
+					]
+				]
+			],
+			[
+				142500,
+				[
+					[
+						"Camera Switch",
+						"0.001",
+						"off"
+					]
+				]
+			],
+			[
+				142656.25,
+				[
+					[
+						"Better Cinematics",
+						"0.001",
+						"1"
+					]
+				]
+			],
+			[
+				142968.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, cubein"
+					]
+				]
+			],
+			[
+				143046.875,
+				[
+					[
+						"Fade UI Complete",
+						"9",
+						"1"
+					]
+				]
+			],
+			[
+				143125,
+				[
+					[
+						"Camera Switch",
+						"0.001",
+						"on"
+					]
+				]
+			],
+			[
+				143128.255208333,
+				[
+					[
+						"Better Cinematics",
+						"0.5",
+						"80"
+					]
+				]
+			],
+			[
+				143131.510416667,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				145625,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"90"
+					]
+				]
+			],
+			[
+				145628.255208333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				148125,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"60"
+					]
+				]
+			],
+			[
+				148128.255208333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				149375,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"70"
+					]
+				]
+			],
+			[
+				149378.255208333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				149687.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"90"
+					]
+				]
+			],
+			[
+				150000,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				150003.255208333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				153125,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				153128.255208333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				155625,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"50"
+					]
+				]
+			],
+			[
+				155628.255208333,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				158125,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"60"
+					]
+				]
+			],
+			[
+				158128.255208333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				159375,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"70"
+					]
+				]
+			],
+			[
+				159378.255208333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				159687.5,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"90"
+					]
+				]
+			],
+			[
+				160000,
+				[
+					[
+						"Better Cinematics",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				160003.255208333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				163125,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"70"
+					]
+				]
+			],
+			[
+				163128.255208333,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				163131.510416667,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				165625,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				166718.75,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				168125,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				170625,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				171718.75,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				172031.25,
+				[
+					[
+						"Camera Follow Pos",
+						"300",
+						"700"
+					],
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				172578.125,
+				[
+					[
+						"Flashfade",
+						"0.6",
+						"0.6"
+					]
+				]
+			],
+			[
+				173125,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"40"
+					]
+				]
+			],
+			[
+				173128.255208333,
+				[
+					[
+						"zoom lol",
+						"0.9",
+						""
+					]
+				]
+			],
+			[
+				173131.510416667,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				175625,
+				[
+					[
+						"Better Cinematics",
+						"0.3",
+						"60"
+					]
+				]
+			],
+			[
+				175628.255208333,
+				[
+					[
+						"zoom lol",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				177031.25,
+				[
+					[
+						"Camera Follow Pos",
+						"300",
+						"700"
+					]
+				]
+			],
+			[
+				177034.505208333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				178121.09375,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.79, 0.3, expoout"
+					]
+				]
+			],
+			[
+				178125,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				180625,
+				[
+					[
+						"zoom lol",
+						"1.1",
+						""
+					]
+				]
+			],
+			[
+				181875,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.94, 0.3, expoout"
+					]
+				]
+			],
+			[
+				182500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.74, 0.3, expoout"
+					]
+				]
+			],
+			[
+				183125,
+				[
+					[
+						"Better Cinematics",
+						"0.4",
+						"100"
+					]
+				]
+			],
+			[
+				183128.255208333,
+				[
+					[
+						"roval_flash",
+						"",
+						""
+					]
+				]
+			],
+			[
+				183131.510416667,
+				[
+					[
+						"zoom lol",
+						"0.69",
+						""
+					]
+				]
+			],
+			[
+				183134.765625,
+				[
+					[
+						"Camera Follow Pos",
+						"300",
+						"700"
+					]
+				]
+			]
+		]
+	}
+}

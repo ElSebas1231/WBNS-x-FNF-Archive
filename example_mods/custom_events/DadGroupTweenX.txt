@@ -1,0 +1,2 @@
+Value 1: Move X
+Value 2: Time in Seconds

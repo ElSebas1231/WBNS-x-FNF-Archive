@@ -1,0 +1,34 @@
+{
+	"name": "stickers-set-aquino",
+	"artist": "Mateo41Sketch",
+	"stickers": {
+		"aquino": ["aquinoSticker1", "aquinoSticker2", "aquinoSticker3"],
+		"aquinoStardew": ["aquinoStardewSticker1", "aquinoStardewSticker2"],
+		"erika": ["erikaStardewSticker1", "erikaStardewSticker2"],
+		"noobly": ["nooblySticker1", "nooblySticker2"],
+		"creisi": ["zeckroSticker1", "zeckroSticker2"],
+		"karfall": ["karfallSticker1" , "karfallSticker2", "karfallSticker3"],
+		"fernan": ["fernanSticker1" , "fernanSticker2", "fernanSticker3"],
+		"botsita": ["botsitaSticker1" , "botsitaSticker2"],
+		"kick": ["kickSticker1" , "kickSticker2"],
+		"compota": ["compotaSticker1" , "compotaSticker2"],
+		"sylvee": ["sylveeSticker1", "sylveeSticker2", "sylveeSticker3"],
+		"daarick": ["daarickSticker1"],
+		"craft": ["craftSticker1"],
+		"adrian": ["adrianSticker1"],
+		"mugquino": ["mugquinoSticker1"]
+	},
+	"stickerPacks": {
+		"erika": ["aquinoStardew", "erika"],
+		"creisi": ["aquino", "creisi"],
+		"noobly": ["aquino", "noobly"],
+		"karfall": ["aquino", "karfall"],
+		"compota": ["aquino", "compota"],
+		"botsita": ["aquino", "botsita", "kick"],
+		"sylvee": ["aquino", "sylvee"],
+		"fernan": ["aquino", "fernan"],
+		"estupidez": ["aquino", "daarick", "craft"],
+		"adrian": ["mugquino", "adrian"],
+		"all": ["aquino", "aquinoStardew", "erika", "creisi", "karfall", "noobly", "botsita", "kick", "compota", "sylvee", "daarick", "craft", "fernan", "adrian", "mugquino"]
+	}
+}

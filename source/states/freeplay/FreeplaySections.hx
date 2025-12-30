@@ -1,5 +1,6 @@
 package states.freeplay;
 
+import openfl.Assets;
 import flixel.graphics.FlxGraphic;
 import flixel.input.keyboard.FlxKey;
 import flixel.input.keyboard.FlxKeyboard;
@@ -18,7 +19,7 @@ class FreeplaySections extends MusicBeatState {
     var lockSprite:FlxSprite;
 
     var sectionSprite:FlxSprite;
-    var logo:FlxSprite;
+    var dlcLogo:FlxSprite;
     var selectorTablet:FlxSprite;
     var freeplayTitle:FlxSprite;
     var titleBack:FlxSprite;
@@ -27,31 +28,26 @@ class FreeplaySections extends MusicBeatState {
 
     private static var curSelected:Int = 0;
     public static var sectionSelected:String = '';
-    public static var freeplaySections:Array<String> = ['storymode', 'extras', 'remixes']; 
+    public static var freeplaySections:Array<String> = ['c3jodlc', 'aquinodlc']; 
 
-    var bottomText:FlxText;
+	var bottomText:FlxText;
 	var bottomBG:FlxSprite;
+
+    var messageOverlay:FlxSprite;
+    var messageText:FlxText;
+    var showMessage:Bool = false;
+    var onMessageClose:Void->Void = null;
 
     override function create():Void {
         Paths.clearUnusedMemory();
 		Paths.clearStoredMemory();
 
+        openfl.Lib.application.window.setIcon(lime.graphics.Image.fromFile('assets/shared/images/ui/menus/utils/icon.png'));
+
         if (FlxG.mouse.visible) Cursor.hide();
         
-        if (FlxG.sound.music == null) {
-            FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-            FlxG.sound.music.fadeIn(1.5, 0, 1);
-        } 
-
-        // YES THIS COULD HAPPEND
-        if (FlxG.sound.music.volume == 0 || FlxG.sound.music.volume < 1) FlxG.sound.music.fadeIn(1.5, FlxG.sound.music.volume, 1);
-
-        for (item in ClientPrefs.data.fpSectionsUnlocked) {
-            if (!freeplaySections.contains(item)) {
-                freeplaySections.push(item);
-            }
-        }
-
+        if (FlxG.sound.music == null) FlxG.sound.playMusic(Paths.music('freakyMenu'));
+        
 		var bgColor:FlxSprite = new FlxSprite().makeGraphic(1280, 720, 0xFF121227);
 		add(bgColor);
 
@@ -86,13 +82,13 @@ class FreeplaySections extends MusicBeatState {
         freeplayTablets.y -= 40;
         add(freeplayTablets);
 
-        logo = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
-        logo.antialiasing = ClientPrefs.data.antialiasing;
-        logo.scale.set(0.75, 0.75);
-        logo.updateHitbox();
-        logo.x = 430;
-        logo.y = 100;
-        add(logo);
+        dlcLogo = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
+        dlcLogo.antialiasing = ClientPrefs.data.antialiasing;
+        dlcLogo.scale.set(0.75, 0.75);
+        dlcLogo.updateHitbox();
+        dlcLogo.x = 430;
+        dlcLogo.y = 100;
+        add(dlcLogo);
         
         lockSprite = new FlxSprite(0, 0);
         lockSprite.antialiasing = ClientPrefs.data.antialiasing;
@@ -173,6 +169,8 @@ class FreeplaySections extends MusicBeatState {
         changeSelection(0, true);
         doIntro();
 
+        openfl.Lib.application.window.setIcon(lime.graphics.Image.fromFile('assets/shared/images/ui/menus/utils/icon.png'));
+
         super.create();
     }
     
@@ -186,6 +184,7 @@ class FreeplaySections extends MusicBeatState {
             if (controls.UI_LEFT_P) {
                 if (freeplaySections.length > 1) {
                     changeSelection(-1);
+
                     if(arrowSelection1Tween != null) arrowSelection1Tween.cancel();
 
                     arrowSelector1.scale.set(1.45, 1.45);
@@ -194,10 +193,10 @@ class FreeplaySections extends MusicBeatState {
                             arrowSelection1Tween = null;
                         }
                     });
-                } else FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
-            } 
-            
-            if (controls.UI_RIGHT_P) {
+                } else {
+                    FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
+                }
+            } else if (controls.UI_RIGHT_P) {
                 if (freeplaySections.length > 1) {
                     changeSelection(1);
 
@@ -209,15 +208,36 @@ class FreeplaySections extends MusicBeatState {
                             arrowSelection2Tween = null;
                         }
                     });
-                } else FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
+                } else {
+                    FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
+                }
             }
 
             if (controls.ACCEPT) {
                 if (canEnter) {
                     sectionSelected = freeplaySections[curSelected];
-                    FlxG.sound.play(Paths.sound('confirm'), 0.5);
-                    FlxG.sound.music.fadeOut(0.5, 0);
-                    MusicBeatState.switchState(new FreeplayState());
+                    if (sectionSelected == "c3jodlc") {
+                        var texto:String = Assets.getText(Paths.txt("mensajeC3jo")).replace("\\n", "\n");
+                        canSelectSomething = false;
+                        showOneTimeMessage('mensajeC3jo', '$texto\n\n¡Presiona ${ClientPrefs.keyBinds.get('back')[0]} ó ${ClientPrefs.keyBinds.get('back')[1]} para quitar este mensaje e ir al selector de canciones!\nNota: Este mensaje no volverá a aparecer', function() {
+                            FlxG.sound.play(Paths.sound('confirm'), 0.5);
+                            MusicBeatState.switchState(new FreeplayState());
+                        });
+                    }
+
+                    if (sectionSelected == "aquinodlc") {
+                        var texto:String = Assets.getText(Paths.txt("mensajeAquino")).replace("\\n", "\n");
+                        canSelectSomething = false;
+                        showOneTimeMessage('mensajeAquino', '$texto\n\n¡Presiona ${ClientPrefs.keyBinds.get('back')[0]} ó ${ClientPrefs.keyBinds.get('back')[1]} para quitar este mensaje e ir al selector de canciones!\nNota: Este mensaje no volverá a aparecer', function() {
+                            FlxG.sound.play(Paths.sound('confirm'), 0.5);
+                            MusicBeatState.switchState(new FreeplayState());
+                        });
+                    }
+
+                    if (!showMessage) {
+                        FlxG.sound.play(Paths.sound('confirm'), 0.5);
+                        MusicBeatState.switchState(new FreeplayState());
+                    }
                 } else {
                     FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
                     freeplayTablets.animation.play('lock pressed');
@@ -227,12 +247,26 @@ class FreeplaySections extends MusicBeatState {
                     }
                 }
             }
-    
+
             if (controls.BACK) {
                 canSelectSomething = false;
                 doOutro();
             }
         }
+
+        if (controls.BACK) {
+            if (showMessage && !canSelectSomething) {
+                hideOverlayMessage();
+            }
+        }
+    }
+
+    function tryUnlockSection(section:String, messageId:String, message:String, finishCallback:Void->Void) {
+        if (!ClientPrefs.data.fpSectionsUnlocked.contains(section)) {
+            doUnlockCinematic(section, messageId, message, finishCallback);
+            return true;
+        }
+        return false;
     }
 
     function doIntro():Void {
@@ -242,25 +276,60 @@ class FreeplaySections extends MusicBeatState {
         FlxTween.tween(bottomBG, {y: 694}, 1.2, {ease: FlxEase.cubeOut});
         FlxTween.tween(bottomText, {y: 698}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.2});
 
-        for (obj in [selectorTablet, arrowSelector1, arrowSelector2]){
-            FlxTween.tween(obj, {alpha: 1, "scale.x": 1, "scale.y": 1}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.8});
-        }
+        FlxTween.tween(selectorTablet, {alpha: 1, "scale.x": 1, "scale.y": 1}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.8});
+        FlxTween.tween(arrowSelector1, {alpha: 1, "scale.x": 1, "scale.y": 1}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.8});
+        FlxTween.tween(arrowSelector2, {alpha: 1, "scale.x": 1, "scale.y": 1}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.8});
 
         new FlxTimer().start(1.5, function(tmr:FlxTimer) {
-            FlxG.sound.play(Paths.sound('freeplay/select'), 0.3, false, null, true, function() {
+            var unlocked = tryUnlockSection(
+                'c3jodlc',
+                'unlockC3joDLC',
+                '¡Felicidades!\nSe has desbloqueado el DLC de C3jo\nMuchas gracias por descargar el mod, disfruta del nuevo contenido.\n\nPresiona ${ClientPrefs.keyBinds.get('back')[0]} ó ${ClientPrefs.keyBinds.get('back')[1]} para quitar este mensaje\nNota: Este mensaje no volverá a aparecer',
+                function() {
+                    canEnter = true;
+                    onMessageClose = null;
+                    canSelectSomething = true;
+                    canDoCinematic = true;
+
+                    // Intentar desbloquear aquinodlc después de c3jodlc
+                    tryUnlockSection(
+                        'aquinodlc',
+                        'unlockAquinoDLC',
+                        '¡Felicidades!\nSe has desbloqueado el DLC de Aquino\nMuchas gracias por descargar el mod, disfruta del nuevo contenido.\n\nPresiona ${ClientPrefs.keyBinds.get('back')[0]} ó ${ClientPrefs.keyBinds.get('back')[1]} para quitar este mensaje\nNota: Este mensaje no volverá a aparecer',
+                        function() {
+                            canEnter = true;
+                            canSelectSomething = true;
+                            canDoCinematic = true;
+                        }
+                    );
+                }
+            );
+
+            if (!unlocked) {
+                tryUnlockSection(
+                    'aquinodlc',
+                    'unlockAquinoDLC',
+                    '¡Felicidades!\nSe has desbloqueado el DLC de Aquino\nMuchas gracias por descargar el mod, disfruta del nuevo contenido.\n\nPresiona ${ClientPrefs.keyBinds.get('back')[0]} ó ${ClientPrefs.keyBinds.get('back')[1]} para quitar este mensaje\nNota: Este mensaje no volverá a aparecer',
+                    function() {
+                        canEnter = true;
+                        canSelectSomething = true;
+                        canDoCinematic = true;
+                    }
+                );
+            }
+
+            if (ClientPrefs.data.fpSectionsUnlocked.contains('c3jodlc') && ClientPrefs.data.fpSectionsUnlocked.contains('aquinodlc')) {
                 canSelectSomething = true;
-            });
+            }
         });
     }
 
     // Yeah, pretty functions names, right?
     function doOutro() {
-        for (obj in [lockSprite, logo, sectionSprite, selectorTablet, arrowSelector1, arrowSelector2, bottomBG, bottomText]){
-            FlxTween.cancelTweensOf(obj);
-        }
-
+        FlxTween.cancelTweensOf(lockSprite);
+        FlxTween.cancelTweensOf(dlcLogo);
         lockSprite.alpha = 0;
-        logo.alpha = 0;
+        dlcLogo.alpha = 0;
 
         freeplayTablets.animation.play('intro', true, true);
         freeplayTablets.animation.finishCallback = function(name:String) {
@@ -271,11 +340,18 @@ class FreeplaySections extends MusicBeatState {
         FlxTween.tween(titleBack, {y: -150}, 0.8, {ease: FlxEase.cubeOut, startDelay: 0.2});
         FlxTween.tween(freeplayTitle, {y: -100}, 0.8, {ease: FlxEase.cubeOut, startDelay: 0.3});
 
-        for (obj in [sectionSprite, selectorTablet, arrowSelector1, arrowSelector2]){
-            FlxTween.tween(obj, {alpha: 0, "scale.x": 1.2, "scale.y": 1.2}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.4});
-        }
-
-        FlxTween.tween(logo, {alpha: 0}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
+        FlxTween.cancelTweensOf(sectionSprite);
+        FlxTween.cancelTweensOf(selectorTablet);
+        FlxTween.cancelTweensOf(arrowSelector1);
+        FlxTween.cancelTweensOf(arrowSelector2);
+        FlxTween.cancelTweensOf(bottomBG);
+        FlxTween.cancelTweensOf(bottomText);
+        
+        FlxTween.tween(sectionSprite, {alpha: 0, "scale.x": 1.2, "scale.y": 1.2}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.4});
+        FlxTween.tween(selectorTablet, {alpha: 0, "scale.x": 1.2, "scale.y": 1.2}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.4});
+        FlxTween.tween(arrowSelector1, {alpha: 0, "scale.x": 1.2, "scale.y": 1.2}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.4});
+        FlxTween.tween(arrowSelector2, {alpha: 0, "scale.x": 1.2, "scale.y": 1.2}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.4});
+        FlxTween.tween(dlcLogo, {alpha: 0}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
         FlxTween.tween(bottomBG, {y: 754}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.2});
         FlxTween.tween(bottomText, {y: 718}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.2});
 
@@ -288,14 +364,131 @@ class FreeplaySections extends MusicBeatState {
         });
     }
 
+    // Make sure to have some assets related with the unlocked section, just saying...
+    // I know... this sucks...
+    var canDoCinematic:Bool = true;
+    var tweenSectionSprCinematic:FlxTween;
+    function doUnlockCinematic(sectionUnlocked:String, messageId:String, message:String, finishCallBack:Void->Void) {
+        if (canDoCinematic) {
+            canDoCinematic = false;
+            if (canSelectSomething) canSelectSomething = false;
+    
+            FlxTween.cancelTweensOf(dlcLogo);
+            FlxTween.cancelTweensOf(sectionSprite);
+            
+            dlcLogo.alpha = 0;
+            sectionSprite.alpha = 0;
+            
+            FlxG.sound.play(Paths.sound('freeplay/select'), 0.3);
+            freeplayTablets.animation.play('turn', true);
+            freeplayTablets.animation.finishCallback = function(name:String) {
+                if (name == 'turn') {
+                    freeplayTablets.animation.play('idle');
+                    lockSprite.alpha = 1;
+                }
+            }
+    
+            if (Paths.fileExists('images/ui/menus/freeplay/tab/${sectionUnlocked}_logo.png', IMAGE)) {
+                dlcLogo.loadGraphic(Paths.image('ui/menus/freeplay/tab/${sectionUnlocked}_logo'));
+            } else {
+                dlcLogo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
+            }
+            dlcLogo.updateHitbox();
+            dlcLogo.x = 430;
+            dlcLogo.y = 100;
+            FlxTween.tween(dlcLogo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
+            
+            sectionSprite.alpha = 0;
+            sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_${sectionUnlocked}'));
+    
+            if (tweenSectionSprCinematic != null) tweenSectionSprCinematic.cancel();
+            tweenSectionSprCinematic = FlxTween.tween(sectionSprite, {alpha: 1}, 0.35, {onComplete: function(twn:FlxTween) {
+                tweenSectionSpr = null;
+    
+                lockSprite.animation.play('press');
+                lockSprite.animation.finishCallback = function(name:String) {
+                    if (name == 'press') {
+                        lockSprite.animation.play('idle');
+                        FlxTween.cancelTweensOf(lockSprite);
+                        FlxTween.tween(lockSprite, {alpha: 0}, 0.45, {ease: FlxEase.cubeOut, onComplete: function(twn:FlxTween) {
+                            if ((!ClientPrefs.data.messagesAlreadySeen.exists(messageId) || !ClientPrefs.data.messagesAlreadySeen.get(messageId))) {
+                                showOneTimeMessage(messageId, message, function() {
+                                    onMessageClose = null;
+                                    if (finishCallBack != null) finishCallBack();
+                                });
+                            } else {
+                                if (finishCallBack != null) finishCallBack();
+                            }
+                        }});
+                        
+                        ClientPrefs.data.fpSectionsUnlocked.push(sectionUnlocked);
+                        curSelected = ClientPrefs.data.fpSectionsUnlocked.indexOf(sectionUnlocked);
+                    }
+                }
+            }});
+        }
+    }
+
+    // Messages stuff
+    function showOverlayMessage(msg:String) {
+        if (!showMessage) {
+            showMessage = true;
+
+            messageOverlay = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
+            messageOverlay.alpha = 0.6;
+            messageOverlay.scale.set(0.2, 0.2);
+            messageOverlay.updateHitbox();
+            messageOverlay.screenCenter();
+            messageOverlay.scrollFactor.set();
+            add(messageOverlay);
+        
+            messageText = new FlxText(0, 0, FlxG.width - 100, msg, 28);
+            messageText.setFormat(Paths.font("PhantomMuff Full Letters 1.1.5.ttf"), 28, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+            messageText.scrollFactor.set();
+            messageText.borderSize = 2;
+            messageText.antialiasing = ClientPrefs.data.antialiasing;
+            messageText.alpha = 0.0001;
+            messageText.screenCenter();
+            add(messageText);
+
+            FlxTween.tween(messageOverlay, {"scale.x": 1, "scale.y": 1}, 0.4, {ease: FlxEase.smoothStepIn, onComplete: function(t:FlxTween) {
+                FlxTween.tween(messageText, {alpha: 1}, 0.2, {ease: FlxEase.smoothStepIn});
+            }});
+        }
+    }
+
+    function hideOverlayMessage() {
+        if (messageText != null) FlxTween.tween(messageText, {alpha: 0.0001}, 0.4, {ease: FlxEase.smoothStepOut, onComplete: function(t:FlxTween) {
+            if (messageOverlay != null) FlxTween.tween(messageOverlay, {"scale.x": 0.2, "scale.y": 0.2}, 0.4, {ease: FlxEase.smoothStepOut, onComplete: function(t:FlxTween) {
+                showMessage = false;
+                remove(messageOverlay, true);
+                remove(messageText, true);
+
+                if (onMessageClose != null) {
+                    onMessageClose();
+                    onMessageClose = null;
+                }
+            }});
+        }});
+    }
+
+    function showOneTimeMessage(id:String, texto:String, ?closeCallback:Void->Void) {
+        if (!ClientPrefs.data.messagesAlreadySeen.exists(id) || !ClientPrefs.data.messagesAlreadySeen.get(id)) {
+            showOverlayMessage(texto);
+            onMessageClose = closeCallback;
+
+            ClientPrefs.data.messagesAlreadySeen.set(id, true);
+            ClientPrefs.saveSettings();
+        }
+    }
+    // end of messages stuff
+
     var tweenSectionSpr:FlxTween;
     function changeSelection(change:Int = 0, ?intro:Bool = false) {
         curSelected += change;
 
         if (curSelected < 0) curSelected = freeplaySections.length-1;
         if (curSelected >= freeplaySections.length) curSelected = 0;
-
-        if (freeplaySections[curSelected].contains('dlc')) sectionSelected = freeplaySections[curSelected]; else sectionSelected = '';
 
         if (change >= 1)
             freeplayTablets.animation.play('turn', true);
@@ -305,12 +498,11 @@ class FreeplaySections extends MusicBeatState {
         canEnter = false;
         canSelectSomething = false;
 
-        for (obj in [lockSprite, logo, sectionSprite]){
-            FlxTween.cancelTweensOf(obj);
-        }
-        
+        FlxTween.cancelTweensOf(lockSprite);
+        FlxTween.cancelTweensOf(dlcLogo);
+        FlxTween.cancelTweensOf(sectionSprite);
         lockSprite.alpha = 0;
-        logo.alpha = 0;
+        dlcLogo.alpha = 0;
         sectionSprite.alpha = 0;
 
         if (!intro) {
@@ -322,28 +514,19 @@ class FreeplaySections extends MusicBeatState {
                     }
                 }
                 
-                logo.alpha = 0;
-                if (freeplaySections[curSelected].contains('dlc')) {
-                    logo.loadGraphic(Paths.image('freeplay/dlc_logo'));
+                dlcLogo.alpha = 0;
+                if (Paths.fileExists('images/ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo.png', IMAGE)) {
+                    dlcLogo.loadGraphic(Paths.image('ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo'));
                 } else {
-                    if (Paths.fileExists('images/ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo.png', IMAGE)) {
-                        logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo'));
-                    } else {
-                        logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
-                    }
+                    dlcLogo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
                 }
-                
-                logo.updateHitbox();
-                logo.x = 430;
-                logo.y = 100;
-                FlxTween.tween(logo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
+                dlcLogo.updateHitbox();
+                dlcLogo.x = 430;
+                dlcLogo.y = 100;
+                FlxTween.tween(dlcLogo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
 
                 sectionSprite.alpha = 0;
-                
-                if (freeplaySections[curSelected].contains('dlc'))
-                    sectionSprite.loadGraphic(Paths.image('freeplay/sec_dlc'));
-                else 
-                    sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_${freeplaySections[curSelected]}'));
+                sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_${freeplaySections[curSelected]}'));
     
                 if (tweenSectionSpr != null) tweenSectionSpr.cancel();
                 tweenSectionSpr = FlxTween.tween(sectionSprite, {alpha: 1}, 0.35, {onComplete: function(twn:FlxTween) {
@@ -360,12 +543,12 @@ class FreeplaySections extends MusicBeatState {
                     }
                 }
 
-                logo.alpha = 0;
-                logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
-                logo.updateHitbox();
-                logo.x = 430;
-                logo.y = 100;
-                FlxTween.tween(logo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
+                dlcLogo.alpha = 0;
+                dlcLogo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
+                dlcLogo.updateHitbox();
+                dlcLogo.x = 430;
+                dlcLogo.y = 100;
+                FlxTween.tween(dlcLogo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
 
                 sectionSprite.alpha = 0;
                 sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/padlock'));
@@ -377,24 +560,17 @@ class FreeplaySections extends MusicBeatState {
                 }});
             }
         } else {
-            logo.alpha = 0;
-            if (freeplaySections[curSelected].contains('dlc')) {
-                logo.loadGraphic(Paths.image('freeplay/dlc_logo'));
+            dlcLogo.alpha = 0;
+            if (Paths.fileExists('images/ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo.png', IMAGE)) {
+                dlcLogo.loadGraphic(Paths.image('ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo'));
             } else {
-                if (Paths.fileExists('freeplay/tab/${freeplaySections[curSelected]}_logo.png', IMAGE)) {
-                    logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo'));
-                } else {
-                    logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
-                }
+                dlcLogo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
             }
-            logo.x = 430;
-            logo.y = 100;
-            FlxTween.tween(logo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 1.5});
+            dlcLogo.x = 430;
+            dlcLogo.y = 100;
+            FlxTween.tween(dlcLogo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 1.5});
 
-            if (freeplaySections[curSelected].contains('dlc'))
-                sectionSprite.loadGraphic(Paths.image('freeplay/sec_dlc'));
-            else 
-                sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_${freeplaySections[curSelected]}'));
+            sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_${freeplaySections[curSelected]}'));
         }
 
         new FlxTimer().start(0.5, function(tmr:FlxTimer) {

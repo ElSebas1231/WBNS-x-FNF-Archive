@@ -1,0 +1,2466 @@
+{
+	"song": {
+		"events": [
+			[
+				8612.17948717949,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				8615.38461538462,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"100"
+					]
+				]
+			],
+			[
+				8692.30769230769,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.5",
+						"1"
+					]
+				]
+			],
+			[
+				9842.30769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				9846.15384615385,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"40"
+					]
+				]
+			],
+			[
+				10153.8461538462,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				10157.0512820513,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				10461.5384615385,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				10464.7435897436,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				10769.2307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				10772.4358974359,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				11073.0769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				11076.9230769231,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"70"
+					]
+				]
+			],
+			[
+				13538.4615384615,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				13846.1538461538,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.95, 0.3, expoout"
+					]
+				]
+			],
+			[
+				14153.8461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				14461.5384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.05, 0.3, expoout"
+					]
+				]
+			],
+			[
+				14769.2307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.3, expoout"
+					]
+				]
+			],
+			[
+				15384.6153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				16000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				18461.5384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				18769.2307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.95, 0.3, expoout"
+					]
+				]
+			],
+			[
+				19076.9230769231,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				19384.6153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.05, 0.3, expoout"
+					]
+				]
+			],
+			[
+				19692.3076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.86, 0.3, expoout"
+					]
+				]
+			],
+			[
+				20307.6923076923,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				20923.0769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				23384.6153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				26000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				27538.4615384615,
+				[
+					[
+						"Cinematics (With HUD)",
+						"2",
+						"1"
+					]
+				]
+			],
+			[
+				28461.5384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				30769.2307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"100"
+					]
+				]
+			],
+			[
+				30772.4358974359,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				30846.1538461538,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"40"
+					]
+				]
+			],
+			[
+				31076.9230769231,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"100"
+					]
+				]
+			],
+			[
+				31080.1282051282,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				31153.8461538461,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				31384.6153846154,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"100"
+					]
+				]
+			],
+			[
+				31387.8205128205,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				31461.5384615385,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				31692.3076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"120"
+					]
+				]
+			],
+			[
+				31695.5128205128,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				31769.2307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				32000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					],
+					[
+						"Toggle Trail",
+						"1",
+						"1"
+					]
+				]
+			],
+			[
+				32615.3846153846,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				32692.3076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				33230.7692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				33846.1538461538,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				33923.0769230769,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				34461.5384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				35076.9230769231,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				35153.8461538461,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				35692.3076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				36307.6923076923,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				36384.6153846154,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				36923.0769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				37538.4615384615,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				37615.3846153846,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				38153.8461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				38769.2307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				38846.1538461538,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				39384.6153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				40000,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				40076.9230769231,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				40615.3846153846,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.6",
+						"1"
+					]
+				]
+			],
+			[
+				40615.3846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				41842.3076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					],
+					[
+						"Toggle Trail",
+						"",
+						""
+					]
+				]
+			],
+			[
+				41846.1538461539,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"50"
+					]
+				]
+			],
+			[
+				46769.2307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				51076.9230769231,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"100"
+					]
+				]
+			],
+			[
+				51230.7692307693,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"70"
+					]
+				]
+			],
+			[
+				51384.6153846154,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"40"
+					]
+				]
+			],
+			[
+				51692.3076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"50"
+					]
+				]
+			],
+			[
+				51692.3076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				54153.8461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.15, 0.3, expoout"
+					]
+				]
+			],
+			[
+				56615.3846153847,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				59076.9230769231,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.15, 0.3, expoout"
+					]
+				]
+			],
+			[
+				60923.076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"100"
+					]
+				]
+			],
+			[
+				61076.9230769231,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"70"
+					]
+				]
+			],
+			[
+				61230.7692307693,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"40"
+					]
+				]
+			],
+			[
+				61538.4615384616,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"50"
+					]
+				]
+			],
+			[
+				61538.4615384616,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				62769.2307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				64000.0000000001,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				65230.7692307693,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				66461.5384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				67692.3076923078,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				68923.076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				70153.8461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				71384.6153846155,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				72615.3846153847,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				73846.1538461539,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				75076.9230769232,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				76307.6923076924,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				77538.4615384616,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.95, 0.3, expoout"
+					]
+				]
+			],
+			[
+				78769.2307692309,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				80000.0000000001,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"80"
+					]
+				]
+			],
+			[
+				80000.0000000001,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				80076.9230769232,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				80307.6923076924,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"80"
+					]
+				]
+			],
+			[
+				80384.6153846155,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				80615.3846153847,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"80"
+					]
+				]
+			],
+			[
+				80692.3076923078,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				80923.076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"80"
+					]
+				]
+			],
+			[
+				81000.0000000001,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				81228.8461538463,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				81230.7692307694,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				86153.8461538463,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				88615.3846153848,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				88923.0769230771,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				89230.7692307694,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				89538.4615384617,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				89846.153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				90153.8461538463,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				90461.5384615386,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				90769.2307692309,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				91076.9230769232,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				96000.0000000001,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				98461.5384615386,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				98769.2307692309,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				99076.9230769232,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				99384.6153846155,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				99692.3076923078,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				100000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				100307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				100615.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				100923.076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				103384.615384615,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				103692.307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.95, 0.3, expoout"
+					]
+				]
+			],
+			[
+				104000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				104307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.05, 0.3, expoout"
+					]
+				]
+			],
+			[
+				104615.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.3, expoout"
+					]
+				]
+			],
+			[
+				105230.769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				105846.153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				108307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				108615.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.95, 0.3, expoout"
+					]
+				]
+			],
+			[
+				108923.076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				109230.769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.05, 0.3, expoout"
+					]
+				]
+			],
+			[
+				109538.461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.3, expoout"
+					]
+				]
+			],
+			[
+				110038.461538462,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"1"
+					]
+				]
+			],
+			[
+				110153.846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				110461.538461539,
+				[
+					[
+						"Change Scroll Speed",
+						"0.7",
+						"0.001"
+					]
+				]
+			],
+			[
+				110767.307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"100"
+					]
+				]
+			],
+			[
+				110769.230769231,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						"0.001"
+					]
+				]
+			],
+			[
+				110772.435897436,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				115692.307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				118307.692307693,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				120615.384615385,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"120"
+					]
+				]
+			],
+			[
+				120618.58974359,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				121076.923076923,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"100"
+					]
+				]
+			],
+			[
+				121230.769230769,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"80"
+					]
+				]
+			],
+			[
+				121384.615384616,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"60"
+					]
+				]
+			],
+			[
+				121538.461538462,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"40"
+					]
+				]
+			],
+			[
+				121692.307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.01",
+						"20"
+					]
+				]
+			],
+			[
+				121846.153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					],
+					[
+						"Toggle Trail",
+						"1",
+						"1"
+					]
+				]
+			],
+			[
+				121846.153846154,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.3",
+						"100"
+					]
+				]
+			],
+			[
+				123076.923076923,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				124307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				125538.461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				126769.230769231,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				128000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				129230.769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				130461.538461538,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				131690.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				131692.307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.3",
+						"80"
+					]
+				]
+			],
+			[
+				134153.846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				136615.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				137846.153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138153.846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138461.538461539,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138769.230769231,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				139076.923076923,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				139692.307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				140307.692307692,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"60"
+					]
+				]
+			],
+			[
+				140307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				140384.615384616,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				140615.384615385,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"60"
+					]
+				]
+			],
+			[
+				140692.307692308,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				140923.076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"60"
+					]
+				]
+			],
+			[
+				141000,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				141230.769230769,
+				[
+					[
+						"Change Scroll Speed",
+						"0.01",
+						"0.001"
+					]
+				]
+			],
+			[
+				141534.615384616,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				141538.461538462,
+				[
+					[
+						"Change Scroll Speed",
+						"1",
+						"0.001"
+					]
+				]
+			],
+			[
+				141538.461538462,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"60"
+					]
+				]
+			],
+			[
+				141615.384615385,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				141846.153846154,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"60"
+					]
+				]
+			],
+			[
+				141923.076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				142153.846153846,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"60"
+					]
+				]
+			],
+			[
+				142230.769230769,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				142461.538461539,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"60"
+					]
+				]
+			],
+			[
+				142538.461538462,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"80"
+					]
+				]
+			],
+			[
+				142615.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.2, cubein"
+					]
+				]
+			],
+			[
+				142769.230769231,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.1",
+						"100"
+					],
+					[
+						"Change Scroll Speed",
+						"1.1",
+						"0.1"
+					]
+				]
+			],
+			[
+				147692.307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				150153.846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				150461.538461539,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				150769.230769231,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				151076.923076923,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				151384.615384616,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				151692.307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				152000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				152307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				152615.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				157538.461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				160000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				160307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				160615.384615385,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				160923.076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				161230.769230769,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"90"
+					]
+				]
+			],
+			[
+				161230.769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.3, expoout"
+					]
+				]
+			],
+			[
+				161538.461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				161538.461538462,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"70"
+					]
+				]
+			],
+			[
+				161846.153846154,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"50"
+					]
+				]
+			],
+			[
+				161846.153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				162153.846153846,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"30"
+					]
+				]
+			],
+			[
+				162153.846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				162461.538461538,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"90"
+					]
+				]
+			],
+			[
+				162461.538461538,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				164923.076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				165230.769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.95, 0.3, expoout"
+					]
+				]
+			],
+			[
+				165538.461538462,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				165846.153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.05, 0.3, expoout"
+					]
+				]
+			],
+			[
+				166153.846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				166769.230769231,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				167384.615384615,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				169846.153846154,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				170153.846153846,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.95, 0.3, expoout"
+					]
+				]
+			],
+			[
+				170461.538461539,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				170769.230769231,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.05, 0.3, expoout"
+					]
+				]
+			],
+			[
+				171076.923076923,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				171692.307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				172000,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"1"
+					]
+				]
+			],
+			[
+				172307.692307692,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.001",
+						"100"
+					]
+				]
+			],
+			[
+				172307.692307692,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				177230.769230769,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				178461.538461538,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				179076.923076923,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				179692.307692308,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				180923.076923077,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				180923.076923077,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"90"
+					]
+				]
+			],
+			[
+				181538.461538461,
+				[
+					[
+						"Cinematics (With HUD)",
+						"0.2",
+						"60"
+					]
+				]
+			],
+			[
+				181538.461538461,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				182153.846153846,
+				[
+					[
+						"Cinematics (With HUD)",
+						"1",
+						"0"
+					]
+				]
+			],
+			[
+				182461.538461538,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.65, cubein"
+					]
+				]
+			]
+		]
+	}
+}

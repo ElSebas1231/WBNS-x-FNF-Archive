@@ -1,0 +1,10 @@
+Funciones de cámara:                                          //Opciones extra:
+a,b,c,g,aa,bb,cc,gg,ab,bc, extra,cam,int       boomzoom,beathud,velcam,hud,hudz
+Funciones de Zoom:       //Modchart:                         //Flash (Pantalla por delante):  // Luz(Estela por delante):
+zoom,zooma,zoomz       modcharty,modchartx      flash,flasho,flashz,flcolor             luz,luzz
+Fondo (Pantalla por atras):           //Letras:                                                      //Color
+fondo,fondon,fondoz,fcolor       canta,cantab,cantac,cantacolor         bfcolor,gfcolor,dadcolor,charcolor
+Doblevalor (Introducir en value2): ("cosaonumero","cosaonumero2")
+Triplevalor (Introducir en value2): ("cosa1","cosa2","cosa3")
+Univalor (Introducir en value2): ("cosa1")
+Sinvalor: No se introduce nada en value2

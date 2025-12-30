@@ -1,3 +1,4 @@
+#if LUA_ALLOWED
 package psychlua;
 
 import backend.WeekData;
@@ -25,7 +26,6 @@ import objects.Character;
 import states.MainMenuState;
 import states.StoryMenuState;
 import states.freeplay.FreeplayState;
-import states.freeplay.FreeplaySections;
 
 import substates.StickerSubState;
 import substates.PauseSubState;
@@ -70,7 +70,12 @@ class FunkinLua {
 		this.scriptName = scriptName.trim();
 		var game:PlayState = PlayState.instance;
 		game.luaArray.push(this);
+
 		var myFolder:Array<String> = this.scriptName.split('/');
+		#if MODS_ALLOWED
+		if(myFolder[0] + '/' == Paths.mods() && (Mods.currentModDirectory == myFolder[1] || Mods.getGlobalMods().contains(myFolder[1]))) //is inside mods folder
+			this.modFolder = myFolder[1];
+		#end
 
 		// Lua shit
 		set('Function_StopLua', LuaUtils.Function_StopLua);
@@ -778,19 +783,13 @@ class FunkinLua {
 			game.addCharacterToList(name, charType);
 		});
 		Lua_helper.add_callback(lua, "precacheImage", function(name:String, ?allowGPU:Bool = true) {
-			Paths.image(name, (FreeplaySections.sectionSelected.contains('dlc') ? 'dlcs/${FreeplaySections.sectionSelected}' : null), allowGPU);
+			Paths.image(name, allowGPU);
 		});
 		Lua_helper.add_callback(lua, "precacheSound", function(name:String) {
-			if (FreeplaySections.sectionSelected.contains('dlc'))
-				Paths.returnSound(null, name, 'dlc/${FreeplaySections.sectionSelected}/sounds');
-			else
-				Paths.sound(name);
+			Paths.sound(name);
 		});
 		Lua_helper.add_callback(lua, "precacheMusic", function(name:String) {
-			if (FreeplaySections.sectionSelected.contains('dlc'))
-				Paths.returnSound(null, name, 'dlc/${FreeplaySections.sectionSelected}/music');
-			else
-				Paths.music(name);
+			Paths.music(name);
 		});
 
 		// others
@@ -824,14 +823,38 @@ class FunkinLua {
 				FlxTransitionableState.skipNextTransOut = true;
 			}
 
-			var stickerSet = (PlayState.SONG.player1.contains('c3jo')) ? "stickers-set-2" : "stickers-set-1";
-			var stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-				case "hiper": "hiper";
-				case "roier": "roier";
-				case "steyb": "steyb";
-				case "noticiero": "umad";
-				default: "all";
-			};
+			var stickerSet = 'stickers-set-wbns';
+			var stickerPack = 'all';
+
+			if (PlayState.SONG.player1.contains('c3jo')) {
+				stickerSet = 'stickers-set-c3jo';
+
+				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+					case "hiper": "hiper";
+					case "roier": "roier";
+					case "steyb": "steyb";
+					case "noticiero": "umad";
+					default: "all";
+				};
+			}
+
+			if (PlayState.SONG.player1.contains('aquino')) {
+				stickerSet = 'stickers-set-aquino';
+
+				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+					case "erika": "erika";
+					case "karfall": "karfall";
+					case "noobly": "noobly";
+					case "creisi.mov": "creisi";
+					case "promenade": "botsita";
+					case "let's go compota v2": "compota";
+					case "saludo v2": "fernan";
+					case "toneando v2": "adrian";
+					case "estupidez": "estupidez";
+					case "sylvee": "sylvee";
+					default: "all";
+				};
+			}
 
 			if(PlayState.isStoryMode)
 				if (!ClientPrefs.data.noStickers) {
@@ -1015,7 +1038,7 @@ class FunkinLua {
 			var leSprite:ModchartSprite = new ModchartSprite(x, y);
 			if(image != null && image.length > 0)
 			{
-				leSprite.loadGraphic(Paths.image(image, (FreeplaySections.sectionSelected.contains('dlc') ? 'dlcs/${FreeplaySections.sectionSelected}' : null)));
+				leSprite.loadGraphic(Paths.image(image));
 			}
 			game.modchartSprites.set(tag, leSprite);
 			leSprite.active = true;
@@ -1332,13 +1355,22 @@ class FunkinLua {
 			var songPath:String = Paths.formatToSongPath(PlayState.SONG.song);
 			#if TRANSLATIONS_ALLOWED
 			path = Paths.getPath('data/$songPath/${dialogueFile}_${ClientPrefs.data.language}.json', TEXT);
+			#if MODS_ALLOWED
+			if(!FileSystem.exists(path))
+			#else
+			if(!Assets.exists(path, TEXT))
 			#end
-			if(!FileSystem.exists(path) || !Assets.exists(path, TEXT))
-				path = Paths.getPath('data/$songPath/$dialogueFile.json', TEXT, (FreeplaySections.sectionSelected.contains('dlc') ? 'dlcs/${FreeplaySections.sectionSelected}' : null));
+			#end
+				path = Paths.getPath('data/$songPath/$dialogueFile.json', TEXT);
 
 			luaTrace('startDialogue: Trying to load dialogue: ' + path);
 
-			if (FileSystem.exists(path) || Assets.exists(path, TEXT)) {
+			#if MODS_ALLOWED
+			if(FileSystem.exists(path))
+			#else
+			if(Assets.exists(path, TEXT))
+			#end
+			{
 				var shit:DialogueFile = DialogueBoxPsych.parseDialogue(path);
 				if(shit.dialogue.length > 0)
 				{
@@ -1494,6 +1526,23 @@ class FunkinLua {
 			}
 		});
 		#end
+
+		// mod settings
+		#if MODS_ALLOWED
+		addLocalCallback("getModSetting", function(saveTag:String, ?modName:String = null) {
+			if(modName == null)
+			{
+				if(this.modFolder == null)
+				{
+					FunkinLua.luaTrace('getModSetting: Argument #2 is null and script is not inside a packed Mod folder!', false, false, FlxColor.RED);
+					return null;
+				}
+				modName = this.modFolder;
+			}
+			return LuaUtils.getModSetting(saveTag, modName);
+		});
+		#end
+		//
 
 		Lua_helper.add_callback(lua, "debugPrint", function(text:Dynamic = '', color:String = 'WHITE') PlayState.instance.addTextToDebug(text, CoolUtil.colorFromString(color)));
 
@@ -1659,17 +1708,20 @@ class FunkinLua {
 
 	function findScript(scriptFile:String, ext:String = '.lua')
 	{
-		if (!scriptFile.endsWith(ext)) scriptFile += ext;
-
+		if(!scriptFile.endsWith(ext)) scriptFile += ext;
 		var preloadPath:String = Paths.getSharedPath(scriptFile);
-		var path:String = Paths.dlcsFolders(scriptFile);
-
-		if (FileSystem.exists(scriptFile))
+		#if MODS_ALLOWED
+		var path:String = Paths.modFolders(scriptFile);
+		if(FileSystem.exists(scriptFile))
 			return scriptFile;
-		else if (FileSystem.exists(path))
+		else if(FileSystem.exists(path))
 			return path;
 
-		if (FileSystem.exists(preloadPath) || Assets.exists(preloadPath)) {
+		if(FileSystem.exists(preloadPath))
+		#else
+		if(Assets.exists(preloadPath))
+		#end
+		{
 			return preloadPath;
 		}
 		return null;
@@ -1699,7 +1751,7 @@ class FunkinLua {
 		Lua_helper.add_callback(lua, name, null); //just so that it gets called
 	}
 
-	#if (!flash && sys)
+	#if (MODS_ALLOWED && !flash && sys)
 	public var runtimeShaders:Map<String, Array<String>> = new Map<String, Array<String>>();
 	#end
 
@@ -1707,17 +1759,24 @@ class FunkinLua {
 	{
 		if(!ClientPrefs.data.shaders) return false;
 
-		#if (!flash && sys)
-		if(runtimeShaders.exists(name)){
+		#if (MODS_ALLOWED && !flash && sys)
+		if(runtimeShaders.exists(name))
+		{
 			luaTrace('Shader $name was already initialized!');
 			return true;
 		}
 
-		var foldersToCheck:Array<String> = [Paths.dlcs('shaders/'), Paths.dlcsFolders('shaders/')];
+		var foldersToCheck:Array<String> = [Paths.mods('shaders/')];
+		if(Mods.currentModDirectory != null && Mods.currentModDirectory.length > 0)
+			foldersToCheck.insert(0, Paths.mods(Mods.currentModDirectory + '/shaders/'));
+
+		for(mod in Mods.getGlobalMods())
+			foldersToCheck.insert(0, Paths.mods(mod + '/shaders/'));
 
 		for (folder in foldersToCheck)
 		{
-			if(FileSystem.exists(folder)) {
+			if(FileSystem.exists(folder))
+			{
 				var frag:String = folder + name + '.frag';
 				var vert:String = folder + name + '.vert';
 				var found:Bool = false;
@@ -1750,3 +1809,4 @@ class FunkinLua {
 		return false;
 	}
 }
+#end

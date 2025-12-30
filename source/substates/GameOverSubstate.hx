@@ -114,7 +114,8 @@ class GameOverSubstate extends MusicBeatSubstate
 		PlayState.instance.callOnScripts('onUpdatePost', [elapsed]);
 	}
 
-	function coolStartDeath(?volume:Float = 1):Void	{
+	function coolStartDeath(?volume:Float = 1):Void
+	{
 		if (hasIntro) {
 			FlxG.sound.play(Paths.music('$loopSoundName-intro'), volume, false, null, true,() -> {
 				FlxG.sound.playMusic(Paths.music(loopSoundName), volume, true);
@@ -134,7 +135,7 @@ class GameOverSubstate extends MusicBeatSubstate
 				isEnding = true;
 				boyfriend.playAnim('deathConfirm', true);
 				FlxG.sound.music.stop();
-				FlxG.sound.play(Paths.sound(endSoundName));
+				FlxG.sound.play(Paths.music(endSoundName));
 				new FlxTimer().start(0.7, function(tmr:FlxTimer)
 				{
 					FlxG.camera.fade(FlxColor.BLACK, 2, false, function() {
@@ -148,7 +149,7 @@ class GameOverSubstate extends MusicBeatSubstate
 					isEnding = true;
 					boyfriend.playAnim('deathConfirm');
 					FlxG.sound.music.stop();	
-					FlxG.sound.play(Paths.sound(endSoundName));
+					FlxG.sound.play(Paths.music(endSoundName));
 					PlayState.instance.callOnScripts('onGameOverConfirm', [false]);
 					new FlxTimer().start(0.7, function(tmr:FlxTimer)
 				{
@@ -197,7 +198,7 @@ class GameOverSubstate extends MusicBeatSubstate
 							StickerSubState.STICKER_PACK = stickerPack;
 							
 							if (PlayState.isStoryMode) {
-								openSubState(cast new StickerSubState(null, (sticker) -> new StoryMenuState(sticker)));
+								openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
 							} else {
 								openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
 							}

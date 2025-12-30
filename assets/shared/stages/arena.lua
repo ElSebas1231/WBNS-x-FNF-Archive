@@ -1,0 +1,40 @@
+function onCreate()  
+    makeLuaSprite('citi', 'misc/aquino/arena/citi', -1450, -250)
+    setProperty('citi.antialiasing', getPropertyFromClass('backend.ClientPrefs', 'data.antialiasing'))
+    scaleObject('citi', 1.85, 1.85)
+    setScrollFactor('citi', 1.1, 1.1)
+    addLuaSprite('citi')
+
+    makeLuaSprite('foco', 'misc/aquino/arena/foco', -1300, -500)
+    setProperty('foco.antialiasing', getPropertyFromClass('backend.ClientPrefs', 'data.antialiasing'))
+    scaleObject('foco', 2,2)
+    addLuaSprite('foco')
+    
+    makeAnimatedLuaSprite('publico1', 'misc/aquino/arena/publico1', -1400, -100)
+    addAnimationByPrefix('publico1', 'idle', 'idle', 24)
+    scaleObject('publico1', 1.8, 1.8)
+    addLuaSprite('publico1')
+    
+    makeAnimatedLuaSprite('publico2', 'misc/aquino/arena/publico2', 1250, -80)
+    addAnimationByPrefix('publico2', 'idle', 'idle', 24)
+    scaleObject('publico2', 1.8, 1.8)
+    addLuaSprite('publico2')
+
+    makeAnimatedLuaSprite('publico3', 'misc/aquino/arena/publico3', -1200, 500)
+    addAnimationByPrefix('publico3', 'idle', 'idle', 24)
+    scaleObject('publico3', 1.8, 1.8)
+    setScrollFactor('publico3', 0.9, 1)
+    setObjectOrder('publico3', getObjectOrder('boyfriendGroup')+1)
+    addLuaSprite('publico3')
+    
+    makeLuaSprite('muro', 'misc/aquino/arena/muro', -1500, 1000)
+    scaleObject('muro', 2, 2)
+    setScrollFactor('muro', 0.9, 1)
+    setObjectOrder('muro', getObjectOrder('boyfriendGroup')+1)
+    addLuaSprite('muro')
+
+    makeLuaSprite('suelo', 'misc/aquino/arena/suelo', -1420, 250)
+    setProperty('suelo.antialiasing', getPropertyFromClass('backend.ClientPrefs', 'data.antialiasing'))
+    scaleObject('suelo', 1.8, 1.8)
+    addLuaSprite('suelo')
+end

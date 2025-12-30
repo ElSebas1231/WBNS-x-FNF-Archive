@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-61,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Steyb_idle0"
+		},
+		{
+			"offsets": [
+				63,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Steyb_left0"
+		},
+		{
+			"offsets": [
+				-72,
+				-37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Steyb_down"
+		},
+		{
+			"offsets": [
+				-4,
+				40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Steyb_up"
+		},
+		{
+			"offsets": [
+				-57,
+				15
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Steyb_right"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/c3jodlc/steyb",
+	"position": [
+		-70,
+		180
+	],
+	"healthicon": "steyb-dlc",
+	"flip_x": false,
+	"healthbar_colors": [
+		61,
+		54,
+		255
+	],
+	"camera_position": [
+		0,
+		-50
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

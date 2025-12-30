@@ -1,0 +1,20 @@
+{
+	"name": "stickers-set-c3jo",
+	"artist": "Mateo41Sketch",
+	"stickers": {
+		"c3jo": ["c3joSticker1", "c3joSticker2"],
+		"oe": ["c3joSticker1"],
+		"hiper": ["hiperSticker1"],
+		"roier": ["roierSticker1"],
+		"steyb": ["steybSticker1"],
+		"umad": ["umadSticker1"]
+	},
+	"stickerPacks": {
+		"oe": ["oe"],
+		"hiper": ["c3jo", "hiper"],
+		"roier": ["c3jo", "roier"],
+		"steyb": ["c3jo", "steyb"],
+		"umad": ["c3jo", "umad"],
+		"all": ["c3jo", "hiper", "roier", "steyb", "umad"]
+	}
+}

@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle instancia",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				96,
+				-1
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left instancia",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				97,
+				-92
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down instancia",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				39,
+				34
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up instancia",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-29,
+				-7
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right instancia",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				11,
+				13
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "hey instancia",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/aquinodlc/compota",
+	"position": [
+		-120,
+		75
+	],
+	"healthicon": "icon-compota-dlc",
+	"flip_x": false,
+	"healthbar_colors": [
+		68,
+		68,
+		206
+	],
+	"camera_position": [
+		120,
+		180
+	],
+	"sing_duration": 4,
+	"scale": 0.55,
+	"_editor_isPlayer": false
+}

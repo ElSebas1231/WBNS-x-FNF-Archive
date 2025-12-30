@@ -144,33 +144,62 @@ class ExtraFunctions
 
 		// File management
 		Lua_helper.add_callback(lua, "checkFileExists", function(filename:String, ?absolute:Bool = false) {
-			if (absolute) return FileSystem.exists(filename);
+			#if MODS_ALLOWED
+			if(absolute)
+			{
+				return FileSystem.exists(filename);
+			}
 
-			var path:String = Paths.dlcsFolders(filename);
-			if (FileSystem.exists(path)) return true;
-
+			var path:String = Paths.modFolders(filename);
+			if(FileSystem.exists(path))
+			{
+				return true;
+			}
 			return FileSystem.exists(Paths.getPath('assets/$filename', TEXT));
+			#else
+			if(absolute)
+			{
+				return Assets.exists(filename);
+			}
+			return Assets.exists(Paths.getPath('assets/$filename', TEXT));
+			#end
 		});
-		Lua_helper.add_callback(lua, "saveFile", function(path:String, content:String)
+		Lua_helper.add_callback(lua, "saveFile", function(path:String, content:String, ?absolute:Bool = false)
 		{
 			try {
-				File.saveContent(path, content);
+				#if MODS_ALLOWED
+				if(!absolute)
+					File.saveContent(Paths.mods(path), content);
+				else
+				#end
+					File.saveContent(path, content);
+
 				return true;
 			} catch (e:Dynamic) {
-				FunkinLua.luaTrace('saveFile: Error trying to save "$path": $e', false, false, FlxColor.RED);
+				FunkinLua.luaTrace("saveFile: Error trying to save " + path + ": " + e, false, false, FlxColor.RED);
 			}
 			return false;
 		});
 		Lua_helper.add_callback(lua, "deleteFile", function(path:String, ?ignoreModFolders:Bool = false)
 		{
 			try {
+				#if MODS_ALLOWED
 				if(!ignoreModFolders)
 				{
-					var lePath:String = Paths.dlcsFolders(path);
-					if (FileSystem.exists(lePath) || Assets.exists(lePath)) {
+					var lePath:String = Paths.modFolders(path);
+					if(FileSystem.exists(lePath))
+					{
 						FileSystem.deleteFile(lePath);
 						return true;
 					}
+				}
+				#end
+
+				var lePath:String = Paths.getPath(path, TEXT);
+				if(Assets.exists(lePath))
+				{
+					FileSystem.deleteFile(lePath);
+					return true;
 				}
 			} catch (e:Dynamic) {
 				FunkinLua.luaTrace("deleteFile: Error trying to delete " + path + ": " + e, false, false, FlxColor.RED);

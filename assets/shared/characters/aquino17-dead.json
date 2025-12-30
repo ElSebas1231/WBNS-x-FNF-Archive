@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "death start0"
+		},
+		{
+			"offsets": [
+				-77,
+				-2
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "death idle0"
+		},
+		{
+			"offsets": [
+				-29,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "death confirm0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/aquinodlc/aquino17death",
+	"position": [
+		-170,
+		190
+	],
+	"healthicon": "aquino-dlc",
+	"flip_x": false,
+	"healthbar_colors": [
+		220,
+		76,
+		40
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.85,
+	"_editor_isPlayer": true
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fernan-saludo-dialogos.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="saludo aquino0000" x="2075" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0001" x="1245" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0002" x="415" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0003" x="0" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0004" x="830" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0005" x="1660" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0006" x="1660" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0007" x="830" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0008" x="830" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0009" x="1245" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0010" x="1245" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0011" x="1660" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0012" x="415" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0013" x="415" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0014" x="830" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0015" x="830" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0016" x="1245" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0017" x="1245" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0018" x="415" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0019" x="415" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0020" x="830" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0021" x="830" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0022" x="2075" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0023" x="2075" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0024" x="0" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0025" x="0" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0026" x="415" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0027" x="415" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0028" x="2075" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0029" x="2075" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0030" x="0" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0031" x="0" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0032" x="830" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0033" x="2075" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0034" x="2075" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0035" x="1245" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0036" x="1245" y="1746" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0037" x="1660" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0038" x="1660" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0039" x="830" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0040" x="830" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0041" x="830" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0042" x="830" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0043" x="2075" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0044" x="2075" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0045" x="0" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0046" x="0" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0047" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0048" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0049" x="2075" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0050" x="2075" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0051" x="0" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0052" x="0" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0053" x="2075" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0054" x="2075" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0055" x="0" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0056" x="0" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0057" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0058" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0059" x="2075" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0060" x="2075" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0061" x="0" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0062" x="0" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0063" x="2075" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0064" x="2075" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0065" x="0" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0066" x="0" y="1164" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0067" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0068" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0069" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0070" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0071" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="saludo aquino0072" x="415" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0000" x="1660" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0001" x="1660" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0002" x="0" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0003" x="0" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0004" x="1660" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0005" x="1660" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0006" x="1660" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0007" x="1660" y="0" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0008" x="0" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0009" x="0" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0010" x="415" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0011" x="415" y="291" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0012" x="415" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0013" x="415" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0014" x="1245" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0015" x="1245" y="582" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0016" x="1245" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0017" x="1245" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0018" x="1660" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0019" x="1660" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0020" x="1660" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0021" x="1660" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0022" x="1660" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0023" x="1660" y="1455" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0024" x="1245" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+	<SubTexture name="te void a descuartizar0025" x="1245" y="873" width="415" height="291" frameX="2" frameY="2" frameWidth="411" frameHeight="287"/>
+</TextureAtlas>

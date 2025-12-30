@@ -1,0 +1,6 @@
+Value 1: New tweening method (string)
+
+Leave it blank to use the default value.
+Default tween = quadOut
+============================================
+Note: Make sure you don't do any typo on the tween value.

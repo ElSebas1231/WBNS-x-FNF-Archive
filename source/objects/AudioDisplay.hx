@@ -92,7 +92,7 @@ class AudioDisplay extends FlxSpriteGroup
 			else
 				animFrame = Math.round(getValues[i].value * _height);
 
-			animFrame = Math.round((animFrame * FlxG.sound.volume) / 2);
+			if (!FlxG.sound.muted) animFrame = Math.round((animFrame * FlxG.sound.volume) / 2); else animFrame = 0;
 
 			if (horizontal) {
 				members[i].scale.x = FlxMath.lerp(animFrame, members[i].scale.x, Math.exp(-elapsed * 16));

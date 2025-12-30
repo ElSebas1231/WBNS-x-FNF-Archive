@@ -1,8 +1,11 @@
 package states.editors;
 
 import backend.WeekData;
+
 import objects.Character;
+
 import states.MainMenuState;
+import states.freeplay.FreeplayState;
 
 class MasterEditorMenu extends MusicBeatState
 {
@@ -30,7 +33,7 @@ class MasterEditorMenu extends MusicBeatState
 		DiscordClient.changePresence("Editors Main Menu", null);
 		#end
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('ui/menus/utils/bgMiscDesat'));
 		bg.scrollFactor.set();
 		bg.color = 0xFF353535;
 		add(bg);
@@ -68,7 +71,7 @@ class MasterEditorMenu extends MusicBeatState
 		#end
 		changeSelection();
 
-		FlxG.mouse.visible = false;
+		Cursor.hide();
 		super.create();
 	}
 
@@ -105,6 +108,10 @@ class MasterEditorMenu extends MusicBeatState
 					LoadingState.loadAndSwitchState(new ChartingState(), false);
 				case 'Character Editor':
 					LoadingState.loadAndSwitchState(new CharacterEditorState(Character.DEFAULT_CHARACTER, false));
+				case 'Week Editor':
+					MusicBeatState.switchState(new WeekEditorState());
+				case 'Menu Character Editor':
+					MusicBeatState.switchState(new MenuCharacterEditorState());
 				case 'Dialogue Editor':
 					LoadingState.loadAndSwitchState(new DialogueEditorState(), false);
 				case 'Dialogue Portrait Editor':

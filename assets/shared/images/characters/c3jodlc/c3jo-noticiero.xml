@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="c3jo-noticiero.png">
+	<!-- Created with Adobe Animate version 22.0.2.168 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="c3jo down0000" x="0" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0001" x="0" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0002" x="0" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0003" x="306" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0004" x="306" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0005" x="306" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0006" x="612" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0007" x="612" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0008" x="918" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0009" x="1224" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0010" x="1224" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0011" x="1224" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0012" x="1224" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0013" x="1224" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0014" x="1224" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down0015" x="1224" y="0" width="306" height="345"/>
+	<SubTexture name="c3jo down miss0000" x="1530" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0001" x="1530" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0002" x="1530" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0003" x="1835" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0004" x="1835" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0005" x="1835" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0006" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0007" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0008" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0009" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0010" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0011" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0012" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0013" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0014" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo down miss0015" x="2140" y="0" width="305" height="344"/>
+	<SubTexture name="c3jo idle0000" x="2445" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0001" x="2445" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0002" x="2445" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0003" x="2760" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0004" x="2760" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0005" x="3075" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0006" x="3075" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0007" x="3390" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0008" x="3390" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0009" x="3390" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0010" x="3705" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0011" x="3705" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0012" x="3705" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0013" x="3705" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0014" x="3705" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo idle0015" x="3705" y="0" width="315" height="393"/>
+	<SubTexture name="c3jo left0000" x="0" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0001" x="0" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0002" x="0" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0003" x="344" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0004" x="344" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0005" x="688" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0006" x="1032" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0007" x="1032" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0008" x="1376" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0009" x="1376" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0010" x="1720" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0011" x="2064" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0012" x="2064" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0013" x="2064" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0014" x="2064" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left0015" x="2064" y="393" width="344" height="342"/>
+	<SubTexture name="c3jo left miss0000" x="2408" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0001" x="2408" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0002" x="2408" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0003" x="2782" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0004" x="2782" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0005" x="3156" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0006" x="3156" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0007" x="3156" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0008" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0009" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0010" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0011" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0012" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0013" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0014" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo left miss0015" x="3530" y="393" width="374" height="341"/>
+	<SubTexture name="c3jo right0000" x="0" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0001" x="0" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0002" x="0" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0003" x="341" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0004" x="341" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0005" x="341" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0006" x="682" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0007" x="682" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0008" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0009" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0010" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0011" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0012" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0013" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0014" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right0015" x="1023" y="735" width="341" height="387"/>
+	<SubTexture name="c3jo right miss0000" x="1364" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0001" x="1364" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0002" x="1364" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0003" x="1676" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0004" x="1676" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0005" x="1676" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0006" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0007" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0008" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0009" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0010" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0011" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0012" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0013" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0014" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo right miss0015" x="1988" y="735" width="312" height="377"/>
+	<SubTexture name="c3jo up0000" x="2300" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0001" x="2300" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0002" x="2300" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0003" x="2689" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0004" x="2689" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0005" x="2689" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0006" x="3078" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0007" x="3078" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0008" x="3467" y="735" width="389" height="416"/>
+	<SubTexture name="c3jo up0009" x="0" y="1151" width="389" height="416"/>
+	<SubTexture name="c3jo up0010" x="0" y="1151" width="389" height="416"/>
+	<SubTexture name="c3jo up0011" x="389" y="1151" width="389" height="416"/>
+	<SubTexture name="c3jo up0012" x="389" y="1151" width="389" height="416"/>
+	<SubTexture name="c3jo up0013" x="389" y="1151" width="389" height="416"/>
+	<SubTexture name="c3jo up0014" x="389" y="1151" width="389" height="416"/>
+	<SubTexture name="c3jo up0015" x="389" y="1151" width="389" height="416"/>
+	<SubTexture name="c3jo up miss0000" x="778" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0001" x="778" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0002" x="778" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0003" x="1148" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0004" x="1148" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0005" x="1148" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0006" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0007" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0008" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0009" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0010" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0011" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0012" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0013" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0014" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="c3jo up miss0015" x="1518" y="1151" width="370" height="436"/>
+	<SubTexture name="death confirm0000" x="1888" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0001" x="1888" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0002" x="1888" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0003" x="2312" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0004" x="2312" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0005" x="2736" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0006" x="3160" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0007" x="3160" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0008" x="3584" y="1151" width="424" height="360"/>
+	<SubTexture name="death confirm0009" x="0" y="1587" width="424" height="360"/>
+	<SubTexture name="death confirm0010" x="424" y="1587" width="424" height="360"/>
+	<SubTexture name="death confirm0011" x="424" y="1587" width="424" height="360"/>
+	<SubTexture name="death confirm0012" x="848" y="1587" width="424" height="360"/>
+	<SubTexture name="death confirm0013" x="848" y="1587" width="424" height="360"/>
+	<SubTexture name="death confirm0014" x="848" y="1587" width="424" height="360"/>
+	<SubTexture name="death idle0000" x="1272" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0001" x="1272" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0002" x="1272" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0003" x="1650" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0004" x="1650" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0005" x="2028" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0006" x="2028" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0007" x="2406" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0008" x="2784" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0009" x="2784" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0010" x="2784" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0011" x="2784" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0012" x="2784" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0013" x="2784" y="1587" width="378" height="360"/>
+	<SubTexture name="death idle0014" x="2784" y="1587" width="378" height="360"/>
+	<SubTexture name="death start0000" x="3162" y="1587" width="407" height="396"/>
+	<SubTexture name="death start0001" x="3162" y="1587" width="407" height="396"/>
+	<SubTexture name="death start0002" x="3569" y="1587" width="407" height="396"/>
+	<SubTexture name="death start0003" x="3569" y="1587" width="407" height="396"/>
+	<SubTexture name="death start0004" x="0" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0005" x="407" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0006" x="814" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0007" x="1221" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0008" x="1628" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0009" x="2035" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0010" x="2442" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0011" x="2849" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0012" x="3256" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0013" x="3256" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0014" x="3663" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0015" x="3663" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0016" x="3663" y="1983" width="407" height="396"/>
+	<SubTexture name="death start0017" x="0" y="2379" width="407" height="396"/>
+	<SubTexture name="death start0018" x="0" y="2379" width="407" height="396"/>
+	<SubTexture name="death start0019" x="0" y="2379" width="407" height="396"/>
+	<SubTexture name="death start0020" x="407" y="2379" width="407" height="396"/>
+	<SubTexture name="death start0021" x="407" y="2379" width="407" height="396"/>
+</TextureAtlas>

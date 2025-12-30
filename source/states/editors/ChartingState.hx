@@ -38,6 +38,7 @@ import objects.AttachedSprite;
 import objects.Character;
 import substates.Prompt;
 
+import states.freeplay.FreeplaySections;
 
 #if sys
 import flash.media.Sound;
@@ -220,7 +221,7 @@ class ChartingState extends MusicBeatState
 
 		vortex = FlxG.save.data.chart_vortex;
 		ignoreWarnings = FlxG.save.data.ignoreWarnings;
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('ui/menus/utils/bgMiscDesat'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		bg.scrollFactor.set();
 		bg.color = 0xFF222222;
@@ -258,7 +259,7 @@ class ChartingState extends MusicBeatState
 		nextRenderedSustains = new FlxTypedGroup<FlxSprite>();
 		nextRenderedNotes = new FlxTypedGroup<Note>();
 
-		FlxG.mouse.visible = true;
+		Cursor.show();
 		//FlxG.save.bind('funkin', CoolUtil.getSavePath());
 
 		//addSection();
@@ -437,11 +438,15 @@ class ChartingState extends MusicBeatState
 		{
 
 			var songName:String = Paths.formatToSongPath(_song.song);
-			var file:String = Paths.json(songName + '/events');
-
-			if (FileSystem.exists(Paths.dlcsJson(songName + '/events')) || FileSystem.exists(file)) {
+			var file:String = Paths.json('${FreeplaySections.sectionSelected}/${songName}/events');
+			#if sys
+			if (#if MODS_ALLOWED FileSystem.exists(Paths.modsJson(songName + '/events')) || #end FileSystem.exists(file))
+			#else
+			if (OpenFlAssets.exists(file))
+			#end
+			{
 				clearEvents();
-				var events:SwagSong = Song.loadFromJson('events', songName);
+				var events:SwagSong = Song.loadFromJson('events', '${FreeplaySections.sectionSelected}/${songName}');
 				_song.events = events.events;
 				changeSection(curSec);
 			}
@@ -480,15 +485,23 @@ class ChartingState extends MusicBeatState
 		stepperSpeed.value = _song.speed;
 		stepperSpeed.name = 'song_speed';
 		blockPressWhileTypingOnStepper.push(stepperSpeed);
+		#if MODS_ALLOWED
+		var directories:Array<String> = [Paths.mods('characters/'), Paths.mods(Mods.currentModDirectory + '/characters/'), Paths.getSharedPath('characters/')];
+		for(mod in Mods.getGlobalMods())
+			directories.push(Paths.mods(mod + '/characters/'));
+		#else
+		var directories:Array<String> = [Paths.getSharedPath('characters/')];
+		#end
 
-		var directories:Array<String> = [Paths.dlcs('characters/'), Paths.dlcsFolders('characters/'), Paths.getSharedPath('characters/')];
 		var tempArray:Array<String> = [];
 		var characters:Array<String> = Mods.mergeAllTextsNamed('data/characterList.txt', Paths.getSharedPath());
-		
-		for (character in characters) {
-			if(character.trim().length > 0) tempArray.push(character);
+		for (character in characters)
+		{
+			if(character.trim().length > 0)
+				tempArray.push(character);
 		}
 
+		#if MODS_ALLOWED
 		for (i in 0...directories.length) {
 			var directory:String = directories[i];
 			if(FileSystem.exists(directory)) {
@@ -496,7 +509,7 @@ class ChartingState extends MusicBeatState
 					var path = haxe.io.Path.join([directory, file]);
 					if (!FileSystem.isDirectory(path) && file.endsWith('.json')) {
 						var charToCheck:String = file.substr(0, file.length - 5);
-						if (charToCheck.trim().length > 0 && (!charToCheck.endsWith('-dead') || !charToCheck.endsWith('-death')) && !tempArray.contains(charToCheck)) {
+						if(charToCheck.trim().length > 0 && !charToCheck.endsWith('-dead') && !tempArray.contains(charToCheck)) {
 							tempArray.push(charToCheck);
 							characters.push(charToCheck);
 						}
@@ -504,7 +517,7 @@ class ChartingState extends MusicBeatState
 				}
 			}
 		}
-
+		#end
 		tempArray = [];
 
 		var player1DropDown = new FlxUIDropDownMenu(10, stepperSpeed.y + 45, FlxUIDropDownMenu.makeStrIdLabelArray(characters, true), function(character:String)
@@ -534,7 +547,13 @@ class ChartingState extends MusicBeatState
 		player2DropDown.selectedLabel = _song.player2;
 		blockPressWhileScrolling.push(player2DropDown);
 
-		var directories:Array<String> = [Paths.dlcs('stages/'), Paths.dlcsFolders('stages/'), Paths.getSharedPath('stages/')];
+		#if MODS_ALLOWED
+		var directories:Array<String> = [Paths.mods('stages/'), Paths.mods(Mods.currentModDirectory + '/stages/'), Paths.getSharedPath('stages/')];
+		for(mod in Mods.getGlobalMods())
+			directories.push(Paths.mods(mod + '/stages/'));
+		#else
+		var directories:Array<String> = [Paths.getSharedPath('stages/')];
+		#end
 
 		var stageFile:Array<String> = Mods.mergeAllTextsNamed('data/stageList.txt', Paths.getSharedPath());
 		var stages:Array<String> = [];
@@ -544,7 +563,7 @@ class ChartingState extends MusicBeatState
 			}
 			tempArray.push(stage);
 		}
-
+		#if MODS_ALLOWED
 		for (i in 0...directories.length) {
 			var directory:String = directories[i];
 			if(FileSystem.exists(directory)) {
@@ -560,6 +579,7 @@ class ChartingState extends MusicBeatState
 				}
 			}
 		}
+		#end
 
 		if(stages.length < 1) stages.push('stage');
 
@@ -955,9 +975,12 @@ class ChartingState extends MusicBeatState
 		var eventPushedMap:Map<String, Bool> = new Map<String, Bool>();
 		var directories:Array<String> = [];
 
-		directories.push(Paths.dlcs('custom_events/'));
-		directories.push(Paths.dlcsFolders('custom_events/'));
-		directories.push(Paths.getSharedPath('custom_events/'));
+		#if MODS_ALLOWED
+		directories.push(Paths.mods('custom_events/'));
+		directories.push(Paths.mods(Mods.currentModDirectory + '/custom_events/'));
+		for(mod in Mods.getGlobalMods())
+			directories.push(Paths.mods(mod + '/custom_events/'));
+		#end
 
 		for (i in 0...directories.length) {
 			var directory:String =  directories[i];
@@ -1328,6 +1351,8 @@ class ChartingState extends MusicBeatState
 	var gameOverSoundInputText:FlxUIInputText;
 	var gameOverLoopInputText:FlxUIInputText;
 	var gameOverEndInputText:FlxUIInputText;
+	var songCharterInputText:FlxUIInputText;
+	var songComposerInputText:FlxUIInputText;
 	var noteSkinInputText:FlxUIInputText;
 	var noteSplashesInputText:FlxUIInputText;
 	function addDataUI()
@@ -1359,7 +1384,13 @@ class ChartingState extends MusicBeatState
 		};
 
 		//
-		noteSkinInputText = new FlxUIInputText(10, 280, 150, _song.arrowSkin != null ? _song.arrowSkin : '', 8);
+		songComposerInputText = new FlxUIInputText(10, 230, 150, _song.composer != null ? _song.composer : '', 8);
+		blockPressWhileTypingOn.push(songComposerInputText);
+
+		songCharterInputText = new FlxUIInputText(songComposerInputText.x, songComposerInputText.y + 35, 150, _song.charter != null ? _song.charter : '', 8);
+		blockPressWhileTypingOn.push(songCharterInputText);
+
+		noteSkinInputText = new FlxUIInputText(songCharterInputText.x, songCharterInputText.y + 35, 150, _song.arrowSkin != null ? _song.arrowSkin : '', 8);
 		blockPressWhileTypingOn.push(noteSkinInputText);
 
 		noteSplashesInputText = new FlxUIInputText(noteSkinInputText.x, noteSkinInputText.y + 35, 150, _song.splashSkin != null ? _song.splashSkin : '', 8);
@@ -1379,6 +1410,8 @@ class ChartingState extends MusicBeatState
 		tab_group_data.add(check_disableNoteRGB);
 		
 		tab_group_data.add(reloadNotesButton);
+		tab_group_data.add(songComposerInputText);
+		tab_group_data.add(songCharterInputText);
 		tab_group_data.add(noteSkinInputText);
 		tab_group_data.add(noteSplashesInputText);
 
@@ -1387,6 +1420,8 @@ class ChartingState extends MusicBeatState
 		tab_group_data.add(new FlxText(gameOverLoopInputText.x, gameOverLoopInputText.y - 15, 0, 'Game Over Loop Music (music/):'));
 		tab_group_data.add(new FlxText(gameOverEndInputText.x, gameOverEndInputText.y - 15, 0, 'Game Over Retry Music (music/):'));
 
+		tab_group_data.add(new FlxText(songComposerInputText.x, songComposerInputText.y - 15, 0, 'Song Composer:'));
+		tab_group_data.add(new FlxText(songCharterInputText.x, songCharterInputText.y - 15, 0, 'Song Charter:'));
 		tab_group_data.add(new FlxText(noteSkinInputText.x, noteSkinInputText.y - 15, 0, 'Note Texture:'));
 		tab_group_data.add(new FlxText(noteSplashesInputText.x, noteSplashesInputText.y - 15, 0, 'Note Splashes Texture:'));
 		UI_box.addGroup(tab_group_data);
@@ -1412,8 +1447,8 @@ class ChartingState extends MusicBeatState
 		opponentVocals = new FlxSound();
 		try
 		{
-			var playerVocals = Paths.voices(currentSongName, (characterData.vocalsP1 == null || characterData.vocalsP1.length < 1) ? 'Player' : characterData.vocalsP1);
-			vocals.loadEmbedded(playerVocals != null ? playerVocals : Paths.voices(currentSongName));
+			var playerVocals = Paths.voices('${FreeplaySections.sectionSelected}/${currentSongName}', (characterData.vocalsP1 == null || characterData.vocalsP1.length < 1) ? 'Player' : characterData.vocalsP1);
+			vocals.loadEmbedded(playerVocals != null ? playerVocals : Paths.voices('${FreeplaySections.sectionSelected}/${currentSongName}'));
 		}
 		vocals.autoDestroy = false;
 		FlxG.sound.list.add(vocals);
@@ -1421,7 +1456,7 @@ class ChartingState extends MusicBeatState
 		opponentVocals = new FlxSound();
 		try
 		{
-			var oppVocals = Paths.voices(currentSongName, (characterData.vocalsP2 == null || characterData.vocalsP2.length < 1) ? 'Opponent' : characterData.vocalsP2);
+			var oppVocals = Paths.voices('${FreeplaySections.sectionSelected}/${currentSongName}', (characterData.vocalsP2 == null || characterData.vocalsP2.length < 1) ? 'Opponent' : characterData.vocalsP2);
 			if(oppVocals != null) opponentVocals.loadEmbedded(oppVocals);
 		}
 		opponentVocals.autoDestroy = false;
@@ -1690,7 +1725,7 @@ class ChartingState extends MusicBeatState
 			strumLineNotes.members[i].y = strumLine.y;
 		}
 
-		FlxG.mouse.visible = true;//cause reasons. trust me
+		Cursor.show(); //cause reasons. trust me
 		camPos.y = strumLine.y;
 		if(!disableAutoScrolling.checked) {
 			if (Math.ceil(strumLine.y) >= gridBG.height)
@@ -1824,7 +1859,7 @@ class ChartingState extends MusicBeatState
 			else if (FlxG.keys.justPressed.ENTER)
 			{
 				autosaveSong();
-				FlxG.mouse.visible = false;
+				Cursor.hide();
 				PlayState.SONG = _song;
 				FlxG.sound.music.stop();
 				if(vocals != null) vocals.stop();
@@ -1853,7 +1888,7 @@ class ChartingState extends MusicBeatState
 				PlayState.chartingMode = false;
 				MusicBeatState.switchState(new states.editors.MasterEditorMenu());
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
-				FlxG.mouse.visible = false;
+				Cursor.hide();
 				return;
 			}
 
@@ -1965,6 +2000,8 @@ class ChartingState extends MusicBeatState
 						var fuck:Float = CoolUtil.quantize(beat, snap) + increase; //(Math.floor((beat+snap) / snap) * snap);
 						FlxG.sound.music.time = Conductor.beatToSeconds(fuck);
 					}
+
+					pauseAndSetVocalsTime();
 				}
 			}
 
@@ -2013,8 +2050,6 @@ class ChartingState extends MusicBeatState
 				if (FlxG.keys.justPressed.UP || FlxG.keys.justPressed.DOWN  )
 				{
 					FlxG.sound.music.pause();
-
-
 					updateCurStep();
 					//FlxG.sound.music.time = (Math.round(curStep/quants[curQuant])*quants[curQuant]) * Conductor.stepCrochet;
 
@@ -2632,17 +2667,27 @@ class ChartingState extends MusicBeatState
 	function loadCharacterFile(char:String):CharacterFile {
 		characterFailed = false;
 		var characterPath:String = 'characters/' + char + '.json';
-		var path:String = Paths.dlcsFolders(characterPath);
+		#if MODS_ALLOWED
+		var path:String = Paths.modFolders(characterPath);
 		if (!FileSystem.exists(path)) {
 			path = Paths.getSharedPath(characterPath);
 		}
 
-		if (!FileSystem.exists(path)) {
+		if (!FileSystem.exists(path))
+		#else
+		var path:String = Paths.getSharedPath(characterPath);
+		if (!OpenFlAssets.exists(path))
+		#end
+		{
 			path = Paths.getSharedPath('characters/' + Character.DEFAULT_CHARACTER + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
 			characterFailed = true;
 		}
 
+		#if MODS_ALLOWED
 		var rawJson = File.getContent(path);
+		#else
+		var rawJson = OpenFlAssets.getText(path);
+		#end
 		return cast Json.parse(rawJson);
 	}
 
@@ -3070,12 +3115,12 @@ class ChartingState extends MusicBeatState
 		try {
 			if (Difficulty.getString() != Difficulty.getDefault()) {
 				if(Difficulty.getString() == null){
-					PlayState.SONG = Song.loadFromJson(song.toLowerCase(), song.toLowerCase());
+					PlayState.SONG = Song.loadFromJson(song.toLowerCase(), '${FreeplaySections.sectionSelected}/${song.toLowerCase()}');
 				}else{
-					PlayState.SONG = Song.loadFromJson(song.toLowerCase() + "-" + Difficulty.getString(), song.toLowerCase());
+					PlayState.SONG = Song.loadFromJson(song.toLowerCase() + "-" + Difficulty.getString(), '${FreeplaySections.sectionSelected}/${song.toLowerCase()}');
 				}
 			}
-			else PlayState.SONG = Song.loadFromJson(song.toLowerCase(), song.toLowerCase());
+			else PlayState.SONG = Song.loadFromJson(song.toLowerCase(), '${FreeplaySections.sectionSelected}/${song.toLowerCase()}');
 			MusicBeatState.resetState();
 		}
 		catch(e)

@@ -1,0 +1,168 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-61,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "IDLE",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-56,
+				-10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-69,
+				-20
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-100,
+				55
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-97,
+				29
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-48,
+				-1
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "ALT_LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-68,
+				-27
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "ALT_DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-100,
+				6
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "ALT_UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-96,
+				-12
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "ALT_RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-44,
+				21
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "LEFT_MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-56,
+				-30
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "DOWN_MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-107,
+				79
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "UP_MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-95,
+				53
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "RIGHT_MISS",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/c3jodlc/c3joBF",
+	"position": [
+		-70,
+		310
+	],
+	"healthicon": "c3jo-dlc",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		110,
+		0
+	],
+	"camera_position": [
+		100,
+		-100
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

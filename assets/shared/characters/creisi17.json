@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "creisi idle0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				57,
+				-25
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "creisi right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-29,
+				-13
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "creisi el down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				52
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "creisi up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-60,
+				-17
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "left creisi0",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/aquinodlc/creisi",
+	"position": [
+		-20,
+		160
+	],
+	"healthicon": "creisi-dlc",
+	"flip_x": true,
+	"healthbar_colors": [
+		90,
+		43,
+		187
+	],
+	"camera_position": [
+		100,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.9,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,866 @@
+{
+	"song": {
+		"events": [
+			[
+				32343.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				33281.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				34218.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				35156.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				36093.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				37031.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				37968.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				38906.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				39843.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				40781.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				41718.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				42656.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				43593.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				44531.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				45468.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				46406.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.4",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				46875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				47343.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				47812.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				48281.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				48750,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				49218.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				49687.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				50156.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				50625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				51093.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				51562.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				52031.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				52500,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				52968.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				53437.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				53906.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				54375,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				54843.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				55312.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				55781.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				56250,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				56718.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				57187.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				57656.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				58125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				58593.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				59062.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				59531.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				60468.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				60937.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				61406.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				77226.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				77578.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				78046.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				78281.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				79101.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				79453.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				79921.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				80156.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				80976.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				81328.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				81796.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				82031.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				82851.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				83203.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				83671.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				83906.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				84726.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				85078.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				85546.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				85781.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				86601.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				86953.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				87421.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				87656.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				88476.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				88828.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				89296.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				89531.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				90351.5625,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				90703.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				91171.875,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				138750,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				139218.75,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				139453.125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				139570.3125,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				139687.5,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, 39ce40"
+					]
+				]
+			],
+			[
+				140156.25,
+				[
+					[
+						"roval_luz",
+						"0.3, 0.2",
+						"normal, linear, ffffff"
+					]
+				]
+			],
+			[
+				142558.59375,
+				[
+					[
+						"roval_luz",
+						"1, 0.1",
+						"normal, linear, 39ce40"
+					]
+				]
+			]
+		]
+	}
+}

@@ -1,0 +1,146 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-91,
+				-37
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-117,
+				-47
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-99,
+				-10
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-112,
+				-34
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-87,
+				-33
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-223,
+				-34
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle-statico",
+			"indices": [],
+			"name": "statico"
+		},
+		{
+			"offsets": [
+				-88,
+				-44
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "Que",
+			"indices": [],
+			"name": "que"
+		},
+		{
+			"offsets": [
+				-77,
+				-27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "Fan",
+			"indices": [],
+			"name": "soy tu fan"
+		},
+		{
+			"offsets": [
+				-110,
+				-25
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "WHAT",
+			"indices": [],
+			"name": "what"
+		},
+		{
+			"offsets": [
+				-220,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "pero",
+			"indices": [],
+			"name": "pero fernan"
+		},
+		{
+			"offsets": [
+				-223,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "doxeo",
+			"indices": [],
+			"name": "me a doxeado"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/aquinodlc/aquino-saludo, characters/aquinodlc/aquino-saludo-dialogos",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "icon-aquino-dlc",
+	"flip_x": true,
+	"healthbar_colors": [
+		220,
+		76,
+		40
+	],
+	"camera_position": [
+		0,
+		-135
+	],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": true
+}

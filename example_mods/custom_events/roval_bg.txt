@@ -1,0 +1,9 @@
+Value1: Tiempo,Opacidad
+Value2: Modo,Ease,Color(HEX)
+(Simple - Modo Normal/Color) Value2: Color(HEX)
+Modos: Normal (Ajusta opacidad del sprite)
+Color (Cambias el color al bg ya existente)
+Flash (Funciona como flash)
+Predeterminado: Tiempo: 0.25
+Opacidad: 0.7           Modo: Normal
+Ease: Linear              Color: 000000 (Negro)

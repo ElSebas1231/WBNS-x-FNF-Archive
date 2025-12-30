@@ -1,0 +1,356 @@
+{
+	"song": {
+		"events": [
+			[
+				50526.3157894737,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.001, cubeout"
+					]
+				]
+			],
+			[
+				51052.6315789473,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.2, cubeout"
+					]
+				]
+			],
+			[
+				58947.3684210526,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.2, 0.001, cubeout"
+					]
+				]
+			],
+			[
+				59473.6842105263,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.2, cubeout"
+					]
+				]
+			],
+			[
+				67368.4210526315,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.001, cubeout"
+					]
+				]
+			],
+			[
+				67894.7368421052,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.2, cubeout"
+					]
+				]
+			],
+			[
+				94736.842105263,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				103157.894736842,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				107368.421052631,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				108947.368421052,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				109210.526315789,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				109473.684210526,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				111578.947368421,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				113947.368421052,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				114210.526315789,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				114736.842105263,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				115263.157894737,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				115526.315789474,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				115789.47368421,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				118947.368421052,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				119473.684210526,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				120000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				122368.421052631,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				122631.578947368,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				123157.894736842,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				123684.210526316,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				123947.368421052,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				124210.526315789,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				127368.421052631,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				127894.736842105,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				128421.052631579,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				130526.315789474,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				135789.47368421,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				136315.789473684,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"1.1, 0.3, expoout"
+					]
+				]
+			],
+			[
+				136842.105263158,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, cubeinout"
+					]
+				]
+			]
+		]
+	}
+}

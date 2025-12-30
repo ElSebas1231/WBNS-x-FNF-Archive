@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="aquino-saludo-dialogos.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="me a doxeado0000" x="2835" y="963" width="397" height="480" frameX="2" frameY="-1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0001" x="2835" y="963" width="397" height="480" frameX="2" frameY="-1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0002" x="2437" y="1448" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0003" x="2437" y="1448" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0004" x="2835" y="0" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0005" x="2835" y="0" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0006" x="2437" y="965" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0007" x="2437" y="965" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0008" x="2437" y="482" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0009" x="2437" y="482" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0010" x="2835" y="963" width="397" height="480" frameX="2" frameY="-1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0011" x="2835" y="963" width="397" height="480" frameX="2" frameY="-1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0012" x="2437" y="1448" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0013" x="2437" y="1448" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0014" x="2835" y="0" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0015" x="2835" y="0" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0016" x="2437" y="965" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0017" x="2437" y="965" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0018" x="2437" y="482" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0019" x="2437" y="482" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0020" x="2835" y="963" width="397" height="480" frameX="2" frameY="-1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0021" x="2835" y="963" width="397" height="480" frameX="2" frameY="-1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0022" x="2437" y="1448" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0023" x="2437" y="1448" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0024" x="2835" y="0" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0025" x="2835" y="0" width="397" height="482" frameX="2" frameY="1" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0026" x="2437" y="965" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0027" x="2437" y="965" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0028" x="2437" y="482" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="me a doxeado0029" x="2437" y="482" width="397" height="483" frameX="2" frameY="2" frameWidth="393" frameHeight="479"/>
+	<SubTexture name="pero fernan0000" x="3630" y="930" width="398" height="464" frameX="1" frameY="-17" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0001" x="3630" y="930" width="398" height="464" frameX="1" frameY="-17" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0002" x="3184" y="2865" width="398" height="465" frameX="1" frameY="-16" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0003" x="3184" y="2865" width="398" height="465" frameX="1" frameY="-16" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0004" x="2786" y="2865" width="398" height="466" frameX="1" frameY="-15" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0005" x="2388" y="2865" width="398" height="466" frameX="1" frameY="-15" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0006" x="1990" y="2865" width="398" height="467" frameX="1" frameY="-14" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0007" x="1990" y="2865" width="398" height="467" frameX="1" frameY="-14" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0008" x="1194" y="2865" width="398" height="468" frameX="1" frameY="-13" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0009" x="1194" y="2865" width="398" height="468" frameX="1" frameY="-13" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0010" x="398" y="2865" width="398" height="469" frameX="1" frameY="-12" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0011" x="398" y="2865" width="398" height="469" frameX="1" frameY="-12" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0012" x="398" y="2865" width="398" height="469" frameX="1" frameY="-12" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0013" x="398" y="2865" width="398" height="469" frameX="1" frameY="-12" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0014" x="3630" y="0" width="398" height="465" frameX="1" frameY="-16" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0015" x="3630" y="0" width="398" height="465" frameX="1" frameY="-16" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0016" x="2786" y="2385" width="398" height="475" frameX="1" frameY="-6" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0017" x="2786" y="2385" width="398" height="475" frameX="1" frameY="-6" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0018" x="796" y="2385" width="398" height="479" frameX="1" frameY="-2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0019" x="796" y="2385" width="398" height="479" frameX="1" frameY="-2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0020" x="3232" y="475" width="398" height="473" frameX="1" frameY="-8" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0021" x="3232" y="475" width="398" height="473" frameX="1" frameY="-8" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0022" x="3232" y="1893" width="398" height="471" frameX="1" frameY="-10" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0023" x="3232" y="1893" width="398" height="471" frameX="1" frameY="-10" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0024" x="3232" y="1421" width="398" height="472" frameX="1" frameY="-9" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0025" x="3232" y="1421" width="398" height="472" frameX="1" frameY="-9" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0026" x="3232" y="1421" width="398" height="472" frameX="1" frameY="-9" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0027" x="1592" y="2865" width="398" height="468" frameX="1" frameY="-13" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0028" x="1592" y="2865" width="398" height="468" frameX="1" frameY="-13" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0029" x="1592" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0030" x="1592" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0031" x="1592" y="2385" width="398" height="478" frameX="1" frameY="-3" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0032" x="1592" y="2385" width="398" height="478" frameX="1" frameY="-3" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0033" x="3232" y="948" width="398" height="473" frameX="1" frameY="-8" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0034" x="3232" y="948" width="398" height="473" frameX="1" frameY="-8" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0035" x="796" y="2865" width="398" height="469" frameX="1" frameY="-12" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0036" x="796" y="2865" width="398" height="469" frameX="1" frameY="-12" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0037" x="398" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0038" x="398" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0039" x="1990" y="2385" width="398" height="478" frameX="1" frameY="-3" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0040" x="1990" y="2385" width="398" height="478" frameX="1" frameY="-3" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0041" x="3630" y="465" width="398" height="465" frameX="1" frameY="-16" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0042" x="3630" y="465" width="398" height="465" frameX="1" frameY="-16" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0043" x="3232" y="2364" width="398" height="471" frameX="1" frameY="-10" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0044" x="3232" y="2364" width="398" height="471" frameX="1" frameY="-10" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0045" x="1194" y="2385" width="398" height="479" frameX="1" frameY="-2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0046" x="1194" y="2385" width="398" height="479" frameX="1" frameY="-2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0047" x="1194" y="2385" width="398" height="479" frameX="1" frameY="-2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0048" x="2388" y="2385" width="398" height="478" frameX="1" frameY="-3" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0049" x="2388" y="2385" width="398" height="478" frameX="1" frameY="-3" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0050" x="0" y="2385" width="398" height="480" frameX="1" frameY="-1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0051" x="0" y="2385" width="398" height="480" frameX="1" frameY="-1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0052" x="1990" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0053" x="1990" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0054" x="2437" y="0" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0055" x="2437" y="0" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0056" x="1194" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0057" x="1194" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0058" x="0" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0059" x="0" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0060" x="0" y="2385" width="398" height="480" frameX="1" frameY="-1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0061" x="0" y="2385" width="398" height="480" frameX="1" frameY="-1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0062" x="1990" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0063" x="1990" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0064" x="2437" y="0" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0065" x="2437" y="0" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0066" x="1194" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0067" x="1194" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0068" x="0" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0069" x="0" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0070" x="0" y="2385" width="398" height="480" frameX="1" frameY="-1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0071" x="0" y="2385" width="398" height="480" frameX="1" frameY="-1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0072" x="1990" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0073" x="1990" y="1902" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0074" x="2437" y="0" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0075" x="2437" y="0" width="398" height="482" frameX="1" frameY="1" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0076" x="1194" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0077" x="1194" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0078" x="0" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0079" x="0" y="1902" width="398" height="483" frameX="1" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0080" x="1549" y="959" width="399" height="483" frameX="2" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="pero fernan0081" x="1549" y="959" width="399" height="483" frameX="2" frameY="2" frameWidth="395" frameHeight="479"/>
+	<SubTexture name="que0000" x="0" y="1447" width="509" height="455" frameX="-2" frameY="-16" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0001" x="0" y="1447" width="509" height="455" frameX="-2" frameY="-16" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0002" x="1017" y="974" width="508" height="459" frameX="1" frameY="-12" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0003" x="1017" y="974" width="508" height="459" frameX="1" frameY="-12" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0004" x="508" y="974" width="509" height="465" frameX="2" frameY="-6" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0005" x="508" y="974" width="509" height="465" frameX="2" frameY="-6" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0006" x="508" y="974" width="509" height="465" frameX="2" frameY="-6" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0007" x="508" y="974" width="509" height="465" frameX="2" frameY="-6" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0008" x="508" y="974" width="509" height="465" frameX="2" frameY="-6" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0009" x="508" y="974" width="509" height="465" frameX="2" frameY="-6" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0010" x="508" y="974" width="509" height="465" frameX="2" frameY="-6" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0011" x="0" y="974" width="508" height="473" frameX="1" frameY="2" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="que0012" x="0" y="974" width="508" height="473" frameX="1" frameY="2" frameWidth="509" frameHeight="469"/>
+	<SubTexture name="soy tu fan0000" x="1035" y="480" width="499" height="487" frameX="-17" frameY="2" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0001" x="1035" y="480" width="499" height="487" frameX="-17" frameY="2" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0002" x="0" y="487" width="512" height="487" frameX="-4" frameY="2" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0003" x="0" y="487" width="512" height="487" frameX="-4" frameY="2" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0004" x="0" y="0" width="517" height="487" frameX="1" frameY="2" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0005" x="0" y="0" width="517" height="487" frameX="1" frameY="2" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0006" x="512" y="487" width="513" height="484" frameX="-3" frameY="-1" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0007" x="512" y="487" width="513" height="484" frameX="-3" frameY="-1" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0008" x="517" y="0" width="518" height="482" frameX="2" frameY="-3" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0009" x="517" y="0" width="518" height="482" frameX="2" frameY="-3" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0010" x="517" y="0" width="518" height="482" frameX="2" frameY="-3" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0011" x="1035" y="0" width="514" height="480" frameX="-2" frameY="-5" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="soy tu fan0012" x="1035" y="0" width="514" height="480" frameX="-2" frameY="-5" frameWidth="515" frameHeight="483"/>
+	<SubTexture name="statico0000" x="2835" y="1443" width="397" height="480" frameX="2" frameY="2" frameWidth="393" frameHeight="477"/>
+	<SubTexture name="statico0001" x="2835" y="1443" width="397" height="480" frameX="2" frameY="2" frameWidth="393" frameHeight="477"/>
+	<SubTexture name="statico0002" x="2835" y="1443" width="397" height="480" frameX="2" frameY="2" frameWidth="393" frameHeight="477"/>
+	<SubTexture name="statico0003" x="2835" y="482" width="397" height="481" frameX="2" frameY="2" frameWidth="393" frameHeight="477"/>
+	<SubTexture name="statico0004" x="2835" y="482" width="397" height="481" frameX="2" frameY="2" frameWidth="393" frameHeight="477"/>
+	<SubTexture name="statico0005" x="2835" y="482" width="397" height="481" frameX="2" frameY="2" frameWidth="393" frameHeight="477"/>
+	<SubTexture name="what0000" x="3232" y="0" width="398" height="475" frameX="-90" frameY="-12" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0001" x="3232" y="0" width="398" height="475" frameX="-90" frameY="-12" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0002" x="0" y="2865" width="398" height="469" frameX="-90" frameY="-18" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0003" x="0" y="2865" width="398" height="469" frameX="-90" frameY="-18" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0004" x="2039" y="0" width="398" height="489" frameX="-90" frameY="2" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0005" x="2039" y="0" width="398" height="489" frameX="-90" frameY="2" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0006" x="2039" y="976" width="398" height="487" frameX="-90" frameY="0" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0007" x="2039" y="489" width="398" height="487" frameX="-90" frameY="0" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0008" x="796" y="1902" width="398" height="483" frameX="-90" frameY="-4" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0009" x="796" y="1902" width="398" height="483" frameX="-90" frameY="-4" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0010" x="796" y="1902" width="398" height="483" frameX="-90" frameY="-4" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0011" x="398" y="2385" width="398" height="480" frameX="-90" frameY="-7" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0012" x="398" y="2385" width="398" height="480" frameX="-90" frameY="-7" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0013" x="1549" y="482" width="414" height="477" frameX="-74" frameY="-10" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0014" x="1549" y="482" width="414" height="477" frameX="-74" frameY="-10" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0015" x="1549" y="0" width="490" height="482" frameX="2" frameY="-5" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0016" x="1549" y="0" width="490" height="482" frameX="2" frameY="-5" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0017" x="1549" y="0" width="490" height="482" frameX="2" frameY="-5" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0018" x="1549" y="0" width="490" height="482" frameX="2" frameY="-5" frameWidth="486" frameHeight="485"/>
+	<SubTexture name="what0019" x="1549" y="0" width="490" height="482" frameX="2" frameY="-5" frameWidth="486" frameHeight="485"/>
+</TextureAtlas>

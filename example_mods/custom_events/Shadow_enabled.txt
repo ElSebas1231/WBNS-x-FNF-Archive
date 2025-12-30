@@ -1,0 +1,7 @@
+Value 1: Character to edit the shadow (dad, boyfriend)
+Value 2: Boolean (Default  = false)
+
+If you want to turn on the shadow of a character, 
+fill the Value 2 with "true", or if you want to 
+turn it off, fill the Value 2 with "false" instead or just
+leave it blank.

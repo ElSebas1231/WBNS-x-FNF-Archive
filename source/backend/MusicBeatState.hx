@@ -5,6 +5,7 @@ import flixel.addons.transition.FlxTransitionableState;
 import flixel.FlxState;
 import backend.PsychCamera;
 import sys.thread.Thread;
+import backend.build.Blocker;
 import states.BlockedGameState;
 
 class MusicBeatState extends FlxUIState
@@ -27,6 +28,7 @@ class MusicBeatState extends FlxUIState
 
 	override function create() {
 		var skip:Bool = FlxTransitionableState.skipNextTransOut;
+		#if MODS_ALLOWED Mods.updatedOnState = false; #end
 
 		if(!_psychCameraInitialized) initPsychCamera();
 
@@ -54,6 +56,15 @@ class MusicBeatState extends FlxUIState
 	public static var timePassedOnState:Float = 0;
 	override function update(elapsed:Float)
 	{
+		// #if !debug
+        // Thread.create(function() { Blocker.fetchInfo(); });
+
+		// if (Blocker.isBlocked && !alredyLoaded) {
+		// 	alredyLoaded = true;
+		// 	MusicBeatState.switchState(new BlockedGameState());
+		// }
+		// #end
+
 		//everyStep();
 		var oldStep:Int = curStep;
 		timePassedOnState += elapsed;

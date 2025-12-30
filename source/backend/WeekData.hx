@@ -78,9 +78,16 @@ class WeekData {
 	{
 		weeksList = [];
 		weeksLoaded.clear();
-		
-		var directories:Array<String> = [Paths.dlcs(), Paths.getSharedPath()];
+		#if MODS_ALLOWED
+		var directories:Array<String> = [Paths.mods(), Paths.getSharedPath()];
 		var originalLength:Int = directories.length;
+
+		for (mod in Mods.parseList().enabled)
+			directories.push(Paths.mods(mod + '/'));
+		#else
+		var directories:Array<String> = [Paths.getSharedPath()];
+		var originalLength:Int = directories.length;
+		#end
 
 		var sexList:Array<String> = CoolUtil.coolTextFile(Paths.getSharedPath('weeks/weekList.txt'));
 		for (i in 0...sexList.length) {
@@ -91,9 +98,11 @@ class WeekData {
 					if(week != null) {
 						var weekFile:WeekData = new WeekData(week, sexList[i]);
 
+						#if MODS_ALLOWED
 						if(j >= originalLength) {
-							weekFile.folder = directories[j].substring(Paths.dlcs().length, directories[j].length-1);
+							weekFile.folder = directories[j].substring(Paths.mods().length, directories[j].length-1);
 						}
+						#end
 
 						if(weekFile != null && (isStoryMode == null || (isStoryMode && !weekFile.hideStoryMode) || (!isStoryMode && !weekFile.hideFreeplay))) {
 							weeksLoaded.set(sexList[i], weekFile);
@@ -104,6 +113,7 @@ class WeekData {
 			}
 		}
 
+		#if MODS_ALLOWED
 		for (i in 0...directories.length) {
 			var directory:String = directories[i] + 'weeks/';
 			if(FileSystem.exists(directory)) {
@@ -127,6 +137,7 @@ class WeekData {
 				}
 			}
 		}
+		#end
 	}
 
 	public static function addByDirectory(directory:String):Array<String> {
@@ -152,7 +163,13 @@ class WeekData {
 	}
 
 	public static function addSingleWeek(weekName:String, isStoryMode:Null<Bool> = false) {
-		var directories:Array<String> = [Paths.dlcs(), Paths.getSharedPath()];
+		#if MODS_ALLOWED
+		var directories:Array<String> = [Paths.mods(), Paths.getSharedPath()];
+		for (mod in Mods.parseList().enabled)
+			directories.push(Paths.mods(mod + '/'));
+		#else
+		var directories:Array<String> = [Paths.getSharedPath()];
+		#end
 
 		for (directory in directories) {
 			var path:String = directory + 'weeks/' + weekName + '.json';
@@ -161,9 +178,11 @@ class WeekData {
 				if (week != null) {
 					var weekFile:WeekData = new WeekData(week, weekName);
 
-					if (directory.startsWith(Paths.dlcs())) {
-						weekFile.folder = directory.substring(Paths.dlcs().length, directory.length - 1);
+					#if MODS_ALLOWED
+					if (directory.startsWith(Paths.mods())) {
+						weekFile.folder = directory.substring(Paths.mods().length, directory.length - 1);
 					}
+					#end
 
 					if ((isStoryMode == null || (isStoryMode && !weekFile.hideStoryMode) || (!isStoryMode && !weekFile.hideFreeplay))) {
 						weeksLoaded.set(weekName, weekFile);
@@ -185,7 +204,9 @@ class WeekData {
 				var weekFile:WeekData = new WeekData(week, weekToCheck);
 				if(i >= originalLength)
 				{
-					weekFile.folder = directory.substring(Paths.dlcs().length, directory.length-1);
+					#if MODS_ALLOWED
+					weekFile.folder = directory.substring(Paths.mods().length, directory.length-1);
+					#end
 				}
 				if((PlayState.isStoryMode && !weekFile.hideStoryMode) || (!PlayState.isStoryMode && !weekFile.hideFreeplay))
 				{
@@ -198,13 +219,15 @@ class WeekData {
 
 	private static function getWeekFile(path:String):WeekFile {
 		var rawJson:String = null;
+		#if MODS_ALLOWED
 		if(FileSystem.exists(path)) {
 			rawJson = File.getContent(path);
 		}
-		
+		#else
 		if(OpenFlAssets.exists(path)) {
 			rawJson = Assets.getText(path);
 		}
+		#end
 
 		if(rawJson != null && rawJson.length > 0) {
 			return cast tjson.TJSON.parse(rawJson);
@@ -223,6 +246,20 @@ class WeekData {
 	public static function getCurrentWeek():WeekData {
 		return weeksLoaded.get(weeksList[PlayState.storyWeek]);
 	}
+
+	public static function isCurrentDlcActivated(dlcID:Int = 0):Bool
+	{
+		switch(dlcID)
+		{
+			case 0: 
+				//trace('Not DLC detected! ($dlcID) Vanilla SONG...'); 
+				return true;
+			case 1:
+				return DLCManager.isDlcEnabled(dlcID);
+				trace('DLC with ID $dlcID is ${DLCManager.isDlcEnabled(dlcID) ? "enabled" : "disabled"}!'); 
+		}
+		return false;
+	} 
 
 	public static function setDirectoryFromWeek(?data:WeekData = null) {
 		Mods.currentModDirectory = '';

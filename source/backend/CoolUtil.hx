@@ -19,7 +19,7 @@ class CoolUtil
 	inline public static function coolTextFile(path:String):Array<String>
 	{
 		var daList:String = null;
-		#if sys
+		#if (sys && MODS_ALLOWED)
 		var formatted:Array<String> = path.split(':'); //prevent "shared:", "preload:" and other library names on file path
 		path = formatted[formatted.length-1];
 		if(FileSystem.exists(path)) daList = File.getContent(path);
@@ -49,6 +49,10 @@ class CoolUtil
 			daList[i] = daList[i].trim();
 
 		return daList;
+	}
+
+	inline public static function boundTo(value:Float, min:Float, max:Float):Float {
+		return Math.max(min, Math.min(max, value));
 	}
 
 	public static function floorDecimal(value:Float, decimals:Int):Float

@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="boton.png">
-<SubTexture name="boton idle0000" x="0" y="0" width="60" height="75" frameX="-727" frameY="-30" frameWidth="1280" frameHeight="720" />
-<SubTexture name="boton idle0001" x="60" y="0" width="51" height="63" frameX="-732" frameY="-36" frameWidth="1280" frameHeight="720" />
-</TextureAtlas>

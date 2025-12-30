@@ -4,7 +4,7 @@ import backend.Highscore;
 import flixel.addons.transition.FlxTransitionableState;
 import substates.StickerSubState;
 import states.freeplay.FreeplayState;
-import backend.funkin.FunkinTools;
+import backend.FunkinTools;
 import backend.Scoring;
 import backend.PsychCamera;
 import backend.animation.FlxAtlasSprite;
@@ -31,7 +31,7 @@ import shaders.ColorGradientShader;
 
 import flixel.util.FlxGradient;
 import flixel.util.FlxTimer;
-using backend.funkin.FunkinTools;
+using backend.FunkinTools;
 
 /**
  * The state for the results screen after a song or week is finished.
@@ -69,6 +69,7 @@ class ResultState extends MusicBeatSubstate
 
 	var exiting:Bool = false;
 	var shownRank:Bool = false;
+	var charGoToX:Float = 0;
 
 	public function new(params:ResultsStateParams)
 	{
@@ -76,7 +77,7 @@ class ResultState extends MusicBeatSubstate
 
 		this.params = params;
 
-		resultingAccuracy = Math.min(1, (params.scoreData.sick + params.scoreData.good) / params.scoreData.totalNotesHit); 
+		resultingAccuracy = Math.min(1, (params.scoreData.sick + params.scoreData.good - params.scoreData.missed) / params.scoreData.totalNotesHit); 
 		if (params.scoreData.totalNotesHit == 0) resultingAccuracy = 0;
 
 		rank = Scoring.calculateRankFromData(params.scoreData.score, resultingAccuracy) ?? SHIT;
@@ -131,8 +132,8 @@ class ResultState extends MusicBeatSubstate
 
 		cameraScroll.angle = -3.8;
 
-		cameraBG.bgColor = FlxColor.BLACK;
-		cameraScroll.bgColor = FlxColor.TRANSPARENT;
+		cameraBG.bgColor = FlxColor.fromString('#FDC05C');
+		cameraScroll.bgColor = FlxColor.fromString('#FDC05C');
 		cameraEverything.bgColor = FlxColor.TRANSPARENT;
 		cameraOverlay.bgColor = FlxColor.TRANSPARENT;
 
@@ -147,7 +148,7 @@ class ResultState extends MusicBeatSubstate
 		// Reset the camera zoom on the results screen.
 		FlxG.camera.zoom = 1.0;
 
-		var bg:FlxSprite = FlxGradient.createGradientFlxSprite(FlxG.width, FlxG.height, [0xFFFECC5C, 0xFFFDC05C], 90);
+		var bg:FlxSprite = FlxGradient.createGradientFlxSprite(FlxG.width*2, FlxG.height*2, [0xFFFECC5C, 0xFFFDC05C], 90);
 		bg.scrollFactor.set();
 		bg.cameras = [cameraBG];
 		add(bg);
@@ -157,15 +158,32 @@ class ResultState extends MusicBeatSubstate
 		add(bgFlash);
 
 		resultsCharacter = new FlxSprite(0,0);
-		resultsCharacter.frames = Paths.getSparrowAtlas('ui/menus/resultScreen/results_${FreeplayState.freeplayCharacter}');
-		resultsCharacter.scale.set(0.75, 0.75);
-		resultsCharacter.updateHitbox();
-		resultsCharacter.animation.addByPrefix('win', '${FreeplayState.freeplayCharacter} resuts animations win0', 12, false);
-		resultsCharacter.animation.addByPrefix('idle', '${FreeplayState.freeplayCharacter} resuts animations idle0', 12, true);
-		resultsCharacter.animation.addByPrefix('lose', '${FreeplayState.freeplayCharacter} resuts animations lose0', 12, false);
-		resultsCharacter.animation.addByPrefix('idlelose', '${FreeplayState.freeplayCharacter} resuts animations idlelose0', 12, true);
-		resultsCharacter.x = 1100;
-		resultsCharacter.y = 30;
+		resultsCharacter.frames = Paths.getMultiAtlas([
+			'ui/menus/resultScreen/results/${FreeplayState.freeplayCharacter}_results-win',
+			'ui/menus/resultScreen/results/${FreeplayState.freeplayCharacter}_results-lose'
+		]);
+		switch (FreeplayState.freeplayCharacter) {
+			case 'aquino':
+				resultsCharacter.animation.addByPrefix('win', 'result screen win animation', 12, false);
+				resultsCharacter.animation.addByPrefix('lose', 'result screen lose animation', 12, true);
+				resultsCharacter.animation.addByPrefix('idle', 'result screen win idle', 12, true);
+				resultsCharacter.scale.set(0.5, 0.5);
+				resultsCharacter.updateHitbox();
+				resultsCharacter.animation.play('idle', true);
+				resultsCharacter.x = 1100;
+				resultsCharacter.y = 120;
+				charGoToX = 580; // used in the tween in
+			case 'c3jo':
+				resultsCharacter.animation.addByPrefix('win', 'result screen win animation0', 12, false);
+				resultsCharacter.animation.addByPrefix('idle', 'result screen win idle0', 12, true);
+				resultsCharacter.animation.addByPrefix('lose', 'result screen lose animation0', 12, false);
+				resultsCharacter.animation.addByPrefix('lose idle', 'result screen lose idle0', 12, true);
+				resultsCharacter.scale.set(0.75, 0.75);
+				resultsCharacter.updateHitbox();
+				resultsCharacter.x = 1100;
+				resultsCharacter.y = 30;
+				charGoToX = 390; // used in the tween in
+		}
 		resultsCharacter.antialiasing = ClientPrefs.data.antialiasing;
 		resultsCharacter.visible = false;
 
@@ -190,7 +208,7 @@ class ResultState extends MusicBeatSubstate
 		var blackTopBar:FlxSprite = new FlxSprite().loadGraphic(Paths.image("ui/menus/resultScreen/topBarBlack"));
 		blackTopBar.y = -blackTopBar.height;
 		FlxTween.tween(blackTopBar, {y: 0}, 7 / 24, {ease: FlxEase.quartOut, startDelay: 3 / 24});
-		add(resultsCharacter);
+		if (resultsCharacter != null) add(resultsCharacter);
 		add(blackTopBar);
 		add(clearPercentSmall);
 		add(clearPercentCounter);
@@ -307,7 +325,6 @@ class ResultState extends MusicBeatSubstate
 			}
 		});
 
-
 		rankBg.makeSolidColor(FlxG.width, FlxG.height, 0xFF000000);
 		rankBg.cameras = [cameraOverlay];
 		rankBg.alpha = 0;
@@ -365,18 +382,43 @@ class ResultState extends MusicBeatSubstate
 				new FlxTimer().start(0.4, _ -> {
 					clearPercentCounter.flash(false);
 					FlxTween.tween(clearPercentCounter, {x: 940, y: 550}, 1, {startDelay: 0.25, ease: FlxEase.quintInOut});
-
-					resultsCharacter.visible = true;
-					FlxTween.tween(resultsCharacter, {x: 390}, 1.8, {ease: FlxEase.expoOut, startDelay: 0.25});
-			
-					if (rank != ScoringRank.SHIT)
-						resultsCharacter.animation.play('win', true);
-					else
-						resultsCharacter.animation.play('lose', true);
-					resultsCharacter.animation.finishCallback = function(name:String) {
-						if (name == 'win') resultsCharacter.animation.play('idle', true);
-
-						if (name == 'lose') resultsCharacter.animation.play('idlelose', true);
+					
+					if (resultsCharacter != null) {
+						if (FreeplayState.freeplayCharacter == 'c3jo') {
+							resultsCharacter.visible = true;
+							FlxTween.tween(resultsCharacter, {x: charGoToX}, 1.8, {ease: FlxEase.expoOut, startDelay: 0.25});
+							
+							if (rank != ScoringRank.SHIT) {
+								resultsCharacter.animation.play('win', true);
+								resultsCharacter.animation.finishCallback = function(name:String) {
+									if (name == 'win') resultsCharacter.animation.play('idle', true);
+								}
+							} else {
+								resultsCharacter.animation.play('lose', true);
+								resultsCharacter.animation.finishCallback = function(name:String) {
+									if (name == 'lose') resultsCharacter.animation.play('lose idle', true);
+								}
+							}
+						}
+						
+						if (FreeplayState.freeplayCharacter == 'aquino') {
+							if (rank != ScoringRank.SHIT) {
+								resultsCharacter.animation.play('win', true);
+								resultsCharacter.animation.curAnim.curFrame = 0;
+								resultsCharacter.animation.curAnim.pause();
+								resultsCharacter.animation.finishCallback = function(name:String) {
+									if (name == 'win') resultsCharacter.animation.play('idle', true);
+								}
+								FlxTween.tween(resultsCharacter, {x: charGoToX}, 1.8, {ease: FlxEase.expoIn, startDelay: 0.35, onComplete: function(twn:FlxTween) {
+									resultsCharacter.visible = true;
+									resultsCharacter.animation.curAnim.resume();
+								}});
+							} else {
+								FlxTween.tween(resultsCharacter, {x: charGoToX}, 1.8, {ease: FlxEase.expoOut, startDelay: 0.25});
+								resultsCharacter.visible = true;
+								resultsCharacter.animation.play('lose', true);
+							}
+						}
 					}
 				});
 			}
@@ -444,7 +486,7 @@ class ResultState extends MusicBeatSubstate
 			FlxTween.tween(clearPercentSmall, {y: 122 - 5}, 0.5, {ease: FlxEase.expoOut, startDelay: 0.85});
 		}
 
-		songName.y = -songName.height;
+		songName.y = -songName.height + 20;
 		var fuckedupnumber = (10) * (songName.text.length / 15);
 		FlxTween.tween(songName, {y: diffYTween - 25 - fuckedupnumber}, 0.5, {ease: FlxEase.expoOut, startDelay: 0.9});
 		songName.x = clearPercentSmall.x + 94;
@@ -525,14 +567,38 @@ class ResultState extends MusicBeatSubstate
 				});
 			}
 
-			var stickerSet = (PlayState.SONG.player1.contains('c3jo')) ? "stickers-set-2" : "stickers-set-1";
-			var stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-				case "hiper": "hiper";
-				case "roier": "roier";
-				case "steyb": "steyb";
-				case "noticiero": "umad";
-				default: "all";
-			};
+			var stickerSet = 'stickers-set-wbns';
+			var stickerPack = 'all';
+
+			if (PlayState.SONG.player1.contains('c3jo')) {
+				stickerSet = 'stickers-set-c3jo';
+
+				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+					case "hiper": "hiper";
+					case "roier": "roier";
+					case "steyb": "steyb";
+					case "noticiero": "umad";
+					default: "all";
+				};
+			}
+
+			if (PlayState.SONG.player1.contains('aquino')) {
+				stickerSet = 'stickers-set-aquino';
+
+				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+					case "erika": "erika";
+					case "karfall": "karfall";
+					case "noobly": "noobly";
+					case "creisi.mov": "creisi";
+					case "promenade": "botsita";
+					case "let's go compota v2": "compota";
+					case "saludo v2": "fernan";
+					case "toneando v2": "adrian";
+					case "estupidez": "estupidez";
+					case "sylvee": "sylvee";
+					default: "all";
+				};
+			}
 
 			if (params.storyMode) {
 				FlxG.sound.pause(); 

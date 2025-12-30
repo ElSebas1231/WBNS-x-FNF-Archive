@@ -1,0 +1,10 @@
+Sets Camera Bounce Speed
+
+
+Value 1: Speed (16 = every section, 8 = every 2 beats, 4 every beat, 1 every step)
+Value 2: Intensity
+
+V2 PARAMS (SEPERATED BY A COMMA)
+param1: HUD bop Intensity (defaults to 0.03)
+param2: GAME bop Intensity (defaults to 0.015)
+Example: 0.03,0.015

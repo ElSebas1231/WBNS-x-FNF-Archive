@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				32,
+				-37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "death start0"
+		},
+		{
+			"offsets": [
+				29,
+				-74
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "death idle0"
+		},
+		{
+			"offsets": [
+				29,
+				-74
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "death confirm0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/c3jodlc/c3jo-noticiero",
+	"position": [
+		10,
+		300
+	],
+	"healthicon": "c3jo-dlc",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		110,
+		0
+	],
+	"camera_position": [
+		0,
+		80
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
