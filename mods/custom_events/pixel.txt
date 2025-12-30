@@ -1,0 +1,2 @@
+value 1 = strenght
+value 2 = duration

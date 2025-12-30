@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				35,
+				-1045
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "ULTRA D final down"
+		},
+		{
+			"offsets": [
+				6,
+				5
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "ULTRA D final idle"
+		},
+		{
+			"offsets": [
+				259,
+				-1208
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "ULTRA D final left"
+		},
+		{
+			"offsets": [
+				299,
+				-1136
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "ULTRA D final up"
+		},
+		{
+			"offsets": [
+				-280,
+				-1263
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "ULTRA D final right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/duxo/ultra_d_final",
+	"position": [
+		-100,
+		-900
+	],
+	"healthicon": "ultra d 2 icon",
+	"flip_x": false,
+	"healthbar_colors": [
+		91,
+		85,
+		115
+	],
+	"camera_position": [
+		-100,
+		350
+	],
+	"sing_duration": 6.1,
+	"scale": 1.9
+}

@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="devs song.png">
-<SubTexture name="idle0000" x="0" y="148" width="169" height="136" frameX="-1574" frameY="-553" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="181" y="0" width="175" height="142" frameX="-1571" frameY="-550" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="0" width="181" height="148" frameX="-1568" frameY="-547" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="169" y="148" width="169" height="136" frameX="-1574" frameY="-553" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

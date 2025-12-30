@@ -1,0 +1,26 @@
+{
+	"songs": [
+		["It's a Rat", "icon-d2", [255, 255, 255]],
+		["Tryhard Slaughter", "icon-d2", [255, 255, 255]],
+		["SDLG", "aquino_grasa_icon", [255, 255, 255]],
+		["Last Course", "icon-andrehTurmoil", [255, 255, 255]],
+		["Nightmare", "icon-Vquino", [255, 255, 255]],
+		["Unwebonable v2", "aquino_icon", [255, 255, 255]],
+		["All Wbns", "ultra_d_icon", [255, 255, 255]]
+	],
+
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "",
+
+	"storyName": "",
+	"weekBefore": "",
+	"weekName": "Duxo Madness",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

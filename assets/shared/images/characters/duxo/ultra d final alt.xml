@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ultra d final alt.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="ULTRA D final down alt0000" x="804" y="711" width="804" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0001" x="804" y="711" width="804" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0002" x="0" y="711" width="804" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0003" x="0" y="711" width="804" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0004" x="807" y="0" width="807" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0005" x="807" y="0" width="807" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0006" x="0" y="0" width="807" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0007" x="0" y="0" width="807" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0008" x="0" y="0" width="807" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final down alt0009" x="0" y="0" width="807" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0000" x="1599" y="1422" width="677" height="658" frameX="2" frameY="-51" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0001" x="1599" y="1422" width="677" height="658" frameX="2" frameY="-51" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0002" x="2124" y="2133" width="673" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0003" x="2124" y="2133" width="673" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0004" x="3187" y="0" width="672" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0005" x="3187" y="0" width="672" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0006" x="3187" y="1422" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0007" x="3187" y="1422" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0008" x="3187" y="711" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0009" x="3187" y="711" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0010" x="3187" y="2133" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0011" x="3187" y="2133" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0012" x="3187" y="2133" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0013" x="3187" y="2133" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final idle alt0014" x="3187" y="2133" width="671" height="711" frameX="2" frameY="2" frameWidth="847" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0000" x="0" y="2844" width="669" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0001" x="0" y="2844" width="669" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0002" x="669" y="2844" width="668" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0003" x="669" y="2844" width="668" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0004" x="1446" y="2133" width="678" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0005" x="1446" y="2133" width="678" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0006" x="767" y="2133" width="679" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0007" x="767" y="2133" width="679" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0008" x="767" y="2133" width="679" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final left alt0009" x="767" y="2133" width="679" height="711" frameX="2" frameY="2" frameWidth="796" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0000" x="799" y="1422" width="800" height="707" frameX="2" frameY="-2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0001" x="799" y="1422" width="800" height="707" frameX="2" frameY="-2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0002" x="1614" y="711" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0003" x="1614" y="711" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0004" x="1614" y="0" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0005" x="1614" y="0" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0006" x="0" y="1422" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0007" x="0" y="1422" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0008" x="0" y="1422" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final right alt0009" x="0" y="1422" width="799" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0000" x="0" y="2133" width="767" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0001" x="0" y="2133" width="767" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0002" x="2413" y="711" width="774" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0003" x="2413" y="711" width="774" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0004" x="2413" y="1422" width="773" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0005" x="2413" y="1422" width="773" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0006" x="2413" y="0" width="774" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0007" x="2413" y="0" width="774" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0008" x="2413" y="0" width="774" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+	<SubTexture name="ULTRA D final up alt0009" x="2413" y="0" width="774" height="711" frameX="2" frameY="2" frameWidth="855" frameHeight="707"/>
+</TextureAtlas>

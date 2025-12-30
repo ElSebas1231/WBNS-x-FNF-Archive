@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="mitia sexo.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="mdown0000" x="100" y="100" width="433" height="534" frameX="0" frameY="-5" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0001" x="100" y="100" width="433" height="534" frameX="0" frameY="-5" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0002" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0003" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0004" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0005" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0006" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0007" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0008" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="mdown0009" x="633" y="100" width="434" height="541" frameX="-6" frameY="0" frameWidth="440" frameHeight="541"/>
+	<SubTexture name="micitia muere0000" x="1167" y="100" width="352" height="857" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0001" x="1167" y="100" width="352" height="857" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0002" x="1619" y="100" width="352" height="857" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0003" x="1619" y="100" width="352" height="857" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0004" x="2071" y="100" width="352" height="857" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0005" x="2071" y="100" width="352" height="857" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0006" x="2071" y="100" width="352" height="857" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0007" x="2523" y="100" width="486" height="857" frameX="0" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0008" x="3109" y="100" width="359" height="846" frameX="-128" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0009" x="3109" y="100" width="359" height="846" frameX="-128" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0010" x="3568" y="100" width="373" height="844" frameX="-128" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0011" x="3568" y="100" width="373" height="844" frameX="-128" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0012" x="4041" y="100" width="363" height="848" frameX="-132" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0013" x="4041" y="100" width="363" height="848" frameX="-132" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0014" x="4504" y="100" width="366" height="848" frameX="-126" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0015" x="4504" y="100" width="366" height="848" frameX="-126" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0016" x="4504" y="100" width="366" height="848" frameX="-126" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0017" x="4970" y="100" width="404" height="844" frameX="-105" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0018" x="4970" y="100" width="404" height="844" frameX="-105" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0019" x="5474" y="100" width="314" height="730" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0020" x="5474" y="100" width="314" height="730" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0021" x="5888" y="100" width="449" height="962" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="micitia muere0022" x="5888" y="100" width="449" height="962" frameX="-134" frameY="0" frameWidth="583" frameHeight="962"/>
+	<SubTexture name="midle0000" x="6437" y="100" width="375" height="717" frameX="0" frameY="0" frameWidth="375" frameHeight="718"/>
+	<SubTexture name="midle0001" x="6437" y="100" width="375" height="717" frameX="0" frameY="0" frameWidth="375" frameHeight="718"/>
+	<SubTexture name="midle0002" x="6912" y="100" width="375" height="717" frameX="0" frameY="0" frameWidth="375" frameHeight="718"/>
+	<SubTexture name="midle0003" x="6912" y="100" width="375" height="717" frameX="0" frameY="0" frameWidth="375" frameHeight="718"/>
+	<SubTexture name="midle0004" x="7387" y="100" width="375" height="718"/>
+	<SubTexture name="midle0005" x="7387" y="100" width="375" height="718"/>
+	<SubTexture name="midle0006" x="7387" y="100" width="375" height="718"/>
+	<SubTexture name="midle0007" x="7387" y="100" width="375" height="718"/>
+	<SubTexture name="midle0008" x="7387" y="100" width="375" height="718"/>
+	<SubTexture name="midle0009" x="7387" y="100" width="375" height="718"/>
+	<SubTexture name="mleft0000" x="100" y="1162" width="352" height="648" frameX="0" frameY="-4" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0001" x="100" y="1162" width="352" height="648" frameX="0" frameY="-4" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0002" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0003" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0004" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0005" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0006" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0007" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0008" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mleft0009" x="552" y="1162" width="332" height="653" frameX="-14" frameY="0" frameWidth="352" frameHeight="653"/>
+	<SubTexture name="mright0000" x="984" y="1162" width="355" height="649"/>
+	<SubTexture name="mright0001" x="984" y="1162" width="355" height="649"/>
+	<SubTexture name="mright0002" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mright0003" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mright0004" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mright0005" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mright0006" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mright0007" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mright0008" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mright0009" x="1439" y="1162" width="347" height="649" frameX="0" frameY="0" frameWidth="355" frameHeight="649"/>
+	<SubTexture name="mup0000" x="1886" y="1162" width="275" height="697" frameX="-6" frameY="0" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0001" x="1886" y="1162" width="275" height="697" frameX="-6" frameY="0" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0002" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0003" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0004" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0005" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0006" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0007" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0008" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+	<SubTexture name="mup0009" x="2261" y="1162" width="287" height="692" frameX="0" frameY="-5" frameWidth="287" frameHeight="697"/>
+</TextureAtlas>

@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="minas.png">
-<SubTexture name="idle0000" x="0" y="0" width="423" height="335" frameX="-1116" frameY="-42" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="423" y="0" width="423" height="335" frameX="-1116" frameY="-42" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="335" width="423" height="335" frameX="-1116" frameY="-42" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="423" y="335" width="423" height="335" frameX="-1116" frameY="-42" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

@@ -150,6 +150,8 @@ class FlashingState extends MusicBeatState
 
 				new FlxTimer().start(1.3, function(tmr:FlxTimer)
 				{
+					trace('triggered!');
+					
 					FlxTween.tween(text1, {alpha: 0}, 1.3);
 					FlxTween.tween(text4, {alpha: 0}, 1.3);
 	

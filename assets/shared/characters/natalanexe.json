@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "natidle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				111,
+				29
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "natleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				110,
+				-289
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "natdown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				98,
+				39
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "natup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-30
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "natright",
+			"indices": []
+		},
+			{
+			"loop": false,
+			"offsets": [
+				265,
+				190
+			],
+			"anim": "muerte",
+			"fps": 24,
+			"name": "nat muere",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/natalan/natalion",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "icon-natalion",
+	"flip_x": false,
+	"healthbar_colors": [
+		31,
+		118,
+		181
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4.0,
+	"scale": 1
+}

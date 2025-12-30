@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="esquizofrenia.png">
-<SubTexture name="idle0000" x="430" y="0" width="206" height="239" frameX="-816" frameY="-299" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="218" y="0" width="212" height="245" frameX="-813" frameY="-296" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="0" width="218" height="251" frameX="-810" frameY="-293" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="0" y="251" width="206" height="239" frameX="-816" frameY="-299" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

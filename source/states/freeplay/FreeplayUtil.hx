@@ -1,5 +1,6 @@
 package states.freeplay;
 
+import openfl.utils.Assets;
 import states.freeplay.FreeplaySections;
 import objects.freeplay.FreeplayCapsule;
 import haxe.Json;
@@ -9,34 +10,29 @@ class FreeplayUtil {
 
     public static function getSongDifficulties(song:String):Array<String> {
 		var songDifficulties:Array<String> = [];
+		var chartFiles:Array<String> = [];
 		var fileSongName = Paths.formatToSongPath(song);
 		var songDataPath:String = '';
 
 		if (FreeplaySections.sectionSelected.contains('dlc'))
-			songDataPath = Paths.dlcsFolders('data/$fileSongName');
+			songDataPath = Paths.modFolders('data/$fileSongName');
 		else 
 			songDataPath = Paths.getSharedPath('data/${FreeplaySections.sectionSelected}/$fileSongName');
 
 		if(songDifficulties.length == 0){
-			if (FileSystem.exists(songDataPath)){
-				var chartFiles = FileSystem.readDirectory(songDataPath)
+			var assetsPath = 'assets/shared/data/${FreeplaySections.sectionSelected}/$fileSongName';
+			chartFiles = Assets.list()
+			.filter(s -> s.indexOf(assetsPath) == 0 && s.endsWith(".json"));
+			chartFiles = chartFiles.map(s -> s.substr(s.lastIndexOf('/') + 1));
+
+			if (chartFiles.length == 0 && FileSystem.exists(songDataPath)) {
+				chartFiles = FileSystem.readDirectory(songDataPath)
 				.filter(s -> s.toLowerCase().startsWith(fileSongName) && s.endsWith(".json"));
-
-				var diffNames = chartFiles.map(s -> s.substring(fileSongName.length+1,s.length-5));
-				// Regrouping difficulties
-				if (diffNames.contains('soarinng') && diffNames.remove("soarinng")) diffNames.insert(0,"soarinng");
-
-				if ((diffNames.contains(".") && !diffNames.contains('normal')) && diffNames.remove(".")) {
-					diffNames.insert(1,"normal");
-				} else if ((diffNames.contains("normal") && !diffNames.contains('.')) && diffNames.remove("normal")) {
-					diffNames.insert(1,"normal");
-				}
-
-				if (diffNames.contains("hard") && diffNames.remove("hard")) diffNames.insert(2,"hard");
-
-				if (diffNames.contains("insano") && diffNames.remove("insano")) diffNames.insert(3,"insano");
-				songDifficulties = diffNames;
 			}
+
+			var diffNames = chartFiles.map(s -> s.substring(fileSongName.length+1,s.length-5));
+			if (diffNames.contains("hard") && diffNames.remove("hard")) diffNames.insert(0,"hard");
+			songDifficulties = diffNames;
 		}
 
 		return songDifficulties;
@@ -47,25 +43,44 @@ class FreeplayUtil {
 		var formattedSongId = Paths.formatToSongPath(songId);
 
 		if (FreeplaySections.sectionSelected.contains('dlc')) 
-			metaFilePath = Paths.dlcsFolders('data/${formattedSongId}/metadata.json');
+			metaFilePath = Paths.modFolders('data/${formattedSongId}/metadata.json');
 		else
 			metaFilePath = Paths.getSharedPath('data/${FreeplaySections.sectionSelected}/${formattedSongId}/metadata.json');
-		
+
+		var metaFileContent:String = null;
+
 		if (FileSystem.exists(metaFilePath)) {
 			try {
-				var metaFileContent:String = sys.io.File.getContent(metaFilePath);
+				metaFileContent = sys.io.File.getContent(metaFilePath);
+			} catch (e:Dynamic) {
+				trace('Error leyendo metadata.json desde FS para la canción ${songId}: $e');
+			}
+		} else {
+			var assetsPath = 'assets/shared/data/${FreeplaySections.sectionSelected}/${formattedSongId}/metadata.json';
+			if (Assets.exists(assetsPath)) {
+				try {
+					metaFileContent = Assets.getText(assetsPath);
+				} catch (e:Dynamic) {
+					trace('Error leyendo metadata.json desde assets para la canción ${songId}: $e');
+				}
+			}
+		}
+
+		if (metaFileContent != null) {
+			try {
 				var metaData:Dynamic = Json.parse(metaFileContent);
 				return new FreeplayMetadata(
 					metaData.freeplayPrevStart,
 					metaData.freeplayPrevEnd,
-					metaData.startingBPM
+					metaData.startingBPM,
+					metaData.songCredits,
+					metaData.songContext
 				);
 			} catch (e:Dynamic) {
-				trace('Error parsing metadata.json for song ${songId}: $e');
+				trace('Error parseando metadata.json para la canción ${songId}: $e');
 			}
 		}
-	
-		// Return a default FreeplayMetadata object if the file doesn't exist or parsing fails
+
 		return new FreeplayMetadata(0, 20, 100);
 	}
 
@@ -87,10 +102,14 @@ class FreeplayMetadata {
     public var freeplayPrevStart:Float = 0; // those are in seconds btw
 	public var freeplayPrevEnd:Float = 15.0;// and this too
 	public var startingBPM:Float = 100; // starting bpm
+	public var songCredits:String = ""; // Text display on Pause Menu
+	public var songContext:String = ""; // Text display on Pause Menu
 
-    public function new(previewStart:Float, previewEnd:Float, initialBPM:Float = 0) {
+    public function new(previewStart:Float, previewEnd:Float, initialBPM:Float = 0, creditsText:String = "", contextText:String = "") {
 		this.freeplayPrevStart = previewStart;
 		this.freeplayPrevEnd = previewEnd;
 		this.startingBPM = initialBPM;
+		this.songCredits = creditsText;
+		this.songContext = contextText;
 	}
 }

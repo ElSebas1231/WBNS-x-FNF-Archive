@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				534,
+				308
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "estailus morido2",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				374,
+				-42
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "estailus morido loop0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				699,
+				344
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "estailus morido confirm0",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/estailus/game over estailus",
+	"position": [
+		-50,
+		150
+	],
+	"healthicon": "icon-estailus",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		45,
+		20
+	],
+	"camera_position": [
+		-600,
+		-250
+	],
+	"sing_duration": 6.1,
+	"scale": 1.3,
+	"_editor_isPlayer": true
+}

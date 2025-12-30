@@ -1,6 +1,6 @@
 package states.results;
 
-import backend.utils.MathUtil;
+import backend.MathUtil;
 import flixel.FlxSprite;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;

@@ -1,0 +1,9 @@
+v1 turns it on or off by typing "on" or "off".
+v2 changes the camera position. (i.e. "200, 600") [x,y]
+Obviously don't add "".
+
+Leave blank for default.
+
+Default:
+v1 = on
+v2 = 700, 450

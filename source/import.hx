@@ -28,19 +28,19 @@ import backend.MusicBeatState;
 import backend.MusicBeatSubstate;
 import backend.CustomFadeTransition;
 import backend.ClientPrefs;
+import backend.DLCManager;
 import backend.Conductor;
 import backend.BaseStage;
 import backend.Difficulty;
 import backend.Language;
 import backend.Mods;
-import backend.utils.Cursor;
+import backend.Cursor;
 
 import objects.Alphabet;
 import objects.BGSprite;
 
 import states.PlayState;
 import states.LoadingState;
-import states.freeplay.FreeplaySections;
 
 import flixel.system.FlxAssets.FlxShader;
 
@@ -65,7 +65,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.addons.transition.FlxTransitionableState;
 
 import backend.CoinsManager;
-import backend.utils.MathUtil;
+import backend.MathUtil;
 
 using StringTools;
 #end

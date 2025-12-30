@@ -165,10 +165,6 @@ class CapsuleText extends FlxSpriteGroup
     {
         resetText();
         flickerTimer = new FlxTimer().start(1 / 24, flickerProgress, 19);
-        flickerTimer.onComplete = function (timer:FlxTimer){
-            blurredText.color = glowColor;
-            whiteText.color = 0xFFFFFFFF;
-        }
     }
 
     function flickerProgress(timer:FlxTimer):Void

@@ -93,13 +93,21 @@ class StageData {
 	public static function getStageFile(stage:String):StageFile {
 		var rawJson:String = null;
 		var path:String = Paths.getSharedPath('stages/' + stage + '.json');
-		var dlcPath:String = Paths.dlcsFolders('stages/' + stage + '.json');
 
-		if (FileSystem.exists(dlcPath)) {
-			rawJson = File.getContent(dlcPath);
-		} else if (FileSystem.exists(path) || Assets.exists(path)) {
+		#if MODS_ALLOWED
+		var modPath:String = Paths.modFolders('stages/' + stage + '.json');
+		if(FileSystem.exists(modPath)) {
+			rawJson = File.getContent(modPath);
+		} else if(FileSystem.exists(path)) {
 			rawJson = File.getContent(path);
-		} else {
+		}
+		#else
+		if(Assets.exists(path)) {
+			rawJson = Assets.getText(path);
+		}
+		#end
+		else
+		{
 			return null;
 		}
 		return cast tjson.TJSON.parse(rawJson);

@@ -1,0 +1,6 @@
+Flashes Camera
+v1 = color number
+choose between light blue (0), light green (1), light orange (2), light purple (3)
+
+v2 = Fade duration
+Default is 0.5 seconds

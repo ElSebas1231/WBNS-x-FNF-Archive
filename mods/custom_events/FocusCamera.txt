@@ -1,0 +1,7 @@
+v1 = Target,Duration
+v2 = Ease,X,Y
+Target = Boyfriend, Dad or Girlfriend | If target is Position, the camera will follow the X and Y | If target is Reset, Resets the camera position
+Duration = Should be in steps (Default 4 steps)
+Ease = Any FlxTween, just put the ease name (Default: classic) | If ease is classic, does the regular camera target change
+X and Y = The camera will follow the X/Y point and won't change from that point (Only if Target is Position, otherwise will be a offset)
+For resetting the camera, put reset on v1. It would cancel the current tweens

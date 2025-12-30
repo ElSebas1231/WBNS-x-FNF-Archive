@@ -1,0 +1,174 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				330,
+				-120
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-135,
+				-238
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-112,
+				-48
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				18,
+				-28
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-60,
+				-60
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "reaccion",
+			"indices": [],
+			"name": "duxo react"
+		},
+		{
+			"offsets": [
+				-30,
+				140
+			],
+			"loop": false,
+			"fps": 15,
+			"anim": "caida",
+			"indices": [
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9
+			],
+			"name": "duxo caida"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/duxo/mr_D",
+	"position": [
+		-170,
+		-160
+	],
+	"healthicon": "icon-d2",
+	"flip_x": false,
+	"healthbar_colors": [
+		124,
+		57,
+		141
+	],
+	"camera_position": [
+		50,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.4,
+	"_editor_isPlayer": false
+}

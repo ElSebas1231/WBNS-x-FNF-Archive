@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="fangirl.png">
-<SubTexture name="idle0000" x="0" y="143" width="190" height="131" frameX="-1144" frameY="-669" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="202" y="0" width="196" height="137" frameX="-1141" frameY="-666" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="0" width="202" height="143" frameX="-1138" frameY="-663" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="190" y="143" width="190" height="131" frameX="-1144" frameY="-669" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

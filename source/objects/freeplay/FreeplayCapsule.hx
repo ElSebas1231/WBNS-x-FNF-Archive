@@ -74,20 +74,11 @@ class FreeplayCapsule extends FlxSpriteGroup {
         if (x != null) this.x = x;
         if (y != null) this.y = y;
 
-        if (FreeplaySections.sectionSelected.contains('dlc')) {
-            capsule.frames = Paths.getSparrowAtlas('freeplay/capsule');
-        } else {
-            capsule.frames = Paths.getSparrowAtlas('ui/menus/freeplay/songs/capsule/capsule_bf');
-        }
-
-        /*
         if(FileSystem.exists(Paths.getPath('images/ui/menus/freeplay/songs/capsule/capsule_${character}.xml'))) {
             capsule.frames = Paths.getSparrowAtlas('ui/menus/freeplay/songs/capsule/capsule_${character}');
         } else {
             capsule.frames = Paths.getSparrowAtlas('ui/menus/freeplay/songs/capsule/capsule_bf');
         }
-        */
-
         capsule.animation.addByPrefix('unlocked', 'capsule unlocked0', 24, true);
         capsule.animation.addByPrefix('locked', 'capsule locked0', 24, true);
 

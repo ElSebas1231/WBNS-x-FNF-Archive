@@ -1,0 +1,135 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				238
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				72,
+				238
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				74,
+				244
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				242
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				68,
+				241
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "down-alt",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				236
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "right-alt",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				236
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "left-alt",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				71,
+				238
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "up-alt",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				67,
+				238
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				80,
+				240
+			],
+			"anim": "Hey",
+			"fps": 24,
+			"name": "hey",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/soarinng/Soarinng-BackroomsW",
+	"position": [
+		-100,
+		250
+	],
+	"healthicon": "soarinng_icon",
+	"flip_x": true,
+	"healthbar_colors": [
+		232,
+		180,
+		53
+	],
+	"camera_position": [
+		200,
+		-200
+	],
+	"sing_duration": 4,
+	"scale": 1.5,
+	"_editor_isPlayer": true
+}

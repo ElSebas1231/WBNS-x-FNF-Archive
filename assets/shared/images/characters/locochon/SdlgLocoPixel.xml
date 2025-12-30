@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SdlgLocoPixel.png">
+	<!-- Created with Aseprite-->
+
+	<SubTexture name="pixelloco idle_0" x="0" y="0" width="39" height="38"/>
+	<SubTexture name="pixelloco idle_1" x="39" y="0" width="39" height="38"/>
+	<SubTexture name="pixelloco idle_2" x="78" y="0" width="39" height="38"/>
+
+	<SubTexture name="pixelloco left_0" x="117" y="0" width="39" height="38"/>
+	<SubTexture name="pixelloco left_1" x="156" y="0" width="39" height="38"/>
+
+	<SubTexture name="pixelloco down_0" x="0" y="38" width="39" height="38"/>
+	<SubTexture name="pixelloco down_1" x="39" y="38" width="39" height="38"/>
+
+	<SubTexture name="pixelloco up_0" x="78" y="38" width="39" height="38"/>
+	<SubTexture name="pixelloco up_1" x="117" y="38" width="39" height="38"/>
+
+	<SubTexture name="pixelloco right_0" x="156" y="38" width="39" height="38"/>
+	<SubTexture name="pixelloco right_1" x="0" y="76" width="39" height="38"/>
+
+	<SubTexture name="pixelloco mleft_0" x="39" y="76" width="39" height="38"/>
+	<SubTexture name="pixelloco mleft_1" x="78" y="76" width="39" height="38"/>
+
+	<SubTexture name="pixelloco mdown_0" x="117" y="76" width="39" height="38"/>
+	<SubTexture name="pixelloco mdown_1" x="156" y="76" width="39" height="38"/>
+
+	<SubTexture name="pixelloco mup_0" x="0" y="114" width="39" height="38"/>
+	<SubTexture name="pixelloco mup_1" x="39" y="114" width="39" height="38"/>
+
+	<SubTexture name="pixelloco mright_0" x="78" y="114" width="39" height="38"/>
+	<SubTexture name="pixelloco mright_1" x="117" y="114" width="39" height="38"/>
+
+
+
+
+</TextureAtlas>

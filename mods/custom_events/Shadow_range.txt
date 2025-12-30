@@ -1,0 +1,7 @@
+Value 1: Character to edit the range (dad, gf, boyfriend)
+Value 2: New range number (Integer)
+
+To edit the range of a character, put a new number in 
+Value 2 to edit the range of the shadow.
+Bigger the number, Longer the range.
+Left the Value 2 with blank if you want to use default. 

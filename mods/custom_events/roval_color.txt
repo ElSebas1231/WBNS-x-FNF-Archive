@@ -1,0 +1,9 @@
+Value1: modo,colorHEX              Value2: tiempo,sprite
+Modos:  "icon", "full", "old", "invert", "negative", "normal"
+Deja en blanco value 1 para cambiar al color original
+Se separa con una ","  
+Ejemplo de sprite: "bf", "gf", "dad", "todos"
+(Si quieres colocar para todos los sprites, solo coloca el tiempo)
+Icon: Obtiene el color del icon del personaje
+Old: Hace el tweencolor    normal: Color original de personajes     
+Invert: Color invertido   negative: Tiene efecto a lo sans v

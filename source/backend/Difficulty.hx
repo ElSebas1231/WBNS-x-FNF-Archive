@@ -2,22 +2,14 @@ package backend;
 
 class Difficulty
 {
-	public static var defaultList(default, never):Array<String> = [
-		'Soarinng',
-		'Normal',
-		'Hard',
-		'Insano'
-	];
+	public static var defaultList(default, never):Array<String> = ['Hard'];
 	public static var list:Array<String> = [];
-	private static var defaultDifficulty(default, never):String = 'Normal'; //The chart that has no suffix and starting difficulty on Freeplay/Story Mode
+	private static var defaultDifficulty(default, never):String = 'Hard'; //The chart that has no suffix and starting difficulty on Freeplay/Story Mode
 
 	inline public static function getFilePath(num:Null<Int> = null)
 	{
 		var filePostfix:String = list[num];
-		if(filePostfix != null && Paths.formatToSongPath(filePostfix) != Paths.formatToSongPath(defaultDifficulty))
-			filePostfix = '-' + filePostfix;
-		else
-			filePostfix = '';
+		filePostfix = '-' + filePostfix;
 		return Paths.formatToSongPath(filePostfix);
 	}
 

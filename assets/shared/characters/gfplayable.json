@@ -1,0 +1,134 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				51,
+				115
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "GFMissLeft"
+		},
+		{
+			"offsets": [
+				-90,
+				137
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "GFMissUp"
+		},
+		{
+			"offsets": [
+				-106,
+				118
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "GFMissRight"
+		},
+		{
+			"offsets": [
+				-16,
+				75
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "GFDown"
+		},
+		{
+			"offsets": [
+				-17,
+				108
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "GFMissDown"
+		},
+		{
+			"offsets": [
+				49,
+				99
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "GFLeft"
+		},
+		{
+			"offsets": [
+				-76,
+				137
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "GFUp"
+		},
+		{
+			"offsets": [
+				-105,
+				107
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "GFRight"
+		},
+		{
+			"offsets": [
+				-52,
+				106
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "GFIdle"
+		},
+		{
+			"offsets": [
+				14,
+				119
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge",
+			"indices": [],
+			"name": "GF Dodge"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/AllStars_Girlfriend_Assets_v2",
+	"position": [
+		0,
+		290
+	],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [
+		165,
+		0,
+		77
+	],
+	"camera_position": [
+		-450,
+		-190
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

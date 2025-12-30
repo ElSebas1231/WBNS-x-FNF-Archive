@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="mukasa.png" width="8544" height="8335">
+	<SubTexture name="mukasa idle0000" x="2551" y="2577" width="847" height="894" frameX="-5" frameY="-17" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0001" x="3400" y="2577" width="846" height="894" frameX="-5" frameY="-17" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0002" x="852" y="2559" width="850" height="893" frameX="-0" frameY="-18" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0003" x="1" y="2504" width="849" height="892" frameX="-1" frameY="-19" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0004" x="846" y="3454" width="844" height="903" frameX="-9" frameY="-8" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0005" x="1" y="3398" width="843" height="902" frameX="-10" frameY="-9" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0006" x="6717" y="3497" width="835" height="909" frameX="-19" frameY="-2" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0007" x="7554" y="3541" width="834" height="909" frameX="-20" frameY="-2" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0008" x="1" y="4302" width="832" height="909" frameX="-22" frameY="-2" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0009" x="835" y="4359" width="832" height="909" frameX="-22" frameY="-2" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0010" x="1" y="4302" width="832" height="909" frameX="-22" frameY="-2" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0011" x="835" y="4359" width="832" height="909" frameX="-22" frameY="-2" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0012" x="7712" y="4452" width="831" height="911" frameX="-23" frameY="-0" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0013" x="1" y="5213" width="830" height="911" frameX="-24" frameY="-0" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa idle0014" x="5882" y="3494" width="833" height="906" frameX="-18" frameY="-5" frameWidth="854" frameHeight="911"/>
+	<SubTexture name="mukasa down0000" x="1081" y="1" width="1079" height="795" frameX="-0" frameY="-26" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0001" x="1" y="1" width="1078" height="794" frameX="-1" frameY="-27" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0002" x="2162" y="1" width="1072" height="798" frameX="-5" frameY="-23" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0003" x="3236" y="1" width="1070" height="798" frameX="-6" frameY="-23" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0004" x="5311" y="1" width="1065" height="817" frameX="-9" frameY="-4" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0005" x="6378" y="1" width="1065" height="817" frameX="-9" frameY="-4" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0006" x="7445" y="1" width="1065" height="821" frameX="-9" frameY="-0" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0007" x="1" y="797" width="1063" height="821" frameX="-10" frameY="-0" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0008" x="7445" y="1" width="1065" height="821" frameX="-9" frameY="-0" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa down0009" x="4308" y="1" width="1001" height="810" frameX="-44" frameY="-11" frameWidth="1079" frameHeight="821"/>
+	<SubTexture name="mukasa jumpscare0000" x="4735" y="5295" width="809" height="938" frameX="-327" frameY="-0" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0001" x="5546" y="5313" width="809" height="938" frameX="-327" frameY="-0" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0002" x="6357" y="5364" width="810" height="938" frameX="-327" frameY="-0" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0003" x="3140" y="5291" width="783" height="926" frameX="-323" frameY="-12" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0004" x="6780" y="2595" width="1059" height="900" frameX="-69" frameY="-38" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0005" x="2536" y="3473" width="1042" height="903" frameX="-81" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0006" x="3580" y="3481" width="1132" height="903" frameX="-23" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0007" x="4714" y="3485" width="1166" height="903" frameX="-2" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0008" x="3349" y="4386" width="1173" height="903" frameX="-0" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0009" x="4524" y="4390" width="1172" height="903" frameX="-0" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0010" x="3349" y="4386" width="1173" height="903" frameX="-0" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0011" x="5698" y="4408" width="1172" height="903" frameX="-0" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0012" x="3349" y="4386" width="1173" height="903" frameX="-0" frameY="-35" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0013" x="833" y="5277" width="1152" height="914" frameX="-20" frameY="-24" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa jumpscare0014" x="1987" y="5290" width="1151" height="914" frameX="-20" frameY="-24" frameWidth="1173" frameHeight="938"/>
+	<SubTexture name="mukasa left0000" x="3880" y="7176" width="675" height="1068" frameX="-0" frameY="-4" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0001" x="4557" y="7194" width="674" height="1068" frameX="-1" frameY="-4" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0002" x="5233" y="7209" width="652" height="1072" frameX="-23" frameY="-0" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0003" x="5887" y="7262" width="651" height="1072" frameX="-24" frameY="-0" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0004" x="3234" y="7174" width="644" height="1062" frameX="-32" frameY="-10" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0005" x="2590" y="7159" width="642" height="1061" frameX="-33" frameY="-11" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0006" x="653" y="7133" width="644" height="1055" frameX="-32" frameY="-17" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0007" x="1299" y="7146" width="643" height="1055" frameX="-33" frameY="-17" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0008" x="1944" y="7159" width="644" height="1055" frameX="-32" frameY="-17" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa left0009" x="1" y="7066" width="650" height="1045" frameX="-26" frameY="-27" frameWidth="676" frameHeight="1072"/>
+	<SubTexture name="mukasa marionetas idle0000" x="4801" y="820" width="1069" height="879" frameX="-2" frameY="-7" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0001" x="5872" y="820" width="1071" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0002" x="6945" y="824" width="1072" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0003" x="1060" y="1676" width="1071" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0004" x="2133" y="1681" width="1072" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0005" x="1060" y="1676" width="1071" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0006" x="6398" y="1707" width="1072" height="886" frameX="-0" frameY="-0" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0007" x="7472" y="1707" width="1071" height="886" frameX="-0" frameY="-0" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0008" x="4801" y="820" width="1069" height="879" frameX="-2" frameY="-7" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0009" x="5872" y="820" width="1071" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0010" x="6945" y="824" width="1072" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas idle0011" x="1060" y="1676" width="1071" height="881" frameX="-0" frameY="-5" frameWidth="1072" frameHeight="886"/>
+	<SubTexture name="mukasa marionetas0000" x="5937" y="2595" width="841" height="897" frameX="-67" frameY="-13" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0001" x="5095" y="2587" width="840" height="896" frameX="-68" frameY="-14" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0002" x="4248" y="2585" width="845" height="894" frameX="-61" frameY="-16" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0003" x="1704" y="2564" width="845" height="893" frameX="-61" frameY="-17" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0004" x="1692" y="3459" width="842" height="904" frameX="-65" frameY="-6" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0005" x="1669" y="4365" width="838" height="910" frameX="-71" frameY="-0" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0006" x="2509" y="4378" width="838" height="910" frameX="-71" frameY="-0" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0007" x="6872" y="4452" width="838" height="910" frameX="-71" frameY="-0" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0008" x="1066" y="798" width="904" height="873" frameX="-37" frameY="-37" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0009" x="1972" y="801" width="904" height="873" frameX="-37" frameY="-37" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0010" x="2878" y="801" width="960" height="878" frameX="-16" frameY="-32" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0011" x="3840" y="813" width="959" height="878" frameX="-17" frameY="-32" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0012" x="3207" y="1693" width="1065" height="882" frameX="-0" frameY="-28" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0013" x="4274" y="1701" width="1064" height="882" frameX="-0" frameY="-28" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0014" x="1" y="1620" width="1057" height="882" frameX="-5" frameY="-28" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0015" x="5340" y="1703" width="1056" height="882" frameX="-5" frameY="-28" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0016" x="1" y="1620" width="1057" height="882" frameX="-5" frameY="-28" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0017" x="5937" y="2595" width="841" height="897" frameX="-67" frameY="-13" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0018" x="5095" y="2587" width="840" height="896" frameX="-68" frameY="-14" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa marionetas0019" x="4248" y="2585" width="845" height="894" frameX="-61" frameY="-16" frameWidth="1065" frameHeight="910"/>
+	<SubTexture name="mukasa right0000" x="7169" y="5365" width="808" height="938" frameX="-0" frameY="-1" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0001" x="1" y="6126" width="808" height="938" frameX="-0" frameY="-1" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0002" x="811" y="6193" width="809" height="938" frameX="-0" frameY="-1" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0003" x="3925" y="5295" width="808" height="937" frameX="-0" frameY="-2" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0004" x="4074" y="6235" width="819" height="939" frameX="-0" frameY="-0" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0005" x="1622" y="6206" width="820" height="938" frameX="-0" frameY="-1" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0006" x="2444" y="6219" width="813" height="938" frameX="-0" frameY="-1" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0007" x="3259" y="6234" width="813" height="938" frameX="-0" frameY="-1" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0008" x="2444" y="6219" width="813" height="938" frameX="-0" frameY="-1" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa right0009" x="4895" y="6253" width="798" height="939" frameX="-0" frameY="-0" frameWidth="820" frameHeight="939"/>
+	<SubTexture name="mukasa up0000" x="7649" y="6305" width="650" height="967" frameX="-0" frameY="-0" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0001" x="7649" y="6305" width="650" height="967" frameX="-0" frameY="-0" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0002" x="6999" y="6305" width="648" height="960" frameX="-5" frameY="-7" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0003" x="6999" y="6305" width="648" height="960" frameX="-5" frameY="-7" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0004" x="6347" y="6304" width="650" height="956" frameX="-2" frameY="-11" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0005" x="6347" y="6304" width="650" height="956" frameX="-2" frameY="-11" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0006" x="5695" y="6253" width="650" height="954" frameX="-4" frameY="-13" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0007" x="5695" y="6253" width="650" height="954" frameX="-4" frameY="-13" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0008" x="5695" y="6253" width="650" height="954" frameX="-4" frameY="-13" frameWidth="657" frameHeight="967"/>
+	<SubTexture name="mukasa up0009" x="7841" y="2595" width="648" height="944" frameX="-9" frameY="-23" frameWidth="657" frameHeight="967"/>
+</TextureAtlas>

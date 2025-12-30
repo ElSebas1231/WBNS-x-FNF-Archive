@@ -94,20 +94,34 @@ class Character extends FlxSprite
 
 			default:
 				var characterPath:String = 'characters/$curCharacter.json';
-				var path:String;
 
-				path = Paths.getPath(characterPath, TEXT, null, true);
-
-				if (!FileSystem.exists(path)) {
+				var path:String = Paths.getPath(characterPath, TEXT, null, true);
+				#if MODS_ALLOWED
+				if (!FileSystem.exists(path))
+				#else
+				if (!Assets.exists(path))
+				#end
+				{
 					path = Paths.getSharedPath('characters/' + DEFAULT_CHARACTER + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
 					color = FlxColor.BLACK;
 					alpha = 0.6;
 				}
 
-				loadCharacterFile(Json.parse(File.getContent(path)));
+				try
+				{
+					#if MODS_ALLOWED
+					loadCharacterFile(Json.parse(File.getContent(path)));
+					#else
+					loadCharacterFile(Json.parse(Assets.getText(path)));
+					#end
+				}
+				catch(e:Dynamic)
+				{
+					trace('Error loading character file of "$character": $e');
+				}
 		}
 
-		if (animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss')) hasMissAnimations = true;
+		if(animOffsets.exists('singLEFTmiss') || animOffsets.exists('singDOWNmiss') || animOffsets.exists('singUPmiss') || animOffsets.exists('singRIGHTmiss')) hasMissAnimations = true;
 		recalculateDanceIdle();
 		dance();
 
@@ -125,14 +139,8 @@ class Character extends FlxSprite
 		isAnimateAtlas = false;
 
 		#if flxanimate
-		var animToFind:String;
-		if (FreeplaySections.sectionSelected.contains('dlc')) {
-			animToFind = Paths.dlcsFolders('images/${json.image}/Animation.json');
-		} else {
-			animToFind = Paths.getPath('images/' + json.image + '/Animation.json', TEXT, null, true);
-		}
-
-		if (FileSystem.exists(animToFind))
+		var animToFind:String = Paths.getPath('images/' + json.image + '/Animation.json', TEXT, null, true);
+		if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
 			isAnimateAtlas = true;
 		#end
 

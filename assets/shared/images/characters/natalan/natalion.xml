@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="natalion.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="nat muere0000" x="100" y="100" width="366" height="676" frameX="-266" frameY="-195" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0001" x="566" y="100" width="366" height="676" frameX="-266" frameY="-195" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0002" x="1032" y="100" width="364" height="680" frameX="-266" frameY="-191" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0003" x="1032" y="100" width="364" height="680" frameX="-266" frameY="-191" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0004" x="1496" y="100" width="630" height="679" frameX="0" frameY="-193" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0005" x="2226" y="100" width="551" height="870" frameX="-147" frameY="-3" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0006" x="2226" y="100" width="551" height="870" frameX="-147" frameY="-3" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0007" x="2877" y="100" width="508" height="824" frameX="-199" frameY="-47" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0008" x="2877" y="100" width="508" height="824" frameX="-199" frameY="-47" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0009" x="3485" y="100" width="504" height="839" frameX="-196" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0010" x="3485" y="100" width="504" height="839" frameX="-196" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0011" x="3485" y="100" width="504" height="839" frameX="-196" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0012" x="4089" y="100" width="505" height="839" frameX="-196" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0013" x="4089" y="100" width="505" height="839" frameX="-196" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0014" x="4089" y="100" width="505" height="839" frameX="-196" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0015" x="4694" y="100" width="505" height="839" frameX="-197" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0016" x="4694" y="100" width="505" height="839" frameX="-197" frameY="-32" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0017" x="5299" y="100" width="514" height="816" frameX="-187" frameY="-54" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0018" x="5299" y="100" width="514" height="816" frameX="-187" frameY="-54" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0019" x="5913" y="100" width="461" height="783" frameX="-236" frameY="-84" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0020" x="5913" y="100" width="461" height="783" frameX="-236" frameY="-84" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0021" x="6474" y="100" width="359" height="671" frameX="-267" frameY="-258" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0022" x="6474" y="100" width="359" height="671" frameX="-267" frameY="-258" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0023" x="6933" y="100" width="349" height="946" frameX="-347" frameY="-630" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="nat muere0024" x="6933" y="100" width="349" height="946" frameX="-347" frameY="-630" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="natdown0000" x="7382" y="100" width="407" height="406" frameX="0" frameY="-5" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0001" x="100" y="1146" width="407" height="406" frameX="0" frameY="-5" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0002" x="607" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0003" x="607" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0004" x="1108" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0005" x="1108" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0006" x="1609" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0007" x="1609" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0008" x="2110" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natdown0009" x="2611" y="1146" width="401" height="415" frameX="-7" frameY="0" frameWidth="408" frameHeight="415"/>
+	<SubTexture name="natidle0000" x="3112" y="1146" width="366" height="676" frameX="0" frameY="-4" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0001" x="3578" y="1146" width="366" height="676" frameX="0" frameY="-4" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0002" x="1032" y="100" width="364" height="680" frameX="0" frameY="0" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="natidle0003" x="1032" y="100" width="364" height="680" frameX="0" frameY="0" frameWidth="759" frameHeight="1576"/>
+	<SubTexture name="natidle0004" x="4044" y="1146" width="363" height="679" frameX="-1" frameY="-2" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0005" x="4044" y="1146" width="363" height="679" frameX="-1" frameY="-2" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0006" x="4507" y="1146" width="363" height="679" frameX="-1" frameY="-2" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0007" x="4970" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0008" x="5435" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0009" x="5900" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0010" x="6365" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0011" x="6365" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0012" x="6365" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0013" x="6830" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natidle0014" x="6830" y="1146" width="365" height="678" frameX="0" frameY="-3" frameWidth="366" frameHeight="681"/>
+	<SubTexture name="natleft0000" x="7295" y="1146" width="507" height="697" frameX="0" frameY="-14" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0001" x="100" y="1943" width="507" height="697" frameX="0" frameY="-14" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0002" x="707" y="1943" width="446" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0003" x="1253" y="1943" width="480" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0004" x="1253" y="1943" width="480" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0005" x="1833" y="1943" width="334" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0006" x="1833" y="1943" width="334" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0007" x="2267" y="1943" width="334" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0008" x="2267" y="1943" width="334" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natleft0009" x="2267" y="1943" width="334" height="709" frameX="-46" frameY="0" frameWidth="526" frameHeight="711"/>
+	<SubTexture name="natright0000" x="2701" y="1943" width="342" height="648" frameX="0" frameY="-2" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0001" x="3143" y="1943" width="342" height="648" frameX="0" frameY="-2" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0002" x="3585" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0003" x="3585" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0004" x="4024" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0005" x="4024" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0006" x="4463" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0007" x="4463" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0008" x="4902" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natright0009" x="5341" y="1943" width="339" height="650" frameX="0" frameY="0" frameWidth="342" frameHeight="650"/>
+	<SubTexture name="natup0000" x="5780" y="1943" width="477" height="722"/>
+	<SubTexture name="natup0001" x="5780" y="1943" width="477" height="722"/>
+	<SubTexture name="natup0002" x="6357" y="1943" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+	<SubTexture name="natup0003" x="6909" y="1943" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+	<SubTexture name="natup0004" x="7461" y="1943" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+	<SubTexture name="natup0005" x="7461" y="1943" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+	<SubTexture name="natup0006" x="7461" y="1943" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+	<SubTexture name="natup0007" x="100" y="2765" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+	<SubTexture name="natup0008" x="100" y="2765" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+	<SubTexture name="natup0009" x="652" y="2765" width="452" height="714" frameX="-17" frameY="-4" frameWidth="477" frameHeight="722"/>
+</TextureAtlas>

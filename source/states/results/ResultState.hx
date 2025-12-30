@@ -4,7 +4,8 @@ import backend.Highscore;
 import flixel.addons.transition.FlxTransitionableState;
 import substates.StickerSubState;
 import states.freeplay.FreeplayState;
-import backend.funkin.FunkinTools;
+import states.freeplay.FreeplaySections;
+import backend.FunkinTools;
 import backend.Scoring;
 import backend.PsychCamera;
 import backend.animation.FlxAtlasSprite;
@@ -31,7 +32,7 @@ import shaders.ColorGradientShader;
 
 import flixel.util.FlxGradient;
 import flixel.util.FlxTimer;
-using backend.funkin.FunkinTools;
+using backend.FunkinTools;
 
 /**
  * The state for the results screen after a song or week is finished.
@@ -60,7 +61,6 @@ class ResultState extends MusicBeatSubstate
 	final score:ResultScore;
 
 	var rankBg:FlxSprite;
-	var resultsCharacter:FlxSprite;
 	final cameraBG:PsychCamera;
 	final cameraScroll:PsychCamera;
 	final cameraEverything:PsychCamera;
@@ -156,19 +156,6 @@ class ResultState extends MusicBeatSubstate
 		bgFlash.visible = false;
 		add(bgFlash);
 
-		resultsCharacter = new FlxSprite(0,0);
-		resultsCharacter.frames = Paths.getSparrowAtlas('ui/menus/resultScreen/results_${FreeplayState.freeplayCharacter}');
-		resultsCharacter.scale.set(0.75, 0.75);
-		resultsCharacter.updateHitbox();
-		resultsCharacter.animation.addByPrefix('win', '${FreeplayState.freeplayCharacter} resuts animations win0', 12, false);
-		resultsCharacter.animation.addByPrefix('idle', '${FreeplayState.freeplayCharacter} resuts animations idle0', 12, true);
-		resultsCharacter.animation.addByPrefix('lose', '${FreeplayState.freeplayCharacter} resuts animations lose0', 12, false);
-		resultsCharacter.animation.addByPrefix('idlelose', '${FreeplayState.freeplayCharacter} resuts animations idlelose0', 12, true);
-		resultsCharacter.x = 1100;
-		resultsCharacter.y = 30;
-		resultsCharacter.antialiasing = ClientPrefs.data.antialiasing;
-		resultsCharacter.visible = false;
-
 		// The sound system which falls into place behind the score text. Plays every time!
 		var soundSystem:FlxSprite = FunkinTools.createSparrow(-15, -180, 'ui/menus/resultScreen/soundSystem');
 		soundSystem.animation.addByPrefix("idle", "sound system", 24, false);
@@ -190,7 +177,6 @@ class ResultState extends MusicBeatSubstate
 		var blackTopBar:FlxSprite = new FlxSprite().loadGraphic(Paths.image("ui/menus/resultScreen/topBarBlack"));
 		blackTopBar.y = -blackTopBar.height;
 		FlxTween.tween(blackTopBar, {y: 0}, 7 / 24, {ease: FlxEase.quartOut, startDelay: 3 / 24});
-		add(resultsCharacter);
 		add(blackTopBar);
 		add(clearPercentSmall);
 		add(clearPercentCounter);
@@ -365,19 +351,6 @@ class ResultState extends MusicBeatSubstate
 				new FlxTimer().start(0.4, _ -> {
 					clearPercentCounter.flash(false);
 					FlxTween.tween(clearPercentCounter, {x: 940, y: 550}, 1, {startDelay: 0.25, ease: FlxEase.quintInOut});
-
-					resultsCharacter.visible = true;
-					FlxTween.tween(resultsCharacter, {x: 390}, 1.8, {ease: FlxEase.expoOut, startDelay: 0.25});
-			
-					if (rank != ScoringRank.SHIT)
-						resultsCharacter.animation.play('win', true);
-					else
-						resultsCharacter.animation.play('lose', true);
-					resultsCharacter.animation.finishCallback = function(name:String) {
-						if (name == 'win') resultsCharacter.animation.play('idle', true);
-
-						if (name == 'lose') resultsCharacter.animation.play('idlelose', true);
-					}
 				});
 			}
 		});
@@ -525,19 +498,29 @@ class ResultState extends MusicBeatSubstate
 				});
 			}
 
-			var stickerSet = (PlayState.SONG.player1.contains('c3jo')) ? "stickers-set-2" : "stickers-set-1";
-			var stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-				case "hiper": "hiper";
-				case "roier": "roier";
-				case "steyb": "steyb";
-				case "noticiero": "umad";
-				default: "all";
-			};
+			var stickerSet = 'stickers-set-wbns';
+			var stickerPack = 'all';
+
+			if (FreeplaySections.sectionSelected.contains('duxo')) {
+				stickerSet = 'stickers-set-dm';
+
+				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+					case "its a rat": "itsarat";
+					case "last course": "lastCourse";
+					case "nightmare": "nightmare";
+					case "sdlg": "sdlg";
+					case "trick or treat": "trickOrTreat";
+					case "tryhard slaughter": "tryhard";
+					case "unwebonable v2": "unwebonable";
+					case "all wbns": "duxoMadness";
+					default: "all";
+				};
+			}
 
 			if (params.storyMode) {
 				FlxG.sound.pause(); 
-				StickerSubState.STICKER_SET = stickerSet;
-				StickerSubState.STICKER_PACK = stickerPack;
+				if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
+				if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
 
 				openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
 			} else {

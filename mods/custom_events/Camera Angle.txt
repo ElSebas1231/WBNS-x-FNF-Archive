@@ -1,0 +1,9 @@
+Mueve a gusto el HUD o el gameplay.
+
+(ES IMPORTANTE QUE LA COMA ESTE JUNTA)
+
+Value 1: Angulo,T.de Camara
+Ejm: 90,camHUD (también camGame)
+
+Value 2: Duración,Ease
+Ejm: 2,cubein

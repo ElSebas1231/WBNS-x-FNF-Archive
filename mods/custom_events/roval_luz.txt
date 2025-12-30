@@ -1,0 +1,9 @@
+Value1: Tiempo,Opacidad
+Value2: Modo,Ease,Color(HEX)
+(Simple - Modo Normal/Color) Value2: Color(HEX)
+Modos: Normal (Flash normal)
+Color (Cambias el color la luz ya existente)
+Alpha (Cambias la opacidad de la luz como sprite)
+Predeterminado: Tiempo: 0.8
+Opacidad: 0.65         Modo: Normal
+Ease: Linear              Color: ffffff (Blanco)

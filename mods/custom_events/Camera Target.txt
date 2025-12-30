@@ -1,0 +1,12 @@
+Tiempo y donde quieres que se posicione.
+
+Value 1: Target
+         bf (Para Boyfriend)
+         gf (Para Girlfriend)
+         dad (Para el Oponente)
+
+Value 2: Velocidad
+Si quieres algo lento, es de 1 para arriba
+Si quieres algo rápido, es 0.8 para abajo (Decimales)
+
+NO USES NEGATIVOS EN VALUE 2

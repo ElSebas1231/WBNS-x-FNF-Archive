@@ -1,0 +1,47 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "moskau"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 12,
+			"anim": "hey0",
+			"indices": [],
+			"name": "dance"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "hey1",
+			"indices": [],
+			"name": "Pre_Aquinodance"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": true,
+			"fps": 12,
+			"anim": "hey2",
+			"indices": [],
+			"name": "Aquinodance"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/soarinng/SdlgSoaPixel",
+	"position": [120, 330],
+	"healthicon": "gf",
+	"flip_x": false,
+	"healthbar_colors": [165, 0, 77],
+	"camera_position": [0, 0],
+	"sing_duration": 4,
+	"scale": 12,
+	"_editor_isPlayer": false
+}

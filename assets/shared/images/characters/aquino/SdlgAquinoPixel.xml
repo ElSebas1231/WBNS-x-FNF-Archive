@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SdlgAquinoPixel.png">
+	<!-- Created with Aseprite-->
+
+	<SubTexture name="pixelaquino idle_0" x="0" y="0" width="39" height="38"/>
+	<SubTexture name="pixelaquino idle_1" x="39" y="0" width="39" height="38"/>
+	<SubTexture name="pixelaquino idle_2" x="78" y="0" width="39" height="38"/>
+
+	<SubTexture name="pixelaquino left_0" x="0" y="38" width="39" height="38"/>
+	<SubTexture name="pixelaquino left_1" x="39" y="38" width="39" height="38"/>
+
+	<SubTexture name="pixelaquino down_0" x="78" y="38" width="39" height="38"/>
+	<SubTexture name="pixelaquino down_1" x="117" y="38" width="39" height="38"/>
+
+	<SubTexture name="pixelaquino up_0" x="0" y="76" width="39" height="38"/>
+	<SubTexture name="pixelaquino up_1" x="39" y="76" width="39" height="38"/>
+
+	<SubTexture name="pixelaquino right_0" x="78" y="76" width="39" height="38"/>
+	<SubTexture name="pixelaquino right_1" x="117" y="76" width="39" height="38"/>
+
+</TextureAtlas>

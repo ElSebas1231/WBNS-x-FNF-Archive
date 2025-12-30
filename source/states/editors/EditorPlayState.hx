@@ -7,6 +7,7 @@ import backend.Rating;
 import objects.Note;
 import objects.NoteSplash;
 import objects.StrumNote;
+import states.freeplay.FreeplaySections;
 
 import flixel.util.FlxSort;
 import flixel.util.FlxStringUtil;
@@ -96,7 +97,7 @@ class EditorPlayState extends MusicBeatSubstate
 		if(ClientPrefs.data.hitsoundVolume > 0) Paths.sound('hitsound');
 
 		/* setting up Editor PlayState stuff */
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('ui/menus/utils/bgMiscDesat'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		bg.scrollFactor.set();
 		bg.color = 0xFF101010;
@@ -138,7 +139,7 @@ class EditorPlayState extends MusicBeatSubstate
 		tipText.borderSize = 2;
 		tipText.scrollFactor.set();
 		add(tipText);
-		FlxG.mouse.visible = false;
+		Cursor.hide();
 		
 		generateSong(PlayState.SONG.song);
 
@@ -272,7 +273,7 @@ class EditorPlayState extends MusicBeatSubstate
 	{
 		FlxG.stage.removeEventListener(KeyboardEvent.KEY_DOWN, onKeyPress);
 		FlxG.stage.removeEventListener(KeyboardEvent.KEY_UP, onKeyRelease);
-		FlxG.mouse.visible = true;
+		Cursor.show();
 		super.destroy();
 	}
 	
@@ -322,10 +323,10 @@ class EditorPlayState extends MusicBeatSubstate
 		{
 			if (songData.needsVoices)
 			{
-				var playerVocals = Paths.voices(songData.song, (boyfriendVocals == null || boyfriendVocals.length < 1) ? 'Player' : boyfriendVocals);
-				vocals.loadEmbedded(playerVocals != null ? playerVocals : Paths.voices(songData.song));
+				var playerVocals = Paths.voices('${FreeplaySections.sectionSelected}/${songData.song}', (boyfriendVocals == null || boyfriendVocals.length < 1) ? 'Player' : boyfriendVocals);
+				vocals.loadEmbedded(playerVocals != null ? playerVocals : Paths.voices('${FreeplaySections.sectionSelected}/${songData.song}'));
 				
-				var oppVocals = Paths.voices(songData.song, (dadVocals == null || dadVocals.length < 1) ? 'Opponent' : dadVocals);
+				var oppVocals = Paths.voices('${FreeplaySections.sectionSelected}/${songData.song}', (dadVocals == null || dadVocals.length < 1) ? 'Opponent' : dadVocals);
 				if(oppVocals != null) opponentVocals.loadEmbedded(oppVocals);
 			}
 		}
@@ -990,16 +991,26 @@ class EditorPlayState extends MusicBeatSubstate
 	
 	function loadCharacterFile(char:String):CharacterFile {
 		var characterPath:String = 'characters/' + char + '.json';
-		var path:String = Paths.dlcsFolders(characterPath);
+		#if MODS_ALLOWED
+		var path:String = Paths.modFolders(characterPath);
 		if (!FileSystem.exists(path)) {
 			path = Paths.getSharedPath(characterPath);
 		}
 
-		if (!FileSystem.exists(path) || !OpenFlAssets.exists(path)) {
-			path = Paths.getSharedPath('characters/' + Character.DEFAULT_CHARACTER + '.json');
+		if (!FileSystem.exists(path))
+		#else
+		var path:String = Paths.getSharedPath(characterPath);
+		if (!OpenFlAssets.exists(path))
+		#end
+		{
+			path = Paths.getSharedPath('characters/' + Character.DEFAULT_CHARACTER + '.json'); //If a character couldn't be found, change him to BF just to prevent a crash
 		}
 
+		#if MODS_ALLOWED
 		var rawJson = File.getContent(path);
+		#else
+		var rawJson = OpenFlAssets.getText(path);
+		#end
 		return cast Json.parse(rawJson);
 	}
 }

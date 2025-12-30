@@ -1,0 +1,77 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				310,
+				85
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "dleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				53,
+				-230
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "ddown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				53,
+				313
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "dup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-13,
+				59
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "dright",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "didle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/duxo/D_mr",
+	"position": [
+80,20
+	],
+	"healthicon": "icon-d",
+	"flip_x": false,
+	"healthbar_colors": [
+		99,
+		72,
+		165
+	],
+	"camera_position": [
+		50,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

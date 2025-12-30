@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="craftman.png">
-<SubTexture name="idle0000" x="0" y="89" width="130" height="77" frameX="-1592" frameY="-713" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="0" y="0" width="142" height="89" frameX="-1586" frameY="-707" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="142" y="0" width="136" height="83" frameX="-1589" frameY="-710" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="130" y="89" width="130" height="77" frameX="-1592" frameY="-713" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="redline.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="redline0000" x="15" y="15" width="1" height="2" frameX="-12" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0001" x="31" y="15" width="1" height="2" frameX="-12" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0002" x="47" y="15" width="5" height="2" frameX="-10" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0003" x="67" y="15" width="9" height="2" frameX="-8" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0004" x="91" y="15" width="12" height="2" frameX="-6" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0005" x="15" y="32" width="14" height="2" frameX="-5" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0006" x="44" y="32" width="17" height="2" frameX="-4" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0007" x="76" y="32" width="18" height="2" frameX="-3" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0008" x="15" y="49" width="20" height="2" frameX="-2" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0009" x="50" y="49" width="21" height="2" frameX="-2" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0010" x="86" y="49" width="22" height="2" frameX="-1" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0011" x="15" y="66" width="23" height="2" frameX="-1" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0012" x="15" y="66" width="23" height="2" frameX="-1" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0013" x="53" y="66" width="24" height="2" frameX="0" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0014" x="53" y="66" width="24" height="2" frameX="0" frameY="0" frameWidth="25" frameHeight="2"/>
+	<SubTexture name="redline0015" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0016" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0017" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0018" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0019" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0020" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0021" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0022" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0023" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0024" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0025" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0026" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0027" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0028" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0029" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0030" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0031" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0032" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0033" x="15" y="83" width="25" height="2"/>
+	<SubTexture name="redline0034" x="15" y="83" width="25" height="2"/>
+</TextureAtlas>

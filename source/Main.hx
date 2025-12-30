@@ -17,14 +17,14 @@ import openfl.events.Event;
 import openfl.display.StageScaleMode;
 import lime.app.Application;
 import states.TitleState;
-import backend.utils.Cursor;
+import backend.Cursor;
 
 #if linux
 import lime.graphics.Image;
 #end
 
 #if windows
-import backend.utils.WindowUtil;
+import backend.WindowUtil;
 #end
 
 //crash handler stuff
@@ -62,7 +62,6 @@ class Main extends Sprite
 	public static function main():Void
 	{
 		Lib.current.addChild(new Main());
-		Lib.current.addChild(new backend.online.gui.Alert());
 	}
 
 	public function new()
@@ -112,15 +111,10 @@ class Main extends Sprite
 
 		CoolUtil.setDarkMode(true);
 
-		if (!FileSystem.exists('assets/shared/images/coconut.jpg')) {
-			Application.current.window.alert('Ahora como castigo, el juego no iniciará.\nEspero y estés feliz por lo que hiciste.', '¿Cómo te atreves a cambiar al coco místico?');
-			Sys.exit(1);
-		}
-
 		var game = new FlxGame(game.width, game.height, game.initialState, #if (flixel < "5.0.0") game.zoom, #end game.framerate, game.framerate, game.skipSplash, game.startFullscreen);
 		
 		@:privateAccess
-		game._customSoundTray = backend.funkin.FunkinSoundTray;
+		game._customSoundTray = backend.FunkinSoundTray;
 	
 		#if LUA_ALLOWED Lua.set_callbacks_function(cpp.Callable.fromStaticFunction(psychlua.CallbackHandler.call)); #end
 		Controls.instance = new Controls();
@@ -158,21 +152,6 @@ class Main extends Sprite
 		DiscordClient.prepare();
 		#end
 
-		backend.online.mods.ModDownloader.checkDeleteDlDir();
-		addChild(new backend.online.gui.DownloadAlert.DownloadAlerts());
-		FlxG.plugins.add(new backend.online.Waiter());
-
-
-		Lib.application.window.onClose.add(() -> {
-			#if DISCORD_ALLOWED
-			DiscordClient.shutdown();
-			#end
-			backend.online.mods.ModDownloader.cancelAll();
-			backend.online.mods.ModDownloader.checkDeleteDlDir();
-		});
-
-		Lib.application.window.fullscreen = FlxG.save.data.fullscreen;
-
 		// init data
 		if(FlxG.save.data.coins == null) FlxG.save.data.coins = 0;
 
@@ -194,8 +173,6 @@ class Main extends Sprite
 		WindowUtil.initWindowEvents();
 		// Disable the thing on Windows where it tries to send a bug report to Microsoft because why do they care?
 		WindowUtil.disableCrashHandler();
-
-		if (FlxG.save.data.fpSectionsUnlocked != null) ClientPrefs.data.fpSectionsUnlocked = FlxG.save.data.fpSectionsUnlocked;
 	}
 
 	static function resetSpriteCache(sprite:Sprite):Void {
@@ -204,7 +181,7 @@ class Main extends Sprite
 			sprite.__cacheBitmapData = null;
 		}
 	}
-
+	
 	private override function __enterFrame(deltaTime:Float):Void
 	{
 		super.__enterFrame(Std.int(deltaTime));
@@ -225,7 +202,7 @@ class Main extends Sprite
 		dateNow = dateNow.replace(" ", "_");
 		dateNow = dateNow.replace(":", "'");
 
-		path = "./crash/" + "PsychEngine_" + dateNow + ".txt";
+		path = "./crash/" + "WBNS-DLC_" + dateNow + ".txt";
 
 		for (stackItem in callStack)
 		{
@@ -238,7 +215,7 @@ class Main extends Sprite
 			}
 		}
 
-		errMsg += "\nUncaught Error: " + e.error + "\nPlease report this error to the GitHub page: https://github.com/ShadowMario/FNF-PsychEngine\n\n> Crash Handler written by: sqirra-rng";
+		errMsg += "\nUncaught Error: " + e.error;
 
 		if (!FileSystem.exists("./crash/"))
 			FileSystem.createDirectory("./crash/");

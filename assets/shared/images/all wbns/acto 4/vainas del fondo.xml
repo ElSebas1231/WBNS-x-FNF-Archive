@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="vainas del fondo.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="floating objects0000" x="369" y="273" width="100" height="102" frameX="2" frameY="2" frameWidth="96" frameHeight="98"/>
+	<SubTexture name="floating objects0001" x="0" y="0" width="170" height="273" frameX="2" frameY="2" frameWidth="166" frameHeight="269"/>
+	<SubTexture name="floating objects0002" x="170" y="0" width="182" height="250" frameX="2" frameY="2" frameWidth="178" frameHeight="246"/>
+	<SubTexture name="floating objects0003" x="495" y="0" width="87" height="149" frameX="2" frameY="2" frameWidth="83" frameHeight="145"/>
+	<SubTexture name="floating objects0004" x="280" y="273" width="89" height="115" frameX="2" frameY="2" frameWidth="85" frameHeight="111"/>
+	<SubTexture name="floating objects0005" x="0" y="470" width="97" height="99" frameX="2" frameY="2" frameWidth="93" frameHeight="95"/>
+	<SubTexture name="floating objects0006" x="97" y="470" width="97" height="72" frameX="2" frameY="2" frameWidth="93" frameHeight="68"/>
+	<SubTexture name="floating objects0007" x="146" y="273" width="134" height="144" frameX="2" frameY="2" frameWidth="130" frameHeight="140"/>
+	<SubTexture name="floating objects0008" x="352" y="0" width="143" height="221" frameX="2" frameY="2" frameWidth="139" frameHeight="217"/>
+	<SubTexture name="floating objects0009" x="0" y="273" width="146" height="197" frameX="2" frameY="2" frameWidth="143" frameHeight="194"/>
+</TextureAtlas>

@@ -1,0 +1,91 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-57,
+				-128
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "pidle"
+		},
+		{
+			"offsets": [
+				205,
+				-119
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "pleft"
+		},
+		{
+			"offsets": [
+				-96,
+				-162
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "pdown"
+		},
+		{
+			"offsets": [
+				-117,
+				34
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "pup"
+		},
+		{
+			"offsets": [
+				-128,
+				-49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "pright"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "transition",
+			"indices": [],
+			"name": "pestrasformation0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/aquino/paranoiaDogetc",
+	"position": [
+		-70,
+		-320
+	],
+	"healthicon": "icon-Vquino",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

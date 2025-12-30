@@ -13,6 +13,8 @@ import states.TitleState;
 	public var opponentStrums:Bool = true;
 	public var showFPS:Bool = true;
 	public var flashing:Bool = true;
+	public var spookyUnlock:Bool = false;
+	public var seenGoobyeVideo:Bool = false;
 	public var autoPause:Bool = false;
 	public var vsliceResults:Bool = true;
 	public var antialiasing:Bool = true;
@@ -40,7 +42,7 @@ import states.TitleState;
 		[0xFF71E300, 0xFFF6FFE6, 0xFF003100],
 		[0xFFFF884E, 0xFFFFFAF5, 0xFF6C0000]];
 
-	public var fpSectionsUnlocked:Array<String> = ['storymode'];
+	public var fpSectionsUnlocked:Array<String> = ['duxomadness'];
 	public var shopItemsBuyed:Array<String> = [];
 	public var favoriteSongs:Array<String> = [];
 	public var ghostTapping:Bool = true;
@@ -50,6 +52,7 @@ import states.TitleState;
 	public var noStickers:Bool = false;
 	public var healthBarAlpha:Float = 1;
 	public var hitsoundVolume:Float = 0;
+	public var missSoundVolume:Float = 0;
 	public var pauseMusic:String = 'Pause Improv';
 	public var checkForUpdates:Bool = true;
 	public var comboStacking:Bool = true;
@@ -108,10 +111,7 @@ class ClientPrefs {
 		'pause'			=> [ENTER, ESCAPE],
 		'reset'			=> [R],
 		'fullscreen' 	=> [Y, F11],
-		'fp_favorite'	=> [F],
-		'fp_left'		=> [Q],
-		'fp_right'		=> [E],
-		
+
 		'volume_mute'	=> [ZERO],
 		'volume_up'		=> [NUMPADPLUS, PLUS],
 		'volume_down'	=> [NUMPADMINUS, MINUS],

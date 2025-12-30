@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				25,
+				3
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				83
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				18,
+				91
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				95,
+				87
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/spooky/spoookyskid",
+	"position": [
+		120,
+		470
+	],
+	"healthicon": "spooky",
+	"flip_x": true,
+	"healthbar_colors": [
+		238,
+		247,
+		242
+	],
+	"camera_position": [
+		-350,
+		-210
+	],
+	"sing_duration": 4,
+	"scale": 1.2,
+	"_editor_isPlayer": true
+}

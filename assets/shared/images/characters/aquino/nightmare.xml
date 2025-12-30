@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="nightmare.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ndown0000" x="100" y="100" width="1111" height="558" frameX="0" frameY="-15" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0001" x="100" y="100" width="1111" height="558" frameX="0" frameY="-15" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0002" x="1311" y="100" width="1015" height="540" frameX="-26" frameY="-15" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0003" x="1311" y="100" width="1015" height="540" frameX="-26" frameY="-15" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0004" x="2426" y="100" width="1000" height="550" frameX="-33" frameY="0" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0005" x="2426" y="100" width="1000" height="550" frameX="-33" frameY="0" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0006" x="2426" y="100" width="1000" height="550" frameX="-33" frameY="0" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0007" x="2426" y="100" width="1000" height="550" frameX="-33" frameY="0" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="ndown0008" x="2426" y="100" width="1000" height="550" frameX="-33" frameY="0" frameWidth="1111" frameHeight="573"/>
+	<SubTexture name="nidle0000" x="3526" y="100" width="328" height="595"/>
+	<SubTexture name="nidle0001" x="3526" y="100" width="328" height="595"/>
+	<SubTexture name="nidle0002" x="100" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0003" x="100" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0004" x="528" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0005" x="528" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0006" x="956" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0007" x="956" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0008" x="1384" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0009" x="1384" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0010" x="1812" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0011" x="1812" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0012" x="2240" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0013" x="2240" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0014" x="2668" y="795" width="328" height="595"/>
+	<SubTexture name="nidle0015" x="2668" y="795" width="328" height="595"/>
+	<SubTexture name="nleft0000" x="3096" y="795" width="755" height="569" frameX="-80" frameY="-39" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0001" x="3096" y="795" width="755" height="569" frameX="-80" frameY="-39" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0002" x="100" y="1490" width="835" height="594" frameX="0" frameY="0" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0003" x="100" y="1490" width="835" height="594" frameX="0" frameY="0" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0004" x="1035" y="1490" width="827" height="577" frameX="-8" frameY="-17" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0005" x="1035" y="1490" width="827" height="577" frameX="-8" frameY="-17" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0006" x="1035" y="1490" width="827" height="577" frameX="-8" frameY="-17" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0007" x="1035" y="1490" width="827" height="577" frameX="-8" frameY="-17" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nleft0008" x="1035" y="1490" width="827" height="577" frameX="-8" frameY="-17" frameWidth="835" frameHeight="608"/>
+	<SubTexture name="nright0000" x="1962" y="1490" width="514" height="754" frameX="-6" frameY="0" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0001" x="1962" y="1490" width="514" height="754" frameX="-6" frameY="0" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0002" x="2576" y="1490" width="507" height="758" frameX="-3" frameY="-3" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0003" x="2576" y="1490" width="507" height="758" frameX="-3" frameY="-3" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0004" x="3183" y="1490" width="500" height="758" frameX="0" frameY="-2" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0005" x="3183" y="1490" width="500" height="758" frameX="0" frameY="-2" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0006" x="3183" y="1490" width="500" height="758" frameX="0" frameY="-2" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0007" x="3183" y="1490" width="500" height="758" frameX="0" frameY="-2" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nright0008" x="3183" y="1490" width="500" height="758" frameX="0" frameY="-2" frameWidth="520" frameHeight="761"/>
+	<SubTexture name="nup0000" x="100" y="2348" width="1012" height="772" frameX="-142" frameY="-68" frameWidth="1286" frameHeight="1029"/>
+	<SubTexture name="nup0001" x="100" y="2348" width="1012" height="772" frameX="-142" frameY="-68" frameWidth="1286" frameHeight="1029"/>
+	<SubTexture name="nup0002" x="1212" y="2348" width="923" height="786" frameX="-189" frameY="-90" frameWidth="1286" frameHeight="1029"/>
+	<SubTexture name="nup0003" x="1212" y="2348" width="923" height="786" frameX="-189" frameY="-90" frameWidth="1286" frameHeight="1029"/>
+	<SubTexture name="nup0004" x="2235" y="2348" width="1286" height="1029"/>
+	<SubTexture name="nup0005" x="2235" y="2348" width="1286" height="1029"/>
+	<SubTexture name="nup0006" x="2235" y="2348" width="1286" height="1029"/>
+	<SubTexture name="nup0007" x="2235" y="2348" width="1286" height="1029"/>
+	<SubTexture name="nup0008" x="2235" y="2348" width="1286" height="1029"/>
+</TextureAtlas>

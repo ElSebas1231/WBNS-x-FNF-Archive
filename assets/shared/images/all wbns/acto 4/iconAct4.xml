@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="iconAct4.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="20020000" x="550" y="0" width="118" height="138" frameX="-5" frameY="-11" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="aquino-battle0000" x="125" y="451" width="131" height="115" frameX="-7" frameY="-11" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="beta-duxo0000" x="668" y="117" width="114" height="118" frameX="-4" frameY="-11" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="c3jo-traje0000" x="0" y="451" width="125" height="127" frameX="-1" frameY="-8" frameWidth="147" frameHeight="143"/>
+	<SubTexture name="C3700000" x="0" y="314" width="120" height="137" frameX="-2" frameY="0" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="capicuy0000" x="668" y="0" width="119" height="117" frameX="-8" frameY="-25" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="creare-un-mundo0000" x="550" y="285" width="113" height="126" frameX="-3" frameY="-7" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="duxo-irl0000" x="668" y="235" width="108" height="118" frameX="-13" frameY="-19" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="king-of-the-biome0000" x="145" y="145" width="137" height="140" frameX="0" frameY="-4" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="mictiaexe0000" x="283" y="0" width="133" height="139" frameX="-7" frameY="-4" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="mishu0000" x="371" y="314" width="122" height="125" frameX="-10" frameY="-17" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="mr-a0000" x="0" y="155" width="141" height="159" frameX="-3" frameY="-1" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="mukasa0000" x="550" y="138" width="100" height="147" frameX="-1" frameY="2" frameWidth="147" frameHeight="143"/>
+	<SubTexture name="natalanexe0000" x="145" y="0" width="138" height="145" frameX="-3" frameY="-6" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="natalon0000" x="120" y="314" width="129" height="126" frameX="0" frameY="-17" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="perrolol0000" x="668" y="353" width="109" height="107" frameX="-6" frameY="-27" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="soaringdead0000" x="416" y="133" width="120" height="142" frameX="-3" frameY="0" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="sx0000" x="283" y="139" width="108" height="155" frameX="-10" frameY="-2" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="t-odio-aquino0000" x="416" y="0" width="134" height="133" frameX="0" frameY="-10" frameWidth="147" frameHeight="143"/>
+	<SubTexture name="tomycatt0000" x="249" y="314" width="122" height="126" frameX="-8" frameY="-13" frameWidth="147" frameHeight="160"/>
+	<SubTexture name="v-20020000" x="0" y="0" width="145" height="155" frameX="-1" frameY="-5" frameWidth="147" frameHeight="160"/>
+</TextureAtlas>

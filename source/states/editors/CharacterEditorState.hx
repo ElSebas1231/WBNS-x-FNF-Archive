@@ -146,7 +146,7 @@ class CharacterEditorState extends MusicBeatState
 		add(frameAdvanceText);
 
 		addHelpScreen();
-		FlxG.mouse.visible = true;
+		Cursor.show();
 		FlxG.camera.zoom = 1;
 
 		makeUIMenu();
@@ -325,15 +325,15 @@ class CharacterEditorState extends MusicBeatState
 				if(spr != null)
 				{
 					spr.setPosition(character.x, character.y);
+					spr.offset.set(character.offset.x, character.offset.y);
+					spr.visible = true;
+					
 					spr.antialiasing = character.antialiasing;
 					spr.flipX = character.flipX;
 					spr.alpha = ghostAlpha;
 
 					spr.scale.set(character.scale.x, character.scale.y);
 					spr.updateHitbox();
-
-					spr.offset.set(character.offset.x, character.offset.y);
-					spr.visible = true;
 
 					var otherSpr:FlxSprite = (spr == animateGhost) ? ghost : animateGhost;
 					if(otherSpr != null) otherSpr.visible = false;
@@ -1031,7 +1031,7 @@ class CharacterEditorState extends MusicBeatState
 		}
 		else if(FlxG.keys.justPressed.ESCAPE)
 		{
-			FlxG.mouse.visible = false;
+			Cursor.hide();
 			if(!_goToPlayState)
 			{
 				MusicBeatState.switchState(new states.editors.MasterEditorMenu());

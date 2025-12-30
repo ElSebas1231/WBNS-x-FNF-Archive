@@ -1,0 +1,9 @@
+Value1: Valor del zoom agregado al stage
+(Ejemplo: Si el stage tiene 0.8 de zoom y colocas 0.05,
+	ahora el zoom será de 0.85)
+Value2: Tiempo,easing
+Se separa con una ","
+(Si no quieres colocar el easing, solo escribe el tiempo)
+
+Predeterminado: Zoom: 0 (Zoom del stage) 
+Tiempo: 0.2         Easing: Linear

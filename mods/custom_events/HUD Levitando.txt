@@ -1,0 +1,7 @@
+Usalo con valores menores para el efecto
+
+Value 1 = Tiempo (Para efecto: 1)
+Value 2 = Intensidad (Para efecto: 1)
+
+PD: Pueden usar su imaginación con otros
+valores :3

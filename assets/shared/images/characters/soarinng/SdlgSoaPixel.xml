@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SdlgSoaPixel.png">
+	<!-- Created with Aseprite-->
+
+	<SubTexture name="moskau_0" x="0" y="0" width="108" height="65"/>
+	<SubTexture name="moskau_1" x="108" y="0" width="108" height="65"/>
+	<SubTexture name="moskau_2" x="216" y="0" width="108" height="65"/>
+	<SubTexture name="moskau_3" x="324" y="0" width="108" height="65"/>
+	<SubTexture name="moskau_4" x="432" y="0" width="108" height="65"/>
+	<SubTexture name="moskau_5" x="540" y="0" width="108" height="65"/>
+	<SubTexture name="moskau_6" x="648" y="0" width="108" height="65"/>
+	<SubTexture name="moskau_7" x="756" y="0" width="108" height="65"/>
+
+	<SubTexture name="dance_0" x="0" y="65" width="108" height="65"/>
+	<SubTexture name="dance_1" x="108" y="65" width="108" height="65"/>
+	<SubTexture name="dance_2" x="216" y="65" width="108" height="65"/>
+	<SubTexture name="dance_3" x="324" y="65" width="108" height="65"/>
+	<SubTexture name="dance_4" x="432" y="65" width="108" height="65"/>
+	<SubTexture name="dance_5" x="540" y="65" width="108" height="65"/>
+	<SubTexture name="dance_6" x="648" y="65" width="108" height="65"/>
+
+	<SubTexture name="Pre_Aquinodance_0" x="0" y="130" width="108" height="65"/>
+	<SubTexture name="Pre_Aquinodance_1" x="108" y="130" width="108" height="65"/>
+	<SubTexture name="Pre_Aquinodance_2" x="216" y="130" width="108" height="65"/>
+	<SubTexture name="Pre_Aquinodance_3" x="324" y="130" width="108" height="65"/>
+	<SubTexture name="Pre_Aquinodance_4" x="432" y="130" width="108" height="65"/>
+	<SubTexture name="Pre_Aquinodance_5" x="540" y="130" width="108" height="65"/>
+	<SubTexture name="Pre_Aquinodance_6" x="648" y="130" width="108" height="65"/>
+
+	<SubTexture name="Aquinodance_0" x="0" y="195" width="108" height="65"/>
+	<SubTexture name="Aquinodance_1" x="108" y="195" width="108" height="65"/>
+	<SubTexture name="Aquinodance_2" x="216" y="195" width="108" height="65"/>
+	<SubTexture name="Aquinodance_3" x="324" y="195" width="108" height="65"/>
+	<SubTexture name="Aquinodance_4" x="432" y="195" width="108" height="65"/>
+	<SubTexture name="Aquinodance_5" x="540" y="195" width="108" height="65"/>
+
+
+</TextureAtlas>

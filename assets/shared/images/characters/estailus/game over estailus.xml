@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="game over estailus.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="estailus morido confirm0000" x="33" y="33" width="524" height="625" frameX="-250" frameY="-297" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0001" x="593" y="33" width="524" height="624" frameX="-250" frameY="-297" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0002" x="1153" y="33" width="524" height="619" frameX="-250" frameY="-297" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0003" x="1713" y="33" width="835" height="706" frameX="-116" frameY="-234" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0004" x="2584" y="33" width="878" height="850" frameX="-80" frameY="-66" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0005" x="3498" y="33" width="878" height="856" frameX="-80" frameY="-66" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0006" x="4412" y="33" width="1027" height="911" frameX="-10" frameY="-11" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0007" x="4412" y="33" width="1027" height="911" frameX="-10" frameY="-11" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0008" x="5475" y="33" width="1048" height="921" frameX="0" frameY="0" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0009" x="5475" y="33" width="1048" height="921" frameX="0" frameY="0" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0010" x="5475" y="33" width="1048" height="921" frameX="0" frameY="0" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0011" x="6559" y="33" width="823" height="754" frameX="-75" frameY="-169" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0012" x="7418" y="33" width="591" height="671" frameX="-242" frameY="-232" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0013" x="33" y="990" width="591" height="670" frameX="-242" frameY="-232" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0014" x="660" y="990" width="557" height="628" frameX="-245" frameY="-286" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0015" x="660" y="990" width="557" height="628" frameX="-245" frameY="-286" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0016" x="1253" y="990" width="522" height="644" frameX="-253" frameY="-266" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0017" x="1811" y="990" width="522" height="650" frameX="-253" frameY="-266" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0018" x="1811" y="990" width="522" height="650" frameX="-253" frameY="-266" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0019" x="2369" y="990" width="522" height="618" frameX="-253" frameY="-298" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0020" x="2927" y="990" width="522" height="617" frameX="-253" frameY="-298" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0021" x="2927" y="990" width="522" height="617" frameX="-253" frameY="-298" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0022" x="2927" y="990" width="522" height="617" frameX="-253" frameY="-298" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0023" x="3485" y="990" width="522" height="619" frameX="-253" frameY="-298" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0024" x="3485" y="990" width="522" height="619" frameX="-253" frameY="-298" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0025" x="3485" y="990" width="522" height="619" frameX="-253" frameY="-298" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0026" x="4043" y="990" width="539" height="598" frameX="-227" frameY="-313" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0027" x="4043" y="990" width="539" height="598" frameX="-227" frameY="-313" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0028" x="4043" y="990" width="539" height="598" frameX="-227" frameY="-313" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0029" x="4618" y="990" width="563" height="525" frameX="-222" frameY="-347" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0030" x="4618" y="990" width="563" height="525" frameX="-222" frameY="-347" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0031" x="5217" y="990" width="433" height="460" frameX="-294" frameY="-374" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0032" x="5217" y="990" width="433" height="460" frameX="-294" frameY="-374" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0033" x="5686" y="990" width="356" height="362" frameX="-344" frameY="-383" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0034" x="5686" y="990" width="356" height="362" frameX="-344" frameY="-383" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0035" x="6078" y="990" width="0" height="0" frameX="-508" frameY="-646" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0036" x="6078" y="990" width="0" height="0" frameX="-508" frameY="-646" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0037" x="6078" y="990" width="0" height="0" frameX="-508" frameY="-646" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0038" x="6078" y="990" width="0" height="0" frameX="-508" frameY="-646" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido confirm0039" x="6078" y="990" width="0" height="0" frameX="-508" frameY="-646" frameWidth="1048" frameHeight="940"/>
+	<SubTexture name="estailus morido loop0000" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0001" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0002" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0003" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0004" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0005" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0006" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0007" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0008" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0009" x="7234" y="990" width="524" height="624" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0010" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0011" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0012" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0013" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0014" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0015" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0016" x="7234" y="990" width="524" height="624" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0017" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0018" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0019" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0020" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0021" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0022" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0023" x="593" y="1696" width="524" height="625" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0024" x="593" y="1696" width="524" height="625" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0025" x="593" y="1696" width="524" height="625" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0026" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0027" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0028" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0029" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0030" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0031" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0032" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0033" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0034" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0035" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0036" x="33" y="1696" width="524" height="620" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0037" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0038" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0039" x="6674" y="990" width="524" height="626" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0040" x="593" y="1696" width="524" height="625" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0041" x="593" y="1696" width="524" height="625" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0042" x="593" y="1696" width="524" height="625" frameX="0" frameY="0" frameWidth="524" frameHeight="627"/>
+	<SubTexture name="estailus morido loop0043" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0044" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0045" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0046" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0047" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0048" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0049" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0050" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0051" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0052" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0053" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido loop0054" x="6114" y="990" width="524" height="627"/>
+	<SubTexture name="estailus morido20000" x="1153" y="1696" width="284" height="490" frameX="-513" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20001" x="1473" y="1696" width="284" height="490" frameX="-513" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20002" x="1473" y="1696" width="284" height="490" frameX="-513" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20003" x="1793" y="1696" width="284" height="490" frameX="-513" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20004" x="2113" y="1696" width="284" height="490" frameX="-513" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20005" x="2113" y="1696" width="284" height="490" frameX="-513" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20006" x="2433" y="1696" width="281" height="490" frameX="-516" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20007" x="2433" y="1696" width="281" height="490" frameX="-516" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20008" x="2750" y="1696" width="281" height="490" frameX="-516" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20009" x="2750" y="1696" width="281" height="490" frameX="-516" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20010" x="3067" y="1696" width="242" height="490" frameX="-555" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20011" x="3067" y="1696" width="242" height="490" frameX="-555" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20012" x="3345" y="1696" width="242" height="490" frameX="-555" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20013" x="3345" y="1696" width="242" height="490" frameX="-555" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20014" x="3623" y="1696" width="258" height="490" frameX="-555" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20015" x="3623" y="1696" width="258" height="490" frameX="-555" frameY="-338" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20016" x="3917" y="1696" width="841" height="582" frameX="-119" frameY="-310" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20017" x="3917" y="1696" width="841" height="582" frameX="-119" frameY="-310" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20018" x="3917" y="1696" width="841" height="582" frameX="-119" frameY="-310" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20019" x="4794" y="1696" width="909" height="718" frameX="-39" frameY="-188" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20020" x="4794" y="1696" width="909" height="718" frameX="-39" frameY="-188" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20021" x="4794" y="1696" width="909" height="718" frameX="-39" frameY="-188" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20022" x="5739" y="1696" width="920" height="794" frameX="-12" frameY="-107" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20023" x="5739" y="1696" width="920" height="794" frameX="-12" frameY="-107" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20024" x="6695" y="1696" width="940" height="819" frameX="-4" frameY="-86" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20025" x="33" y="2551" width="940" height="819" frameX="-4" frameY="-86" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20026" x="33" y="2551" width="940" height="819" frameX="-4" frameY="-86" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20027" x="1009" y="2551" width="833" height="734" frameX="-29" frameY="-150" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20028" x="1009" y="2551" width="833" height="734" frameX="-29" frameY="-150" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20029" x="1878" y="2551" width="571" height="751" frameX="-185" frameY="-133" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20030" x="1878" y="2551" width="571" height="751" frameX="-185" frameY="-133" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20031" x="2485" y="2551" width="568" height="756" frameX="-188" frameY="-128" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20032" x="2485" y="2551" width="568" height="756" frameX="-188" frameY="-128" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20033" x="3089" y="2551" width="571" height="753" frameX="-185" frameY="-131" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20034" x="3089" y="2551" width="571" height="753" frameX="-185" frameY="-131" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20035" x="3696" y="2551" width="570" height="739" frameX="-186" frameY="-145" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20036" x="3696" y="2551" width="570" height="739" frameX="-186" frameY="-145" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20037" x="3696" y="2551" width="570" height="739" frameX="-186" frameY="-145" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20038" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20039" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20040" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20041" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20042" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20043" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20044" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20045" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20046" x="4302" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20047" x="4913" y="2551" width="575" height="749" frameX="-181" frameY="-135" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20048" x="5524" y="2551" width="574" height="748" frameX="-182" frameY="-136" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20049" x="6134" y="2551" width="574" height="748" frameX="-182" frameY="-136" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20050" x="6744" y="2551" width="576" height="748" frameX="-180" frameY="-136" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20051" x="7356" y="2551" width="576" height="748" frameX="-180" frameY="-136" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20052" x="33" y="3406" width="573" height="752" frameX="-183" frameY="-132" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20053" x="33" y="3406" width="573" height="752" frameX="-183" frameY="-132" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20054" x="33" y="3406" width="573" height="752" frameX="-183" frameY="-132" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20055" x="642" y="3406" width="643" height="826" frameX="-113" frameY="-127" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20056" x="1321" y="3406" width="725" height="1066" frameX="-24" frameY="-2" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20057" x="1321" y="3406" width="725" height="1066" frameX="-24" frameY="-2" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20058" x="2082" y="3406" width="766" height="1079" frameX="0" frameY="0" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20059" x="2082" y="3406" width="766" height="1079" frameX="0" frameY="0" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20060" x="2082" y="3406" width="766" height="1079" frameX="0" frameY="0" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20061" x="2884" y="3406" width="768" height="1073" frameX="-8" frameY="-6" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20062" x="2884" y="3406" width="768" height="1073" frameX="-8" frameY="-6" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20063" x="3688" y="3406" width="768" height="1073" frameX="-8" frameY="-6" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20064" x="3688" y="3406" width="768" height="1073" frameX="-8" frameY="-6" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20065" x="4492" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20066" x="4492" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20067" x="4492" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20068" x="4492" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20069" x="4492" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20070" x="4492" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20071" x="4492" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+	<SubTexture name="estailus morido20072" x="5289" y="3406" width="761" height="1067" frameX="-7" frameY="-9" frameWidth="960" frameHeight="1079"/>
+</TextureAtlas>

@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="aquino dlc capsule.png">
-<SubTexture name="aquino dlc capsule disponible0000" x="0" y="0" width="955" height="773" frameX="-95" frameY="-88" frameWidth="1917" frameHeight="962" />
-<SubTexture name="aquino dlc capsule instalado0000" x="955" y="0" width="956" height="773" frameX="-95" frameY="-88" frameWidth="1917" frameHeight="962" />
-</TextureAtlas>

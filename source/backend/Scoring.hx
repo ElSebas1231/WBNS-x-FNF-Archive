@@ -365,18 +365,18 @@ class Scoring
 			return null;
 
 		// Else, use the standard grades
-		if (sngAccuracy >= 1){
+		if (sngAccuracy >= 0.99){
 			return ScoringRank.PERFECT;
 		}
-		else if (sngAccuracy >= 0.90)
+		else if (sngAccuracy >= 0.90 && sngAccuracy < 0.99)
 		{
 			return ScoringRank.EXCELLENT;
 		}
-		else if (sngAccuracy >= 0.80)
+		else if (sngAccuracy >= 0.80 && sngAccuracy < 0.90)
 		{
 			return ScoringRank.GREAT;
 		}
-		else if (sngAccuracy >= 0.60)
+		else if (sngAccuracy >= 0.60 && sngAccuracy < 0.80)
 		{
 			return ScoringRank.GOOD;
 		}

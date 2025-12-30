@@ -1,0 +1,2541 @@
+{
+	"song": {
+		"events": [
+			[
+				0,
+				[
+					[
+						"FocusCamera",
+						"Boyfriend,1",
+						"expoout,200,-1720"
+					],
+					[
+						"Camera Target",
+						"",
+						"53"
+					]
+				]
+			],
+			[
+				3.90625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.76, 0.01, expoout"
+					]
+				]
+			],
+			[
+				843.75,
+				[
+					[
+						"FocusCamera",
+						"Dad,52",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				847.65625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.46, 4.7, smoothsteepin"
+					]
+				]
+			],
+			[
+				5625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.86, 0.32, expoout"
+					]
+				]
+			],
+			[
+				5812.5,
+				[
+					[
+						"Camera Target",
+						"",
+						"3.4"
+					]
+				]
+			],
+			[
+				6000,
+				[
+					[
+						"FocusCamera",
+						"Reset",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				6003.90625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.32, expoout"
+					]
+				]
+			],
+			[
+				6007.8125,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.2"
+					]
+				]
+			],
+			[
+				8812.5,
+				[
+					[
+						"Camera Target",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				11995.3125,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.5"
+					]
+				]
+			],
+			[
+				12000,
+				[
+					[
+						"Camera Follow Pos",
+						"3150",
+						"1920"
+					]
+				]
+			],
+			[
+				13495.3125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.57, 1.21, smoothstepin"
+					]
+				]
+			],
+			[
+				13500,
+				[
+					[
+						"FocusCamera",
+						"Dad,16",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				15000,
+				[
+					[
+						"FocusCamera",
+						"Reset",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				15003.90625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.46, 0.32, expoout"
+					]
+				]
+			],
+			[
+				15007.8125,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.1"
+					]
+				]
+			],
+			[
+				18000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.32, expoout"
+					]
+				]
+			],
+			[
+				19500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				21000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.32, expoout"
+					]
+				]
+			],
+			[
+				24000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				25500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.32, expoout"
+					]
+				]
+			],
+			[
+				26625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				26997.65625,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.05"
+					]
+				]
+			],
+			[
+				27003.90625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				30000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				31500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.32, expoout"
+					]
+				]
+			],
+			[
+				32250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				32625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				33000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				36000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				37500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.32, expoout"
+					]
+				]
+			],
+			[
+				38250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				38625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				39000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				39937.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				40312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				40500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				41250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				42000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				42937.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				43312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				43500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				44250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				44625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				45000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				45937.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				46312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				46500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				47250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				48000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				48937.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				49312.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				49500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				49875,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				50437.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.22, cubeout"
+					]
+				]
+			],
+			[
+				50812.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.22, cubein"
+					]
+				]
+			],
+			[
+				51000,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.25"
+					]
+				]
+			],
+			[
+				54000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				55500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				56250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				56625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				57000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				60000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				60562.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				61125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				61500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				62250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				62997.65625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.32, expoout"
+					]
+				]
+			],
+			[
+				63000,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.2"
+					]
+				]
+			],
+			[
+				66000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				67500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				68250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				68625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				69000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				72000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				72562.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				73125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				73500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				74250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				74995.3125,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.3"
+					]
+				]
+			],
+			[
+				76218.75,
+				[
+					[
+						"Oscuridad",
+						"6",
+						"100"
+					]
+				]
+			],
+			[
+				76593.75,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 13, smoothstepinout"
+					]
+				]
+			],
+			[
+				77250,
+				[
+					[
+						"Oscuridad",
+						"8",
+						"90"
+					]
+				]
+			],
+			[
+				78000,
+				[
+					[
+						"Oscuridad",
+						"7",
+						"80"
+					]
+				]
+			],
+			[
+				78750,
+				[
+					[
+						"Oscuridad",
+						"7",
+						"75"
+					]
+				]
+			],
+			[
+				79500,
+				[
+					[
+						"Oscuridad",
+						"6.5",
+						"70"
+					]
+				]
+			],
+			[
+				80250,
+				[
+					[
+						"Oscuridad",
+						"6.5",
+						"65"
+					]
+				]
+			],
+			[
+				81000,
+				[
+					[
+						"Oscuridad",
+						"6",
+						"50"
+					]
+				]
+			],
+			[
+				81750,
+				[
+					[
+						"Oscuridad",
+						"6",
+						"45"
+					]
+				]
+			],
+			[
+				82500,
+				[
+					[
+						"Oscuridad",
+						"5",
+						"40"
+					]
+				]
+			],
+			[
+				83250,
+				[
+					[
+						"Oscuridad",
+						"5",
+						"40"
+					]
+				]
+			],
+			[
+				84000,
+				[
+					[
+						"Oscuridad",
+						"5",
+						"40"
+					]
+				]
+			],
+			[
+				84750,
+				[
+					[
+						"Oscuridad",
+						"4.5",
+						"35"
+					]
+				]
+			],
+			[
+				85500,
+				[
+					[
+						"Oscuridad",
+						"3",
+						"35"
+					]
+				]
+			],
+			[
+				86250,
+				[
+					[
+						"Oscuridad",
+						"3",
+						"20"
+					]
+				]
+			],
+			[
+				87000,
+				[
+					[
+						"Oscuridad",
+						"1",
+						"20"
+					]
+				]
+			],
+			[
+				87750,
+				[
+					[
+						"Oscuridad",
+						"1",
+						"5"
+					]
+				]
+			],
+			[
+				88497.65625,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.3"
+					]
+				]
+			],
+			[
+				88500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				88503.90625,
+				[
+					[
+						"Oscuridad",
+						"5",
+						"5"
+					]
+				]
+			],
+			[
+				91500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.32, expoout"
+					]
+				]
+			],
+			[
+				91875,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				93750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				94125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				94500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.32, expoout"
+					]
+				]
+			],
+			[
+				96000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				97500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				98062.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.32, expoout"
+					]
+				]
+			],
+			[
+				98812.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.32, expoout"
+					]
+				]
+			],
+			[
+				99187.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				99750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.32, expoout"
+					]
+				]
+			],
+			[
+				100125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.32, expoout"
+					]
+				]
+			],
+			[
+				100500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.32, expoout"
+					]
+				]
+			],
+			[
+				100968.75,
+				[
+					[
+						"FocusCamera",
+						"Dad,10",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				101997.65625,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.3"
+					]
+				]
+			],
+			[
+				102000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				102003.90625,
+				[
+					[
+						"Oscuridad",
+						"1",
+						"1"
+					]
+				]
+			],
+			[
+				102093.75,
+				[
+					[
+						"FocusCamera",
+						"Reset",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				105000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				106687.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				107062.5,
+				[
+					[
+						"FocusCamera",
+						"Boyfriend,10",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				107250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				107625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.32, expoout"
+					]
+				]
+			],
+			[
+				108000,
+				[
+					[
+						"FocusCamera",
+						"Reset",
+						"smoothstepinout,-200,-120"
+					]
+				]
+			],
+			[
+				108750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.26, cubein"
+					]
+				]
+			],
+			[
+				108937.5,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.3"
+					]
+				]
+			],
+			[
+				111000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				112687.5,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				113250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				113625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.32, expoout"
+					]
+				]
+			],
+			[
+				113995.3125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.32, expoout"
+					]
+				]
+			],
+			[
+				115500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				117000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				117750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				118125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				118500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				119250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				119625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				120003.90625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.32, expoout"
+					]
+				]
+			],
+			[
+				121500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.32, expoout"
+					]
+				]
+			],
+			[
+				123000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				123750,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				124125,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				124500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.32, expoout"
+					]
+				]
+			],
+			[
+				125250,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.32, expoout"
+					]
+				]
+			],
+			[
+				125625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.32, expoout"
+					]
+				]
+			],
+			[
+				125995.3125,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.3"
+					]
+				]
+			],
+			[
+				126000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.32, expoout"
+					]
+				]
+			],
+			[
+				127500,
+				[
+					[
+						"Change Scroll Speed",
+						"0.04",
+						"5.9873472423439"
+					]
+				]
+			],
+			[
+				129000,
+				[
+					[
+						"FocusCamera",
+						"Dad,45",
+						"smoothstepinout,-156,-120"
+					]
+				]
+			],
+			[
+				129003.90625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 4.21, smoothstepinout"
+					]
+				]
+			],
+			[
+				133218.75,
+				[
+					[
+						"Change Scroll Speed",
+						"1.22",
+						"0.32"
+					]
+				]
+			],
+			[
+				133222.65625,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.35, 0.3, cubein"
+					]
+				]
+			],
+			[
+				133500,
+				[
+					[
+						"FocusCamera",
+						"Reset",
+						"smoothstepinout,-190,-120"
+					]
+				]
+			],
+			[
+				134833.333333333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				136166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				137500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138833.333333333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.35, 0.3, expoout"
+					]
+				]
+			],
+			[
+				138833.333333333,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.3"
+					]
+				]
+			],
+			[
+				140166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				141500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				142833.333333333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				143500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				143833.333333333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				144162.5,
+				[
+					[
+						"Camera Follow Pos",
+						"3150",
+						"1920"
+					]
+				]
+			],
+			[
+				144166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.35, 0.3, expoout"
+					]
+				]
+			],
+			[
+				144170.138888889,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.3"
+					]
+				]
+			],
+			[
+				146833.333333333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				148166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				148833.333333333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				149479.166666667,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				149500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				153500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				154166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				154500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.3, expoout"
+					]
+				]
+			],
+			[
+				154833.333333333,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.35, 0.3, expoout"
+					]
+				]
+			],
+			[
+				154833.333333333,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.1"
+					]
+				]
+			],
+			[
+				157500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				158833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				159500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.3, expoout"
+					]
+				]
+			],
+			[
+				159833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				160162.5,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.1"
+					]
+				]
+			],
+			[
+				160166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.35, 0.3, expoout"
+					]
+				]
+			],
+			[
+				162833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				164166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				164666.666666667,
+				[
+					[
+						"Fade UI Complete",
+						"8",
+						"1"
+					]
+				]
+			],
+			[
+				164833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 0.3, expoout"
+					]
+				]
+			],
+			[
+				165166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				165500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.35, 0.3, expoout"
+					]
+				]
+			],
+			[
+				165503.472222222,
+				[
+					[
+						"FocusCamera",
+						"Reset",
+						"smoothstepinout,-100,-110"
+					]
+				]
+			],
+			[
+				168166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				170833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.3, expoout"
+					]
+				]
+			],
+			[
+				170836.805555556,
+				[
+					[
+						"Camera Target",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				171500,
+				[
+					[
+						"Camera Target",
+						"dad",
+						"3"
+					]
+				]
+			],
+			[
+				172166.666666667,
+				[
+					[
+						"Camera Target",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				172833.333333334,
+				[
+					[
+						"Camera Target",
+						"dad",
+						"3"
+					]
+				]
+			],
+			[
+				173500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				173500,
+				[
+					[
+						"Camera Target",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				174166.666666667,
+				[
+					[
+						"Camera Target",
+						"dad",
+						"3"
+					]
+				]
+			],
+			[
+				174833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				174836.805555556,
+				[
+					[
+						"Camera Target",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				175166.666666667,
+				[
+					[
+						"Camera Target",
+						"dad",
+						"3"
+					]
+				]
+			],
+			[
+				175500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				175503.472222223,
+				[
+					[
+						"Camera Target",
+						"bf",
+						"3"
+					]
+				]
+			],
+			[
+				175833.333333334,
+				[
+					[
+						"Camera Target",
+						"dad",
+						"3"
+					]
+				]
+			],
+			[
+				176000,
+				[
+					[
+						"Camera Target",
+						"",
+						"3"
+					]
+				]
+			],
+			[
+				176152.083333334,
+				[
+					[
+						"Camera Target",
+						"",
+						"4"
+					]
+				]
+			],
+			[
+				176166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.3, 0.3, expoout"
+					]
+				]
+			],
+			[
+				176170.138888889,
+				[
+					[
+						"Camera Follow Pos",
+						"3150",
+						"1920"
+					]
+				]
+			],
+			[
+				176833.333333334,
+				[
+					[
+						"Camera Target",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				176916.666666667,
+				[
+					[
+						"Fade UI Complete",
+						"13",
+						"1"
+					]
+				]
+			],
+			[
+				177489.583333334,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				177500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				177500,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.1"
+					]
+				]
+			],
+			[
+				178333.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				178666.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				178833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				179500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				180166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				181000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				181333.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				181500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				182166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				182833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				183666.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				184000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				184166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				184833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				185500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				186333.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				186666.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.65, 0.3, expoout"
+					]
+				]
+			],
+			[
+				186833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				187500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.75, 0.3, expoout"
+					]
+				]
+			],
+			[
+				187833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				188166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.45, 0.3, expoout"
+					]
+				]
+			],
+			[
+				188166.666666667,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.1"
+					]
+				]
+			],
+			[
+				189500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				190166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				190833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.55, 0.3, expoout"
+					]
+				]
+			],
+			[
+				192166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.6, 0.3, expoout"
+					]
+				]
+			],
+			[
+				192833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				193500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.9, 0.3, expoout"
+					]
+				]
+			],
+			[
+				195000,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.8, 0.3, expoout"
+					]
+				]
+			],
+			[
+				196666.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.7, 0.3, expoout"
+					]
+				]
+			],
+			[
+				197500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.3, expoout"
+					]
+				]
+			],
+			[
+				198166.666666667,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.5, 0.3, expoout"
+					]
+				]
+			],
+			[
+				198500,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.4, 0.3, expoout"
+					]
+				]
+			],
+			[
+				198831.25,
+				[
+					[
+						"Flash Camera",
+						"1.49",
+						"0.4"
+					]
+				]
+			],
+			[
+				198833.333333334,
+				[
+					[
+						"Bitto's zoom event",
+						"custom",
+						"0.85, 3.3, sineinout"
+					]
+				]
+			],
+			[
+				199416.666666667,
+				[
+					[
+						"Fade UI Complete",
+						"12",
+						"3.9"
+					]
+				]
+			]
+		]
+	}
+}

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				120,
+				70
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle0"
+		},
+		{
+			"offsets": [
+				132,
+				94
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left0"
+		},
+		{
+			"offsets": [
+				117,
+				45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down0"
+		},
+		{
+			"offsets": [
+				120,
+				83
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up0"
+		},
+		{
+			"offsets": [
+				113,
+				64
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right0"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/locochon/loco-act-2",
+	"position": [
+		60,
+		290
+	],
+	"healthicon": "loco_act_1_icon",
+	"flip_x": true,
+	"healthbar_colors": [
+		107,
+		97,
+		117
+	],
+	"camera_position": [
+		60,
+		-420
+	],
+	"sing_duration": 4,
+	"scale": 1.2
+}

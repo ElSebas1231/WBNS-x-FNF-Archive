@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="frostbite.png">
-<SubTexture name="idle0000" x="0" y="128" width="193" height="55" frameX="-305" frameY="-685" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="0" y="67" width="199" height="61" frameX="-302" frameY="-682" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="0" width="205" height="67" frameX="-299" frameY="-679" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="205" y="0" width="193" height="55" frameX="-305" frameY="-685" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

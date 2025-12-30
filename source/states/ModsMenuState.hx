@@ -67,7 +67,7 @@ class ModsMenuState extends MusicBeatState
 		DiscordClient.changePresence("In the Menus", null);
 		#end
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('ui/menus/utils/bgMiscDesat'));
 		bg.color = 0xFF665AFF;
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		add(bg);
@@ -321,25 +321,30 @@ class ModsMenuState extends MusicBeatState
 				TitleState.initialized = false;
 				TitleState.closedState = false;
 				FlxG.sound.music.fadeOut(0.3);
+				if(FreeplayState.vocals != null)
+				{
+					FreeplayState.vocals.fadeOut(0.3);
+					FreeplayState.vocals = null;
+				}
 				FlxG.camera.fade(FlxColor.BLACK, 0.5, false, FlxG.resetGame, false);
 			}
 			else MusicBeatState.switchState(new MainMenuState());
 
 			persistentUpdate = false;
 			FlxG.autoPause = ClientPrefs.data.autoPause;
-			FlxG.mouse.visible = false;
+			Cursor.hide();
 			return;
 		}
 
 		if(Math.abs(FlxG.mouse.deltaX) > 10 || Math.abs(FlxG.mouse.deltaY) > 10)
 		{
 			controls.controllerMode = false;
-			if(!FlxG.mouse.visible) FlxG.mouse.visible = true;
+			if(!FlxG.mouse.visible) Cursor.show();
 		}
 		
 		if(controls.controllerMode != _lastControllerMode)
 		{
-			if(controls.controllerMode) FlxG.mouse.visible = false;
+			if(controls.controllerMode) Cursor.hide();
 			_lastControllerMode = controls.controllerMode;
 		}
 

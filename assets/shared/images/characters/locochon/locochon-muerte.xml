@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="locochon-muerte.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="muerte-loop0000" x="100" y="100" width="483" height="723" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0001" x="100" y="100" width="483" height="723" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0002" x="683" y="100" width="483" height="717" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0003" x="683" y="100" width="483" height="717" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0004" x="1266" y="100" width="483" height="714" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0005" x="1266" y="100" width="483" height="714" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0006" x="1849" y="100" width="483" height="713" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0007" x="1849" y="100" width="483" height="713" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0008" x="1849" y="100" width="483" height="713" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0009" x="1849" y="100" width="483" height="713" frameX="-1" frameY="-5" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0010" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0011" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0012" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0013" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0014" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0015" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0016" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0017" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0018" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="muerte-loop0019" x="2432" y="100" width="487" height="718" frameX="0" frameY="0" frameWidth="487" frameHeight="728"/>
+	<SubTexture name="primer-muerte0000" x="3019" y="100" width="647" height="771"/>
+	<SubTexture name="primer-muerte0001" x="3766" y="100" width="647" height="771"/>
+	<SubTexture name="primer-muerte0002" x="4513" y="100" width="647" height="771"/>
+	<SubTexture name="primer-muerte0003" x="5260" y="100" width="647" height="771"/>
+	<SubTexture name="primer-muerte0004" x="6007" y="100" width="647" height="771"/>
+	<SubTexture name="primer-muerte0005" x="6754" y="100" width="647" height="771"/>
+	<SubTexture name="primer-muerte0006" x="100" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0007" x="847" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0008" x="1594" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0009" x="2341" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0010" x="3088" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0011" x="3835" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0012" x="4582" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0013" x="5329" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0014" x="6076" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0015" x="6823" y="971" width="647" height="771"/>
+	<SubTexture name="primer-muerte0016" x="100" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0017" x="847" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0018" x="1594" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0019" x="2341" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0020" x="3088" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0021" x="3835" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0022" x="4582" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0023" x="5329" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0024" x="6076" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0025" x="6823" y="1842" width="647" height="771"/>
+	<SubTexture name="primer-muerte0026" x="100" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0027" x="847" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0028" x="1594" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0029" x="2341" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0030" x="3088" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0031" x="3835" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0032" x="4582" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0033" x="5329" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0034" x="6076" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0035" x="6823" y="2713" width="647" height="771"/>
+	<SubTexture name="primer-muerte0036" x="100" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0037" x="847" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0038" x="1594" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0039" x="2341" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0040" x="3088" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0041" x="3835" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0042" x="4582" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0043" x="5329" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0044" x="6076" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0045" x="6823" y="3584" width="647" height="771"/>
+	<SubTexture name="primer-muerte0046" x="100" y="4455" width="647" height="771"/>
+	<SubTexture name="primer-muerte0047" x="847" y="4455" width="647" height="771"/>
+	<SubTexture name="primer-muerte0048" x="1594" y="4455" width="647" height="771"/>
+	<SubTexture name="primer-muerte0049" x="2341" y="4455" width="647" height="771"/>
+	<SubTexture name="primer-muerte0050" x="2341" y="4455" width="647" height="771"/>
+	<SubTexture name="retry0000" x="3088" y="4455" width="483" height="730"/>
+	<SubTexture name="retry0001" x="3671" y="4455" width="483" height="730"/>
+	<SubTexture name="retry0002" x="4254" y="4455" width="483" height="718" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0003" x="4837" y="4455" width="483" height="718" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0004" x="5420" y="4455" width="483" height="716" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0005" x="6003" y="4455" width="483" height="716" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0006" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0007" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0008" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0009" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0010" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0011" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0012" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0013" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0014" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0015" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0016" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0017" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0018" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0019" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0020" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0021" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0022" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0023" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0024" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0025" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0026" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0027" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0028" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0029" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0030" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0031" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0032" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0033" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0034" x="6586" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0035" x="7169" y="4455" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0036" x="100" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+	<SubTexture name="retry0037" x="683" y="5326" width="483" height="714" frameX="0" frameY="0" frameWidth="483" frameHeight="730"/>
+</TextureAtlas>

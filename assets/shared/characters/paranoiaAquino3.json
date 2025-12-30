@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "nidle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				399,
+				38
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "nleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				429,
+				-25
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "ndown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				495,
+				195
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "nup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-108,
+				198
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "nright",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/aquino/nightmare",
+	"position": [
+		30,
+		180
+	],
+	"healthicon": "icon-Vquino",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		0,
+		0
+	],
+	"camera_position": [
+		-650,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2,
+	"_editor_isPlayer": false
+}

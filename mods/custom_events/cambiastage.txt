@@ -1,0 +1,7 @@
+stage = aquino - loco - duxo - nadie (Solo para M Normal)
+MODO NORMAL
+V1: stage
+MODO OPACIDAD
+V1: oppstage
+V2: stage,opacidad,tiempo
+(va entre comas)

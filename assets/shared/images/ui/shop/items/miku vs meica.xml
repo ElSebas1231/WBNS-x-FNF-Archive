@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="miku vs meica.png">
-<SubTexture name="idle0000" x="219" y="0" width="207" height="88" frameX="-307" frameY="-206" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="0" y="100" width="213" height="94" frameX="-304" frameY="-203" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="0" width="219" height="100" frameX="-301" frameY="-200" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="219" y="88" width="207" height="88" frameX="-307" frameY="-206" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

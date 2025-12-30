@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "Nat chiken dead animation 0"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "Nat chiken dead loop 0"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "Nat chiken dead confirm 0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/natalan/natchickenGameOVer",
+	"position": [
+		-780,
+		-560
+	],
+	"healthicon": "loco_act_1_icon",
+	"flip_x": true,
+	"healthbar_colors": [
+		89,
+		78,
+		96
+	],
+	"camera_position": [
+		10,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.6,
+	"_editor_isPlayer": true
+}

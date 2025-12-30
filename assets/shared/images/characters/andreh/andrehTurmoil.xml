@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="andrehTurmoil.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Andreh Idle 0000" x="3029" y="3320" width="925" height="841" frameX="-440" frameY="-675" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Idle 0001" x="1946" y="4255" width="926" height="829" frameX="-436" frameY="-687" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Idle 0002" x="3954" y="3320" width="928" height="838" frameX="-440" frameY="-678" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Idle 0003" x="2103" y="3320" width="926" height="842" frameX="-443" frameY="-674" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Idle 0004" x="1024" y="4255" width="922" height="844" frameX="-443" frameY="-672" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Right 0000" x="1074" y="3320" width="1029" height="902" frameX="-470" frameY="-613" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Right 0001" x="0" y="4255" width="1024" height="904" frameX="-469" frameY="-611" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Right 0002" x="0" y="5159" width="1017" height="910" frameX="-468" frameY="-605" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Right 0003" x="5336" y="0" width="1016" height="911" frameX="-467" frameY="-604" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Down 0000" x="5336" y="1837" width="859" height="991" frameX="-529" frameY="-557" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Down 0001" x="6352" y="0" width="851" height="993" frameX="-533" frameY="-555" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Down 0002" x="5336" y="3827" width="851" height="996" frameX="-533" frameY="-552" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Down 0003" x="5336" y="2828" width="851" height="999" frameX="-533" frameY="-549" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Up0000" x="3843" y="0" width="744" height="1352" frameX="-588" frameY="-353" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Up0001" x="3087" y="0" width="756" height="1346" frameX="-583" frameY="-359" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Up0002" x="4587" y="0" width="749" height="1341" frameX="-583" frameY="-364" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Up0003" x="4587" y="1341" width="744" height="1338" frameX="-583" frameY="-367" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Left 0000" x="1804" y="6069" width="903" height="911" frameX="-520" frameY="-614" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Left 0001" x="0" y="6069" width="903" height="915" frameX="-522" frameY="-610" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Left 0002" x="903" y="6069" width="901" height="914" frameX="-525" frameY="-611" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Left 0003" x="7203" y="0" width="901" height="913" frameX="-527" frameY="-612" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0000" x="7203" y="913" width="713" height="931" frameX="-434" frameY="-584" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0001" x="7203" y="1844" width="709" height="930" frameX="-442" frameY="-585" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0002" x="7203" y="2774" width="702" height="932" frameX="-450" frameY="-583" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0003" x="7203" y="3706" width="694" height="935" frameX="-463" frameY="-580" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0004" x="2134" y="0" width="953" height="1183" frameX="-478" frameY="-597" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0005" x="5336" y="911" width="936" height="926" frameX="-497" frameY="-596" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0006" x="2104" y="2386" width="1013" height="930" frameX="-496" frameY="-592" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0007" x="1080" y="2386" width="1024" height="932" frameX="-495" frameY="-590" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0008" x="2032" y="1193" width="1045" height="933" frameX="-494" frameY="-589" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0009" x="0" y="2386" width="1080" height="934" frameX="-493" frameY="-588" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0010" x="939" y="1193" width="1093" height="935" frameX="-493" frameY="-587" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0011" x="0" y="3320" width="1074" height="935" frameX="-492" frameY="-587" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0012" x="0" y="0" width="1072" height="1193" frameX="-478" frameY="-587" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0013" x="1072" y="0" width="1062" height="1193" frameX="-478" frameY="-587" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Andreh Attack Animation 0014" x="0" y="1193" width="939" height="1193" frameX="-478" frameY="-587" frameWidth="1920" frameHeight="1920"/>
+</TextureAtlas>

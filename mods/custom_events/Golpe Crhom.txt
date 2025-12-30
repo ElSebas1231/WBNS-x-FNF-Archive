@@ -1,0 +1,4 @@
+EFECTRO CHROM EN TODA LA PANTALLA 
+
+Value 1 = Chromatic Aberration(usa números pequeños, < 0.01)
+Value 2 = Numero cualquiera (calculado 0.3)

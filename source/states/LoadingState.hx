@@ -14,6 +14,7 @@ import flash.media.Sound;
 import backend.Song;
 import backend.StageData;
 import objects.Character;
+import states.freeplay.FreeplaySections;
 
 import sys.thread.Thread;
 import sys.thread.Mutex;
@@ -42,10 +43,9 @@ class LoadingState extends MusicBeatState
 	var stopMusic:Bool = false;
 	var dontUpdate:Bool = false;
 
-	var bar:FlxSprite;
-	var barWidth:Int = 0;
-	var intendedPercent:Float = 0;
-	var curPercent:Float = 0;
+	var wbnsLoading:FlxSprite;
+	var loadingSprite:FlxSprite;
+	var loadScreen:Bool = false;
 	var canChangeState:Bool = true;
 
 	override function create()
@@ -66,29 +66,28 @@ class LoadingState extends MusicBeatState
 			#end
 		}
 
-		var bg = new FlxSprite().makeGraphic(1, 1, 0xFFCAFF4D);
-		bg.scale.set(FlxG.width, FlxG.height);
-		bg.updateHitbox();
-		bg.screenCenter();
-		add(bg);
+		if (FreeplaySections.sectionSelected == 'c3jodlc') {
+			loadScreen = true;
+			loadingSprite = new FlxSprite().loadGraphic(Paths.image('ui/menus/loading/ls_${FreeplaySections.sectionSelected}'+FlxG.random.int(1,2)));
+			loadingSprite.screenCenter();
+			add(loadingSprite);
+		}
 
-		var funkay:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('funkay'));
-		funkay.antialiasing = ClientPrefs.data.antialiasing;
-		funkay.setGraphicSize(0, FlxG.height);
-		funkay.updateHitbox();
-		add(funkay);
-
-		var bg:FlxSprite = new FlxSprite(0, 660).makeGraphic(1, 1, FlxColor.BLACK);
-		bg.scale.set(FlxG.width - 300, 25);
-		bg.updateHitbox();
-		bg.screenCenter(X);
-		add(bg);
-
-		bar = new FlxSprite(bg.x + 5, bg.y + 5).makeGraphic(1, 1, FlxColor.WHITE);
-		bar.scale.set(0, 15);
-		bar.updateHitbox();
-		add(bar);
-		barWidth = Std.int(bg.width - 10);
+		wbnsLoading = new FlxSprite();
+		wbnsLoading.frames = Paths.getSparrowAtlas('ui/menus/loading/loading animation');
+		wbnsLoading.animation.addByPrefix('loading', 'loading animation loading anim0', 24, true);
+		wbnsLoading.animation.addByPrefix('clear', 'loading animation loading clear0', 24, false);
+		wbnsLoading.animation.play('loading', true);
+		if (loadScreen) {
+			wbnsLoading.scale.set(0.45, 0.45); 
+			wbnsLoading.updateHitbox();
+			wbnsLoading.x = 30;
+			wbnsLoading.y = 430;
+		} else {
+			wbnsLoading.scale.set(0.5, 0.5);
+			wbnsLoading.screenCenter();
+		}
+		add(wbnsLoading);
 
 		persistentUpdate = true;
 		super.create();
@@ -108,23 +107,13 @@ class LoadingState extends MusicBeatState
 				onLoad();
 				return;
 			}
-			intendedPercent = loaded / loadMax;
-		}
-
-		if (curPercent != intendedPercent)
-		{
-			if (Math.abs(curPercent - intendedPercent) < 0.001) curPercent = intendedPercent;
-			else curPercent = FlxMath.lerp(intendedPercent, curPercent, Math.exp(-elapsed * 15));
-
-			bar.scale.x = barWidth * curPercent;
-			bar.updateHitbox();
 		}
 	}
 
 	inline static public function loadAndSwitchState(target:FlxState, stopMusic = false, intrusive:Bool = true) {
 		MusicBeatState.switchState(getNextState(target, stopMusic, intrusive));
 	}
-	
+
 	var finishedLoading:Bool = false;
 	function onLoad()
 	{
@@ -132,7 +121,19 @@ class LoadingState extends MusicBeatState
 			FlxG.sound.music.stop();
 
 		FlxTransitionableState.skipNextTransIn = true;
-		MusicBeatState.switchState(target);
+
+		if (wbnsLoading != null) {
+			wbnsLoading.animation.play('clear');
+			wbnsLoading.animation.finishCallback = function(name:String) {
+				if (name == 'clear') {
+					new FlxTimer().start(2.2, function(tmr:FlxTimer) {
+						MusicBeatState.switchState(target);
+					});
+				}
+			}
+		} else {
+			MusicBeatState.switchState(target);
+		}
 
 		transitioning = true;
 		finishedLoading = true;
@@ -159,12 +160,8 @@ class LoadingState extends MusicBeatState
 
 		if (weekDir != null && weekDir.length > 0 && weekDir != '') directory = weekDir;
 
-		if (FreeplaySections.sectionSelected.contains('dlc')) {
-			directory = '';
-		}
-
 		Paths.setCurrentLevel(directory);
-		trace('Setting asset folder to: $directory');
+		trace('Setting asset folder to ' + directory);
 	}
 
 	static function getNextState(target:FlxState, stopMusic = false, intrusive:Bool = true):FlxState
@@ -230,15 +227,14 @@ class LoadingState extends MusicBeatState
 	
 			var customSkin:String = noteSkin + Note.getNoteSkinPostfix();
 			if(Paths.fileExists('images/$customSkin.png', IMAGE)) noteSkin = customSkin;
-			if (Paths.fileExists('images/$noteSkin', IMAGE)) imagesToPrepare.push(noteSkin);
+			imagesToPrepare.push(noteSkin);
 			//
 
 			// LOAD NOTE SPLASH IMAGE
 			var noteSplash:String = NoteSplash.DEFAULT_SKIN;
 			if(PlayState.SONG.splashSkin != null && PlayState.SONG.splashSkin.length > 0) noteSplash = PlayState.SONG.splashSkin;
 			else noteSplash += NoteSplash.getSplashSkinPostfix();
-			if (Paths.fileExists('images/$noteSplash', IMAGE)) imagesToPrepare.push(noteSplash);
-			
+			imagesToPrepare.push(noteSplash);
 			completedThread();
 		});
 
@@ -291,7 +287,7 @@ class LoadingState extends MusicBeatState
 			var nam:String = folder.trim();
 			if(nam.endsWith('/'))
 			{
-				for (subfolder in Mods.directoriesWithFile((FreeplaySections.sectionSelected.contains('dlc') ? Paths.dlcs() : Paths.getSharedPath()), '$prefix/$nam'))
+				for (subfolder in Mods.directoriesWithFile(Paths.getSharedPath(), '$prefix/$nam'))
 				{
 					for (file in FileSystem.readDirectory(subfolder))
 					{
@@ -362,14 +358,18 @@ class LoadingState extends MusicBeatState
 		try
 		{
 			var path:String = Paths.getPath('characters/$char.json', TEXT);
+			#if MODS_ALLOWED
 			var character:Dynamic = Json.parse(File.getContent(path));
+			#else
+			var character:Dynamic = Json.parse(Assets.getText(path));
+			#end
 
 			var isAnimateAtlas:Bool = false;
 			var img:String = character.image;
 			img = img.trim();
 			#if flxanimate
 			var animToFind:String = Paths.getPath('images/$img/Animation.json', TEXT);
-			if (FileSystem.exists(animToFind) || Assets.exists(animToFind))
+			if (#if MODS_ALLOWED FileSystem.exists(animToFind) || #end Assets.exists(animToFind))
 				isAnimateAtlas = true;
 			#end
 
@@ -389,8 +389,9 @@ class LoadingState extends MusicBeatState
 					var st:String = '$i';
 					if(i == 0) st = '';
 	
-					if(Paths.fileExists('images/$img/spritemap$st.png', IMAGE)) {
-						trace('found Sprite PNG');
+					if(Paths.fileExists('images/$img/spritemap$st.png', IMAGE))
+					{
+						//trace('found Sprite PNG');
 						imagesToPrepare.push('$img/spritemap$st');
 						break;
 					}

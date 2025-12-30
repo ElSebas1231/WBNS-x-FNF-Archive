@@ -1,0 +1,1 @@
+Efecto que oscurece el ambiente(Solo camGame)Value 1 = Radio Negro (Por defecto = 1)Value 2 = Intensidad (Por Defecto = 0.25)En V2 puedes usar del 0 al 1 (decimales)

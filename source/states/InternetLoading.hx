@@ -20,12 +20,31 @@ class InternetLoading extends MusicBeatState
 
         loadingLoopSound = FlxG.sound.play(Paths.sound('internet_loading/loading_loop'));
 
+        sys.thread.Thread.create(() -> {
+            DLCManager.initDLCs();
+        });
+        authDlcs();
+
         new FlxTimer().start(2, function(t:FlxTimer)
         {
             if(alredyReturned) return;
 
             confirm();
         });
+    }
+    
+    function authDlcs()
+    {
+        if(FileSystem.exists(Paths.txt('dlc_1')))
+        {
+            if(File.getContent(Paths.txt('dlc_1')) == 'true' && DLCManager.dlcSaves.data.dlc1Activated) 
+            {
+                #if develop
+                trace('DLC 1 has been activated!');
+                #end
+                alredyReturned = true;
+            }
+        }
     }
 
     override function update(elapsed:Float)

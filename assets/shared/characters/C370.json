@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "C370 idle0"
+		},
+		{
+			"offsets": [
+				104,
+				-23
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "C370 left0"
+		},
+		{
+			"offsets": [
+				-12,
+				-317
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "C370 down0"
+		},
+		{
+			"offsets": [
+				-45,
+				-26
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "C370 up0"
+		},
+		{
+			"offsets": [
+				-137,
+				-45
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "C370 right0"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/c3jo/C370",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "face",
+	"flip_x": false,
+	"healthbar_colors": [
+		161,
+		161,
+		161
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 2.0,
+	"scale": 1
+}

@@ -18,7 +18,7 @@ import flixel.FlxState;
 
 using Lambda;
 using StringTools;
-using backend.utils.IteratorTools;
+using backend.IteratorTools;
 
 class StickerSubState extends MusicBeatSubstate
 {

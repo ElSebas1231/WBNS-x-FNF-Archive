@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ycbu_lightning.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="lightning0000" x="263" y="0" width="124" height="841" frameX="-11" frameY="-14" frameWidth="158" frameHeight="871"/>
+	<SubTexture name="lightning0001" x="0" y="0" width="131" height="843" frameX="-11" frameY="-12" frameWidth="158" frameHeight="871"/>
+	<SubTexture name="lightning0002" x="131" y="0" width="132" height="836" frameX="-13" frameY="-17" frameWidth="158" frameHeight="871"/>
+	<SubTexture name="lightning0003" x="0" y="843" width="116" height="846" frameX="-20" frameY="-8" frameWidth="158" frameHeight="871"/>
+</TextureAtlas>

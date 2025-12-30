@@ -10,27 +10,25 @@ import backend.WeekData;
 import backend.Highscore;
 import backend.Song;
 
+import shaders.ColorTint;
+
 class FreeplaySections extends MusicBeatState {
     var bgImage:FlxSprite;
     var freeplayTablets:FlxSprite;
-    var arrowSelector1:FlxSprite;
-    var arrowSelector2:FlxSprite;
-    var lockSprite:FlxSprite;
 
     var sectionSprite:FlxSprite;
     var logo:FlxSprite;
     var selectorTablet:FlxSprite;
     var freeplayTitle:FlxSprite;
     var titleBack:FlxSprite;
-    var arrowSelection1Tween:FlxTween;
-    var arrowSelection2Tween:FlxTween;
 
     private static var curSelected:Int = 0;
     public static var sectionSelected:String = '';
-    public static var freeplaySections:Array<String> = ['storymode', 'extras', 'remixes']; 
+    public static var freeplaySections:Array<String> = ['duxomadness']; 
 
     var bottomText:FlxText;
 	var bottomBG:FlxSprite;
+	var swagShader:ColorTint = null;
 
     override function create():Void {
         Paths.clearUnusedMemory();
@@ -41,20 +39,14 @@ class FreeplaySections extends MusicBeatState {
         if (FlxG.sound.music == null) {
             FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
             FlxG.sound.music.fadeIn(1.5, 0, 1);
-        } 
+        }
 
         // YES THIS COULD HAPPEND
         if (FlxG.sound.music.volume == 0 || FlxG.sound.music.volume < 1) FlxG.sound.music.fadeIn(1.5, FlxG.sound.music.volume, 1);
 
-        for (item in ClientPrefs.data.fpSectionsUnlocked) {
-            if (!freeplaySections.contains(item)) {
-                freeplaySections.push(item);
-            }
-        }
-
-		var bgColor:FlxSprite = new FlxSprite().makeGraphic(1280, 720, 0xFF121227);
-		add(bgColor);
-
+        swagShader = new ColorTint();
+		swagShader.uMix = 0.8;
+        
 		var bgStars:FlxSprite = new FlxSprite();
 		bgStars.antialiasing = ClientPrefs.data.antialiasing;
 		bgStars.loadGraphic(Paths.image('ui/menus/utils/stars'));
@@ -64,14 +56,6 @@ class FreeplaySections extends MusicBeatState {
         bgImage.antialiasing = ClientPrefs.data.antialiasing;
         bgImage.screenCenter();
         add(bgImage);
-
-        var grid:FlxBackdrop = new FlxBackdrop(Paths.image('ui/menus/titlemenu/checker'));
-		grid.x = TitleState.gridXPosition;
-		grid.y = TitleState.gridYPosition;
-		grid.scale.set(0.3, 0.3);
-		grid.velocity.set(40, -40);
-		grid.alpha = 0.45;
-		add(grid);
 
         freeplayTablets = new FlxSprite(0, 0);
         freeplayTablets.antialiasing = ClientPrefs.data.antialiasing;
@@ -86,26 +70,14 @@ class FreeplaySections extends MusicBeatState {
         freeplayTablets.y -= 40;
         add(freeplayTablets);
 
-        logo = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
+        logo = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/duxomadness_logo'));
         logo.antialiasing = ClientPrefs.data.antialiasing;
-        logo.scale.set(0.75, 0.75);
-        logo.updateHitbox();
+        logo.alpha = 0;
         logo.x = 430;
         logo.y = 100;
+        logo.scale.set(0.75, 0.75);
+        logo.updateHitbox();
         add(logo);
-        
-        lockSprite = new FlxSprite(0, 0);
-        lockSprite.antialiasing = ClientPrefs.data.antialiasing;
-        lockSprite.frames = Paths.getSparrowAtlas('ui/menus/freeplay/tab/pixel padlock');
-        lockSprite.animation.addByPrefix('idle', 'pixel padlock padlock idle0', 24, true);
-        lockSprite.animation.addByPrefix('press', 'pixel padlock padlock press0', 24, false);
-        lockSprite.animation.finishCallback = function(name:String) {
-            if (name == 'press') freeplayTablets.animation.play('idle');
-        }
-        lockSprite.screenCenter();
-        lockSprite.y -= 30;
-        lockSprite.alpha = 0;
-        add(lockSprite);
 
         selectorTablet = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/title tablet selector'));
         selectorTablet.antialiasing = ClientPrefs.data.antialiasing;
@@ -115,29 +87,12 @@ class FreeplaySections extends MusicBeatState {
         selectorTablet.scale.set(1.2, 1.2);
         add(selectorTablet);
 
-        sectionSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/padlock'));
+        sectionSprite = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_duxomadness'));
         sectionSprite.screenCenter();
         sectionSprite.y += 260;
         sectionSprite.alpha = 0;
         sectionSprite.antialiasing = ClientPrefs.data.antialiasing;
         add(sectionSprite);
-
-        arrowSelector1 = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/arrow'));
-        arrowSelector1.antialiasing = ClientPrefs.data.antialiasing;
-        arrowSelector1.alpha = 0;
-        arrowSelector1.scale.set(1.2, 1.2);
-        arrowSelector1.x = selectorTablet.x - 120;
-        arrowSelector1.y = selectorTablet.y - 40;
-        add(arrowSelector1);
-
-        arrowSelector2 = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/arrow'));
-        arrowSelector2.antialiasing = ClientPrefs.data.antialiasing;
-        arrowSelector2.flipX = true;
-        arrowSelector2.alpha = 0;
-        arrowSelector2.scale.set(1.2, 1.2);
-        arrowSelector2.x = selectorTablet.x + 380;
-        arrowSelector2.y = arrowSelector1.y;
-        add(arrowSelector2);
 
         titleBack = new FlxSprite(0, 0).loadGraphic(Paths.image('ui/menus/freeplay/tab/title_back'));
         titleBack.screenCenter();
@@ -170,47 +125,22 @@ class FreeplaySections extends MusicBeatState {
         bottomText.antialiasing = ClientPrefs.data.antialiasing;
 		add(bottomText);
 
-        changeSelection(0, true);
+        if (swagShader != null) {
+			selectorTablet.shader = freeplayTablets.shader = bgImage.shader = freeplayTitle.shader = swagShader.shader;
+		}
+
         doIntro();
 
         super.create();
     }
     
-    var movedBack:Bool = false;
     var canSelectSomething:Bool = false;
     var canEnter:Bool = false;
     override function update(elapsed:Float):Void {
         super.update(elapsed);
 
         if (canSelectSomething) {
-            if (controls.UI_LEFT_P) {
-                if (freeplaySections.length > 1) {
-                    changeSelection(-1);
-                    if(arrowSelection1Tween != null) arrowSelection1Tween.cancel();
-
-                    arrowSelector1.scale.set(1.45, 1.45);
-                    arrowSelection1Tween = FlxTween.tween(arrowSelector1.scale, {x: 1.2, y: 1.2}, 0.2, {
-                        onComplete: function(twn:FlxTween) {
-                            arrowSelection1Tween = null;
-                        }
-                    });
-                } else FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
-            } 
-            
-            if (controls.UI_RIGHT_P) {
-                if (freeplaySections.length > 1) {
-                    changeSelection(1);
-
-                    if(arrowSelection2Tween != null) arrowSelection2Tween.cancel();
-
-                    arrowSelector2.scale.set(1.45, 1.45);
-                    arrowSelection2Tween = FlxTween.tween(arrowSelector2.scale, {x: 1.2, y: 1.2}, 0.2, {
-                        onComplete: function(twn:FlxTween) {
-                            arrowSelection2Tween = null;
-                        }
-                    });
-                } else FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
-            }
+            if (controls.UI_LEFT_P || controls.UI_RIGHT_P) FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
 
             if (controls.ACCEPT) {
                 if (canEnter) {
@@ -218,17 +148,11 @@ class FreeplaySections extends MusicBeatState {
                     FlxG.sound.play(Paths.sound('confirm'), 0.5);
                     FlxG.sound.music.fadeOut(0.5, 0);
                     MusicBeatState.switchState(new FreeplayState());
-                } else {
-                    FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
-                    freeplayTablets.animation.play('lock pressed');
-                    lockSprite.animation.play('press');
-                    lockSprite.animation.finishCallback = function(name:String) {
-                        if (name == 'press') lockSprite.animation.play('idle');
-                    }
-                }
+                } else FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
             }
     
             if (controls.BACK) {
+                canEnter = false;
                 canSelectSomething = false;
                 doOutro();
             }
@@ -241,26 +165,22 @@ class FreeplaySections extends MusicBeatState {
         FlxTween.tween(freeplayTitle, {y: 16}, 1.2, {ease: FlxEase.cubeOut});
         FlxTween.tween(bottomBG, {y: 694}, 1.2, {ease: FlxEase.cubeOut});
         FlxTween.tween(bottomText, {y: 698}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.2});
+        FlxTween.tween(selectorTablet, {alpha: 1, "scale.x": 1, "scale.y": 1}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.8, onComplete: function(twn:FlxTween) {
+            canEnter = true;
+            canSelectSomething = true;
+            FlxG.sound.play(Paths.sound('freeplay/select'), 0.3);
+        }});
 
-        for (obj in [selectorTablet, arrowSelector1, arrowSelector2]){
-            FlxTween.tween(obj, {alpha: 1, "scale.x": 1, "scale.y": 1}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.8});
-        }
-
-        new FlxTimer().start(1.5, function(tmr:FlxTimer) {
-            FlxG.sound.play(Paths.sound('freeplay/select'), 0.3, false, null, true, function() {
-                canSelectSomething = true;
-            });
-        });
+        FlxTween.tween(logo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 1.2});
+        FlxTween.tween(sectionSprite, {alpha: 1}, 0.35, {ease: FlxEase.cubeOut, startDelay: 1.2});
     }
 
     // Yeah, pretty functions names, right?
     function doOutro() {
-        for (obj in [lockSprite, logo, sectionSprite, selectorTablet, arrowSelector1, arrowSelector2, bottomBG, bottomText]){
+        logo.alpha = 0;
+        for (obj in [logo, sectionSprite, selectorTablet, bottomBG, bottomText]){
             FlxTween.cancelTweensOf(obj);
         }
-
-        lockSprite.alpha = 0;
-        logo.alpha = 0;
 
         freeplayTablets.animation.play('intro', true, true);
         freeplayTablets.animation.finishCallback = function(name:String) {
@@ -271,7 +191,7 @@ class FreeplaySections extends MusicBeatState {
         FlxTween.tween(titleBack, {y: -150}, 0.8, {ease: FlxEase.cubeOut, startDelay: 0.2});
         FlxTween.tween(freeplayTitle, {y: -100}, 0.8, {ease: FlxEase.cubeOut, startDelay: 0.3});
 
-        for (obj in [sectionSprite, selectorTablet, arrowSelector1, arrowSelector2]){
+        for (obj in [sectionSprite, selectorTablet]){
             FlxTween.tween(obj, {alpha: 0, "scale.x": 1.2, "scale.y": 1.2}, 1.2, {ease: FlxEase.cubeOut, startDelay: 0.4});
         }
 
@@ -282,126 +202,9 @@ class FreeplaySections extends MusicBeatState {
         new FlxTimer().start(2.2, function(tmr:FlxTimer) {
             FlxTransitionableState.skipNextTransIn = true;
             FlxTransitionableState.skipNextTransOut = true;
+
             FlxG.sound.play(Paths.sound('cancelMenu'));
-            movedBack = true;
             MusicBeatState.switchState(new MainMenuState());
-        });
-    }
-
-    var tweenSectionSpr:FlxTween;
-    function changeSelection(change:Int = 0, ?intro:Bool = false) {
-        curSelected += change;
-
-        if (curSelected < 0) curSelected = freeplaySections.length-1;
-        if (curSelected >= freeplaySections.length) curSelected = 0;
-
-        if (freeplaySections[curSelected].contains('dlc')) sectionSelected = freeplaySections[curSelected]; else sectionSelected = '';
-
-        if (change >= 1)
-            freeplayTablets.animation.play('turn', true);
-        else if (change <= 1)
-            freeplayTablets.animation.play('turn inv', true);
-
-        canEnter = false;
-        canSelectSomething = false;
-
-        for (obj in [lockSprite, logo, sectionSprite]){
-            FlxTween.cancelTweensOf(obj);
-        }
-        
-        lockSprite.alpha = 0;
-        logo.alpha = 0;
-        sectionSprite.alpha = 0;
-
-        if (!intro) {
-            FlxG.sound.play(Paths.sound('freeplay/select'), 0.3);
-            if (ClientPrefs.data.fpSectionsUnlocked.contains(freeplaySections[curSelected])) {
-                freeplayTablets.animation.finishCallback = function(name:String) {
-                    if (name == 'turn' || name == 'turn inv')  {
-                        freeplayTablets.animation.play('idle');
-                    }
-                }
-                
-                logo.alpha = 0;
-                if (freeplaySections[curSelected].contains('dlc')) {
-                    logo.loadGraphic(Paths.image('freeplay/dlc_logo'));
-                } else {
-                    if (Paths.fileExists('images/ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo.png', IMAGE)) {
-                        logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo'));
-                    } else {
-                        logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
-                    }
-                }
-                
-                logo.updateHitbox();
-                logo.x = 430;
-                logo.y = 100;
-                FlxTween.tween(logo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
-
-                sectionSprite.alpha = 0;
-                
-                if (freeplaySections[curSelected].contains('dlc'))
-                    sectionSprite.loadGraphic(Paths.image('freeplay/sec_dlc'));
-                else 
-                    sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_${freeplaySections[curSelected]}'));
-    
-                if (tweenSectionSpr != null) tweenSectionSpr.cancel();
-                tweenSectionSpr = FlxTween.tween(sectionSprite, {alpha: 1}, 0.35, {onComplete: function(twn:FlxTween) {
-                    canEnter = true;
-                    tweenSectionSpr = null;
-                }});
-            } else {
-                canEnter = false;
-                freeplayTablets.animation.finishCallback = function(name:String) {
-                    if (name == 'turn' || name == 'turn inv')  {
-                        FlxTween.cancelTweensOf(lockSprite);
-                        FlxTween.tween(lockSprite, {alpha: 1}, 0.45, {ease: FlxEase.cubeOut});
-                        freeplayTablets.animation.play('idle');
-                    }
-                }
-
-                logo.alpha = 0;
-                logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
-                logo.updateHitbox();
-                logo.x = 430;
-                logo.y = 100;
-                FlxTween.tween(logo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 0.2});
-
-                sectionSprite.alpha = 0;
-                sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/padlock'));
-    
-                if (tweenSectionSpr != null) tweenSectionSpr.cancel();
-                tweenSectionSpr = FlxTween.tween(sectionSprite, {alpha: 1}, 0.35, {onComplete: function(twn:FlxTween)
-                {
-                    tweenSectionSpr = null;
-                }});
-            }
-        } else {
-            logo.alpha = 0;
-            if (freeplaySections[curSelected].contains('dlc')) {
-                logo.loadGraphic(Paths.image('freeplay/dlc_logo'));
-            } else {
-                if (Paths.fileExists('freeplay/tab/${freeplaySections[curSelected]}_logo.png', IMAGE)) {
-                    logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/${freeplaySections[curSelected]}_logo'));
-                } else {
-                    logo.loadGraphic(Paths.image('ui/menus/freeplay/tab/wbns_logo'));
-                }
-            }
-            logo.x = 430;
-            logo.y = 100;
-            FlxTween.tween(logo, {alpha: 1}, 0.65, {ease: FlxEase.cubeOut, startDelay: 1.5});
-
-            if (freeplaySections[curSelected].contains('dlc'))
-                sectionSprite.loadGraphic(Paths.image('freeplay/sec_dlc'));
-            else 
-                sectionSprite.loadGraphic(Paths.image('ui/menus/freeplay/tab/sec_${freeplaySections[curSelected]}'));
-        }
-
-        new FlxTimer().start(0.5, function(tmr:FlxTimer) {
-            canSelectSomething = true;
-            FlxTween.tween(sectionSprite, {alpha: 1}, 1.4, {ease: FlxEase.cubeOut, startDelay: 1.2, onComplete: function(twn:FlxTween) {
-                if (intro && ClientPrefs.data.fpSectionsUnlocked.contains(freeplaySections[curSelected])) canEnter = true;
-            }});
         });
     }
 }

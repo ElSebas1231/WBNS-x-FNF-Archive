@@ -1,0 +1,11 @@
+Used on nesbeat.lua stage
+Value 1 = {
+  3 = do glitch; 4 = add bird on Duck stage;
+  21 = enable bowser fireBar, 22 = disable; 28 = Fellas action;
+}
+Value 2
+if v1 = 28{
+   0 = disable Fellas; 1 = enable fellas; 2 = impulse;
+   3 = do Glitch; 4 = disable moviment;
+   5 = enable moviment; 6 = change position;
+}

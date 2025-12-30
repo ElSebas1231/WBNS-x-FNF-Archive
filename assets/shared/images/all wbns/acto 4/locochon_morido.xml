@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="locochon_morido.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="loco empalado0000" x="1366" y="820" width="456" height="401" frameX="-10" frameY="-12" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0001" x="0" y="1259" width="456" height="401" frameX="-10" frameY="-12" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0002" x="1366" y="0" width="456" height="410" frameX="-4" frameY="-3" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0003" x="1366" y="410" width="456" height="410" frameX="-4" frameY="-3" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0004" x="456" y="842" width="456" height="417" frameX="1" frameY="0" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0005" x="0" y="842" width="456" height="417" frameX="1" frameY="0" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0006" x="911" y="0" width="455" height="420" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0007" x="911" y="420" width="455" height="420" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0008" x="455" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0009" x="456" y="0" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0010" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0011" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0012" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0013" x="0" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0014" x="0" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0015" x="0" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0016" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0017" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0018" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0019" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0020" x="0" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0021" x="0" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0022" x="0" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0023" x="0" y="421" width="455" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+	<SubTexture name="loco empalado0024" x="0" y="0" width="456" height="421" frameX="2" frameY="1" frameWidth="464" frameHeight="419"/>
+</TextureAtlas>

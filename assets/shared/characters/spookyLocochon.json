@@ -1,0 +1,124 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				61,
+				-3
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				73,
+				-2
+			],
+			"fps": 24,
+			"anim": "singLEFT-C3jo",
+			"indices": [],
+			"name": "leftc3josing0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				-18
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				21,
+				-22
+			],
+			"fps": 24,
+			"anim": "singDOWN-C3jo",
+			"indices": [],
+			"name": "downc3josing0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				17
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				10,
+				40
+			],
+			"fps": 24,
+			"anim": "singUP-C3jo",
+			"indices": [],
+			"name": "upc3josing0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-65,
+				3
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				-1
+			],
+			"fps": 24,
+			"anim": "singRIGHT-C3jo",
+			"indices": [],
+			"name": "rightc3josing0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/locochon/spoookylocochin",
+	"position": [
+		40,
+		125
+	],
+	"healthicon": "dad",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		-20,
+		-20
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="perro icon.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="perro icon0000" x="100" y="100" width="100" height="140" frameX="-11" frameY="-6" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0001" x="100" y="100" width="100" height="140" frameX="-11" frameY="-6" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0002" x="300" y="100" width="107" height="137" frameX="-8" frameY="-10" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0003" x="300" y="100" width="107" height="137" frameX="-8" frameY="-10" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0004" x="300" y="100" width="107" height="137" frameX="-8" frameY="-10" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0005" x="507" y="100" width="104" height="131" frameX="-8" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0006" x="507" y="100" width="104" height="131" frameX="-8" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0007" x="711" y="100" width="117" height="139" frameX="0" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0008" x="711" y="100" width="117" height="139" frameX="0" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0009" x="100" y="340" width="119" height="150" frameX="-2" frameY="0" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0010" x="100" y="340" width="119" height="150" frameX="-2" frameY="0" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0011" x="319" y="340" width="121" height="144" frameX="-1" frameY="-1" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0012" x="319" y="340" width="121" height="144" frameX="-1" frameY="-1" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0013" x="540" y="340" width="114" height="135" frameX="-2" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0014" x="540" y="340" width="114" height="135" frameX="-2" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0015" x="540" y="340" width="114" height="135" frameX="-2" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0016" x="540" y="340" width="114" height="135" frameX="-2" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0017" x="540" y="340" width="114" height="135" frameX="-2" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0018" x="540" y="340" width="114" height="135" frameX="-2" frameY="-4" frameWidth="122" frameHeight="150"/>
+	<SubTexture name="perro icon0019" x="540" y="340" width="114" height="135" frameX="-2" frameY="-4" frameWidth="122" frameHeight="150"/>
+</TextureAtlas>

@@ -1,0 +1,149 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				160,
+				-100
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "mleft",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				121,
+				-270
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "mdown",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				-30
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "mup",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-70,
+				-90
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "mright",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			],
+			"name": "midle"
+		},
+		{
+			"offsets": [
+				125,
+				4
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "muerte",
+			"loop": false,
+			"name": "micitia muere"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/mictia/mictia",
+	"position": [
+		50,
+		-100
+	],
+	"healthicon": "icon-mictia",
+	"flip_x": false,
+	"healthbar_colors": [
+		96,
+		54,
+		99
+	],
+	"camera_position": [
+		70,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

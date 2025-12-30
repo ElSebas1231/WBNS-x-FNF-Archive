@@ -1,0 +1,87 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "pixelloco idle"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "pixelloco left"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "pixelloco down"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "pixelloco up"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "pixelloco right"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "pixelloco mleft"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "pixelloco mdown"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "pixelloco mup"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "pixelloco mright"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": true,
+	"image": "characters/locochon/SdlgLocoPixel",
+	"position": [180, 518],
+	"healthicon": "cavebf",
+	"flip_x": true,
+	"healthbar_colors": [107, 8, 0],
+	"camera_position": [270, -120],
+	"sing_duration": 4,
+	"scale": 12,
+	"_editor_isPlayer": true
+}

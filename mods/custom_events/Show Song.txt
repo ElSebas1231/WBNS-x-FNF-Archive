@@ -1,0 +1,1 @@
+Value 1 = Show Song, put 1 to remove the text.

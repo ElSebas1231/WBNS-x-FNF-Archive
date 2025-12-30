@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="loco grasa.png">
+	<!-- Created with Adobe Animate version 22.0.3.179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Ldown0000" x="100" y="100" width="391" height="486" frameX="0" frameY="-7" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0001" x="100" y="100" width="391" height="486" frameX="0" frameY="-7" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0002" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0003" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0004" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0005" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0006" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0007" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0008" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Ldown0009" x="591" y="100" width="392" height="494" frameX="-4" frameY="0" frameWidth="396" frameHeight="494"/>
+	<SubTexture name="Lidle0000" x="1083" y="100" width="500" height="584" frameX="0" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0001" x="1083" y="100" width="500" height="584" frameX="0" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0002" x="1683" y="100" width="498" height="585" frameX="-2" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0003" x="1683" y="100" width="498" height="585" frameX="-2" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0004" x="2281" y="100" width="496" height="585" frameX="-4" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0005" x="2281" y="100" width="496" height="585" frameX="-4" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0006" x="2281" y="100" width="496" height="585" frameX="-4" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0007" x="2281" y="100" width="496" height="585" frameX="-4" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0008" x="2281" y="100" width="496" height="585" frameX="-4" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lidle0009" x="2281" y="100" width="496" height="585" frameX="-4" frameY="0" frameWidth="500" frameHeight="585"/>
+	<SubTexture name="Lleft0000" x="2877" y="100" width="455" height="498" frameX="0" frameY="-12" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0001" x="2877" y="100" width="455" height="498" frameX="0" frameY="-12" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0002" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0003" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0004" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0005" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0006" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0007" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0008" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lleft0009" x="3432" y="100" width="413" height="510" frameX="-8" frameY="0" frameWidth="455" frameHeight="510"/>
+	<SubTexture name="Lright0000" x="100" y="785" width="483" height="523" frameX="-14" frameY="-3" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0001" x="100" y="785" width="483" height="523" frameX="-14" frameY="-3" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0002" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0003" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0004" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0005" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0006" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0007" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0008" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lright0009" x="683" y="785" width="467" height="526" frameX="0" frameY="0" frameWidth="497" frameHeight="526"/>
+	<SubTexture name="Lup0000" x="1250" y="785" width="366" height="539"/>
+	<SubTexture name="Lup0001" x="1250" y="785" width="366" height="539"/>
+	<SubTexture name="Lup0002" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+	<SubTexture name="Lup0003" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+	<SubTexture name="Lup0004" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+	<SubTexture name="Lup0005" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+	<SubTexture name="Lup0006" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+	<SubTexture name="Lup0007" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+	<SubTexture name="Lup0008" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+	<SubTexture name="Lup0009" x="1716" y="785" width="360" height="521" frameX="-2" frameY="-16" frameWidth="366" frameHeight="539"/>
+</TextureAtlas>

@@ -1,0 +1,4 @@
+value1: duration
+value2: alpha,ease,color
+
+(opcional: [ease, color]

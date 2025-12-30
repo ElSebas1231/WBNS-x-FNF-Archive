@@ -1,0 +1,6 @@
+Value 1: Character to edit the shadow (dad, boyfriend)
+Value 2: Boolean (Default  = false)
+
+In case you want to color the shadow with the color of the note.
+Just fill the 'Value 2' with 'true' and see what happened after you
+pressed the note.

@@ -8,6 +8,7 @@ import flixel.FlxSubState;
 
 import states.StoryMenuState;
 import states.freeplay.FreeplayState;
+import states.freeplay.FreeplaySections;
 
 class GameOverSubstate extends MusicBeatSubstate
 {
@@ -55,10 +56,14 @@ class GameOverSubstate extends MusicBeatSubstate
 		boyfriend.y += boyfriend.positionArray[1] - PlayState.instance.boyfriend.positionArray[1];
 		add(boyfriend);
 
-		playingDeathSound = true;
-		FlxG.sound.play(Paths.sound(deathSoundName), 1, false, null, true, function() {
-			playingDeathSound = false;
-		});
+		var deathSound = Paths.sound(deathSoundName);
+		trace('Sound = null?: ${deathSound == null}');
+		if (deathSound != null) {
+			FlxG.sound.play(deathSound, 1, false, null, true, function() {
+				playingDeathSound = false;
+			});
+		}
+
 		FlxG.camera.scroll.set();
 		FlxG.camera.target = null;
 
@@ -82,13 +87,9 @@ class GameOverSubstate extends MusicBeatSubstate
 
 		PlayState.instance.callOnScripts('onUpdate', [elapsed]);
 
-		if (controls.ACCEPT)
-		{
-			endBullshit(false);
-		}
+		if (controls.ACCEPT) endBullshit(false);
 
-		if (controls.BACK)
-		{
+		if (controls.BACK) {
 			#if desktop DiscordClient.resetClientID(); #end
 			endBullshit(true);
 		}
@@ -97,8 +98,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			if (boyfriend.animation.curAnim.name == 'firstDeath' && boyfriend.animation.curAnim.finished && startedDeath)
 				boyfriend.playAnim('deathLoop');
 
-			if(boyfriend.animation.curAnim.name == 'firstDeath')
-			{
+			if(boyfriend.animation.curAnim.name == 'firstDeath') {
 				if(boyfriend.animation.curAnim.curFrame >= 12 && !moveCamera) {
 					FlxG.camera.follow(camFollow, LOCKON, 0.6);
 					moveCamera = true;
@@ -135,8 +135,7 @@ class GameOverSubstate extends MusicBeatSubstate
 				boyfriend.playAnim('deathConfirm', true);
 				FlxG.sound.music.stop();
 				FlxG.sound.play(Paths.sound(endSoundName));
-				new FlxTimer().start(0.7, function(tmr:FlxTimer)
-				{
+				new FlxTimer().start(0.7, function(tmr:FlxTimer) {
 					FlxG.camera.fade(FlxColor.BLACK, 2, false, function() {
 						MusicBeatState.resetState();
 					});
@@ -150,54 +149,36 @@ class GameOverSubstate extends MusicBeatSubstate
 					FlxG.sound.music.stop();	
 					FlxG.sound.play(Paths.sound(endSoundName));
 					PlayState.instance.callOnScripts('onGameOverConfirm', [false]);
-					new FlxTimer().start(0.7, function(tmr:FlxTimer)
-				{
-					FlxG.camera.fade(FlxColor.BLACK, 2, false, function()
-					{
+					new FlxTimer().start(0.7, function(tmr:FlxTimer) {
+					FlxG.camera.fade(FlxColor.BLACK, 2, false, function() {
 						PlayState.deathCounter = 0;
 						PlayState.seenCutscene = false;
 		
-						Mods.loadTopMod();
-
 						var stickerSet = 'stickers-set-wbns';
 						var stickerPack = 'all';
 			
-						if (PlayState.SONG.player1.contains('c3jo')) {
-							stickerSet = 'stickers-set-c3jo';
+						if (FreeplaySections.sectionSelected.contains('duxo')) {
+							stickerSet = 'stickers-set-dm';
 			
 							stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-								case "hiper": "hiper";
-								case "roier": "roier";
-								case "steyb": "steyb";
-								case "noticiero": "umad";
-								default: "all";
-							};
-						}
-			
-						if (PlayState.SONG.player1.contains('aquino')) {
-							stickerSet = 'stickers-set-aquino';
-			
-							stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-								case "erika": "erika";
-								case "karfall": "karfall";
-								case "noobly": "noobly";
-								case "creisi.mov": "creisi";
-								case "promenade": "botsita";
-								case "let's go compota v2": "compota";
-								case "saludo v2": "fernan";
-								case "toneando v2": "adrian";
-								case "estupidez": "estupidez";
-								case "sylvee": "sylvee";
+								case "its a rat": "itsarat";
+								case "last course": "lastCourse";
+								case "nightmare": "nightmare";
+								case "sdlg": "sdlg";
+								case "trick or treat": "trickOrTreat";
+								case "tryhard slaughter": "tryhard";
+								case "unwebonable v2": "unwebonable";
+								case "all wbns": "duxoMadness";
 								default: "all";
 							};
 						}
 
 						if (!ClientPrefs.data.noStickers) {
-							StickerSubState.STICKER_SET = stickerSet;
-							StickerSubState.STICKER_PACK = stickerPack;
+							if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
+							if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
 							
 							if (PlayState.isStoryMode) {
-								openSubState(cast new StickerSubState(null, (sticker) -> new StoryMenuState(sticker)));
+								openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
 							} else {
 								openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
 							}

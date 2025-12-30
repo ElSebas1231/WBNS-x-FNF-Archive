@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="natchicken.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="Nat Chicken Idle0000" x="5006" y="794" width="517" height="810" frameX="-752" frameY="-761" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Idle0001" x="5006" y="0" width="528" height="794" frameX="-748" frameY="-777" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Idle0002" x="0" y="2831" width="535" height="797" frameX="-737" frameY="-774" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Idle0003" x="3950" y="0" width="531" height="800" frameX="-741" frameY="-771" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Idle0004" x="4481" y="0" width="525" height="806" frameX="-747" frameY="-765" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Idle0005" x="4481" y="806" width="524" height="807" frameX="-748" frameY="-764" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right 0000" x="4481" y="3215" width="497" height="796" frameX="-799" frameY="-775" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right 0001" x="4481" y="1613" width="497" height="801" frameX="-797" frameY="-770" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right 0002" x="4481" y="2414" width="495" height="801" frameX="-798" frameY="-770" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right 0003" x="0" y="4362" width="491" height="802" frameX="-800" frameY="-769" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down 0000" x="1603" y="2831" width="583" height="728" frameX="-693" frameY="-843" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down 0001" x="1746" y="1192" width="580" height="735" frameX="-692" frameY="-836" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down 0002" x="2282" y="2009" width="579" height="734" frameX="-693" frameY="-837" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down 0003" x="0" y="3628" width="578" height="734" frameX="-694" frameY="-837" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up 0000" x="5006" y="2406" width="487" height="859" frameX="-781" frameY="-700" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up 0001" x="3950" y="2502" width="495" height="855" frameX="-777" frameY="-704" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up 0002" x="3950" y="800" width="497" height="852" frameX="-775" frameY="-707" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up 0003" x="3950" y="1652" width="498" height="850" frameX="-774" frameY="-709" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left 0000" x="0" y="1192" width="564" height="817" frameX="-642" frameY="-754" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left 0001" x="557" y="2009" width="557" height="818" frameX="-649" frameY="-753" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left 0002" x="0" y="2009" width="557" height="822" frameX="-652" frameY="-749" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left 0003" x="2342" y="0" width="557" height="823" frameX="-653" frameY="-748" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right miss 0000" x="5006" y="1604" width="522" height="802" frameX="-774" frameY="-769" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right miss 0001" x="3417" y="0" width="533" height="802" frameX="-763" frameY="-769" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right miss 0002" x="3417" y="1663" width="528" height="808" frameX="-763" frameY="-763" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Right miss 0003" x="5006" y="3265" width="495" height="808" frameX="-796" frameY="-763" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down miss 0000" x="1159" y="1192" width="587" height="747" frameX="-690" frameY="-824" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down miss 0001" x="564" y="1192" width="595" height="747" frameX="-682" frameY="-824" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down miss 0002" x="1114" y="2009" width="590" height="752" frameX="-682" frameY="-819" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Down miss 0003" x="1704" y="2009" width="578" height="752" frameX="-694" frameY="-819" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up miss 0000" x="3417" y="802" width="496" height="861" frameX="-771" frameY="-698" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up miss 0001" x="2899" y="850" width="510" height="861" frameX="-757" frameY="-698" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up miss 0002" x="2899" y="0" width="518" height="850" frameX="-754" frameY="-709" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Up miss 0003" x="2899" y="1711" width="506" height="850" frameX="-766" frameY="-709" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left miss 0000" x="1778" y="0" width="564" height="819" frameX="-642" frameY="-752" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left miss 0001" x="1195" y="0" width="583" height="819" frameX="-623" frameY="-752" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left miss 0002" x="606" y="0" width="589" height="823" frameX="-621" frameY="-748" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Left miss 0003" x="2342" y="823" width="557" height="823" frameX="-653" frameY="-748" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Dodge 0000" x="0" y="0" width="606" height="1192" frameX="-738" frameY="-367" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Dodge 0001" x="535" y="2831" width="534" height="796" frameX="-738" frameY="-763" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Dodge 0002" x="1069" y="2831" width="534" height="795" frameX="-738" frameY="-764" frameWidth="1920" frameHeight="1920"/>
+	<SubTexture name="Nat Chicken Dodge 0003" x="1069" y="2831" width="534" height="795" frameX="-738" frameY="-764" frameWidth="1920" frameHeight="1920"/>
+</TextureAtlas>

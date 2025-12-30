@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Act3_Static.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="act3stat0000" x="0" y="0" width="2868" height="1456" frameX="2" frameY="2" frameWidth="2868" frameHeight="1452"/>
+	<SubTexture name="act3stat0001" x="2868" y="0" width="2868" height="1456" frameX="2" frameY="2" frameWidth="2868" frameHeight="1452"/>
+</TextureAtlas>

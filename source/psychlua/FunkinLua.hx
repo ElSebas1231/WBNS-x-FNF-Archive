@@ -818,20 +818,29 @@ class FunkinLua {
 			return true;
 		});
 		Lua_helper.add_callback(lua, "exitSong", function(?skipTransition:Bool = false) {
-			if(skipTransition)
-			{
+			if(skipTransition) {
 				FlxTransitionableState.skipNextTransIn = true;
 				FlxTransitionableState.skipNextTransOut = true;
 			}
 
-			var stickerSet = (PlayState.SONG.player1.contains('c3jo')) ? "stickers-set-2" : "stickers-set-1";
-			var stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-				case "hiper": "hiper";
-				case "roier": "roier";
-				case "steyb": "steyb";
-				case "noticiero": "umad";
-				default: "all";
-			};
+			var stickerSet = 'stickers-set-wbns';
+			var stickerPack = 'all';
+
+			if (FreeplaySections.sectionSelected.contains('duxo')) {
+				stickerSet = 'stickers-set-dm';
+
+				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+					case "its a rat": "itsarat";
+					case "last course": "lastCourse";
+					case "nightmare": "nightmare";
+					case "sdlg": "sdlg";
+					case "trick or treat": "trickOrTreat";
+					case "tryhard slaughter": "tryhard";
+					case "unwebonable v2": "unwebonable";
+					case "all wbns": "duxoMadness";
+					default: "all";
+				};
+			}
 
 			if(PlayState.isStoryMode)
 				if (!ClientPrefs.data.noStickers) {
@@ -1662,7 +1671,7 @@ class FunkinLua {
 		if (!scriptFile.endsWith(ext)) scriptFile += ext;
 
 		var preloadPath:String = Paths.getSharedPath(scriptFile);
-		var path:String = Paths.dlcsFolders(scriptFile);
+		var path:String = Paths.modFolders(scriptFile);
 
 		if (FileSystem.exists(scriptFile))
 			return scriptFile;
@@ -1713,7 +1722,7 @@ class FunkinLua {
 			return true;
 		}
 
-		var foldersToCheck:Array<String> = [Paths.dlcs('shaders/'), Paths.dlcsFolders('shaders/')];
+		var foldersToCheck:Array<String> = [Paths.mods('shaders/'), Paths.modFolders('shaders/')];
 
 		for (folder in foldersToCheck)
 		{

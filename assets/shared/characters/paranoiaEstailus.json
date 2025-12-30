@@ -1,0 +1,223 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "eidle0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				58,
+				-4
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "eleft0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				43,
+				-31
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "eleft miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-60,
+				-40
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "edown0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-55,
+				-58
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "edown miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				32
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "eup0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-56,
+				15
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "eup miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-65,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "eright0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-58,
+				-13
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "eright miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				1,
+				0
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "eidle alt0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				46,
+				-4
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "eleft alt0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				-29
+			],
+			"anim": "singLEFTmiss-alt",
+			"fps": 24,
+			"name": "eleft miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-37,
+				-34
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "edown alt0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-53,
+				-60
+			],
+			"anim": "singDOWNmiss-alt",
+			"fps": 24,
+			"name": "edown miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-72,
+				24
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "eup alt0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-46,
+				12
+			],
+			"anim": "singUPmiss-alt",
+			"fps": 24,
+			"name": "eup miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-54,
+				4
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "eright alt0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-48,
+				-11
+			],
+			"anim": "singRIGHTmiss-alt",
+			"fps": 24,
+			"name": "eright miss0",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/estailus/paranoiaEstailus",
+	"position": [
+		-50,
+		150
+	],
+	"healthicon": "icon-estailus",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		45,
+		0
+	],
+	"camera_position": [
+		110,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

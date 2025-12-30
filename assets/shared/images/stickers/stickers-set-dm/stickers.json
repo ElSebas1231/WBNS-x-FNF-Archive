@@ -1,0 +1,37 @@
+{
+	"name": "stickers-set-1",
+	"artist": "juandrix",
+	"stickers": {
+		"mrD1": ["duxoSticker1"],
+		"mrD2": ["duxoSticker2"],
+		"locochon": ["locochonSticker1"],
+		"locoGrasa": ["locochonSticker2"],
+		"soarinng": ["soarinngSticker1"],
+		"soarinngGrasa": ["soarinngSticker2"],
+		"mictia": ["mictiaSticker1"],
+		"natalan": ["natalanSticker1"],
+		"natChicken": ["natalanSticker2"],
+		"andrehTurmoil": ["andrehSticker1"],
+		"aquinoGrasa": ["aquinoSticker1"],
+		"aquinoSpooky": ["aquinoSticker2"],
+		"aquinoNightmare": ["aquinoSticker3", "aquinoSticker4"],
+		"duxoSpooky": ["duxoSticker3"],
+		"locochonSpooky": ["locochonSticker3"],
+		"c3joSpooky": ["c3joSticker1"],
+		"estailusNightmare": ["estailusSticker1"],
+		"aquinoUnwebonable": ["aquinoSticker5"],
+		"duxoUnwebonable": ["duxoSticker4"],
+		"locochonUnwebonable": ["locochonSticker4"]
+	},
+	"stickerPacks": {
+		"itsarat": ["mrD1", "locochon", "soarinng"],
+		"tryhard": ["mrD1", "mrD2", "locochon", "soarinng", "natalan", "mictia"],
+		"sdlg": ["aquinoGrasa", "locoGrasa", "soarinngGrasa"],
+		"lastCourse": ["natChicken", "andrehTurmoil"],
+		"nightmare": ["aquinoNightmare", "estailusNightmare"],
+		"trickOrTreat": ["aquinoSpooky", "duxoSpooky", "locochonSpooky", "c3joSpooky"],
+		"unwebonable": ["aquinoUnwebonable", "duxoUnwebonable", "locochonUnwebonable"],
+		"duxoMadness": ["mrD1", "mrD2", "duxoSpooky", "duxoUnwebonable"],
+		"all": ["mrD1", "mrD2", "locochon", "locoGrasa", "soarinng", "soarinngGrasa", "mictia", "natalan", "natChicken", "andrehTurmoil", "aquino", "aquinoGrasa", "aquinoSpooky", "aquinoNightmare", "duxoSpooky", "locochonSpooky", "c3joSpooky", "estailusNightmare", "aquinoUnwebonable", "duxoUnwebonable", "locochonUnwebonable"]
+	}
+}

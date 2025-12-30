@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				68,
+				-90
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				125,
+				-86
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				-142
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				54,
+				-73
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				8,
+				-90
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/soarinng/soaring-all-wbns",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "soarinng_icon",
+	"flip_x": false,
+	"healthbar_colors": [
+		232,
+		180,
+		53
+	],
+	"camera_position": [
+		-500,
+		-100
+	],
+	"sing_duration": 6.1,
+	"scale": 1.3
+}

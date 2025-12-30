@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<TextureAtlas imagePath="mall encounter.png">
-<SubTexture name="idle0000" x="264" y="0" width="123" height="163" frameX="-1331" frameY="-355" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0000" x="135" y="0" width="129" height="169" frameX="-1328" frameY="-352" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="press0001" x="0" y="0" width="135" height="175" frameX="-1325" frameY="-349" frameWidth="1920" frameHeight="1080" />
-<SubTexture name="sold0000" x="0" y="175" width="123" height="163" frameX="-1331" frameY="-355" frameWidth="1920" frameHeight="1080" />
-</TextureAtlas>

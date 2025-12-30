@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="loadingYoutube.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="loading0000" x="689" y="529" width="15" height="15" frameX="-93" frameY="-16" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0001" x="514" y="452" width="16" height="14" frameX="-96" frameY="-21" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0002" x="689" y="544" width="16" height="14" frameX="-99" frameY="-26" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0003" x="545" y="452" width="16" height="12" frameX="-103" frameY="-34" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0004" x="561" y="452" width="16" height="11" frameX="-105" frameY="-41" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0005" x="611" y="600" width="16" height="9" frameX="-107" frameY="-52" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0006" x="689" y="496" width="21" height="33" frameX="-101" frameY="-57" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0007" x="456" y="540" width="29" height="40" frameX="-92" frameY="-64" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0008" x="554" y="485" width="43" height="46" frameX="-76" frameY="-71" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0009" x="611" y="560" width="95" height="40" frameX="-20" frameY="-82" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0010" x="441" y="485" width="113" height="53" frameX="1" frameY="-69" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0011" x="494" y="370" width="112" height="82" frameX="2" frameY="-40" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0012" x="215" y="485" width="104" height="121" frameX="2" frameY="-2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0013" x="611" y="124" width="98" height="124" frameX="2" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0014" x="611" y="372" width="95" height="124" frameX="2" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0015" x="0" y="485" width="108" height="124" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0016" x="494" y="124" width="114" height="124" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0017" x="373" y="124" width="118" height="124" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0018" x="125" y="0" width="125" height="124" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0019" x="125" y="247" width="125" height="121" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0020" x="0" y="247" width="125" height="121" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0021" x="0" y="368" width="125" height="117" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0022" x="249" y="368" width="125" height="113" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0023" x="250" y="247" width="123" height="112" frameX="1" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0024" x="125" y="368" width="124" height="115" frameX="1" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0025" x="250" y="124" width="123" height="119" frameX="1" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0026" x="124" y="124" width="124" height="123" frameX="1" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0027" x="0" y="124" width="124" height="123" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0028" x="0" y="0" width="125" height="124" frameX="2" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0029" x="250" y="0" width="123" height="124" frameX="1" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0030" x="373" y="0" width="121" height="124" frameX="-1" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0031" x="494" y="0" width="117" height="124" frameX="-5" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0032" x="611" y="248" width="98" height="124" frameX="-24" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0033" x="611" y="0" width="99" height="124" frameX="-23" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0034" x="108" y="485" width="107" height="124" frameX="-16" frameY="2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0035" x="494" y="248" width="115" height="122" frameX="-8" frameY="0" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0036" x="373" y="248" width="117" height="116" frameX="-6" frameY="-6" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0037" x="374" y="368" width="120" height="104" frameX="-3" frameY="-18" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0038" x="319" y="485" width="122" height="55" frameX="0" frameY="-67" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0039" x="319" y="540" width="111" height="59" frameX="1" frameY="-63" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0040" x="611" y="496" width="78" height="64" frameX="1" frameY="-58" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0041" x="430" y="540" width="26" height="53" frameX="1" frameY="-46" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0042" x="485" y="540" width="16" height="39" frameX="1" frameY="-40" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0043" x="494" y="452" width="20" height="33" frameX="2" frameY="-31" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0044" x="530" y="452" width="15" height="14" frameX="-6" frameY="-24" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0045" x="556" y="466" width="14" height="15" frameX="-13" frameY="-16" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0046" x="514" y="466" width="14" height="15" frameX="-18" frameY="-11" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0047" x="583" y="466" width="13" height="15" frameX="-25" frameY="-7" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0048" x="570" y="466" width="13" height="15" frameX="-30" frameY="-4" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0049" x="597" y="500" width="11" height="16" frameX="-36" frameY="-1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0050" x="597" y="500" width="11" height="16" frameX="-36" frameY="-1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0051" x="511" y="540" width="10" height="15" frameX="-43" frameY="0" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0052" x="521" y="540" width="9" height="15" frameX="-50" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0053" x="530" y="540" width="9" height="14" frameX="-56" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0054" x="501" y="540" width="10" height="15" frameX="-62" frameY="1" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0055" x="597" y="516" width="11" height="15" frameX="-68" frameY="0" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0056" x="597" y="485" width="12" height="15" frameX="-74" frameY="-2" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0057" x="596" y="466" width="13" height="15" frameX="-79" frameY="-5" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0058" x="542" y="466" width="14" height="15" frameX="-84" frameY="-8" frameWidth="121" frameHeight="121"/>
+	<SubTexture name="loading0059" x="528" y="466" width="14" height="15" frameX="-89" frameY="-12" frameWidth="121" frameHeight="121"/>
+</TextureAtlas>

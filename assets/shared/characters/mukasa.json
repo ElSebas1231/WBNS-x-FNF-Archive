@@ -1,0 +1,101 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-142,
+				321
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "mukasa left0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				5,
+				-180
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "mukasa down0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-453,
+				112
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "mukasa up0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-576,
+				56
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "mukasa right0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-160,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "mukasa idle0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				80,
+				54
+			],
+			"loop": false,
+			"anim": "jumpscare",
+			"fps": 24,
+			"name": "mukasa jumpscare0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-40,
+				-50
+			],
+			"loop": false,
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "mukasa marionetas idle0",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/duxo/mukasa",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "mukasa icon",
+	"flip_x": false,
+	"healthbar_colors": [
+		108,
+		78,
+		139
+	],
+	"camera_position": [
+		-370,
+		-650
+	],
+	"sing_duration": 6.1,
+	"scale": 2,
+	"_editor_isPlayer": false
+}

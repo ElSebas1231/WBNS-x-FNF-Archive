@@ -3,7 +3,6 @@ package psychlua;
 #if (!flash && sys)
 import flixel.addons.display.FlxRuntimeShader;
 #end
-import flixel.graphics.FlxGraphic;
 
 class ShaderFunctions
 {
@@ -14,7 +13,7 @@ class ShaderFunctions
 		funk.addLocalCallback("initLuaShader", function(name:String, ?glslVersion:Int = 120) {
 			if(!ClientPrefs.data.shaders) return false;
 
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			return funk.initLuaShader(name, glslVersion);
 			#else
 			FunkinLua.luaTrace("initLuaShader: Platform unsupported for Runtime Shaders!", false, false, FlxColor.RED);
@@ -25,7 +24,7 @@ class ShaderFunctions
 		funk.addLocalCallback("setSpriteShader", function(obj:String, shader:String) {
 			if(!ClientPrefs.data.shaders) return false;
 
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			if(!funk.runtimeShaders.exists(shader) && !funk.initLuaShader(shader))
 			{
 				FunkinLua.luaTrace('setSpriteShader: Shader $shader is missing!', false, false, FlxColor.RED);
@@ -64,7 +63,7 @@ class ShaderFunctions
 
 
 		Lua_helper.add_callback(lua, "getShaderBool", function(obj:String, prop:String) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if (shader == null)
 			{
@@ -78,7 +77,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "getShaderBoolArray", function(obj:String, prop:String) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if (shader == null)
 			{
@@ -92,7 +91,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "getShaderInt", function(obj:String, prop:String) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if (shader == null)
 			{
@@ -106,7 +105,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "getShaderIntArray", function(obj:String, prop:String) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if (shader == null)
 			{
@@ -120,7 +119,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "getShaderFloat", function(obj:String, prop:String) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if (shader == null)
 			{
@@ -134,7 +133,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "getShaderFloatArray", function(obj:String, prop:String) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if (shader == null)
 			{
@@ -150,7 +149,7 @@ class ShaderFunctions
 
 
 		Lua_helper.add_callback(lua, "setShaderBool", function(obj:String, prop:String, value:Bool) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if(shader == null)
 			{
@@ -165,7 +164,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "setShaderBoolArray", function(obj:String, prop:String, values:Dynamic) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if(shader == null)
 			{
@@ -180,7 +179,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "setShaderInt", function(obj:String, prop:String, value:Int) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if(shader == null)
 			{
@@ -195,7 +194,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "setShaderIntArray", function(obj:String, prop:String, values:Dynamic) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if(shader == null)
 			{
@@ -210,7 +209,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "setShaderFloat", function(obj:String, prop:String, value:Float) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if(shader == null)
 			{
@@ -225,7 +224,7 @@ class ShaderFunctions
 			#end
 		});
 		Lua_helper.add_callback(lua, "setShaderFloatArray", function(obj:String, prop:String, values:Dynamic) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if(shader == null)
 			{
@@ -242,7 +241,7 @@ class ShaderFunctions
 		});
 
 		Lua_helper.add_callback(lua, "setShaderSampler2D", function(obj:String, prop:String, bitmapdataPath:String) {
-			#if (!flash && sys)
+			#if (!flash && MODS_ALLOWED && sys)
 			var shader:FlxRuntimeShader = getShader(obj);
 			if(shader == null)
 			{
@@ -251,10 +250,7 @@ class ShaderFunctions
 			}
 
 			// trace('bitmapdatapath: $bitmapdataPath');
-			var value:FlxGraphic;
-			
-			value = Paths.image(bitmapdataPath);
-
+			var value = Paths.image(bitmapdataPath);
 			if(value != null && value.bitmap != null)
 			{
 				// trace('Found bitmapdata. Width: ${value.bitmap.width} Height: ${value.bitmap.height}');
