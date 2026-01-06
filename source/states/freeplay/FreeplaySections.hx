@@ -34,6 +34,8 @@ class FreeplaySections extends MusicBeatState {
         Paths.clearUnusedMemory();
 		Paths.clearStoredMemory();
 
+        DiscordClient.changePresence("Viewing the Freeplay Sections", null, 'duxomadness');
+
         if (FlxG.mouse.visible) Cursor.hide();
         
         if (FlxG.sound.music == null) {

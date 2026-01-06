@@ -32,7 +32,6 @@ import cutscenes.DialogueBoxPsych;
 import states.StoryMenuState;
 import states.freeplay.FreeplaySections;
 import states.freeplay.FreeplayState;
-import states.editors.ChartingState;
 
 import states.results.Tallies;
 import states.results.ResultState;

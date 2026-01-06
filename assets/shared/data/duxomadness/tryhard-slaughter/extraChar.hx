@@ -44,6 +44,7 @@ var dadPlat:Bool = true;
 var cameraTargetting:Bool = true;
 function onUpdate() {
     if (natPlat) { natalion.y = game.getLuaObject('extraPlatform').y + 820; }
+
     if (dadPlat) {
         switch (game.dad.curCharacter) {
             case 'mr_D':
@@ -53,6 +54,8 @@ function onUpdate() {
             case 'mr_D2':
                 game.dad.y = game.getLuaObject('dadPlatform').y + 1490;
         }
+
+        if (game.getLuaObject('explosion') != null) game.getLuaObject('explosion').y = game.dad.y - 250;
     }
 
     game.boyfriend.y = game.getLuaObject('bfPlatform').y + 1400;
@@ -81,6 +84,8 @@ function onEvent(n, v1, v2) {
                 FlxTween.tween(tomyexe, {y: tomyexe.y+1200}, 0.8, {ease: FlxEase.smoothStepIn});
             case '1-1':
                 dadPlat = false;
+                game.getLuaObject('explosion').visible = true;
+                game.getLuaObject('explosion').playAnim('explosion', true);
                 game.triggerEvent('Play Animation', 'caida', 'dad');
 
                 FlxTween.tween(tomyexe, {x: tomyexe.x+500, y: tomyexe.y-1200}, 1.5, {ease: FlxEase.quadInOut, startDelay: 0.5});
@@ -91,6 +96,7 @@ function onEvent(n, v1, v2) {
                     game.dad.y = 1230;
                     game.dad.alpha = 0;
                     dadPlat = true;
+                    game.getLuaObject('explosion').destroy();
 
                     FlxTween.tween(game.dad, {alpha: 1}, 0.8, {ease: FlxEase.smoothStepOut});
                 }});
@@ -153,8 +159,23 @@ function opponentNoteHit(note:Note) {
         tomyexe.holdTimer = 0;
         tomyexe.playAnim(game.singAnimations[note.noteData]);
 
+        if (Conductor.songPosition / 1000 >= 63.750 && Conductor.songPosition / 1000 <= 123.632) {
+            if (game.dad.animation.curAnim.name == 'idle' && !mustHitSection) {
+                cameraTargetting = false;
+                game.camFollow.setPosition(tomyexe.getMidpoint().x + 150, tomyexe.getMidpoint().y - 100);
+                game.camFollow.x += tomyexe.cameraPosition[0] + game.opponentCameraOffset[0];
+                game.camFollow.y += tomyexe.cameraPosition[1] + game.opponentCameraOffset[1];
+            }
+        }
+
         game.opponentStrums.members[note.noteData].playAnim('static');
     } 
+}
+
+function goodNoteHitPre(note:Note) {
+    if (Conductor.songPosition / 1000 >= 63.750 && Conductor.songPosition / 1000 <= 123.632) {
+        if (mustHitSection && tomyexe.animation.curAnim.name.startsWith('sing')) cameraTargetting = true;
+    }
 }
 
 function onBeatHit() { characterBop(curBeat); }

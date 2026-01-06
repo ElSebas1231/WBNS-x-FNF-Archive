@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="explosion.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="explosion0000" x="2390" y="1078" width="116" height="112" frameX="-594" frameY="-319" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0001" x="2390" y="1078" width="116" height="112" frameX="-594" frameY="-319" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0002" x="2390" y="875" width="217" height="203" frameX="-536" frameY="-272" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0003" x="2390" y="672" width="217" height="203" frameX="-536" frameY="-272" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0004" x="1438" y="682" width="332" height="284" frameX="-479" frameY="-230" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0005" x="0" y="682" width="903" height="644" frameX="-140" frameY="-30" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0006" x="0" y="1326" width="756" height="659" frameX="-120" frameY="-63" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0007" x="1839" y="0" width="799" height="672" frameX="-88" frameY="-50" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0008" x="929" y="0" width="910" height="654" frameX="1" frameY="-12" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0009" x="0" y="0" width="929" height="682" frameX="2" frameY="2" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0010" x="903" y="682" width="535" height="591" frameX="-407" frameY="-95" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0011" x="1839" y="672" width="551" height="607" frameX="-401" frameY="-88" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0012" x="1158" y="1326" width="399" height="212" frameX="-422" frameY="-166" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0013" x="1438" y="966" width="395" height="216" frameX="-430" frameY="-161" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0014" x="756" y="1326" width="402" height="220" frameX="-426" frameY="-154" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0015" x="2607" y="672" width="12" height="9" frameX="-706" frameY="-103" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0016" x="2619" y="672" width="4" height="4" frameX="-268" frameY="-107" frameWidth="1041" frameHeight="720"/>
+	<SubTexture name="explosion0017" x="2619" y="672" width="4" height="4" frameX="-268" frameY="-107" frameWidth="1041" frameHeight="720"/>
+</TextureAtlas>

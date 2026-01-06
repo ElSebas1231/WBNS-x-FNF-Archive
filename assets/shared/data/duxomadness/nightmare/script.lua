@@ -13,12 +13,17 @@ function onCreate()
 end
 
 function onUpdate() 
-    if getPropertyFromClass('backend.Conductor', 'songPosition') / 1000 >= 106.064 and getPropertyFromClass('backend.Conductor', 'songPosition') / 1000 <= 107.626 then
-        setProperty('camHUD.visible', false)
-        setProperty('camGame.visible', false)
+    songPos = getPropertyFromClass('backend.Conductor', 'songPosition') / 1000
+
+    if (songPos >= 106.064 and songPos <= 107.626) then
+        if getProperty('camHUD.visible') ~= false then setProperty('camHUD.visible', false) end
+        if getProperty('camGame.visible') ~= false then setProperty('camGame.visible', false) end
+    elseif (songPos >= 181.241 and songPos <= 182.068) then
+        if getProperty('camHUD.visible') ~= true then setProperty('camHUD.visible', true) end
+        if getProperty('camGame.visible') ~= false then setProperty('camGame.visible', false) end
     end
 
-    if getPropertyFromClass('backend.Conductor', 'songPosition') / 1000 > 107.626 then
+    if (songPos > 107.626 and songPos < 181.241) or songPos >= 182.068 then
         if getProperty('camHUD.visible') ~= true then setProperty('camHUD.visible', true) end
         if getProperty('camGame.visible') ~= true then setProperty('camGame.visible', true) end
     end

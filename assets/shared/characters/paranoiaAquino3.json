@@ -1,67 +1,67 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "nidle",
-			"indices": []
+			"indices": [],
+			"name": "Vidle"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				399,
-				38
+				173,
+				-36
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singLEFT",
-			"fps": 24,
-			"name": "nleft",
-			"indices": []
+			"indices": [],
+			"name": "vleft"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				429,
-				-25
+				227,
+				-22
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWN",
-			"fps": 24,
-			"name": "ndown",
-			"indices": []
+			"indices": [],
+			"name": "vdown"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				495,
-				195
+				294,
+				285
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUP",
-			"fps": 24,
-			"name": "nup",
-			"indices": []
+			"indices": [],
+			"name": "vup"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				-108,
-				198
+				-87,
+				-62
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "nright",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "vright"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/aquino/nightmare",
+	"image": "characters/aquino/vquino_alt",
 	"position": [
-		30,
-		180
+		-100,
+		100
 	],
 	"healthicon": "icon-Vquino",
 	"flip_x": false,
@@ -71,10 +71,10 @@
 		0
 	],
 	"camera_position": [
-		-650,
+		0,
 		0
 	],
 	"sing_duration": 6.1,
-	"scale": 1.2,
+	"scale": 1,
 	"_editor_isPlayer": false
 }

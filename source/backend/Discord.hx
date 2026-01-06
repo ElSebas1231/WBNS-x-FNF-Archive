@@ -94,11 +94,11 @@ class DiscordClient
 		button2.label = button2Label;
 		button2.label = button2Url;
 
-		if(button1.label == null) button2.label = "¡Descarga el mod dando clic!";
-		if(button1.url == null) button1.url = "https://gamebanana.com/mods/588411";
+		if (button1.label == null || button1.label == '') button2.label = "¡Descarga el mod dando clic!";
+		if (button1.url == null || button1.url == '') button1.url = "https://gamebanana.com/mods/642860";
 
-		if(button2.label == null) button2.label = "Cuenta de Twitter/𝕏 del mod";
-		if(button2.url == null) button2.url = "https://x.com/WBNSxFNFmod";
+		if (button2.label == null || button2.label == '') button2.label = "Cuenta de Twitter/𝕏 del mod";
+		if (button2.url == null || button2.url == '') button2.url = "https://x.com/WBNSxFNFmod";
 
 		presence.details = details;
 		presence.state = state;

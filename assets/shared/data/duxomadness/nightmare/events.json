@@ -2042,9 +2042,19 @@
 				140689.655172414,
 				[
 					[
+						"Change BG",
+						"pilares3",
+						""
+					],
+					[
 						"Change Character",
 						"dad",
-						"paranoiaAquino"
+						"paranoiaAquino3"
+					],
+					[
+						"Change Character",
+						"bf",
+						"paranoiaEstailus3"
 					]
 				]
 			],
@@ -2969,6 +2979,16 @@
 				]
 			],
 			[
+				181241.379310345,
+				[
+					[
+						"Trans Pilar",
+						"",
+						""
+					]
+				]
+			],
+			[
 				182068.965517241,
 				[
 					[
@@ -2977,14 +2997,19 @@
 						""
 					],
 					[
+						"BG Cuerpos",
+						"",
+						""
+					],
+					[
 						"Change Character",
 						"dad",
-						"paranoiaAquino3"
+						"paranoiaAquino4"
 					],
 					[
 						"Change Character",
 						"bf",
-						"paranoiaEstailus3"
+						"paranoiaEstailus4"
 					]
 				]
 			],

@@ -40,6 +40,13 @@ function onCreate()
     addLuaSprite("foreground", true)
     scaleObject("foreground", grandeONo+0.2, grandeONo+0.2)  
     setScrollFactor("foreground", 1.14, 1.4)
+
+    makeAnimatedLuaSprite('explosion', 'ratman/explosion', -150, 0);
+    addAnimationByPrefix('explosion', 'explosion', 'explosion', 20, false)
+    setProperty('explosion.antialiasing', false)
+    setProperty('explosion.visible', false)
+    scaleObject('explosion', 2.5, 2.5)
+    addLuaSprite('explosion', true)
 end
 
 function onEvent(n,v1,v2)

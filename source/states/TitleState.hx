@@ -458,5 +458,6 @@ class TitleState extends MusicBeatState
 
 		openfl.Lib.application.window.title = 'WBNS x Friday Night Funkin: Duxo Madness';
 		openfl.Lib.application.window.setIcon(lime.graphics.Image.fromFile("assets/shared/images/ui/menus/utils/icon.png"));
+		DiscordClient.changePresence("In the Title Screen", null, 'duxomadness');
 	}
 }

@@ -79,6 +79,8 @@ class FreeplayState extends MusicBeatState {
 		WeekData.weeksList = [];
 		WeekData.weeksLoaded.clear();
 
+        DiscordClient.changePresence("In the Freeplay Menu", null, 'duxomadness');
+
 		if (FreeplaySections.sectionSelected == '' || FreeplaySections.sectionSelected == null) {
 			trace('Freeplay section is null!!!!\nExitting to FreeplaySections...');
 			MusicBeatState.switchState(new FreeplaySections());

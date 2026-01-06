@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				1,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				29,
+				7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				-3,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-4,
+				39
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-20,
+				16
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/estailus/estailusMiado",
+	"position": [
+		-50,
+		150
+	],
+	"healthicon": "icon-estailus2",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		45,
+		0
+	],
+	"camera_position": [
+		-50,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

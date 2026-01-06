@@ -24,6 +24,8 @@ function onCreate()
             setPropertyFromGroup('unspawnNotes',i,'scale.y',1.2)
         end
     end
+
+
 end
 
 function onCreatePost()
@@ -325,6 +327,29 @@ function onEvent(name,v1,v2)
                 extraIcon('setIconProperty',{'dadIcon','followCharacterImage',false})
                 extraIcon('loadIconGraphic',{'dadIcon','icon-sys'})
                 extraIcon('setIconAsPrincipal',{'duckIcon'})
+            end
+        end
+    end
+    if name == 'Subajada' then
+        if v1 == '0' then
+            for i,v in ipairs({'healthBar.bg', 'healthBar.leftBar', 'healthBar.rightBar', 'scoreMM'}) do
+                doTweenY(v..'Y', v, getProperty(v..'.y') + 200, 0.84, 'expoInOut')
+            end
+
+            for i,v in ipairs({'iconP1', 'iconP2'}) do
+                doTweenY(v..'Y', v, getProperty(v..'.y') + 200, 0.84, 'expoInOut')
+                doTweenAlpha(v..'alpha', v, 0, 0.84, 'expoInOut')
+            end
+        end
+
+        if v1 == '1' then
+            for i,v in ipairs({'healthBar.bg', 'healthBar.leftBar', 'healthBar.rightBar', 'scoreMM'}) do
+                doTweenY(v..'Y', v, getProperty(v..'.y') - 200, 0.84, 'expoInOut')
+            end
+
+            for i,v in ipairs({'iconP1', 'iconP2'}) do
+                doTweenY(v..'Y', v, getProperty(v..'.y') - 200, 0.84, 'expoInOut')
+                doTweenAlpha(v..'alpha', v, 1, 0.84, 'expoInOut')
             end
         end
     end

@@ -14,16 +14,15 @@ class IntroVideoState extends MusicBeatState
     override function create() {
         super.create();
 
-		if(!foundFile) {
+        do {
             fileName = Paths.video('intromadness');
             #if sys
-            if(FileSystem.exists(fileName)) 
+            if (FileSystem.exists(fileName)) 
             #else
-            if(OpenFlAssets.exists(fileName)) 
+            if (OpenFlAssets.exists(fileName)) 
             #end
                 foundFile = true;
-            
-        }
+        } while (!foundFile);
 
         if (foundFile) {
             sprite = new FlxSprite().makeGraphic(1280, 720, FlxColor.BLACK);

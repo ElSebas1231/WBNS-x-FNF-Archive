@@ -7,9 +7,9 @@
 				0,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"1.4, 0.001, expoout"
+						"Set Property",
+						"defaultCamZoom",
+						"1.4"
 					]
 				]
 			],

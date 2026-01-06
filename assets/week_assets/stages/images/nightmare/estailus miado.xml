@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="estailus miado.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="stai0000" x="0" y="0" width="624" height="644" frameX="2" frameY="2" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0001" x="0" y="0" width="624" height="644" frameX="2" frameY="2" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0002" x="0" y="0" width="624" height="644" frameX="2" frameY="2" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0003" x="1245" y="0" width="616" height="643" frameX="-6" frameY="0" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0004" x="1245" y="0" width="616" height="643" frameX="-6" frameY="0" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0005" x="624" y="0" width="621" height="643" frameX="-2" frameY="-2" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0006" x="624" y="0" width="621" height="643" frameX="-2" frameY="-2" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0007" x="624" y="0" width="621" height="643" frameX="-2" frameY="-2" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0008" x="0" y="644" width="608" height="644" frameX="-16" frameY="-1" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0009" x="0" y="644" width="608" height="644" frameX="-16" frameY="-1" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0010" x="608" y="644" width="607" height="643" frameX="-16" frameY="-2" frameWidth="622" frameHeight="649"/>
+	<SubTexture name="stai0011" x="608" y="644" width="607" height="643" frameX="-16" frameY="-2" frameWidth="622" frameHeight="649"/>
+</TextureAtlas>

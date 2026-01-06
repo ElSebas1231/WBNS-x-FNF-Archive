@@ -36,7 +36,7 @@
 	"vocals_file": "",
 	"no_antialiasing": true,
 	"image": "characters/soarinng/SdlgSoaPixel",
-	"position": [120, 330],
+	"position": [300, 390],
 	"healthicon": "gf",
 	"flip_x": false,
 	"healthbar_colors": [165, 0, 77],
