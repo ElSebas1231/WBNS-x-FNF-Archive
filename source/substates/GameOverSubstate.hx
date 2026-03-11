@@ -57,7 +57,6 @@ class GameOverSubstate extends MusicBeatSubstate
 		add(boyfriend);
 
 		var deathSound = Paths.sound(deathSoundName);
-		trace('Sound = null?: ${deathSound == null}');
 		if (deathSound != null) {
 			FlxG.sound.play(deathSound, 1, false, null, true, function() {
 				playingDeathSound = false;
@@ -154,39 +153,37 @@ class GameOverSubstate extends MusicBeatSubstate
 						PlayState.deathCounter = 0;
 						PlayState.seenCutscene = false;
 		
-						var stickerSet = 'stickers-set-wbns';
-						var stickerPack = 'all';
-			
-						if (FreeplaySections.sectionSelected.contains('duxo')) {
-							stickerSet = 'stickers-set-dm';
-			
-							stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-								case "its a rat": "itsarat";
-								case "last course": "lastCourse";
-								case "nightmare": "nightmare";
-								case "sdlg": "sdlg";
-								case "trick or treat": "trickOrTreat";
-								case "tryhard slaughter": "tryhard";
-								case "unwebonable v2": "unwebonable";
-								case "all wbns": "duxoMadness";
-								default: "all";
-							};
-						}
+						var stickerSet = 'stickers-set-dm';
+						var stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+							case "its a rat": "itsarat";
+							case "last milk": "lastCourse";
+							case "nightmare": "nightmare";
+							case "sdlg": "sdlg";
+							case "trick or treat": "trickOrTreat";
+							case "tryhard slaughter": "tryhard";
+							case "unwebonable v2": "unwebonable";
+							case "all wbns": "duxoMadness";
+							default: "all";
+						};
+						
+						if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
+						if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
 
-						if (!ClientPrefs.data.noStickers) {
-							if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
-							if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
-							
-							if (PlayState.isStoryMode) {
-								openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
-							} else {
-								openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
-							}
+						if (states.TitleState.secretSongLoaded) {
+							FlxG.switchState(new FreeplaySections());
 						} else {
-							if (PlayState.isStoryMode) {
-								FlxG.switchState(new StoryMenuState());
+							if (!ClientPrefs.data.noStickers) {
+								if (PlayState.isStoryMode) {
+									openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
+								} else {
+									openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
+								}
 							} else {
-								FlxG.switchState(new FreeplayState());
+								if (PlayState.isStoryMode) {
+									FlxG.switchState(new StoryMenuState());
+								} else {
+									FlxG.switchState(new FreeplayState());
+								}
 							}
 						}
 		

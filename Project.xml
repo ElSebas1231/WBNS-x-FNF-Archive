@@ -27,6 +27,7 @@
 	<define name="TRANSLATIONS_ALLOWED" />
 
 	<define name="SHOW_LOADING_SCREEN" />
+	<!-- <define name="CHART_EDITOR" /> -->
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
 
 	<section if="officialBuild">
@@ -67,14 +68,14 @@
 	<!-- Assets -->
 	<assets path="assets/fonts" />
 	<assets path="assets/shared" />
-	<assets path="assets/secrets" 					rename="assets/shared" embed="true"/>
 	<assets path='mods' />
 
 	<assets path="assets/videos"					library="videos"/>
 	<assets path="assets/songs"         			library="songs"/>
-	<assets path="assets/secrets/songs" 			library="songs" rename="assets/songs" embed="true"/>
-	<assets path="assets/secrets/images/spooky" 	library="week_assets" rename="assets/stages/images/spooky" embed="true"/>
 	<assets path="assets/week_assets"   			library="week_assets" rename="assets"/>
+	<assets path="assets/embed/songs" 				library="songs" rename="assets/songs" embed="true"/>
+	<assets path="assets/embed" 					rename="assets/shared" embed="true"/>
+
 
 	<library name="videos"        preload="true"/>
 	<library name="songs"         preload="true" />
@@ -90,21 +91,24 @@
 	<haxelib name="flixel-addons" />
 	<haxelib name="tjson" />
 
-	<!--Psych stuff needed-->
+	<!-- haxelib git linc_luajit https://github.com/superpowers04/linc_luajit.git -->
 	<haxelib name="linc_luajit" if="LUA_ALLOWED"/>
-	<haxelib name="SScript" if="HSCRIPT_ALLOWED"/>
-	<haxelib name="hxCodec"/>
-	<haxelib name="hxdiscord_rpc" if="DISCORD_ALLOWED"/>
-	<haxelib name="flxanimate"/>
 
-	<!--Mod stuff needed-->
-	<!-- <haxelib name="farfadox-utils"/> -->
+	<!-- https://github.com/CCobaltDev/SScript-Archive/raw/refs/heads/main/archives/SScript-7,7,0.zip -->
+	<haxelib name="SScript" if="HSCRIPT_ALLOWED"/> 
+	<haxelib name="hxvlc"/>
+	<haxelib name="hxdiscord_rpc" if="DISCORD_ALLOWED"/>
+
+	<!-- haxelib git flxanimate https://github.com/ShadowMario/flxanimate dev -->
+	<haxelib name="flxanimate"/>
 
 	<!-- haxelib git funkin.vis https://github.com/beihu235/funkVis-FrequencyFixed -->
 	<haxelib name="funkin.vis"/>
 
 	<!-- haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666 -->
    <haxelib name="grig.audio" />
+
+   <haxelib name="flxpartialsound" />
 
 	<!-- Disable Discord IO Thread -->
 	<haxedef name="DISCORD_DISABLE_IO_THREAD" if="hxdiscord_rpc" />

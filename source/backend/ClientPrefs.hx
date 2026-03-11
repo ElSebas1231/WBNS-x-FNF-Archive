@@ -11,10 +11,9 @@ import states.TitleState;
 	public var downScroll:Bool = false;
 	public var middleScroll:Bool = false;
 	public var opponentStrums:Bool = true;
+	public var focusVolume:Bool = true;
 	public var showFPS:Bool = true;
 	public var flashing:Bool = true;
-	public var spookyUnlock:Bool = false;
-	public var seenGoobyeVideo:Bool = false;
 	public var autoPause:Bool = false;
 	public var vsliceResults:Bool = true;
 	public var antialiasing:Bool = true;
@@ -43,8 +42,7 @@ import states.TitleState;
 		[0xFFFF884E, 0xFFFFFAF5, 0xFF6C0000]];
 
 	public var fpSectionsUnlocked:Array<String> = ['duxomadness'];
-	public var shopItemsBuyed:Array<String> = [];
-	public var favoriteSongs:Array<String> = [];
+	public var secretSongsUnlocked:Array<{name:String, healthIcon:String}> = new Array();
 	public var ghostTapping:Bool = true;
 	public var timeBarType:String = 'Time Left';
 	public var scoreZoom:Bool = true;
@@ -52,7 +50,7 @@ import states.TitleState;
 	public var noStickers:Bool = false;
 	public var healthBarAlpha:Float = 1;
 	public var hitsoundVolume:Float = 0;
-	public var missSoundVolume:Float = 0;
+	public var missSoundVolume:Float = 0.5;
 	public var pauseMusic:String = 'Pause Improv';
 	public var checkForUpdates:Bool = true;
 	public var comboStacking:Bool = true;
@@ -133,10 +131,7 @@ class ClientPrefs {
 		'accept'		=> [A, START],
 		'back'			=> [B],
 		'pause'			=> [START],
-		'reset'			=> [BACK],
-		'fp_favorite'	=> [BACK],
-		'fp_left'		=> [LEFT_SHOULDER],
-		'fp_right'		=> [RIGHT_SHOULDER],
+		'reset'			=> [BACK]
 	];
 	public static var defaultKeys:Map<String, Array<FlxKey>> = null;
 	public static var defaultButtons:Map<String, Array<FlxGamepadInputID>> = null;
@@ -270,24 +265,5 @@ class ClientPrefs {
 		FlxG.sound.muteKeys = turnOn ? TitleState.muteKeys : [];
 		FlxG.sound.volumeDownKeys = turnOn ? TitleState.volumeDownKeys : [];
 		FlxG.sound.volumeUpKeys = turnOn ? TitleState.volumeUpKeys : [];
-	}
-	
-	public static function isSongFavorited(id:String):Bool {
-		return ClientPrefs.data.favoriteSongs.contains(id);
-	}
-
-	public static function favoriteSong(id:String) {
-		if (!isSongFavorited(id))
-		{
-			ClientPrefs.data.favoriteSongs.push(id);
-			FlxG.save.flush();
-		}
-	}
-
-	public static function unfavoriteSong(id:String) {
-		if (isSongFavorited(id)) {
-			ClientPrefs.data.favoriteSongs.remove(id);
-			FlxG.save.flush();
-		}
 	}
 }

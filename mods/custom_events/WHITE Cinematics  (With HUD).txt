@@ -1,0 +1,8 @@
+Value 1: VELOCIDAD
+         Medida en segundos, si quieres algo rápido en decimales
+         si quieres algo ligero esta bien en segundos normales.
+
+Value 2: DISTANCIA
+         Medida en 10x10. (La recomendada es 50 hasta 90)
+
+SI QUIERES EL FADEOUT EL VALOR ES: 370

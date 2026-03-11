@@ -1,6 +1,8 @@
  --Hud Sacado del Nevados' Gallery, Programado por Josno (Yo)
 --Tienes el permiso de modificarlo o mejorarlo a tu gusto!
 
+local fps = false
+
 function onCreatePost()
 	--Precache images lol
 	precacheImage('customYoutubeHud/black')
@@ -15,6 +17,7 @@ function onCreatePost()
 	setProperty('countdownReady.visible', false)
 	setProperty('countdownSet.visible', false)
 	setProperty('countdownGo.visible', false)
+	fps = getPropertyFromClass('ClientPrefs.data', 'showFPS')
 	--setProperty('introSoundsSuffix', '-NULL')
 	
 	--Sprites
@@ -133,7 +136,7 @@ function onUpdate(elapsed)
 	setProperty('Health.visible', false)
     setProperty('iconP1.visible', false)
     setProperty('iconP2.visible', false)
-	setPropertyFromClass('Main','fpsVar.visible',false)
+	setPropertyFromClass('Main','fpsVar.visible', false)
 	
 	--NewTimeBar Things
 	setProperty('newTimeBarBG.y', 664)
@@ -158,6 +161,10 @@ function onCountdownTick(counter) --CustomCountdown
 		--muere mierda
 		removeLuaSprite('loadingZZZ', true)
 	end
+end
+
+function onDestroy()
+	setPropertyFromClass('Main', 'fpsVar.visible', fps)
 end
 
 function onSongStart() --Timer Things

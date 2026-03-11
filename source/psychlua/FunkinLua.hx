@@ -818,35 +818,31 @@ class FunkinLua {
 			return true;
 		});
 		Lua_helper.add_callback(lua, "exitSong", function(?skipTransition:Bool = false) {
-			if(skipTransition) {
+			if (skipTransition) {
 				FlxTransitionableState.skipNextTransIn = true;
 				FlxTransitionableState.skipNextTransOut = true;
 			}
 
-			var stickerSet = 'stickers-set-wbns';
-			var stickerPack = 'all';
-
-			if (FreeplaySections.sectionSelected.contains('duxo')) {
-				stickerSet = 'stickers-set-dm';
-
-				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-					case "its a rat": "itsarat";
-					case "last course": "lastCourse";
-					case "nightmare": "nightmare";
-					case "sdlg": "sdlg";
-					case "trick or treat": "trickOrTreat";
-					case "tryhard slaughter": "tryhard";
-					case "unwebonable v2": "unwebonable";
-					case "all wbns": "duxoMadness";
-					default: "all";
-				};
-			}
-
-			if(PlayState.isStoryMode)
+			var stickerSet = 'stickers-set-dm';
+			var stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+				case "its a rat": "itsarat";
+				case "last milk": "lastCourse";
+				case "nightmare": "nightmare";
+				case "sdlg": "sdlg";
+				case "trick or treat": "trickOrTreat";
+				case "tryhard slaughter": "tryhard";
+				case "unwebonable v2": "unwebonable";
+				case "all wbns": "duxoMadness";
+				default: "all";
+			};
+			
+			if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
+			if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
+			
+			if (states.TitleState.secretSongLoaded) {
+				FlxG.switchState(new FreeplaySections());
+			} else {
 				if (!ClientPrefs.data.noStickers) {
-					StickerSubState.STICKER_SET = stickerSet;
-					StickerSubState.STICKER_PACK = stickerPack;
-					
 					if (PlayState.isStoryMode) {
 						game.openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
 					} else {
@@ -859,6 +855,7 @@ class FunkinLua {
 						FlxG.switchState(new FreeplayState());
 					}
 				}
+			}
 
 			#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 
@@ -1367,6 +1364,7 @@ class FunkinLua {
 			}
 			return false;
 		});
+		/*
 		Lua_helper.add_callback(lua, "startVideo", function(videoFile:String) {
 			#if VIDEOS_ALLOWED
 			if(FileSystem.exists(Paths.video(videoFile))) {
@@ -1386,6 +1384,7 @@ class FunkinLua {
 			return true;
 			#end
 		});
+		*/
 
 		Lua_helper.add_callback(lua, "playMusic", function(sound:String, volume:Float = 1, loop:Bool = false) {
 			FlxG.sound.playMusic(Paths.music(sound), volume, loop);

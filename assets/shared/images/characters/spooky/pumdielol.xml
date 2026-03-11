@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pumdielol.png">
+	<!-- Created with Adobe Animate version 24.0.1.329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="die pump0000" x="6" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0001" x="6" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0002" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0003" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0004" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0005" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0006" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0007" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0008" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0009" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0010" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0011" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0012" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0013" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0014" x="679" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0015" x="1352" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0016" x="1352" y="6" width="581" height="400"/>
+	<SubTexture name="die pump0017" x="6" y="498" width="581" height="400"/>
+	<SubTexture name="die pump0018" x="6" y="498" width="581" height="400"/>
+	<SubTexture name="die pump0019" x="679" y="498" width="581" height="400"/>
+	<SubTexture name="die pump0020" x="679" y="498" width="581" height="400"/>
+	<SubTexture name="die pump0021" x="1352" y="498" width="581" height="400"/>
+	<SubTexture name="die pump0022" x="1352" y="498" width="581" height="400"/>
+	<SubTexture name="die pump0023" x="6" y="990" width="581" height="400"/>
+	<SubTexture name="die pump0024" x="679" y="990" width="581" height="400"/>
+	<SubTexture name="die pump0025" x="679" y="990" width="581" height="400"/>
+	<SubTexture name="die pump0026" x="1352" y="990" width="581" height="400"/>
+	<SubTexture name="die pump0027" x="1352" y="990" width="581" height="400"/>
+	<SubTexture name="die pump0028" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0029" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0030" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0031" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0032" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0033" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0034" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0035" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0036" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0037" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0038" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0039" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0040" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0041" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0042" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0043" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0044" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0045" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0046" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0047" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0048" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0049" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0050" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0051" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0052" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0053" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0054" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0055" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0056" x="6" y="1482" width="581" height="400"/>
+	<SubTexture name="die pump0057" x="6" y="1482" width="581" height="400"/>
+</TextureAtlas>

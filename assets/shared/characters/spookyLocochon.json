@@ -1,124 +1,87 @@
 {
 	"animations": [
 		{
-			"loop": false,
-			"offsets": [
-				0,
-				0
-			],
+			"offsets": [0, 0],
+			"indices": [],
 			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle0"
+			"loop": false,
+			"name": "idle"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				61,
-				-3
-			],
+			"offsets": [33, -15],
+			"indices": [],
 			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "left0"
+			"loop": false,
+			"name": "left"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				73,
-				-2
-			],
-			"fps": 24,
-			"anim": "singLEFT-C3jo",
+			"offsets": [-28, -41],
 			"indices": [],
-			"name": "leftc3josing0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				6,
-				-18
-			],
 			"fps": 24,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "down0"
+			"loop": false,
+			"name": "down"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				21,
-				-22
-			],
-			"fps": 24,
-			"anim": "singDOWN-C3jo",
+			"offsets": [-13, 27],
 			"indices": [],
-			"name": "downc3josing0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				2,
-				17
-			],
 			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "up0"
+			"loop": false,
+			"name": "up"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				10,
-				40
-			],
-			"fps": 24,
-			"anim": "singUP-C3jo",
+			"offsets": [-69, -19],
 			"indices": [],
-			"name": "upc3josing0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-65,
-				3
-			],
 			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "right0"
+			"loop": false,
+			"name": "right"
 		},
 		{
-			"loop": false,
-			"offsets": [
-				-18,
-				-1
-			],
+			"offsets": [-69, -19],
+			"indices": [],
 			"fps": 24,
 			"anim": "singRIGHT-C3jo",
+			"loop": false,
+			"name": "altright"
+		},
+		{
+			"offsets": [33, -15],
 			"indices": [],
-			"name": "rightc3josing0"
+			"fps": 24,
+			"anim": "singLEFT-C3jo",
+			"loop": false,
+			"name": "altleft"
+		},
+		{
+			"offsets": [-13, 27],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-C3jo",
+			"loop": false,
+			"name": "altup"
+		},
+		{
+			"offsets": [-28, -41],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-C3jo",
+			"loop": false,
+			"name": "altdown"
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/locochon/spoookylocochin",
-	"position": [
-		40,
-		125
-	],
-	"healthicon": "dad",
+	"image": "characters/locochon/locospooki",
+	"position": [70, 220],
+	"healthicon": "locochon_icon",
 	"flip_x": false,
-	"healthbar_colors": [
-		175,
-		102,
-		206
-	],
-	"camera_position": [
-		-20,
-		-20
-	],
+	"healthbar_colors": [89, 78, 69],
+	"camera_position": [-20, -180],
 	"sing_duration": 4,
-	"scale": 1,
+	"scale": 1.8,
 	"_editor_isPlayer": false
 }

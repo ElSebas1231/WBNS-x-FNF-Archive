@@ -83,19 +83,6 @@ class FreeplayUtil {
 
 		return new FreeplayMetadata(0, 20, 100);
 	}
-
-    public static function toggleFavorite(capsule:FreeplayCapsule):Bool {
-		var songName:String = capsule.songText.text;
-		var songLowercase:String = songName.toLowerCase();
-
-		if (ClientPrefs.isSongFavorited(songLowercase)) {
-			ClientPrefs.unfavoriteSong(songLowercase);
-			return false;
-		} else {
-			ClientPrefs.favoriteSong(songLowercase);
-			return true;
-		}
-	}
 }
 
 class FreeplayMetadata {

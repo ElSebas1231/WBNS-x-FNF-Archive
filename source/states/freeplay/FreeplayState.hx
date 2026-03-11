@@ -18,8 +18,8 @@ import objects.freeplay.FreeplayScore;
 import objects.AudioDisplay;
 
 import states.freeplay.FreeplayUtil;
-import states.freeplay.FreeplayPreview;
-import states.freeplay.FreeplayPreloadSubState;
+
+#if CHART_EDITOR import states.editors.ChartingState; #end
 
 class FreeplayState extends MusicBeatState {
 
@@ -31,7 +31,6 @@ class FreeplayState extends MusicBeatState {
 	public var fpScore:FreeplayScore;
 	public static var freeplayCharacter:String = 'bf'; // Later to be used for character selection
 	private static var lastDifficultyName:String = Difficulty.getDefault();
-	private var previewSong:FreeplayPreview;
 
     var bg:FlxSprite;
 	var titleBack:FlxSprite;
@@ -51,7 +50,6 @@ class FreeplayState extends MusicBeatState {
 	var intendedScore:Int = 0;
 	var intendedCompletion:Float = 0;
 
-	var menuSongTime:Float = 0;
 	var stickerSubState:StickerSubState;
 
 	var visualizer:AudioDisplay;
@@ -72,9 +70,10 @@ class FreeplayState extends MusicBeatState {
 		if (stickerSubState != null && !ClientPrefs.data.noStickers) {
 			openSubState(stickerSubState);
 			stickerSubState.degenStickers();
-		} else {
-			Paths.clearStoredMemory();
-		}
+		} else Paths.clearStoredMemory();
+
+		FlxG.sound.playMusic(Paths.music('freeplayRandom'), 0);
+		FlxG.sound.music.fadeIn(2.6, 0, 1);
 
 		WeekData.weeksList = [];
 		WeekData.weeksLoaded.clear();
@@ -86,7 +85,6 @@ class FreeplayState extends MusicBeatState {
 			MusicBeatState.switchState(new FreeplaySections());
 		}
 
-		if (FlxG.sound.music != null) menuSongTime = FlxG.sound.music.time;
 		WeekData.addByDirectory(Paths.getSharedPath('weeks/${FreeplaySections.sectionSelected}'));
 
 		for (i in 0...WeekData.weeksList.length) {
@@ -104,7 +102,11 @@ class FreeplayState extends MusicBeatState {
             }
 		}
 
-		if (ClientPrefs.data.spookyUnlock) addSong('Trick or Treat', songs.length - 1, 'icon-spooky');
+		if (ClientPrefs.data.secretSongsUnlocked.length > 0) {
+			for (i in 0...ClientPrefs.data.secretSongsUnlocked.length) {
+				addSong(ClientPrefs.data.secretSongsUnlocked[i].name, songs.length - (i+1), ClientPrefs.data.secretSongsUnlocked[i].healthIcon);
+			}
+		}
 
 		Mods.loadTopMod();
 		persistentUpdate = true;
@@ -231,18 +233,7 @@ class FreeplayState extends MusicBeatState {
 		updateCapsulePositions(0);
 		bottomTextMove();
 		super.create();
-		
-		freeplayPreload(songs);
     }
-
-	function freeplayPreload(preloadList:Array<SongMetadata>) {
-		var preloadSongList = [for (song in preloadList) { name: song.songName }];
-		persistentUpdate = false;
-		
-		if (stickerSubState == null || stickerSubState.stickersGone) {
-			openSubState(new FreeplayPreloadSubState(preloadSongList));
-		}
-	}
 
 	var moveTimer:FlxTimer = new FlxTimer();
     var moveTween:FlxTween;
@@ -259,8 +250,7 @@ class FreeplayState extends MusicBeatState {
 		});
 	}
 
-    public function addSong(songName:String, weekNum:Int, songCharacter:String)
-	{
+    public function addSong(songName:String, weekNum:Int, songCharacter:String) {
 		songs.push(new SongMetadata(songName, weekNum, songCharacter));
 	}
 
@@ -300,28 +290,6 @@ class FreeplayState extends MusicBeatState {
 				completitionText.offset.x = -50;
 		}
 
-		// #if debug
-		// if (FlxG.keys.pressed.ALT) {
-		// 	if (controls.UI_LEFT_P) {
-		// 		trace('To 0');
-		// 		FlxTween.cancelTweensOf(mmMenuShader);
-		// 		FlxTween.num(0, 1, 1.5, {ease: FlxEase.smoothStepOut}, function(num:Float) {
-		// 			mmMenuShader.uMix.value = [num];
-		// 			trace('uMix = ${mmMenuShader.uMix.value[0]}');
-		// 		});
-		// 	}
-
-		// 	if (controls.UI_RIGHT_P) {
-		// 		trace('To 1');
-		// 		FlxTween.cancelTweensOf(mmMenuShader);
-		// 		FlxTween.num(1, 0, 1.5, {ease: FlxEase.smoothStepOut}, function(num:Float) {
-		// 			mmMenuShader.uMix.value = [num];
-		// 			trace('uMix = ${mmMenuShader.uMix.value[0]}');
-		// 		});
-		// 	}
-		// }
-		// #end
-		
 		var shiftMult:Int = 1;
 		if (FlxG.keys.pressed.SHIFT) shiftMult = 3;
 
@@ -370,7 +338,22 @@ class FreeplayState extends MusicBeatState {
 				generateSongCapsules(true);
 			}
 	
-			if (controls.ACCEPT) {
+			if (controls.ACCEPT || FlxG.mouse.justPressed) {
+				#if CHART_EDITOR
+				if (FlxG.keys.pressed.SHIFT) {
+					var songLowercase:String = Paths.formatToSongPath(grpCapsules.members[curSelected].songText.text);
+					if (songLowercase != 'random') {
+						var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
+	
+						PlayState.SONG = Song.loadFromJson(poop, '${FreeplaySections.sectionSelected}/${songLowercase}');
+						PlayState.isStoryMode = false;
+						PlayState.storyDifficulty = curDifficulty;
+						PlayState.chartingMode = true;
+	
+						LoadingState.loadAndSwitchState(new ChartingState());
+					}
+				} else 
+				#end
 				FlxG.sound.play(Paths.sound('confirm'), 0.5);
 				grpCapsules.members[curSelected].onConfirm();
 				canSelectSomething = false;
@@ -387,76 +370,35 @@ class FreeplayState extends MusicBeatState {
 					openSubState(new GameplayChangersSubstate());
 				}
 			}
-	
-			if (controls.BACK) {
-				if (previewSong != null) {
-					if (FlxG.sound.music != null) FlxG.sound.music.stop();
-					previewSong.isLooping = false;
+
+			#if CHART_EDITOR
+			if (FlxG.mouse.justPressedRight) {
+				var songLowercase:String = Paths.formatToSongPath(grpCapsules.members[curSelected].songText.text);
+				if (songLowercase != 'random') {
+					var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
+
+					PlayState.SONG = Song.loadFromJson(poop, '${FreeplaySections.sectionSelected}/${songLowercase}');
+					PlayState.isStoryMode = false;
+					PlayState.storyDifficulty = curDifficulty;
+					PlayState.chartingMode = true;
+
+					LoadingState.loadAndSwitchState(new ChartingState());
 				}
-				
+			}
+			#end
+	
+			if (controls.BACK) {				
 				movedBack = true;
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 
 				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-				FlxG.sound.music.fadeIn(1.5, 0, 1);
-				FlxG.sound.music.time = menuSongTime;
-				
+				FlxG.sound.music.fadeIn(2.6, 0, 1);
+				FlxG.sound.music.time = FreeplaySections.menuSongTime;
 				MusicBeatState.switchState(new FreeplaySections());
 			}
 		}
 
-		if (FlxG.keys.pressed.SHIFT) {
-			if (FlxG.keys.justPressed.SPACE) {
-			   var curCapsule:FreeplayCapsule = grpCapsules.members[curSelected];
-			   if (curCapsule.songText.text == 'Random') {
-				   var availableSongCapsules:Array<FreeplayCapsule> = grpCapsules.members.filter(function(cap:FreeplayCapsule) {
-					   return cap != null && cap.alive;
-				   });
-   
-				   var randomCapsule:FreeplayCapsule = FlxG.random.getObject(availableSongCapsules, null, 1);
-				   var songName:String = randomCapsule.songText.text;
-				   if (songName != 'Random') {
-					   var meta:FreeplayMetadata = FreeplayUtil.getMeta(songName);
-					   
-					   if (previewSong != null) {
-						   if (FlxG.sound.music != null) FlxG.sound.music.stop();
-						   previewSong.isLooping = false;
-					   }
-	   
-					   var params:PlayerParams = {
-						   isInst: true,
-						   loop: true,
-						   startingVolume: 0.0,
-						   starting: meta.freeplayPrevStart,
-						   ending: meta.freeplayPrevEnd,
-						   onLoad: function() {
-							   Conductor.bpm = meta.startingBPM;
-							   FlxG.sound.music.fadeIn(2, 0.0, 0.8);
-						   }
-					   };
-					   previewSong = new FreeplayPreview(params);
-					   previewSong.play(songName);
-				   } else {
-					   var params:PlayerParams = {
-						   isInst: false,
-						   loop: true,
-						   startingVolume: 0.0,
-						   onLoad: function() {
-							   Conductor.bpm = 146;
-							   FlxG.sound.music.fadeIn(2, 0.0, 0.8);
-							   visualizer.changeAnalyzer(FlxG.sound.music);
-						   }
-					   };
-   
-					   previewSong = new FreeplayPreview(params);
-					   previewSong.play("freeplayRandom");
-				   }
-			   }
-		   }
-		}
-
 		Conductor.songPosition = FlxG.sound.music.time;
-		if (previewSong != null) previewSong.update(elapsed);
     }
 
 	override function closeSubState() {
@@ -492,7 +434,6 @@ class FreeplayState extends MusicBeatState {
 		}
 
 		changeDiff();
-		playTargetSong();
 	}
 
 	var tweenDifficulty:FlxTween;
@@ -533,50 +474,6 @@ class FreeplayState extends MusicBeatState {
 			{
 				tweenDifficulty = null;
 			}});
-		}
-	}
-
-	function playTargetSong() {
-		var songName:String = grpCapsules.members[curSelected].songText.text;
-		if (songName != 'Random') {
-			var meta:FreeplayMetadata = FreeplayUtil.getMeta(songName);
-			
-			if (previewSong != null) {
-				if (FlxG.sound.music != null) FlxG.sound.music.stop();
-				previewSong.isLooping = false;
-			}
-
-			var params:PlayerParams = {
-				isInst: true,
-				loop: true,
-				startingVolume: 0.0,
-				starting: meta.freeplayPrevStart,
-				ending: meta.freeplayPrevEnd,
-				onLoad: function() {
-					Conductor.bpm = meta.startingBPM;
-					FlxG.sound.music.fadeIn(2, 0.0, 0.8);
-				}
-			};
-			previewSong = new FreeplayPreview(params);
-			previewSong.play(songName);
-		} else {
-			if (previewSong != null) {
-				if (FlxG.sound.music != null) FlxG.sound.music.stop();
-				previewSong.isLooping = false;
-			}
-
-			var params:PlayerParams = {
-				isInst: false,
-				loop: true,
-				startingVolume: 0.0,
-				onLoad: function() {
-					Conductor.bpm = 146;
-					FlxG.sound.music.fadeIn(2, 0.0, 0.8);
-					visualizer.changeAnalyzer(FlxG.sound.music);
-				}
-			};
-			previewSong = new FreeplayPreview(params);
-			FreeplayPreview.preloadSound("freeplayRandom", false, function(){ previewSong.play("freeplayRandom"); });
 		}
 	}
 
@@ -636,7 +533,7 @@ class FreeplayState extends MusicBeatState {
 			songCapsules.y = songCapsules.intendedY(i + 1) - 10;
 			songCapsules.targetPos.x = songCapsules.x;
 			songCapsules.newText.visible = Highscore.isSongBeated(tempSongListArray[i].songName, curDifficulty);
-			songCapsules.favIcon.visible = ClientPrefs.isSongFavorited(tempSongListArray[i].songName.toLowerCase());
+			songCapsules.favIcon.visible = false;
 			songCapsules.ranking.rank = Highscore.getSongRank(tempSongListArray[i].songName, curDifficulty);
 			songCapsules.onConfirm = function() {
 				onCapsuleConfirm(songCapsules);
@@ -659,12 +556,13 @@ class FreeplayState extends MusicBeatState {
 		trace(poop);
 
 		try {
-			if (FreeplaySections.sectionSelected.contains('dlc'))
+			if (FreeplaySections.sectionSelected.contains('dlc')) {
 				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-			else 
+			} else {
 				PlayState.SONG = Song.loadFromJson(poop, '${FreeplaySections.sectionSelected}/${songLowercase}');
-			PlayState.isStoryMode = false;
-			PlayState.storyDifficulty = curDifficulty;
+				PlayState.isStoryMode = false;
+				PlayState.storyDifficulty = curDifficulty;
+			}
 
 			trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
 		} catch (e:Dynamic) {
@@ -695,8 +593,6 @@ class FreeplayState extends MusicBeatState {
 		}
 
 		new FlxTimer().start(1.5, function(tmr:FlxTimer) {
-			FlxTransitionableState.skipNextTransIn = true;
-			FlxTransitionableState.skipNextTransOut = true;
 			LoadingState.prepareToSong();
 			LoadingState.loadAndSwitchState(new PlayState());
 		});

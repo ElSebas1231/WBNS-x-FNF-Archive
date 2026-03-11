@@ -2,32 +2,32 @@
 	"song": {
 		"events": [
 			[
-				14973.6328125,
+				15000,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.36, 1.32, smoothstepinout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.33"
 					]
 				]
 			],
 			[
-				15937.5,
+				15468.75,
 				[
 					[
 						"FocusCamera",
-						"dad,7",
+						"dad,10",
 						"smoothstepinout,-70,-100"
 					]
 				]
 			],
 			[
-				16054.6875,
+				15590.8203125,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.84, smoothstepinout"
+						"ZoomCamera",
+						"7",
+						"smoothstepinout,0.8"
 					]
 				]
 			],
@@ -47,12 +47,22 @@
 				]
 			],
 			[
+				16879.8828125,
+				[
+					[
+						"ZoomCamera",
+						"3",
+						"expoout,1"
+					]
+				]
+			],
+			[
 				18750,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.1"
 					]
 				]
 			],
@@ -70,19 +80,9 @@
 				20625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.32, expoout"
-					]
-				]
-			],
-			[
-				21562.5,
-				[
-					[
-						"Bitto's zoom event",
-						"custom",
-						"0.55, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1"
 					]
 				]
 			],
@@ -90,9 +90,9 @@
 				22500,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.65, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.1"
 					]
 				]
 			],
@@ -100,9 +100,9 @@
 				23437.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.55, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.2"
 					]
 				]
 			],
@@ -110,9 +110,9 @@
 				23906.25,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.3"
 					]
 				]
 			],
@@ -120,9 +120,9 @@
 				24375,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1"
 					]
 				]
 			],
@@ -130,9 +130,9 @@
 				26250,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.55, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.1"
 					]
 				]
 			],
@@ -140,9 +140,9 @@
 				28125,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1"
 					]
 				]
 			],
@@ -150,9 +150,9 @@
 				30000,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.65, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.1"
 					]
 				]
 			],
@@ -160,9 +160,9 @@
 				30937.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.55, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.2"
 					]
 				]
 			],
@@ -170,9 +170,19 @@
 				31406.25,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.3"
+					]
+				]
+			],
+			[
+				31640.625,
+				[
+					[
+						"Camera Target",
+						"",
+						"100"
 					]
 				]
 			],
@@ -180,9 +190,9 @@
 				31875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.7, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.4"
 					]
 				]
 			],
@@ -190,9 +200,19 @@
 				32812.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1"
+					]
+				]
+			],
+			[
+				32929.6875,
+				[
+					[
+						"Camera Target",
+						"",
+						"4"
 					]
 				]
 			],
@@ -200,19 +220,39 @@
 				33750,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.32, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.1"
 					]
 				]
 			],
 			[
-				43125,
+				34804.6875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.32, expoout"
+						"Camera Target",
+						"",
+						"2"
+					]
+				]
+			],
+			[
+				35625,
+				[
+					[
+						"ZoomCamera",
+						"3",
+						"expoout,0.9"
+					]
+				]
+			],
+			[
+				39375,
+				[
+					[
+						"ZoomCamera",
+						"27",
+						"quadinout,1"
 					]
 				]
 			],
@@ -240,9 +280,9 @@
 				44765.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.32, 1.4, smoothstepinout"
+						"ZoomCamera",
+						"7",
+						"smoothstepinout,0.75"
 					]
 				]
 			],
@@ -260,9 +300,9 @@
 				46875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.32, expoout"
+						"ZoomCamera",
+						"79",
+						"quadinout,0.9"
 					]
 				]
 			],
@@ -290,9 +330,9 @@
 				61875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"12",
+						"quadinout,0.79"
 					]
 				]
 			],
@@ -310,9 +350,9 @@
 				63750,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.9"
 					]
 				]
 			],
@@ -320,9 +360,19 @@
 				67500,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1"
+					]
+				]
+			],
+			[
+				70781.25,
+				[
+					[
+						"ZoomCamera",
+						"3",
+						"expoout,1.2"
 					]
 				]
 			],
@@ -330,19 +380,9 @@
 				71250,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
-					]
-				]
-			],
-			[
-				75000,
-				[
-					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -350,9 +390,19 @@
 				76875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
+					]
+				]
+			],
+			[
+				78750,
+				[
+					[
+						"ZoomCamera",
+						"3",
+						"expoout,1"
 					]
 				]
 			],
@@ -360,19 +410,9 @@
 				82500,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
-					]
-				]
-			],
-			[
-				84375,
-				[
-					[
-						"Bitto's zoom event",
-						"custom",
-						"0.55, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.1"
 					]
 				]
 			],
@@ -380,19 +420,39 @@
 				85312.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.2"
 					]
 				]
 			],
 			[
-				90000,
+				85781.25,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.56, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.3"
+					]
+				]
+			],
+			[
+				86250,
+				[
+					[
+						"ZoomCamera",
+						"3",
+						"expoout,0.9"
+					]
+				]
+			],
+			[
+				90703.125,
+				[
+					[
+						"ZoomCamera",
+						"3",
+						"expoout,1"
 					]
 				]
 			],
@@ -400,9 +460,9 @@
 				91406.25,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.46, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.4"
 					]
 				]
 			],
@@ -410,9 +470,9 @@
 				91875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1.2"
 					]
 				]
 			],
@@ -420,9 +480,19 @@
 				92812.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1"
+					]
+				]
+			],
+			[
+				93281.25,
+				[
+					[
+						"ZoomCamera",
+						"3",
+						"circout,0.9"
 					]
 				]
 			],
@@ -430,9 +500,24 @@
 				93750,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
+					],
+					[
+						"Camera Target",
+						"",
+						"100"
+					]
+				]
+			],
+			[
+				93867.1875,
+				[
+					[
+						"Camera Target",
+						"",
+						"3"
 					]
 				]
 			],
@@ -440,9 +525,9 @@
 				94687.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -450,9 +535,9 @@
 				95625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -460,9 +545,9 @@
 				96562.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -470,9 +555,9 @@
 				96914.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -480,9 +565,9 @@
 				97265.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -490,9 +575,9 @@
 				97500,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
 					]
 				]
 			],
@@ -500,9 +585,9 @@
 				98437.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -510,9 +595,9 @@
 				99375,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -520,9 +605,9 @@
 				100312.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -530,9 +615,9 @@
 				100664.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -540,9 +625,9 @@
 				101015.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -550,9 +635,9 @@
 				101250,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
 					]
 				]
 			],
@@ -560,9 +645,9 @@
 				102187.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -570,9 +655,9 @@
 				103125,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -580,9 +665,9 @@
 				104062.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -590,9 +675,9 @@
 				104414.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -600,9 +685,9 @@
 				104765.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -610,9 +695,9 @@
 				105000,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
 					]
 				]
 			],
@@ -620,9 +705,9 @@
 				105937.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -630,9 +715,9 @@
 				106875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -640,9 +725,9 @@
 				107812.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -650,9 +735,9 @@
 				108164.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -660,9 +745,9 @@
 				108515.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -670,9 +755,9 @@
 				108750,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
 					]
 				]
 			],
@@ -680,9 +765,9 @@
 				109687.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -690,9 +775,9 @@
 				110625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -700,9 +785,9 @@
 				111562.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -710,9 +795,9 @@
 				111914.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -720,9 +805,9 @@
 				112265.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -730,9 +815,9 @@
 				112500,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
 					]
 				]
 			],
@@ -740,9 +825,9 @@
 				113437.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -750,9 +835,9 @@
 				114375,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -760,9 +845,9 @@
 				115312.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -770,9 +855,9 @@
 				115664.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -780,9 +865,9 @@
 				116015.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -790,9 +875,9 @@
 				116250,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
 					]
 				]
 			],
@@ -800,9 +885,9 @@
 				117187.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -810,9 +895,9 @@
 				118125,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -820,9 +905,9 @@
 				119062.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -830,9 +915,9 @@
 				119414.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -840,9 +925,9 @@
 				119765.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -850,9 +935,9 @@
 				120000,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.76"
 					]
 				]
 			],
@@ -860,9 +945,9 @@
 				120937.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -870,19 +955,9 @@
 				121875,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.6, 0.4, expoout"
-					]
-				]
-			],
-			[
-				122578.125,
-				[
-					[
-						"FocusCamera",
-						"",
-						"expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,0.89"
 					]
 				]
 			],
@@ -890,9 +965,9 @@
 				122812.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.8"
 					]
 				]
 			],
@@ -900,9 +975,9 @@
 				123164.0625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.45, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.75"
 					]
 				]
 			],
@@ -910,9 +985,9 @@
 				123515.625,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"1,true",
+						"expoout,0.73"
 					]
 				]
 			],
@@ -920,9 +995,9 @@
 				123750,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.5, 0.4, expoout"
+						"ZoomCamera",
+						"3",
+						"expoout,1"
 					]
 				]
 			],
@@ -930,9 +1005,19 @@
 				124687.5,
 				[
 					[
-						"Bitto's zoom event",
-						"custom",
-						"0.4, 0.4, expoout"
+						"ZoomCamera",
+						"7",
+						"quadinout,1.2"
+					]
+				]
+			],
+			[
+				127031.25,
+				[
+					[
+						"ZoomCamera",
+						"21",
+						"smoothstepinout,0.9"
 					]
 				]
 			],
@@ -949,7 +1034,6 @@
 			[
 				136875,
 				[
-
 					[
 						"Set Property",
 						"cameraSpeed",

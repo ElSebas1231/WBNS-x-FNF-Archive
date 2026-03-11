@@ -61,7 +61,7 @@ function setupShaders()
 end
 
 function onCreatePost()
-    setupShaders()
+    if shadersEnabled then setupShaders() end
     setProperty('gf.visible', false)
 end
 

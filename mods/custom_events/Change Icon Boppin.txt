@@ -1,0 +1,7 @@
+value 1: type scale for bf icon
+
+value 2: type scale for opponent icon
+
+example:  1.2, 1.2
+
+event made by: Elizm

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="Act_4_FINALE_Lightingmcqueen.png">
-	<!-- Created using the Spritesheet and XML generator -->
-	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
-	<SubTexture name="line0000" x="0" y="0" width="743" height="864" frameX="-19" frameY="2" frameWidth="773" frameHeight="860"/>
-	<SubTexture name="line0001" x="743" y="0" width="730" height="864" frameX="-17" frameY="2" frameWidth="773" frameHeight="860"/>
-	<SubTexture name="line0002" x="1473" y="0" width="723" height="864" frameX="-24" frameY="2" frameWidth="773" frameHeight="860"/>
-</TextureAtlas>

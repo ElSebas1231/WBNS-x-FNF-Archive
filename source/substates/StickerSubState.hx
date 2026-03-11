@@ -132,20 +132,24 @@ class StickerSubState extends MusicBeatSubstate
 
 	function regenStickers():Void
 	{
-		if (grpStickers.members.length > 0) {
-			grpStickers.clear();
-		}
+		if (grpStickers.members.length > 0) grpStickers.clear();
 
 		var stickerInfo:StickerInfo = new StickerInfo(STICKER_SET);
 		var stickers:Map<String, Array<String>> = new Map<String, Array<String>>();
 
 		if (STICKER_PACK != null) {
 			for (stickerSets in stickerInfo.getPack(STICKER_PACK)) {
-				stickers.set(stickerSets, stickerInfo.getStickers(stickerSets));
+				var stickerArray = stickerInfo.getStickers(stickerSets);
+				if (stickerArray != null && stickerArray.length > 0) {
+					stickers.set(stickerSets, stickerArray);
+				}
 			}
 		} else {
 			for (stickerSets in stickerInfo.getPack("all")) {
-				stickers.set(stickerSets, stickerInfo.getStickers(stickerSets));
+				var stickerArray = stickerInfo.getStickers(stickerSets);
+				if (stickerArray != null && stickerArray.length > 0) {
+					stickers.set(stickerSets, stickerArray);
+				}
 			}
 		}
 
@@ -222,9 +226,6 @@ class StickerSubState extends MusicBeatSubstate
 		lastOne.updateHitbox();
 		lastOne.angle = 0;
 		lastOne.screenCenter();
-
-		STICKER_SET = "stickers-set-wbns";
-		STICKER_PACK = "all";
 	}
 
 	override public function update(elapsed:Float):Void

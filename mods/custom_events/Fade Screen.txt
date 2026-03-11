@@ -1,0 +1,6 @@
+Fade Camera Other | Pantalla negra
+
+Value 1: Duración
+Value 2: Valor de Transparencia
+
+(1 = Negro - 0 = Nada :v)

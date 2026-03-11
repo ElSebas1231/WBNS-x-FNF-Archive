@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="tumbaskid.png">
+	<!-- Created with Adobe Animate version 24.0.1.329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="tumbaskid0000" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0001" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0002" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0003" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0004" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0005" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0006" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0007" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0008" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0009" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0010" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0011" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0012" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0013" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0014" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0015" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0016" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0017" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0018" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0019" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0020" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0021" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0022" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0023" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0024" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0025" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0026" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0027" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0028" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0029" x="359" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0030" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0031" x="6" y="6" width="261" height="259"/>
+	<SubTexture name="tumbaskid0032" x="6" y="6" width="261" height="259"/>
+</TextureAtlas>

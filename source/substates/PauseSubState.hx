@@ -87,8 +87,8 @@ class PauseSubState extends MusicBeatSubstate
 		difficultyChoices.push('BACK');
 
 		var meta:FreeplayMetadata = FreeplayUtil.getMeta(PlayState.SONG.song);
-		creditsTxt = meta.songCredits;
-		contextTxt = meta.songContext;
+		creditsTxt = (meta.songCredits != null ? meta.songCredits : '???');
+		contextTxt = (meta.songContext != null ? meta.songContext : '???');
 
 		pauseMusic = new FlxSound();
 		try {
@@ -416,42 +416,40 @@ class PauseSubState extends MusicBeatSubstate
 	
 						Mods.loadTopMod();
 	
-						var stickerSet = 'stickers-set-wbns';
-						var stickerPack = 'all';
-			
-						if (FreeplaySections.sectionSelected.contains('duxo')) {
-							stickerSet = 'stickers-set-dm';
-
-							stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
-								case "its a rat": "itsarat";
-								case "last course": "lastCourse";
-								case "nightmare": "nightmare";
-								case "sdlg": "sdlg";
-								case "trick or treat": "trickOrTreat";
-								case "tryhard slaughter": "tryhard";
-								case "unwebonable v2": "unwebonable";
-								case "all wbns": "duxoMadness";
-								default: "all";
-							};
-						}
-
-						if (!ClientPrefs.data.noStickers) {
-							if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
-							if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
-
-							if (PlayState.isStoryMode) {
-								openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
-							} else {
-								openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
-							}
+						var stickerSet = 'stickers-set-dm';
+						var stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
+							case "its a rat": "itsarat";
+							case "last milk": "lastCourse";
+							case "nightmare": "nightmare";
+							case "sdlg": "sdlg";
+							case "trick or treat": "trickOrTreat";
+							case "tryhard slaughter": "tryhard";
+							case "unwebonable v2": "unwebonable";
+							case "all wbns": "duxoMadness";
+							default: "all";
+						};
+						
+						if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
+						if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
+						
+						if (states.TitleState.secretSongLoaded) {
+							FlxG.switchState(new FreeplaySections());
 						} else {
-							if (PlayState.isStoryMode) {
-								FlxG.switchState(new StoryMenuState());
+							if (!ClientPrefs.data.noStickers) {
+								if (PlayState.isStoryMode) {
+									openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
+								} else {
+									openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
+								}
 							} else {
-								FlxG.switchState(new FreeplayState());
+								if (PlayState.isStoryMode) {
+									FlxG.switchState(new StoryMenuState());
+								} else {
+									FlxG.switchState(new FreeplayState());
+								}
 							}
 						}
-	
+
 						FlxG.sound.playMusic(Paths.music('freakyMenu'));
 						PlayState.changedDifficulty = false;
 						PlayState.chartingMode = false;

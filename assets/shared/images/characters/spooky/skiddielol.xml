@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="skiddielol.png">
+	<!-- Created with Adobe Animate version 24.0.1.329 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="die skid0000" x="6" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0001" x="6" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0002" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0003" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0004" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0005" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0006" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0007" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0008" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0009" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0010" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0011" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0012" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0013" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0014" x="467" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0015" x="928" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0016" x="928" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0017" x="1389" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0018" x="1389" y="6" width="369" height="325"/>
+	<SubTexture name="die skid0019" x="6" y="423" width="369" height="325"/>
+	<SubTexture name="die skid0020" x="6" y="423" width="369" height="325"/>
+	<SubTexture name="die skid0021" x="467" y="423" width="369" height="325"/>
+	<SubTexture name="die skid0022" x="467" y="423" width="369" height="325"/>
+	<SubTexture name="die skid0023" x="928" y="423" width="369" height="325"/>
+	<SubTexture name="die skid0024" x="1389" y="423" width="369" height="325"/>
+	<SubTexture name="die skid0025" x="1389" y="423" width="369" height="325"/>
+	<SubTexture name="die skid0026" x="6" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0027" x="6" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0028" x="467" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0029" x="467" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0030" x="467" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0031" x="467" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0032" x="467" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0033" x="467" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0034" x="467" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0035" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0036" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0037" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0038" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0039" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0040" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0041" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0042" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0043" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0044" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0045" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0046" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0047" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0048" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0049" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0050" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0051" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0052" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0053" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0054" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0055" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0056" x="928" y="840" width="369" height="325"/>
+	<SubTexture name="die skid0057" x="928" y="840" width="369" height="325"/>
+</TextureAtlas>

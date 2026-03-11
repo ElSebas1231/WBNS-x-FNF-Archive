@@ -148,8 +148,16 @@ class Main extends Sprite
 		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
 		#end
 
+		if (ClientPrefs.data.focusVolume && !ClientPrefs.data.autoPause) {
+			FlxG.signals.focusLost.add(onLostFocus);
+			FlxG.signals.focusGained.add(onGainFocus);
+		}
+
 		#if DISCORD_ALLOWED
 		DiscordClient.prepare();
+		lime.app.Application.current.onExit.add(function(exitCode){
+			DiscordClient.shutdown();
+		});
 		#end
 
 		// init data
@@ -168,11 +176,27 @@ class Main extends Sprite
 			resetSpriteCache(FlxG.game);
 		});
 
-		// Setup window events (like callbacks for onWindowClose)
-		// and fullscreen keybind setup
+		#if (windows && cpp)
 		WindowUtil.initWindowEvents();
-		// Disable the thing on Windows where it tries to send a bug report to Microsoft because why do they care?
 		WindowUtil.disableCrashHandler();
+		#end
+	}
+
+	@:noCompletion var _lastFocusVolume:Null<Float>;
+
+	function onLostFocus() {
+		if (ClientPrefs.data.focusVolume && !ClientPrefs.data.autoPause) {
+			if (FlxG.sound.muted || FlxG.sound.volume == 0 || FlxG.autoPause) return;
+			_lastFocusVolume = FlxG.sound.volume;
+			FlxG.sound.volume *= 0.5;
+		}
+	}
+
+	function onGainFocus() {
+		if (ClientPrefs.data.focusVolume && !ClientPrefs.data.autoPause) {
+			if (FlxG.sound.muted || FlxG.autoPause) return;
+			if (_lastFocusVolume != null) FlxG.sound.volume = _lastFocusVolume;
+		}
 	}
 
 	static function resetSpriteCache(sprite:Sprite):Void {

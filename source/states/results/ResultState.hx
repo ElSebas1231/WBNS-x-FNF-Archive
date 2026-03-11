@@ -506,7 +506,7 @@ class ResultState extends MusicBeatSubstate
 
 				stickerPack = switch (PlayState.SONG.song.toLowerCase()) {
 					case "its a rat": "itsarat";
-					case "last course": "lastCourse";
+					case "last milk": "lastCourse";
 					case "nightmare": "nightmare";
 					case "sdlg": "sdlg";
 					case "trick or treat": "trickOrTreat";
@@ -517,19 +517,20 @@ class ResultState extends MusicBeatSubstate
 				};
 			}
 
-			if (params.storyMode) {
-				FlxG.sound.pause(); 
-				if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
-				if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
+			if (states.TitleState.secretSongLoaded) {
+				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+				FlxG.sound.music.fadeIn(1.5, 0, 1);
 
-				openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
+				FlxG.switchState(new FreeplaySections());
 			} else {
-				if (rank > params.prevScoreRank) {
-					StickerSubState.STICKER_SET = stickerSet;
-					StickerSubState.STICKER_PACK = stickerPack;
-					openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));
+				if (params.storyMode) {
+					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
+					if (stickerSet != null) StickerSubState.STICKER_SET = stickerSet else StickerSubState.STICKER_SET = 'stickers-set-wbns';
+					if (stickerPack != null) StickerSubState.STICKER_PACK = stickerPack else StickerSubState.STICKER_PACK = 'all';
+	
+					openSubState(cast new StickerSubState(null, _ -> new StoryMenuState()));
 				} else {
-					FlxG.sound.pause(); //? fix sound
+					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					StickerSubState.STICKER_SET = stickerSet;
 					StickerSubState.STICKER_PACK = stickerPack;
 					openSubState(cast new StickerSubState(null, (sticker) -> new FreeplayState(sticker)));

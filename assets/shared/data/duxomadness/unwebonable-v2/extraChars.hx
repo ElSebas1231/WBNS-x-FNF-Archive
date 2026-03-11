@@ -6,13 +6,13 @@ var locoUW:Character;
 
 function onCreatePost() {
     //x: -380, y: 245
-    duxoUW = new Character(game.dad.x - 200, game.dad.y + 145, 'unbeatable-duxo', false);
+    duxoUW = new Character(game.dad.x - 650, game.dad.y, 'unbeatable-duxo', false);
     duxoUW.x += 200;
     duxoUW.visible = false;
     game.addBehindDad(duxoUW);
 
     //x: 820, y: 280
-    locoUW = new Character(game.dad.x + 1000, game.dad.y + 180, 'unbeatable-loco', false);
+    locoUW = new Character(game.dad.x + 600, game.dad.y, 'unbeatable-loco', false);
     locoUW.visible = false;
     locoUW.flipX = true;
     game.addBehindDad(locoUW);

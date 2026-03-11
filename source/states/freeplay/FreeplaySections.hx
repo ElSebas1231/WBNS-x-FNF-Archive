@@ -30,21 +30,25 @@ class FreeplaySections extends MusicBeatState {
 	var bottomBG:FlxSprite;
 	var swagShader:ColorTint = null;
 
+	public static var menuSongTime:Float = 0;
+
     override function create():Void {
         Paths.clearUnusedMemory();
 		Paths.clearStoredMemory();
 
-        DiscordClient.changePresence("Viewing the Freeplay Sections", null, 'duxomadness');
+        DiscordClient.changePresence("Viewing the Freeplay Sections");
 
         if (FlxG.mouse.visible) Cursor.hide();
+
+        if (states.TitleState.secretSongLoaded) states.TitleState.secretSongLoaded = false;
         
         if (FlxG.sound.music == null) {
             FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
-            FlxG.sound.music.fadeIn(1.5, 0, 1);
+            FlxG.sound.music.fadeIn(2.6, 0, 1);
         }
 
         // YES THIS COULD HAPPEND
-        if (FlxG.sound.music.volume == 0 || FlxG.sound.music.volume < 1) FlxG.sound.music.fadeIn(1.5, FlxG.sound.music.volume, 1);
+        if (FlxG.sound.music.volume == 0 || FlxG.sound.music.volume < 1) FlxG.sound.music.fadeIn(2.6, FlxG.sound.music.volume, 1);
 
         swagShader = new ColorTint();
 		swagShader.uMix = 0.8;
@@ -128,7 +132,7 @@ class FreeplaySections extends MusicBeatState {
 		add(bottomText);
 
         if (swagShader != null) {
-			selectorTablet.shader = freeplayTablets.shader = bgImage.shader = freeplayTitle.shader = swagShader.shader;
+			bgImage.shader = freeplayTitle.shader = swagShader.shader;
 		}
 
         doIntro();
@@ -147,9 +151,14 @@ class FreeplaySections extends MusicBeatState {
             if (controls.ACCEPT) {
                 if (canEnter) {
                     sectionSelected = freeplaySections[curSelected];
+                    canEnter = false;
+                    canSelectSomething = false;
+                    
+                    if (FlxG.sound.music != null) menuSongTime = FlxG.sound.music.time;
                     FlxG.sound.play(Paths.sound('confirm'), 0.5);
-                    FlxG.sound.music.fadeOut(0.5, 0);
-                    MusicBeatState.switchState(new FreeplayState());
+                    FlxG.sound.music.fadeOut(0.6, 0, function(twn:FlxTween) {
+                        MusicBeatState.switchState(new FreeplayState());
+                    });
                 } else FlxG.sound.play(Paths.sound('freeplay/locked'), 0.5);
             }
     

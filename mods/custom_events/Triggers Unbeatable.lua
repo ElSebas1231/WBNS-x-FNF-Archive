@@ -12,7 +12,6 @@ function onCreatePost()
 
     makeLuaSprite('duckShot','unwebonable/duckCrosshair',0,0)
     setProperty('duckShot.antialiasing',false)
-    scaleObject('duckShot',18,17.4)
     screenCenter('duckShot')
     setObjectCamera('duckShot','other')
     setProperty('duckShot.alpha',0.001)

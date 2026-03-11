@@ -9,7 +9,7 @@ function onCreatePost()
         scaleY = 5
     end
 
-    makeLuaSprite('L', 'luigi/'..luigi, 0, 50)
+    makeLuaSprite('L', 'luigi/'..luigi, 0, (not downscroll and 50 or 580))
     screenCenter('L', 'x')
     scaleObject('L', scaleX, scaleY)
     setObjectCamera('L', 'hud')

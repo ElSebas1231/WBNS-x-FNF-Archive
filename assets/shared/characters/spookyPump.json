@@ -3,8 +3,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				36,
-				24
+				0,
+				0
 			],
 			"fps": 24,
 			"anim": "idle",
@@ -14,8 +14,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				260,
-				166
+				91,
+				-31
 			],
 			"fps": 24,
 			"anim": "singDOWN",
@@ -25,8 +25,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				251,
-				175
+				9,
+				82
 			],
 			"fps": 24,
 			"anim": "singUP",
@@ -35,8 +35,8 @@
 		},
 		{
 			"offsets": [
-				244,
-				174
+				61,
+				12
 			],
 			"loop": false,
 			"fps": 24,
@@ -46,14 +46,58 @@
 		},
 		{
 			"offsets": [
-				234,
-				169
+				-61,
+				2
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
 			"name": "left0"
+		},
+		{
+			"offsets": [
+				-46,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "miss0"
+		},
+		{
+			"offsets": [
+				-46,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "miss0"
+		},
+		{
+			"offsets": [
+				-46,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "miss0"
+		},
+		{
+			"offsets": [
+				-46,
+				-32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "miss0"
 		}
 	],
 	"vocals_file": "",
@@ -61,10 +105,10 @@
 	"image": "characters/spooky/spoookypump",
 	"position": [
 		110,
-		450
+		290
 	],
 	"healthicon": "spooky",
-	"flip_x": true,
+	"flip_x": false,
 	"healthbar_colors": [
 		255,
 		132,
@@ -75,6 +119,6 @@
 		0
 	],
 	"sing_duration": 4,
-	"scale": 1.2,
+	"scale": 1,
 	"_editor_isPlayer": true
 }

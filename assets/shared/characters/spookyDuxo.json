@@ -1,80 +1,80 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle0"
+			"fps": 24,
+			"name": "idle0",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				42,
-				2
+				30,
+				-13
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "left0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				12,
-				-22
-			],
 			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "down0"
+			"name": "left0",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				4,
+				-8,
+				-63
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				7,
 				19
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singUP",
-			"indices": [],
-			"name": "up0"
+			"fps": 24,
+			"name": "up0",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				3,
-				4
+				-4,
+				-5
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "right0"
+			"fps": 24,
+			"name": "right0",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/duxo/spoookyduxo",
 	"position": [
-		60,
-		240
+		110,
+		380
 	],
-	"healthicon": "dad",
+	"healthicon": "duxo_icon",
 	"flip_x": false,
 	"healthbar_colors": [
-		175,
-		102,
-		206
+		113,
+		73,
+		139
 	],
 	"camera_position": [
-		-210,
+		0,
 		-50
 	],
 	"sing_duration": 4,
-	"scale": 1,
+	"scale": 1.6,
 	"_editor_isPlayer": false
 }

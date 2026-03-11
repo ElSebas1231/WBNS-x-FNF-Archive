@@ -1,25 +1,21 @@
 import psychlua.LuaUtils;
-import hxcodec.flixel.FlxVideo;
+import hxvlc.flixel.FlxVideoSprite;
 import substates.PauseSubState;
 import flixel.text.FlxText;
 import backend.InputFormatter;
 
 var sprite:FlxSprite;
-var video:FlxVideo;
+var video:FlxVideoSprite;
 var text:FlxText;
 var videoName:String = 'CinematicaRatman';
 
 function onCreate() {
-    if (!PlayState.seenCutscene) {
-        sprite = new FlxSprite().makeGraphic(1280, 720, FlxColor.BLACK);
-        sprite.screenCenter();
-        sprite.camera = LuaUtils.cameraFromString('hud');
-        game.add(sprite);
-    
-        video = new FlxVideo();
-        video.alpha = 0.0;
-        video.onEndReached.add(() -> { onVideoFinished(); });
-        video.onTextureSetup.add(() -> { sprite.loadGraphic(video.bitmapData); });
+    if (!PlayState.seenCutscene && !ClientPrefs.data.lowQuality) {
+        video = new FlxVideoSprite();
+        video.bitmap.onEndReached.add(() -> { onVideoFinished(); });
+        video.camera = LuaUtils.cameraFromString('hud');
+        game.add(video);
+
         createTip('Presiona ' + InputFormatter.getKeyName(ClientPrefs.keyBinds.get('back')[0]) + ' ó ' + InputFormatter.getKeyName(ClientPrefs.keyBinds.get('back')[1]) + ' para saltar la cinemática');
         game.skipCountdown = true;
     }
@@ -36,25 +32,16 @@ function onCreatePost() {
 }
 
 function onSongStart() {
-    if (video != null) video.play(Paths.video(videoName), false);
+    if (video != null) {
+        video.load(Paths.video(videoName));
+        video.play();
+        stopSounds();
+    }
 }
 
 function onUpdate(elapsed:Float) {
     if (controls.BACK) onVideoFinished();
-
-    if (video != null) {
-        if (FlxG.sound.music != null){
-            if (FlxG.sound.music.playing) FlxG.sound.music.pause();
-        } 
-    
-        if (game.vocals != null) {
-            if (game.vocals.playing) game.vocals.pause();
-        }
-    
-        if (game.opponentVocals != null) {
-            if (game.opponentVocals.playing) game.opponentVocals.pause();
-        }
-    }
+    stopSounds();
 }
 
 function onPause():Void {
@@ -101,12 +88,27 @@ function onDestroy() {
     onVideoFinished();
 }
 
+function stopSounds() {
+    if (video != null) {
+        if (FlxG.sound.music != null){
+            if (FlxG.sound.music.playing) FlxG.sound.music.pause();
+        } 
+    
+        if (game.vocals != null) {
+            if (game.vocals.playing) game.vocals.pause();
+        }
+    
+        if (game.opponentVocals != null) {
+            if (game.opponentVocals.playing) game.opponentVocals.pause();
+        }
+    }
+}
+
 function onVideoFinished() {
     if (text != null) text.destroy();
-    if (sprite != null) sprite.destroy();
 
     if (video != null){
-        video.dispose();
+        video.destroy();
         video = null;
 
         game.persistentUpdate = true;

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextureAtlas imagePath="gray static.png">
-	<!-- Created using the Spritesheet and XML generator -->
-	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
-	<SubTexture name="static0000" x="0" y="0" width="1395" height="787" frameX="2" frameY="2" frameWidth="1394" frameHeight="786"/>
-	<SubTexture name="static0001" x="1395" y="0" width="1395" height="787" frameX="2" frameY="2" frameWidth="1394" frameHeight="786"/>
-</TextureAtlas>

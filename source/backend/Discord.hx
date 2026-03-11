@@ -81,7 +81,7 @@ class DiscordClient
 		isInitialized = true;
 	}
 
-	public static function changePresence(?details:String = 'Iniciando...', ?state:Null<String>, ?songPortrait:String = 'icon', ?smallImageKey : String, ?hasStartTimestamp : Bool, ?endTimestamp: Float, ?button1Label:String, ?button1Url:String, ?button2Label:String, ?button2Url:String)
+	public static function changePresence(?details:String = 'Iniciando...', ?state:Null<String>, ?songPortrait:String = 'duxomadness', ?smallImageKey : String, ?hasStartTimestamp : Bool, ?endTimestamp: Float, ?button1Label:String, ?button1Url:String, ?button2Label:String, ?button2Url:String)
 	{
 		var startTimestamp:Float = 0;
 		if (hasStartTimestamp) startTimestamp = Date.now().getTime();
@@ -94,16 +94,16 @@ class DiscordClient
 		button2.label = button2Label;
 		button2.label = button2Url;
 
-		if (button1.label == null || button1.label == '') button2.label = "¡Descarga el mod dando clic!";
-		if (button1.url == null || button1.url == '') button1.url = "https://gamebanana.com/mods/642860";
+		// if (button1.label == null || button1.label == '') button2.label = "¡Descarga el mod dando clic!";
+		// if (button1.url == null || button1.url == '') button1.url = "https://gamebanana.com/mods/642860";
 
-		if (button2.label == null || button2.label == '') button2.label = "Cuenta de Twitter/𝕏 del mod";
-		if (button2.url == null || button2.url == '') button2.url = "https://x.com/WBNSxFNFmod";
+		// if (button2.label == null || button2.label == '') button2.label = "Cuenta de Twitter/𝕏 del mod";
+		// if (button2.url == null || button2.url == '') button2.url = "https://x.com/WBNSxFNFmod";
 
 		presence.details = details;
 		presence.state = state;
 		presence.largeImageKey = songPortrait;
-		presence.largeImageText = "Engine Version: " + states.MainMenuState.psychEngineVersion;
+		presence.largeImageText = "Psych Engine versión: " + states.MainMenuState.psychEngineVersion;
 		presence.smallImageKey = smallImageKey;
 		// Obtained times are in milliseconds so they are divided so Discord can use it
 		presence.startTimestamp = Std.int(startTimestamp / 1000);
@@ -147,7 +147,7 @@ class DiscordClient
 
 	#if LUA_ALLOWED
 	public static function addLuaCallbacks(lua:State) {
-		Lua_helper.add_callback(lua, "changeDiscordPresence", function(details:String, state:Null<String>, ?smallImageKey:String, ?songPortrait:String = 'icon', ?hasStartTimestamp:Bool, ?endTimestamp:Float, ?button1Label:String, ?button1Url:String, ?button2Label:String, ?button2Url:String) {
+		Lua_helper.add_callback(lua, "changeDiscordPresence", function(details:String, state:Null<String>, ?smallImageKey:String, ?songPortrait:String = 'duxomadness', ?hasStartTimestamp:Bool, ?endTimestamp:Float, ?button1Label:String, ?button1Url:String, ?button2Label:String, ?button2Url:String) {
 			changePresence(details, state, smallImageKey, songPortrait, hasStartTimestamp, endTimestamp, button1Label, button1Url, button2Label, button2Url);
 		});
 

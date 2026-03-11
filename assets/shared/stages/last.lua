@@ -9,24 +9,26 @@ function onCreate()
     scaleObject('bg0', scale, scale)
     addLuaSprite('bg0')
 
-    makeLuaSprite('bg1', 'last/bg1', x + 300, y + 120)
-    scaleObject('bg1', scale - 0.2, scale - 0.2)
-    addLuaSprite('bg1')
-
-    makeLuaSprite('bg2', 'last/bg2', x, y + 130)
-    scaleObject('bg2', scale - 0.2, scale - 0.2)
-    setScrollFactor('bg2', 0.9, 1)
-    addLuaSprite('bg2')
-
-    makeLuaSprite('bg3', 'last/bg3', x + 200, y + 140)
-    scaleObject('bg3', scale - 0.2, scale - 0.2)
-    setScrollFactor('bg3', 1.05, 1)
-    addLuaSprite('bg3')
-
-    makeLuaSprite('bg4', 'last/bg4', x + 300, y + 150)
-    scaleObject('bg4', scale - 0.2, scale - 0.2)
-    setScrollFactor('bg4', 0.95, 1)
-    addLuaSprite('bg4')
+    if not lowQuality then
+        makeLuaSprite('bg1', 'last/bg1', x + 300, y + 120)
+        scaleObject('bg1', scale - 0.2, scale - 0.2)
+        addLuaSprite('bg1')
+    
+        makeLuaSprite('bg2', 'last/bg2', x, y + 130)
+        scaleObject('bg2', scale - 0.2, scale - 0.2)
+        setScrollFactor('bg2', 0.9, 1)
+        addLuaSprite('bg2')
+    
+        makeLuaSprite('bg3', 'last/bg3', x + 200, y + 140)
+        scaleObject('bg3', scale - 0.2, scale - 0.2)
+        setScrollFactor('bg3', 1.05, 1)
+        addLuaSprite('bg3')
+    
+        makeLuaSprite('bg4', 'last/bg4', x + 300, y + 150)
+        scaleObject('bg4', scale - 0.2, scale - 0.2)
+        setScrollFactor('bg4', 0.95, 1)
+        addLuaSprite('bg4')
+    end
 
     makeLuaSprite('fg1', 'last/fg1', x, y)
     scaleObject('fg1', scale, scale)

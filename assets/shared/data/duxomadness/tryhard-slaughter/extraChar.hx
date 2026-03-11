@@ -10,7 +10,7 @@ var natIcon:HealthIcon;
 function onCreate() {
     // x: 1575| y: 1180
     natalion = new Character(game.dad.x - 400, game.dad.y + 1200, 'natalanexe', false);
-    natalion.visible = false;
+    natalion.alpha = 0;
     natalion.scrollFactor.set(1.1, 1.1);
     game.addBehindDad(natalion);
 
@@ -35,8 +35,10 @@ function onCreatePost() {
     FlxTween.tween(game.getLuaObject('bfPlatform'), {y: game.getLuaObject('bfPlatform').y - 150}, 5, {ease: FlxEase.quadInOut, startDelay: 1, type: 4});
     FlxTween.tween(game.getLuaObject('gfPlatform'), {y: game.getLuaObject('gfPlatform').y + 150}, 5, {ease: FlxEase.quadInOut, startDelay: 1.5  , type: 4});
     
-    FlxTween.tween(game.getLuaObject('roquitas1'), {y: game.getLuaObject('roquitas1').y + 150}, 5, {ease: FlxEase.quadInOut, startDelay: 1.5  , type: 4});
-    FlxTween.tween(game.getLuaObject('roquitas2'), {y: game.getLuaObject('roquitas2').y + 150}, 5, {ease: FlxEase.quadInOut, startDelay: 1.5  , type: 4});
+    if (!ClientPrefs.data.lowQuality) {
+        FlxTween.tween(game.getLuaObject('roquitas1'), {y: game.getLuaObject('roquitas1').y + 150}, 5, {ease: FlxEase.quadInOut, startDelay: 1.5  , type: 4});
+        FlxTween.tween(game.getLuaObject('roquitas2'), {y: game.getLuaObject('roquitas2').y + 150}, 5, {ease: FlxEase.quadInOut, startDelay: 1.5  , type: 4});
+    }
 }
 
 var natPlat:Bool = false;
@@ -103,8 +105,10 @@ function onEvent(n, v1, v2) {
 
             case '1-2':
                 natPlat = true;
-                natalion.visible = true;
+                FlxTween.tween(game.getLuaObject('extraPlatform'), {alpha: 1}, 1.5, {ease: FlxEase.smoothStepIn});
                 FlxTween.tween(natIcon, {alpha: 1}, 1.5, {ease: FlxEase.smoothStepIn});
+                FlxTween.tween(natalion, {alpha: 1}, 1.5, {ease: FlxEase.smoothStepIn});
+                
 				var timer:FlxTimer = new FlxTimer().start(1.5, function(tmr:FlxTimer) {
                     FlxTween.tween(game.getLuaObject('extraPlatform'), {y: game.getLuaObject('extraPlatform').y + 150}, 5, {ease: FlxEase.quadInOut, type: 4});
 				});

@@ -1,6 +1,7 @@
 {
 	"song": {
 		"player1": "sdlgLoco",
+		"composer": "Ikenny | Remix By: Not_Wingow and Nexo",
 		"player2": "sdlgAquino",
 		"events": [
 			[
@@ -1727,6 +1728,18 @@
 						"0.7, 0.3, sineout"
 					]
 				]
+			],
+			[
+				110549.242424242,
+				[
+					[
+						"Flash Camera",
+						"0.5",
+						"1,linear,ffffff"
+					]
+				],
+				null,
+				""
 			],
 			[
 				110909.090909091,
@@ -8654,13 +8667,12 @@
 			}
 		],
 		"gfVersion": "sdlgSoarinng",
+		"charter": "Im Snack'sVee",
 		"song": "SDLG",
-		"needsVoices": true,
 		"stage": "sdlg",
+		"needsVoices": true,
 		"format": "psych_v1_convert",
 		"bpm": 165,
-		"speed": 3,
-		"composer": "Ikenny | Remix By: Not_Wingow and Nexo",
-		"charter": "Im Snack'sVee"
+		"speed": 3
 	}
 }

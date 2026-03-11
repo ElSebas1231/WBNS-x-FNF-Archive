@@ -89,6 +89,8 @@ class FreeplayPreloadSubState extends MusicBeatSubstate {
 
             FlxTween.tween(loadingBar, {alpha: 0}, 0.6, {ease: FlxEase.smoothStepOut});
             FlxTween.tween(progressText, {alpha: 0}, 0.6, {ease: FlxEase.smoothStepOut, onComplete: function(t:FlxTween) {
+                Paths.clearUnusedMemory();
+                
                 close();
             }});
         }

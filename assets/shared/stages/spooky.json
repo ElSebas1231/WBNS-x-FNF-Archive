@@ -2,7 +2,7 @@
 	"directory": "stages",
 	"defaultZoom": 1,
 
-	"boyfriend": [200, 155],
-	"girlfriend": [530, 35],
-	"opponent": [330, 30]
+	"boyfriend": [200, 220],
+	"girlfriend": [530, 25],
+	"opponent": [750, 0]
 }

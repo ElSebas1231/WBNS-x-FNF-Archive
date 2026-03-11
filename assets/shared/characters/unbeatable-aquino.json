@@ -54,6 +54,17 @@
 			"fps": 24,
 			"name": "down",
 			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "risa",
+			"fps": 24,
+			"name": "risa",
+			"indices": []
 		}
 	],
 	"vocals_file": "",

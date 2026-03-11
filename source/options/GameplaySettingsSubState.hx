@@ -39,6 +39,12 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 		addOption(option);
 		option.onChange = onChangeAutoPause;
 
+		var option:Option = new Option('Focus Lost volume',
+			"If checked, lowers the game volume when isn't on focus.\nNote: must have unchecked Auto Pause.",
+			'focusVolume',
+			'bool');
+		addOption(option);
+
 		var option:Option = new Option('Result Screen',
 			"If checked, a results screen will be shown after finishing a song.",
 			'vsliceResults',
@@ -142,4 +148,6 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 
 	function onChangeAutoPause()
 		FlxG.autoPause = ClientPrefs.data.autoPause;
+
+	
 }

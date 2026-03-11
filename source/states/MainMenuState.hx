@@ -44,6 +44,9 @@ class MainMenuState extends MusicBeatState
 		#end
 		Mods.loadTopMod();
 
+        Paths.clearUnusedMemory();
+		Paths.clearStoredMemory();
+
 		Cursor.show();
 		if (curColumn != MAIN) curColumn = MAIN;
 
@@ -267,6 +270,14 @@ class MainMenuState extends MusicBeatState
 					menuMoveTo(optionShit[curSelected]);
 				}
 			}
+
+			#if CHART_EDITOR
+			if (controls.justPressed('debug_1')) {
+				selectedSomethin = true;
+				FlxG.mouse.visible = false;
+				MusicBeatState.switchState(new states.editors.MasterEditorMenu());
+			}
+			#end
 		}
 
 		super.update(elapsed);

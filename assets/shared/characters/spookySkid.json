@@ -1,70 +1,114 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle0"
+			"fps": 24,
+			"name": "idle0",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				25,
-				3
+				-20,
+				31
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "left0"
+			"fps": 24,
+			"name": "left0",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				19,
-				83
+				-16,
+				-88
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "down0"
+			"fps": 24,
+			"name": "down0",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
-				18,
-				91
+				-18,
+				40
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singUP",
-			"indices": [],
-			"name": "up0"
+			"fps": 24,
+			"name": "up0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				15,
+				-51
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right0",
+			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				95,
-				87
+				44,
+				-81
 			],
+			"anim": "singRIGHTmiss",
 			"fps": 24,
-			"anim": "singRIGHT",
-			"indices": [],
-			"name": "right0"
+			"name": "miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				-81
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				-81
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "miss0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				44,
+				-81
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "miss0",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/spooky/spoookyskid",
 	"position": [
-		120,
-		470
+		80,
+		330
 	],
 	"healthicon": "spooky",
-	"flip_x": true,
+	"flip_x": false,
 	"healthbar_colors": [
 		238,
 		247,
@@ -72,9 +116,9 @@
 	],
 	"camera_position": [
 		-350,
-		-210
+		-50
 	],
 	"sing_duration": 4,
-	"scale": 1.2,
+	"scale": 1,
 	"_editor_isPlayer": true
 }

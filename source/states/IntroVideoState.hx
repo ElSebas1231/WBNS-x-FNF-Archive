@@ -1,12 +1,12 @@
 package states;
 
-import hxcodec.flixel.FlxVideo;
+import hxvlc.flixel.FlxVideoSprite;
+import flixel.graphics.FlxGraphic;
 
 class IntroVideoState extends MusicBeatState
 {
     public static var leftState:Bool = false;
-    var sprite:FlxSprite;
-    var video:FlxVideo;
+    var video:FlxVideoSprite;
     var toTitleTimer:FlxTimer;
     var foundFile:Bool = false;
     var fileName:String;
@@ -14,8 +14,13 @@ class IntroVideoState extends MusicBeatState
     override function create() {
         super.create();
 
+        var introVideo:String = 'intromadness';
+
+        if (FlxG.random.bool(32)) introVideo = 'intromadness-alt';
+        if (FlxG.random.bool(20)) introVideo = 'ajn';
+
         do {
-            fileName = Paths.video('intromadness');
+            fileName = Paths.video(introVideo);
             #if sys
             if (FileSystem.exists(fileName)) 
             #else
@@ -25,33 +30,23 @@ class IntroVideoState extends MusicBeatState
         } while (!foundFile);
 
         if (foundFile) {
-            sprite = new FlxSprite().makeGraphic(1280, 720, FlxColor.BLACK);
-            sprite.screenCenter();
-            add(sprite);
-        
-            video = new FlxVideo();
-            video.alpha = 0.0;
-            video.play(Paths.video('intromadness'), false);
-            video.onTextureSetup.add(() -> {
-                if (video.bitmapData != null) {
-                    sprite.loadGraphic(video.bitmapData);
-                } else {
-                    if (!TitleState.initialized) {
-                        leftState = true;
-                        if (video != null) video.dispose();
-                        MusicBeatState.switchState(new TitleState());
-                    }
-                }
-            });
-            video.onEndReached.add(() -> { 
-                FlxTween.tween(sprite, {alpha: 0}, 0.75, {onComplete: function(t:FlxTween) {
-                    sprite.destroy();
+            video = new FlxVideoSprite();
+            video.load(Paths.video(introVideo));
+            video.play();
+
+            video.bitmap.onEndReached.add(() -> { 
+                FlxTween.tween(video.bitmap, {alpha: 0}, 0.75, {onComplete: function(t:FlxTween) {
+                    video.destroy();
                     if (!TitleState.initialized) {
                         leftState = true;
                         MusicBeatState.switchState(new TitleState());
                     }
                 }});
             });
+            add(video);
+        } else {
+            leftState = false;
+            MusicBeatState.switchState(new TitleState());
         }
     }
 
@@ -61,11 +56,9 @@ class IntroVideoState extends MusicBeatState
 
         if (foundFile) {
             if (controls.ACCEPT && !introSkipped) {
-                video.dispose();
                 introSkipped = true;
-    
-                FlxTween.tween(sprite, {alpha: 0}, 0.45, {onComplete: function(t:FlxTween) {
-                    sprite.destroy();
+                FlxTween.tween(video, {alpha: 0}, 0.45, {onComplete: function(t:FlxTween) {
+                    video.destroy();
                     leftState = true;
                     MusicBeatState.switchState(new TitleState());
                 }});

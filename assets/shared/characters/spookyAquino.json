@@ -6,62 +6,62 @@
 				0,
 				0
 			],
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idlee0"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				47,
-				-1
+				11,
+				36
 			],
-			"fps": 24,
-			"anim": "singLEFT",
-			"indices": [],
-			"name": "left0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-16,
-				-36
-			],
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "down0"
-		},
-		{
-			"loop": false,
-			"offsets": [
-				-20,
-				23
-			],
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "up0"
+			"fps": 24,
+			"name": "up",
+			"indices": []
 		},
 		{
 			"loop": false,
 			"offsets": [
-				-37,
-				2
+				-15,
+				-32
 			],
+			"anim": "singDOWN",
 			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				58,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				14,
+				0
+			],
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "right0"
+			"fps": 24,
+			"name": "right",
+			"indices": []
 		}
 	],
 	"vocals_file": "",
 	"no_antialiasing": false,
-	"image": "characters/aquino/spoookyaquinin",
+	"image": "characters/aquino/aquinospooky",
 	"position": [
-		40,
-		200
+		80,
+		280
 	],
 	"healthicon": "aquino_icon",
 	"flip_x": false,
@@ -71,10 +71,10 @@
 		45
 	],
 	"camera_position": [
-		20,
-		50
+		-340,
+		-20
 	],
 	"sing_duration": 4,
-	"scale": 1,
+	"scale": 1.5,
 	"_editor_isPlayer": false
 }

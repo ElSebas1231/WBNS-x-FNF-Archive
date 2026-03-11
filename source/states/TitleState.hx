@@ -2,6 +2,9 @@ package states;
 
 import backend.WeekData;
 import backend.Highscore;
+import backend.Song;
+
+import states.freeplay.FreeplaySections;
 
 import flixel.input.keyboard.FlxKey;
 import flixel.addons.transition.FlxTransitionableState;
@@ -11,12 +14,11 @@ import flixel.group.FlxGroup;
 import flixel.input.gamepad.FlxGamepad;
 import flixel.util.FlxAxes;
 import haxe.Json;
+import Lambda;
 
 import openfl.Assets;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
-
-import shaders.ColorTint;
 
 import states.StoryMenuState;
 import states.MainMenuState;
@@ -40,10 +42,9 @@ class TitleState extends MusicBeatState
 	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
 
 	public static var initialized:Bool = false;
-	public static var spookyUnlock:Bool = false;
 
-	var easterEggKey:Array<String> = ['SPOOKY'];
-	var allowedKeys:String = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	var easterEggKey:Array<String> = ['SPOOKY', 'LEFORDE', 'P3L33'];
+	var allowedKeys:String = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 	var easterEggKeyBuffer:String = '';
 
 	var blackScreen:FlxSprite;
@@ -65,6 +66,7 @@ class TitleState extends MusicBeatState
 	private static var blocked:Bool = false;
 
 	public static var mainMenuBack:Bool = false;
+	public static var secretSongLoaded:Bool = false;
 
 	override public function create():Void
 	{
@@ -138,8 +140,6 @@ class TitleState extends MusicBeatState
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
 
-	var swagShader:ColorTint = null;
-
 	function startIntro()
 	{
 		if (!initialized) {
@@ -161,16 +161,6 @@ class TitleState extends MusicBeatState
 		logoBl.screenCenter(X);
 		logoBl.y = 20;
 
-		swagShader = new ColorTint();
-		// swagShader.rLM = 0.25;
-		// swagShader.gLM = 0.38;
-		// swagShader.bLM = 0.38;
-
-		// swagShader.rOffset = 0.9;
-		// swagShader.gOffset = 0.1;
-
-		swagShader.uMix = 0.8;
-
 		titleText = new FlxSprite(0, 0); //576
 		titleText.frames = Paths.getSparrowAtlas('ui/menus/titlemenu/title_enter');
 		titleText.animation.addByPrefix('idle', "title enter idle", 24);
@@ -180,7 +170,6 @@ class TitleState extends MusicBeatState
 		titleText.updateHitbox();
 		add(titleText);
 
-		if (swagShader != null) titleText.shader = swagShader.shader;
 		logoBl.y = 720;
 
 		credGroup = new FlxGroup();
@@ -290,6 +279,19 @@ class TitleState extends MusicBeatState
 				var keyPressed:FlxKey = FlxG.keys.firstJustPressed();
 				var keyName:String = Std.string(keyPressed);
 
+				switch (keyName) {
+					case "ZERO": keyName = "0";
+					case "ONE": keyName = "1";
+					case "TWO": keyName = "2";
+					case "THREE": keyName = "3";
+					case "FOUR": keyName = "4";
+					case "FIVE": keyName = "5";
+					case "SIX": keyName = "6";
+					case "SEVEN": keyName = "7";
+					case "EIGHT": keyName = "8";
+					case "NINE": keyName = "9";
+				}
+
 				if (allowedKeys.contains(keyName)) {
 					easterEggKeyBuffer += keyName;
 					if (easterEggKeyBuffer.length >= 32) easterEggKeyBuffer = easterEggKeyBuffer.substring(1);
@@ -297,17 +299,52 @@ class TitleState extends MusicBeatState
 					for (wordRaw in easterEggKey) {
 						var word:String = wordRaw.toUpperCase();
 		
-						if (easterEggKeyBuffer.contains(word)) {
-							if (!ClientPrefs.data.spookyUnlock) {
-								ClientPrefs.data.spookyUnlock = true;
-								ClientPrefs.saveSettings();
-	
-								FlxG.save.flush();
-								FlxG.sound.play(Paths.sound('ToggleJingle'));
-			
-								easterEggKeyBuffer = '';
-								break;
-							} else FlxG.sound.play(Paths.sound('cancelMenu'));
+						if (easterEggKeyBuffer.contains(word)) {			
+							trace(word);
+							
+							switch (word) {
+								case "SPOOKY": 
+									FlxTransitionableState.skipNextTransIn = true;
+									FlxTransitionableState.skipNextTransOut = true;
+									MusicBeatState.switchState(new JumpScareState());
+								case "P3L33": 
+									FlxTransitionableState.skipNextTransIn = true;
+									FlxTransitionableState.skipNextTransOut = true;
+
+									FlxG.camera.fade(FlxColor.BLACK, 0.5);
+									FlxG.sound.music.fadeOut(0.5, 0, function(twn:FlxTween) {
+										MusicBeatState.switchState(new VideoPlayerState('pilin'));
+									});
+								case "LEFORDE":
+									FlxG.sound.play(Paths.sound('jingle'));
+									FreeplaySections.sectionSelected = 'duxomadness';
+									PlayState.SONG = Song.loadFromJson('leforde-hard', 'duxomadness/leforde');
+									PlayState.isStoryMode = false;
+									PlayState.storyDifficulty = 0;
+
+									trace(ClientPrefs.data.secretSongsUnlocked);
+
+									if (Lambda.find(ClientPrefs.data.secretSongsUnlocked, s -> s.name == "Leforde") == null) {
+										ClientPrefs.data.secretSongsUnlocked.push({name: "Leforde", healthIcon: "snack"});
+										ClientPrefs.saveSettings();
+										FlxG.save.flush();
+									} 
+
+									trace(ClientPrefs.data.secretSongsUnlocked);
+									
+									FlxG.camera.fade(FlxColor.BLACK, 0.5);
+									FlxG.sound.music.fadeOut(0.5, 0, function (twn:FlxTween) {
+										FlxTransitionableState.skipNextTransIn = true;
+										FlxTransitionableState.skipNextTransOut = true;
+										secretSongLoaded = true;
+
+										LoadingState.prepareToSong();
+										LoadingState.loadAndSwitchState(new PlayState());
+									});
+
+									closedState = true;
+									transitioning = true;
+							}	
 						}
 					}
 				}
@@ -315,11 +352,6 @@ class TitleState extends MusicBeatState
 		}
 
 		if (initialized && pressedEnter && !skippedIntro) skipIntro();
-
-		// if(swagShader != null) {
-		// 	if(controls.UI_LEFT) swagShader.hue -= elapsed * 0.1;
-		// 	if(controls.UI_RIGHT) swagShader.hue += elapsed * 0.1;
-		// }
 
 		super.update(elapsed);
 	}
@@ -390,15 +422,15 @@ class TitleState extends MusicBeatState
 				case 24:
 					createCoolText(['Al fin de cuentas']);
 				case 28:
-					addMoreText('Esto no se completó', 40);
+					addMoreText('Esto no revivió', 40);
 				case 32:
 					deleteCoolText();
 				case 35:
-					createCoolText(['Sentimos las molestias']);
+					createCoolText(['Al parecer']);
 				case 39:
-					addMoreText('No pudimos hacerlo', 40);
+					addMoreText('Nos divertiremos', 40);
 				case 43:
-					addMoreText('Esto lo es todo', 80);
+					addMoreText('Por más tiempo', 80);
 				case 47:
 					deleteCoolText();
 				case 52:
@@ -456,8 +488,8 @@ class TitleState extends MusicBeatState
 			}
 		}
 
-		openfl.Lib.application.window.title = 'WBNS x Friday Night Funkin: Duxo Madness';
+		openfl.Lib.application.window.title = "WBNS x Friday Night Funkin': Duxo Madness";
 		openfl.Lib.application.window.setIcon(lime.graphics.Image.fromFile("assets/shared/images/ui/menus/utils/icon.png"));
-		DiscordClient.changePresence("In the Title Screen", null, 'duxomadness');
+		DiscordClient.changePresence("In the Title Screen");
 	}
 }

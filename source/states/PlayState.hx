@@ -33,6 +33,13 @@ import states.StoryMenuState;
 import states.freeplay.FreeplaySections;
 import states.freeplay.FreeplayState;
 
+#if CHART_EDITOR
+import states.editors.ChartingState;
+import states.editors.CharacterEditorState;
+#end
+
+import states.JumpScareState;
+
 import states.results.Tallies;
 import states.results.ResultState;
 
@@ -44,7 +51,7 @@ import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
 #end
 
-import hxcodec.flixel.FlxVideo as VideoHandler;
+import hxvlc.flixel.FlxVideo;
 
 import objects.Note.EventNote;
 import objects.*;
@@ -345,34 +352,19 @@ class PlayState extends MusicBeatState
 		detailsPausedText = "Paused - " + detailsText;
 		#end
 
-		var c3joRPC:Array<String> = ['hiper', 'roier', 'steyb', 'noticiero'];
-		var aquinoRPC:Array<String> = [
-			'creisi.mov', 'erika', 'estupidez',
-			'karfall', "let's go compota v2", 'noobly', 
-			'sylvee', 'toneando v2', 'saludo v2', 'promenade'
-		];
-
 		GameOverSubstate.resetVariables();
 		songName = Paths.formatToSongPath(SONG.song);
-		if(SONG.stage == null || SONG.stage.length < 1) {
+		if (SONG.stage == null || SONG.stage.length < 1) {
 			SONG.stage = StageData.vanillaSongStage(songName);
 		}
 		curStage = SONG.stage;
 
 		// In case your song isn't in the array
-		if(songPortrait == null || songPortrait == ''){
+		if (songPortrait == null || songPortrait == ''){
 			songPortrait = 'icon';
-		}
+		} else songPortrait = 'duxomadness';
 
-		if (c3joRPC.contains(SONG.song.toLowerCase())){
-			songPortrait = 'c3jodlc';
-		}
-
-		if (aquinoRPC.contains(SONG.song.toLowerCase())){
-			songPortrait = 'aquinodlc';
-		}
-
-		if (FreeplaySections.sectionSelected == 'duxomadness') songPortrait = 'duxomadness';
+		if (FreeplaySections.sectionSelected != 'duxomadness') FreeplaySections.sectionSelected = 'duxomadness';
 
 		if (storyDifficultyText.toLowerCase() == 'easy'){
 			storyDifficultyColor = [0xff23a977, 0xffa4f96a];
@@ -431,6 +423,8 @@ class PlayState extends MusicBeatState
 		if(isPixelStage) {
 			introSoundsSuffix = '-pixel';
 		}
+		
+		if (PlayState.SONG.song.toLowerCase() == 'leforde') introSoundsSuffix = '-gm2';
 
 		add(gfGroup);
 		add(dadGroup);
@@ -876,49 +870,6 @@ class PlayState extends MusicBeatState
 		char.y += char.positionArray[1];
 	}
 
-	public function startVideo(name:String)
-	{
-		#if VIDEOS_ALLOWED
-		inCutscene = true;
-
-		var filepath:String = Paths.video(name);
-		#if sys
-		if(!FileSystem.exists(filepath))
-		#else
-		if(!OpenFlAssets.exists(filepath))
-		#end
-		{
-			FlxG.log.warn('Couldnt find video file: ' + name);
-			startAndEnd();
-			return;
-		}
-
-		var video:VideoHandler = new VideoHandler();
-			#if (hxCodec >= "3.0.0")
-			// Recent versions
-			video.play(filepath);
-			video.onEndReached.add(function()
-			{
-				video.dispose();
-				startAndEnd();
-				return;
-			}, true);
-			#else
-			// Older versions
-			video.playVideo(filepath);
-			video.finishCallback = function()
-			{
-				startAndEnd();
-				return;
-			}
-			#end
-		#else
-		FlxG.log.warn('Platform not supported!');
-		startAndEnd();
-		return;
-		#end
-	}
-
 	function startAndEnd()
 	{
 		if(endingSong)
@@ -1283,7 +1234,7 @@ class PlayState extends MusicBeatState
 
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence (with Time Left)
-		if(autoUpdateRPC) DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText.toUpperCase() + ")", 'icon', iconP2.getCharacter());
+		if(autoUpdateRPC) DiscordClient.changePresence("Game Over - " + detailsText, SONG.song + " (" + storyDifficultyText.toUpperCase() + ")", songPortrait, iconP2.getCharacter());
 		#end
 		setOnScripts('songLength', songLength);
 		callOnScripts('onSongStart');
@@ -1751,6 +1702,24 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		#if CHART_EDITOR
+		if(!endingSong && !inCutscene && allowDebugKeys)
+		{
+			if (controls.justPressed('debug_1'))
+				openChartEditor();
+			else if (controls.justPressed('debug_2'))
+				openCharacterEditor();
+		}
+		#else
+		if(!endingSong && !inCutscene && allowDebugKeys) {
+			if (controls.justPressed('debug_1') || controls.justPressed('debug_2')) {
+				FlxTransitionableState.skipNextTransIn = true;
+				FlxTransitionableState.skipNextTransOut = true;
+				MusicBeatState.switchState(new JumpScareState());
+			}
+		}
+		#end
+
 		if (healthBar.bounds.max != null && health > healthBar.bounds.max)
 			health = healthBar.bounds.max;
 
@@ -1905,14 +1874,20 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		#if debug
+		#if CHART_EDITOR
 		if(!endingSong && !startingSong) {
 			if (FlxG.keys.justPressed.ONE) {
 				KillNotes();
 				FlxG.sound.music.onComplete();
 			}
-			if(FlxG.keys.justPressed.TWO) { //Go 10 seconds into the future :O
+			
+			if(FlxG.keys.justPressed.TWO) { 
 				setSongTime(Conductor.songPosition + 10000);
+				clearNotesBefore(Conductor.songPosition);
+			}
+
+			if(FlxG.keys.justPressed.THREE) { 
+				setSongTime(Conductor.songPosition - 10000);
 				clearNotesBefore(Conductor.songPosition);
 			}
 		}
@@ -1989,6 +1964,47 @@ class PlayState extends MusicBeatState
 		if(autoUpdateRPC) DiscordClient.changePresence(detailsPausedText, SONG.song + " (" + storyDifficultyText.toUpperCase() + ")", songPortrait, iconP2.getCharacter());
 		#end
 	}
+
+	#if CHART_EDITOR
+	function openChartEditor()
+	{
+		FlxG.camera.followLerp = 0;
+		persistentUpdate = false;
+		chartingMode = true;
+		paused = true;
+
+		if(FlxG.sound.music != null)
+			FlxG.sound.music.stop();
+		if(vocals != null)
+			vocals.pause();
+		if(opponentVocals != null)
+			opponentVocals.pause();
+
+		#if DISCORD_ALLOWED
+		DiscordClient.changePresence("Chart Editor", null, null, true);
+		DiscordClient.resetClientID();
+		#end
+
+		MusicBeatState.switchState(new ChartingState());
+	}
+
+	function openCharacterEditor()
+	{
+		FlxG.camera.followLerp = 0;
+		persistentUpdate = false;
+		paused = true;
+
+		if(FlxG.sound.music != null)
+			FlxG.sound.music.stop();
+		if(vocals != null)
+			vocals.pause();
+		if(opponentVocals != null)
+			opponentVocals.pause();
+
+		#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
+		MusicBeatState.switchState(new CharacterEditorState(SONG.player2));
+	}
+	#end
 
 	public var isDead:Bool = false; //Don't mess with this on Lua!!!
 	function doDeathCheck(?skipHealthCheck:Bool = false) {
@@ -2498,7 +2514,7 @@ class PlayState extends MusicBeatState
 				if (!ClientPrefs.getGameplaySetting('botplay') && ClientPrefs.data.vsliceResults) {
 					zoomIntoResultsScreen(prevScore < tempActiveTallises.score, tempActiveTallises, prevRank);
 				} else {
-					MusicBeatState.switchState(new FreeplayState());
+					if (states.TitleState.secretSongLoaded) FlxG.switchState(new FreeplaySections()); else MusicBeatState.switchState(new FreeplayState());
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 				}
 				changedDifficulty = false;
@@ -2590,7 +2606,7 @@ class PlayState extends MusicBeatState
 			storyMode: isStoryMode,
 			songId: curSong,
 			difficultyId: Difficulty.getString(),
-			title: isStoryMode ? ('${storyCampaignTitle}') : ('${curSong} by ${SONG.composer}'),
+			title: isStoryMode ? ('${storyCampaignTitle}') : ('${curSong}'),
 			scoreData: scoreData,
 			prevScoreRank: prevScoreRank,
 			isNewHighscore: isNewHighscore
@@ -2999,7 +3015,7 @@ class PlayState extends MusicBeatState
 		if(ClientPrefs.data.ghostTapping) return; //fuck it
 
 		noteMissCommon(direction);
-		if (ClientPrefs.data.missSoundVolume > 0) FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), ClientPrefs.data.missSoundVolume);
+		if (ClientPrefs.data.missSoundVolume > 0) FlxG.sound.play(Paths.soundRandom(PlayState.SONG.song.toLowerCase() == 'leforde' ? 'missgtx' : 'missnote', 1, 3), PlayState.SONG.song.toLowerCase() == 'leforde' ? 1 : ClientPrefs.data.missSoundVolume);
 		callOnScripts('noteMissPress', [direction]);
 	}
 
@@ -3056,6 +3072,7 @@ class PlayState extends MusicBeatState
 
 		var lastCombo:Int = combo;
 		combo = 0;
+		if (ClientPrefs.data.missSoundVolume > 0) FlxG.sound.play(Paths.soundRandom(PlayState.SONG.song.toLowerCase() == 'leforde' ? 'missgtx' : 'missnote', 1, 3), ClientPrefs.data.missSoundVolume);
 
 		health -= subtract * healthLoss;
 		if(!practiceMode) songScore -= 100;
@@ -3074,7 +3091,6 @@ class PlayState extends MusicBeatState
 
 			var animToPlay:String = singAnimations[Std.int(Math.abs(Math.min(singAnimations.length-1, direction)))] + 'miss' + suffix;
 			char.playAnim(animToPlay, true);
-			if (ClientPrefs.data.missSoundVolume > 0) FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), ClientPrefs.data.missSoundVolume);
 
 			if(char != gf && lastCombo > 5 && gf != null && gf.animOffsets.exists('sad')) {
 				gf.playAnim('sad');

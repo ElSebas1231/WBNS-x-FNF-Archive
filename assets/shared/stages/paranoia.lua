@@ -89,22 +89,26 @@ function changeStage(stage)
         scaleObject('luna', 2.5, 2.5)
         addLuaSprite('luna')
 
-        makeLuaSprite('nubes',"nightmare/nube_paranoia", x - 200, -1200)
-        setScrollFactor('nubes', 0.8, 1)
-        scaleObject('nubes', 4, 4)
-        addLuaSprite('nubes')
-
-        makeLuaSprite("cadenas2", "nightmare/cadenas2", -500, -600)
-        scaleObject("cadenas2", 2.5, 2.5)
-        addLuaSprite("cadenas2")
+        if not lowQuality then
+            makeLuaSprite('nubes',"nightmare/nube_paranoia", x - 200, -1200)
+            setScrollFactor('nubes', 0.8, 1)
+            scaleObject('nubes', 4, 4)
+            addLuaSprite('nubes')
+    
+            makeLuaSprite("cadenas2", "nightmare/cadenas2", -500, -600)
+            scaleObject("cadenas2", 2.5, 2.5)
+            addLuaSprite("cadenas2")
+        end
 
         makeLuaSprite("suelo", "nightmare/suelo_paranoia", 0, 0)
         scaleObject("suelo", 2,2)
         addLuaSprite("suelo")
 
-        makeLuaSprite("cadenas1", "nightmare/cadenas", -150, -400)
-        scaleObject("cadenas1", 2.2, 2.2)
-        addLuaSprite("cadenas1", true)
+        if not lowQuality then
+            makeLuaSprite("cadenas1", "nightmare/cadenas", -150, -400)
+            scaleObject("cadenas1", 2.2, 2.2)
+            addLuaSprite("cadenas1", true)
+        end
         
         setCharacterX('dad', initialDadX)
         setCharacterY('dad', initialDadY)
@@ -117,17 +121,13 @@ function changeStage(stage)
 	end
 
     if stage == 'pilares2' then
-        for i,v in ipairs({'pilardad', 'pilarbf', 'nube'}) do
+        for i,v in ipairs({'pilardad', 'pilarbf', 'nube', 'BG', 'bgR'}) do
             if luaSpriteExists(v) then
                 removeLuaSprite(v, true)
             end
         end
         
         setProperty('late.visible', false)
-
-        makeLuaSprite('BG2',"nightmare/fondo_paranoia", -650, -200)
-        scaleObject("BG2", 2.2, 2.2)
-	    addLuaSprite('BG2')
 
         makeAnimatedLuaSprite('neurismo', 'nightmare/neurismo', -650, -500);
         addAnimationByPrefix('neurismo', 'idle', 'neurismo0', 12, true);
@@ -144,34 +144,36 @@ function changeStage(stage)
         setObjectOrder('pilarbf2', getObjectOrder('boyfriendGroup'))
         addLuaSprite('pilarbf2')
 
-        makeLuaSprite('cuerpoAndreh',"nightmare/cuerpo_andreh", -50, -400)
-        scaleObject('cuerpoAndreh', 2, 2)
-        addLuaSprite('cuerpoAndreh')
-
-        -- Lo sé, un poco raro que salga Aquino xd
-        makeLuaSprite('cuerpoAquino',"nightmare/cuerpo_aquino", 350, -550)
-        scaleObject('cuerpoAquino', 3, 3)
-        addLuaSprite('cuerpoAquino')
-
-        makeLuaSprite('cuerpoC3jo',"nightmare/cuerpo_c3jo", 720, -400)
-        scaleObject('cuerpoC3jo', 2, 2)
-        addLuaSprite('cuerpoC3jo')
-
-        makeLuaSprite('cuerpoDuxo',"nightmare/cuerpo_duxo", 1900, -280)
-        scaleObject('cuerpoDuxo', 1.2, 1.2)
-        addLuaSprite('cuerpoDuxo')
-
-        makeLuaSprite('cuerpoLoco',"nightmare/cuerpo_locochon", 2250, -260)
-        scaleObject('cuerpoLoco', 1.3, 1.3)
-        addLuaSprite('cuerpoLoco')
-        
-        makeLuaSprite('cuerpoMictia',"nightmare/cuerpo_mictia", 2650, -500)
-        scaleObject('cuerpoMictia', 3.4, 3.4)
-        addLuaSprite('cuerpoMictia')
-
-        for i,v in ipairs({'cuerpoAndreh', 'cuerpoAquino', 'cuerpoC3jo', 'cuerpoDuxo', 'cuerpoLoco', 'cuerpoMictia'}) do
-            setObjectOrder(v, getObjectOrder('dadGroup')+1)
-            setProperty(v..'.alpha', 0)
+        if not lowQuality then
+            makeLuaSprite('cuerpoAndreh',"nightmare/cuerpo_andreh", -50, -400)
+            scaleObject('cuerpoAndreh', 2, 2)
+            addLuaSprite('cuerpoAndreh')
+    
+            -- Lo sé, un poco raro que salga Aquino xd
+            makeLuaSprite('cuerpoAquino',"nightmare/cuerpo_aquino", 350, -550)
+            scaleObject('cuerpoAquino', 3, 3)
+            addLuaSprite('cuerpoAquino')
+    
+            makeLuaSprite('cuerpoC3jo',"nightmare/cuerpo_c3jo", 720, -400)
+            scaleObject('cuerpoC3jo', 2, 2)
+            addLuaSprite('cuerpoC3jo')
+    
+            makeLuaSprite('cuerpoDuxo',"nightmare/cuerpo_duxo", 1900, -280)
+            scaleObject('cuerpoDuxo', 1.2, 1.2)
+            addLuaSprite('cuerpoDuxo')
+    
+            makeLuaSprite('cuerpoLoco',"nightmare/cuerpo_locochon", 2250, -260)
+            scaleObject('cuerpoLoco', 1.3, 1.3)
+            addLuaSprite('cuerpoLoco')
+            
+            makeLuaSprite('cuerpoMictia',"nightmare/cuerpo_mictia", 2650, -500)
+            scaleObject('cuerpoMictia', 3.4, 3.4)
+            addLuaSprite('cuerpoMictia')
+    
+            for i,v in ipairs({'cuerpoAndreh', 'cuerpoAquino', 'cuerpoC3jo', 'cuerpoDuxo', 'cuerpoLoco', 'cuerpoMictia'}) do
+                setObjectOrder(v, getObjectOrder('dadGroup')+1)
+                setProperty(v..'.alpha', 0)
+            end
         end
 
         setCharacterX('dad', 1200)
@@ -208,7 +210,7 @@ function changeStage(stage)
 
         makeAnimatedLuaSprite('pelito', 'nightmare/pelito', getProperty('dad.x') - 750, getProperty('dad.y') - 120)
         addAnimationByPrefix('pelito', 'idle', 'pelito', 20, true)
-        setObjectOrder('pelito', getObjectOrder('dad'))
+        setObjectOrder('pelito', getObjectOrder('dadGroup'))
         addLuaSprite('pelito')
 
         setProperty('late.visible', false)
@@ -253,11 +255,7 @@ function onEvent(name, value1, value2)
 
     if name == 'Change Character' then
         if value1 == 'dad' then
-            if value2 == 'paranoiaAquino3' then
-                setProperty('pelito.visible', true)
-            else
-                setProperty('pelito.visible', false)
-            end
+            setProperty('pelito.visible', (value2 == 'paranoiaAquino3' and true or false))
         end
     end
 
@@ -311,7 +309,7 @@ function tlBop()
         runHaxeCode([[
         var late = getVar('late');
 
-        if (late.visible == false) return;
+        if (late.visible == false || late == null) return;
         
         var funnyTween1:FlxTween;
         var funnyTween2:FlxTween;

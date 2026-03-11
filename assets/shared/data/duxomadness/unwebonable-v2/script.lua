@@ -24,8 +24,6 @@ function onCreate()
             setPropertyFromGroup('unspawnNotes',i,'scale.y',1.2)
         end
     end
-
-
 end
 
 function onCreatePost()
@@ -94,18 +92,12 @@ function onEvent(name,v1,v2)
     if name == 'Triggers Unbeatable' then
         if v1 == '0' then
             doTweenAlpha('hudalpha','camHUD',1,1,'cubeOut')
-
         elseif v1 == '1' then
             doTweenAlpha('dadAlpha','dad',0,stepCrochet*0.006,'linear')
             doTweenAlpha('iconP2Alpha','iconP2',0,stepCrochet*0.015,'linear')
-
         elseif v1 == '2.5' or v1 == '11' and v2 == '4' then
             cancelTween('dadAlpha')
-            if v1 == '2.5' then
-                triggerEvent('Change Character','dad',dad1)
-            else
-                triggerEvent('Change Character','dad',dad2)
-            end
+            triggerEvent('Change Character','dad', v1 == '2.5' and dad1 or dad2)
             setProperty('dad.alpha',1)
             setProperty('dad.y', getProperty('dad.y') + 550)
             doTweenY('dadY','dad',getProperty('dad.y') - 550,stepCrochet*0.015,'backOut')
@@ -120,24 +112,9 @@ function onEvent(name,v1,v2)
                 triggerEvent('Change Character','dad',dad1)
                 setProperty('dad.visible', true)
                 resetDadY()
-
-            elseif v2 == '1' then
-                -- cancelTween('unbeatable-locoY')
-                -- setObjectOrder('unbeatable-locoChar',getObjectOrder('dadGroup')-1)
-                -- setProperty('unbeatable-locoChar.visible',true)
-                -- setProperty('unbeatable-locoChar.x',getProperty('dadGroup.x')+getProperty('unbeatable-locoChar.positionArray[0]'))
-                -- setProperty('unbeatable-locoChar.y',ydad)
-
             elseif v2 == '2' then
                 triggerEvent('Change Character','dad',dad1)
                 resetDadY()
-                -- doTweenX('unbeatable-locoX','unbeatable-locoChar',xdad-370,1,'cubeOut')
-                -- doTweenY('dadY','dad',getProperty('dad.y')-800,1,'backOut')
-                
-                -- for strums = 0,3 do
-                --     noteTweenX('noteUniX'..strums,strums,getPropertyFromGroup('playerStrums',strums,'x'),0.2,'cubeOut')
-                --     noteTweenX('noteUniX'..(strums+4),strums+4,getPropertyFromGroup('opponentStrums',strums,'x'),0.2,'cubeOut')
-                -- end
             end
             if v2 ~= '2' then
                 if not hideHud then
@@ -154,29 +131,17 @@ function onEvent(name,v1,v2)
                     extraIcon('setIconAsPrincipal',{'duckIcon',true})
                 end
             end
-
         elseif v1 == '7' then
             if v2 == '' then
                 triggerEvent('Change Character','dad',dad2)
                 setProperty('dad.visible', true)
                 resetDadY()
-            elseif v2 == '1' then
-                -- setObjectOrder('unbeatable-duxoChar',getObjectOrder('dadGroup')-1)
-                -- setProperty('unbeatable-duxoChar.visible',true)
-                -- setProperty('unbeatable-duxoChar.x',getProperty('dadGroup.x') + 450)
-                -- setProperty('unbeatable-duxoChar.y',ydad+650)
-                -- doTweenX('unbeatable-duxoX','unbeatable-duxoChar',xdad+395,1,'cubeOut')
-                -- doTweenY('unbeatable-duxoY','unbeatable-duxoChar',ydad,1,'cubeOut')
             end
             
             if not hideHud then
                 if not luaSpriteExists('unbeatable-locoIcon') then
                     extraIcon('addExtraIcon',{'unbeatable-locoIcon','locochon_icon'})
-                    if downscroll then
-                        setProperty('unbeatable-locoIcon.offset.y',200)
-                    else
-                        setProperty('unbeatable-locoIcon.offset.y',-200)
-                    end
+                    setProperty('unbeatable-locoIcon.offset.y', downscroll and 200 or -200)
                     doTweenY('unbeatable-locoIconY','unbeatable-locoIcon.offset',0,stepCrochet*0.005,'cubeOut')
                 end
                 extraIcon('setIconAsPrincipal',{'unbeatable-locoIcon',true})
@@ -185,16 +150,13 @@ function onEvent(name,v1,v2)
         elseif v1 == '8' then
             triggerEvent('Change Character','dad',dad)
             setProperty('dad.visible',false)
-
         elseif v1 == '9' then
-            
             if v2 == '1' then
                 hudAlpha(0,1)
                 setMiddleScroll(true)
             else
                 setMiddleScroll(true,0.9)
             end
-
         elseif v1 == '10' then
             hudAlpha(1,0)
             setMiddleScroll(false,0)
@@ -205,13 +167,9 @@ function onEvent(name,v1,v2)
 
         elseif v1 == '12' then
             setProperty('blackFront.alpha',0)
-            --cancelTween('dadY')
-
             if v2 == '1' then
                 setProperty('dad.alpha',1)
                 setProperty('dad.visible',true)
-                -- setProperty('unbeatable-duxoChar.visible',false)
-                -- setProperty('unbeatable-locoChar.visible',false)
                 extraIcon('setIconAsPrincipal',{'dadIcon',true})
             else
                 if v2 == '2' then
@@ -230,8 +188,6 @@ function onEvent(name,v1,v2)
                 setProperty('camGame.alpha',1)
                 cancelTween('blackFront')
                 setProperty('blackFront.color',getColorFromHex('FFFFFF'))
-                -- setProperty('unbeatable-duxoChar.visible',false)
-                -- setProperty('unbeatable-locoChar.visible',false)
             elseif v2 == '1' then
                 setProperty('dad.visible',true)
                 doTweenAlpha('dadAlpha','dad',1,0.3,'sineIn')
@@ -263,19 +219,9 @@ function onEvent(name,v1,v2)
             if v2 ~= '1' then
                 removeNintendos()
             else
-
                 for strums = 0,3 do
                     setPropertyFromGroup('opponentStrums',strums,'alpha',0)
                 end
-
-                -- setProperty('unbeatable-duxoChar.visible',true)
-                -- setProperty('unbeatable-locoChar.visible',true)
-    
-                -- setProperty('unbeatable-duxoChar.x',xdad+395)
-                -- setProperty('unbeatable-duxoChar.y',ydad)
-    
-                -- setProperty('unbeatable-locoChar.x',xdad-370)
-                -- setProperty('unbeatable-locoChar.y',ydad)
                 removeLuaSprite('blackFront',true)
     
                 setObjectOrder('dad',getObjectOrder('dadGroup')+6)
@@ -330,25 +276,26 @@ function onEvent(name,v1,v2)
             end
         end
     end
+    
     if name == 'Subajada' then
         if v1 == '0' then
             for i,v in ipairs({'healthBar.bg', 'healthBar.leftBar', 'healthBar.rightBar', 'scoreMM'}) do
-                doTweenY(v..'Y', v, getProperty(v..'.y') + 200, 0.84, 'expoInOut')
+                doTweenY(v..'Y', v, getProperty(v..'.y') + (not downscroll and 200 or -200), 0.84, 'expoInOut')
             end
 
             for i,v in ipairs({'iconP1', 'iconP2'}) do
-                doTweenY(v..'Y', v, getProperty(v..'.y') + 200, 0.84, 'expoInOut')
+                doTweenY(v..'Y', v, getProperty(v..'.y') + (not downscroll and 200 or -200), 0.84, 'expoInOut')
                 doTweenAlpha(v..'alpha', v, 0, 0.84, 'expoInOut')
             end
         end
 
         if v1 == '1' then
             for i,v in ipairs({'healthBar.bg', 'healthBar.leftBar', 'healthBar.rightBar', 'scoreMM'}) do
-                doTweenY(v..'Y', v, getProperty(v..'.y') - 200, 0.84, 'expoInOut')
+                doTweenY(v..'Y', v, getProperty(v..'.y') + (not downscroll and -200 or 200), 0.84, 'expoInOut')
             end
 
             for i,v in ipairs({'iconP1', 'iconP2'}) do
-                doTweenY(v..'Y', v, getProperty(v..'.y') - 200, 0.84, 'expoInOut')
+                doTweenY(v..'Y', v, getProperty(v..'.y') + (not downscroll and -200 or 200), 0.84, 'expoInOut')
                 doTweenAlpha(v..'alpha', v, 1, 0.84, 'expoInOut')
             end
         end
@@ -389,12 +336,6 @@ function onUpdate()
         end
     end
 end
-
--- function noteMiss(id,data,type,sus)
---     if curStep > 1438 and curStep < 1695 then
---         --setHealth(-1)
---     end
--- end
 
 function resetDadY()
     setProperty('dad.y',getProperty('dadGroup.y')+getProperty('dad.positionArray[1]'))
